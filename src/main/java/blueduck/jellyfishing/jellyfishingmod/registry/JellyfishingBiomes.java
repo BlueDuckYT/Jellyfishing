@@ -22,7 +22,7 @@ public class JellyfishingBiomes {
     }
 
     public static void registerBiomes() {
-        registerBiome(JELLYFISH_FIELDS.get(), BiomeManager.BiomeType.COOL, BiomeDictionary.Type.OCEAN);
+        registerBiome(JELLYFISH_FIELDS.get(), BiomeManager.BiomeType.WARM, BiomeDictionary.Type.OCEAN);
     }
     public static void registerBiome(Biome biome, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
         BiomeDictionary.addTypes(biome, types);
