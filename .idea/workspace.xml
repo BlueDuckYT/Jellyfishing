@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.runClient">
+  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
     <configuration name="Jellyfishing [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,46 +158,54 @@
       <option name="project" value="LOCAL" />
       <updated>1595620308381</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added placeholder textures for blue jellyfish item and blue jelly">
+      <created>1595626425489</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595626425489</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Biomes now Spawn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Biomes now Spawn" />
+    <MESSAGE value="Added placeholder textures for blue jellyfish item and blue jelly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added placeholder textures for blue jellyfish item and blue jelly" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1595580943907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1595580943907" />
-    <state x="411" y="7" key="CommitChangelistDialog2" timestamp="1595620306287">
+    <state x="411" y="7" key="CommitChangelistDialog2" timestamp="1595626423581">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="411" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1595620306287" />
+    <state x="411" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1595626423581" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1595473427087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595473427087" />
-    <state width="1492" height="210" key="GridCell.Tab.0.bottom" timestamp="1595626231292">
+    <state width="1492" height="210" key="GridCell.Tab.0.bottom" timestamp="1595626456307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595626231292" />
-    <state width="1492" height="210" key="GridCell.Tab.0.center" timestamp="1595626231292">
+    <state width="1492" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595626456307" />
+    <state width="1492" height="210" key="GridCell.Tab.0.center" timestamp="1595626456307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595626231292" />
-    <state width="1492" height="210" key="GridCell.Tab.0.left" timestamp="1595626231292">
+    <state width="1492" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595626456307" />
+    <state width="1492" height="210" key="GridCell.Tab.0.left" timestamp="1595626456307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595626231292" />
-    <state width="1492" height="210" key="GridCell.Tab.0.right" timestamp="1595626231292">
+    <state width="1492" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595626456307" />
+    <state width="1492" height="210" key="GridCell.Tab.0.right" timestamp="1595626456307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595626231292" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595615844925">
+    <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595626456307" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595626429852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595615844925" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595626429852" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595473328169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
