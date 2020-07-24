@@ -1,0 +1,17 @@
+{
+  "block.jellyfishing.jelly_block": "Jelly Block",
+  "block.jellyfishing.blue_jelly_block": "Blue Jelly Block",
+
+  "item.jellyfishing.jellyfish_net": "Jellyfish Net",
+  "item.jellyfishing.jellyfish_jelly": "Jellyfish Jelly",
+  "item.jellyfishing.blue_jellyfish_jelly": "Blue Jellyfish Jelly",
+
+  "item.jellyfishing.jellyfish": "Jellyfish",
+  "item.jellyfishing.blue_jellyfish": "Blue Jellyfish",
+
+  "item.jellyfishing.jellyfish_spawn_egg": "Jellyfish Spawn Egg",
+
+  "entity.jellyfishing.jellyfish": "Jellyfish",
+
+  "biome.jellyfishing.jellyfish_fields": "Jellyfish Fields"
+}

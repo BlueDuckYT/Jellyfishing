@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "jellyfishing:jelly_block"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:jellyfish_jelly",
+    "count": 9
+  }
+}
