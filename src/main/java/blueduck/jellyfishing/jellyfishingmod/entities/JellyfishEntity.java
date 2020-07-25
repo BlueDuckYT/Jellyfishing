@@ -25,5 +25,4 @@ public class JellyfishEntity extends AbstractJellyfishEntity {
     }
 
 
-
 }

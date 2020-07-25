@@ -23,6 +23,7 @@ public class JellyfishFields extends Biome {
     public JellyfishFields() {
         super((new Builder()).surfaceBuilder(SurfaceBuilder.DEFAULT, SurfaceBuilder.SAND_CONFIG).precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-1.5F).scale(0.2F).temperature(0.5F).downfall(0.5F).waterColor(4566523).waterFogColor(604792).parent((String)null));
 
+
         DefaultBiomeFeatures.addOceanCarvers(this);
         DefaultBiomeFeatures.addStructures(this);
 

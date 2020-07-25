@@ -58,6 +58,18 @@ public class JellyfishModel extends EntityModel<JellyfishEntity> {
             body.rotateAngleX = 0;
         }
 
+        tentacle1.rotateAngleX = Math.abs(MathHelper.sin(ageInTicks * 0.1F));
+        tentacle1.rotateAngleZ = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * -1;
+
+        tentacle2.rotateAngleX = Math.abs(MathHelper.sin(ageInTicks * 0.1F));
+        tentacle2.rotateAngleZ = Math.abs(MathHelper.sin(ageInTicks * 0.1F));
+
+        tentacle3.rotateAngleX = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * -1;
+        tentacle3.rotateAngleZ = Math.abs(MathHelper.sin(ageInTicks * 0.1F));
+
+        tentacle4.rotateAngleX = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * -1;
+        tentacle4.rotateAngleZ = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * -1;
+
     }
 
     @Override
