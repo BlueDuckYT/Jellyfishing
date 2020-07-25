@@ -10,8 +10,10 @@
   "item.jellyfishing.blue_jellyfish": "Blue Jellyfish",
 
   "item.jellyfishing.jellyfish_spawn_egg": "Jellyfish Spawn Egg",
+  "item.jellyfishing.blue_jellyfish_spawn_egg": "Blue Jellyfish Spawn Egg",
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
+  "entity.jellyfishing.blue_jellyfish": "Bluw Jellyfish",
 
   "biome.jellyfishing.jellyfish_fields": "Jellyfish Fields"
 }
