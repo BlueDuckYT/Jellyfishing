@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/BlueJellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/BlueJellyfishModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/JellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/JellyfishModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/JellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/JellyfishEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595640685028</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added rudimentary animations to Jellyfish">
+      <created>1595685471876</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595685471876</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -209,17 +213,18 @@
     <MESSAGE value="Adds Blue Jellyfish" />
     <MESSAGE value="Language files" />
     <MESSAGE value="Fixed item models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed item models" />
+    <MESSAGE value="Added rudimentary animations to Jellyfish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added rudimentary animations to Jellyfish" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1595633094047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1595633094047" />
-    <state x="411" y="7" key="CommitChangelistDialog2" timestamp="1595640682688">
+    <state x="411" y="7" key="CommitChangelistDialog2" timestamp="1595685469781">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="411" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1595640682688" />
+    <state x="411" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1595685469781" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1595473427087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -240,10 +245,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595685254790" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595638370289">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595685476191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595638370289" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595685476191" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595473328169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
