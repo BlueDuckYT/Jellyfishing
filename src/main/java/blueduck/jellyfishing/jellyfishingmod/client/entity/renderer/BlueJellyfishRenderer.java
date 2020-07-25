@@ -11,7 +11,7 @@ import net.minecraft.util.ResourceLocation;
 public class BlueJellyfishRenderer extends MobRenderer<BlueJellyfishEntity, BlueJellyfishModel> {
 
     public BlueJellyfishRenderer(EntityRendererManager renderManagerIn) {
-        super(renderManagerIn, new BlueJellyfishModel(), 0.9F);
+        super(renderManagerIn, new BlueJellyfishModel(), 0.3F);
     }
 
 
