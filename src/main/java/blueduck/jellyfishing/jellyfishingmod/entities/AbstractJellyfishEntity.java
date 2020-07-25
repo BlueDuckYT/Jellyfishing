@@ -3,8 +3,7 @@ package blueduck.jellyfishing.jellyfishingmod.entities;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.entity.ai.goal.PanicGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.passive.fish.AbstractFishEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -16,6 +15,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.player.AttackEntityEvent;
 
 public class AbstractJellyfishEntity extends AbstractFishEntity {
 
@@ -40,6 +40,8 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public ItemStack getJellyfishItem() {
         return JELLYFISH_ITEM;
     }
+
+
 
     @Override
     protected boolean processInteract(PlayerEntity player, Hand hand) {

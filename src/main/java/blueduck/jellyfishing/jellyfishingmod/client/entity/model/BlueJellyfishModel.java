@@ -1,14 +1,13 @@
 package blueduck.jellyfishing.jellyfishingmod.client.entity.model;
 
 
-import blueduck.jellyfishing.jellyfishingmod.entities.AbstractJellyfishEntity;
+import blueduck.jellyfishing.jellyfishingmod.entities.BlueJellyfishEntity;
 import blueduck.jellyfishing.jellyfishingmod.entities.JellyfishEntity;
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -18,14 +17,14 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Created using Tabula 8.0.0
  */
 @OnlyIn(Dist.CLIENT)
-public class JellyfishModel extends EntityModel<JellyfishEntity> {
+public class BlueJellyfishModel extends EntityModel<BlueJellyfishEntity> {
     public ModelRenderer body;
     public ModelRenderer tentacle1;
     public ModelRenderer tentacle2;
     public ModelRenderer tentacle3;
     public ModelRenderer tentacle4;
 
-    public JellyfishModel() {
+    public BlueJellyfishModel() {
         this.textureWidth = 24;
         this.textureHeight = 12;
         this.tentacle3 = new ModelRenderer(this, 0, 0);
@@ -50,7 +49,7 @@ public class JellyfishModel extends EntityModel<JellyfishEntity> {
     }
 
     @Override
-    public void setRotationAngles(JellyfishEntity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+    public void setRotationAngles(BlueJellyfishEntity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         if  (!entityIn.isInWater()) {
             body.rotateAngleX = (float) (30 + MathHelper.sin(limbSwing) * 0.5);
         }

@@ -1,6 +1,7 @@
 package blueduck.jellyfishing.jellyfishingmod;
 
 import blueduck.jellyfishing.jellyfishingmod.biomes.JellyfishFields;
+import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.BlueJellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.JellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingBiomes;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingBlocks;
@@ -11,6 +12,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraftforge.common.MinecraftForge;
@@ -66,8 +68,12 @@ public class JellyfishingMod
         RenderTypeLookup.setRenderLayer(JellyfishingBlocks.BLUE_JELLY_BLOCK.get(), RenderType.getTranslucent());
 
         RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.JELLYFISH.get(), manager -> new JellyfishRenderer(manager));
+        RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.BLUE_JELLYFISH.get(), manager -> new BlueJellyfishRenderer(manager));
+
 
         ((JellyfishFields)JellyfishingBiomes.JELLYFISH_FIELDS.get()).addCreatureSpawn(EntityClassification.WATER_CREATURE, new Biome.SpawnListEntry(JellyfishingEntities.JELLYFISH.get(), 50, 1, 1));
+        ((JellyfishFields)JellyfishingBiomes.JELLYFISH_FIELDS.get()).addCreatureSpawn(EntityClassification.WATER_CREATURE, new Biome.SpawnListEntry(JellyfishingEntities.JELLYFISH.get(), 5, 1, 1));
+
 
     }
 
