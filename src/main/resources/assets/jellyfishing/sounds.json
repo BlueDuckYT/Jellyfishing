@@ -1,6 +1,6 @@
 {
   "entity.jellyfish.sting": {
-    "category": "block",
+    "category": "entity",
     "subtitle": "jellyfishing.subtitle.sting",
     "sounds": [ "jellyfishing:entity/jellyfish/sting" ]
   }

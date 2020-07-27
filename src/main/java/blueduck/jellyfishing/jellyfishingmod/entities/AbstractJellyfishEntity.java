@@ -9,6 +9,7 @@ import net.minecraft.entity.passive.fish.AbstractFishEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.*;
@@ -20,16 +21,26 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
 
     public int stingTime;
     public int stingCounter;
+    public double dailyDrops;
+    public int dropCounter;
 
     public static final DamageSource JELLYFISH_STING = (new DamageSource("sting")).setDamageBypassesArmor();
 
     public ItemStack JELLYFISH_ITEM;
+    public Item JELLY_ITEM;
 
-    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, int stingTicks) {
+    public boolean canThisEntitySting;
+
+
+    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, int stingTicks, double dropsPerDay, boolean canSting) {
         super(type, worldIn);
         JELLYFISH_ITEM = JItem;
+        JELLY_ITEM = JellyItem;
         stingTime = stingTicks;
         stingCounter = 0;
+        dailyDrops = dropsPerDay;
+        dropCounter = (int) (Math.random() * 24000 / dropsPerDay);
+        canThisEntitySting = canSting;
     }
 
     @Override
@@ -51,15 +62,19 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if (this.stingCounter > 0) {
             --this.stingCounter;
         }
+        if (dropCounter == 0) {
+            this.entityDropItem(new ItemStack(JELLY_ITEM, 1), -0.3F);
+            dropCounter = (int) (Math.random() * 24000 / dailyDrops);
+        }
+        dropCounter--;
         super.livingTick();
     }
 
     public void onCollideWithPlayer(PlayerEntity entityIn) {
-        if (stingCounter == 0 && this.isInWater()) {
+        if (canThisEntitySting && stingCounter == 0 && this.isInWater()) {
             stingCounter = stingTime;
             entityIn.attackEntityFrom(JELLYFISH_STING, 3);
             this.playSound(JellyfishingSounds.STING.get(), 1, 1);
-
         }
     }
 

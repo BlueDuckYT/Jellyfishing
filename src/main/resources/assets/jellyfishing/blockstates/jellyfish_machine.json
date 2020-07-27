@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "level=0": { "model": "jellyfishing:block/jellyfish_machine" },
+    "level=1": { "model": "jellyfishing:block/jellyfish_machine_1" },
+    "level=2": { "model": "jellyfishing:block/jellyfish_machine_2" },
+    "level=3": { "model": "jellyfishing:block/jellyfish_machine_3" }
+  }
+}

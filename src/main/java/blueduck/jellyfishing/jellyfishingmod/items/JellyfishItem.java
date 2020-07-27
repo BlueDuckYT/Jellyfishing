@@ -26,22 +26,17 @@ import java.util.function.Supplier;
 
 public class JellyfishItem extends Item {
 
-    public Item PRODUCE_ITEM;
-    public int PRODUCE_AMOUNT;
+
     public boolean BREEDABLE;
     public ResourceLocation entityTexture;
     Supplier<EntityType<?>> entityType;
 
-    public JellyfishItem(Properties properties, Item Output, ResourceLocation resloc, Supplier<EntityType<?>> etype) {
+    public JellyfishItem(Properties properties, Supplier<EntityType<?>> etype) {
         super(properties);
-        PRODUCE_ITEM = Output;
-        entityTexture = resloc;
         entityType = etype;
     }
 
-    public ItemStack GetOutputItemStack() {
-        return new ItemStack(PRODUCE_ITEM, PRODUCE_AMOUNT);
-    }
+
 
     public boolean isBreedable() {
         return BREEDABLE;
