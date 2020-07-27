@@ -1,6 +1,7 @@
 package blueduck.jellyfishing.jellyfishingmod.entities;
 
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
+import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingSounds;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
@@ -57,6 +58,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if (stingCounter == 0 && this.isInWater()) {
             stingCounter = stingTime;
             entityIn.attackEntityFrom(JELLYFISH_STING, 3);
+            this.playSound(JellyfishingSounds.STING.get(), 1, 1);
 
         }
     }

@@ -19,8 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added Coral Plants">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/blocks/coral_plant.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Adds Coral Plant Loot Table">
+      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingSounds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds/entity/jellyfish/sting.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,11 +114,11 @@
       <recent name="blueduck.jellyfishing.jellyfishingmod.blocks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\data\jellyfishfields" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\textures\block" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -297,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595859243780</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Adds Coral Plant Loot Table">
+      <created>1595859386842</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1595859386842</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,9 +336,14 @@
     <MESSAGE value="Tweaked animations" />
     <MESSAGE value="Jellyfish now sting and have a custom death message" />
     <MESSAGE value="Added Coral Plants" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Coral Plants" />
+    <MESSAGE value="Adds Coral Plant Loot Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds Coral Plant Loot Table" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595860015177">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1595860015177" />
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1595763141320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -339,30 +356,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595857747998" />
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1595859081296">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1595861862880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595859081296" />
-    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1595859081296">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595861862880" />
+    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1595861862880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595859081296" />
-    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1595859081296">
+    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595861862880" />
+    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1595861862880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595859081296" />
-    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1595859081296">
+    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595861862880" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1595861862880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595859081296" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595861862880" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595688314039" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595729400445">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595859389707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595729400445" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595859389707" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595473328169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

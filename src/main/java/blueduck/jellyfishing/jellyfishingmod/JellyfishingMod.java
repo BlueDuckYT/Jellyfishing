@@ -3,10 +3,7 @@ package blueduck.jellyfishing.jellyfishingmod;
 import blueduck.jellyfishing.jellyfishingmod.biomes.JellyfishFields;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.BlueJellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.JellyfishRenderer;
-import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingBiomes;
-import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingBlocks;
-import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEntities;
-import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
+import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;
@@ -55,6 +52,7 @@ public class JellyfishingMod
         JellyfishingItems.init();
         JellyfishingEntities.init();
         JellyfishingBiomes.init();
+        JellyfishingSounds.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
