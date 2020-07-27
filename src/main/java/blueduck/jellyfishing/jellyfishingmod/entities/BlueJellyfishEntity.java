@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 public class BlueJellyfishEntity extends AbstractJellyfishEntity {
 
     public BlueJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn) {
-        super(type, worldIn, new ItemStack(JellyfishingItems.BLUE_JELLYFISH.get(), 1));
+        super(type, worldIn, new ItemStack(JellyfishingItems.BLUE_JELLYFISH.get(), 1), 200);
     }
 
     @Override

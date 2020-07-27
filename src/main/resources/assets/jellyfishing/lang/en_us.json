@@ -13,7 +13,15 @@
   "item.jellyfishing.blue_jellyfish_spawn_egg": "Blue Jellyfish Spawn Egg",
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
-  "entity.jellyfishing.blue_jellyfish": "Bluw Jellyfish",
+  "entity.jellyfishing.blue_jellyfish": "Blue Jellyfish",
 
-  "biome.jellyfishing.jellyfish_fields": "Jellyfish Fields"
+  "biome.jellyfishing.jellyfish_fields": "Jellyfish Fields",
+
+
+
+
+  "advancements.jellyfishing.ready.title": "I'm Ready!",
+  "advancements.jellyfishing.ready.text": "Enter the Jellyfish Fields",
+
+  "death.attack.sting.player": "{Player} was stung by Jellyfishs"
 }

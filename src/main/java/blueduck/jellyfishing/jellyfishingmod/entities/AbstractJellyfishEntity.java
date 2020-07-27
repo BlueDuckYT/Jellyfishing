@@ -10,20 +10,25 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.util.EntityPredicates;
-import net.minecraft.util.Hand;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundEvents;
+import net.minecraft.util.*;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 
 public class AbstractJellyfishEntity extends AbstractFishEntity {
 
+    public int stingTime;
+    public int stingCounter;
+
+    public static final DamageSource JELLYFISH_STING = (new DamageSource("sting")).setDamageBypassesArmor();
+
     public ItemStack JELLYFISH_ITEM;
 
-    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem) {
+    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, int stingTicks) {
         super(type, worldIn);
         JELLYFISH_ITEM = JItem;
+        stingTime = stingTicks;
+        stingCounter = 0;
     }
 
     @Override
@@ -39,6 +44,21 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
 
     public ItemStack getJellyfishItem() {
         return JELLYFISH_ITEM;
+    }
+
+    public void livingTick() {
+        if (this.stingCounter > 0) {
+            --this.stingCounter;
+        }
+        super.livingTick();
+    }
+
+    public void onCollideWithPlayer(PlayerEntity entityIn) {
+        if (stingCounter == 0 && this.isInWater()) {
+            stingCounter = stingTime;
+            entityIn.attackEntityFrom(JELLYFISH_STING, 3);
+
+        }
     }
 
 
