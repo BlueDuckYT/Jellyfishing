@@ -1,7 +1,16 @@
 {
   "entity.jellyfish.sting": {
-    "category": "entity",
+    "category": "block",
     "subtitle": "jellyfishing.subtitle.sting",
-    "sounds": [ "jellyfishing:entity/jellyfish/sting" ]
+    "sounds": [
+      {
+        "name":  "jellyfishing:entity/jellyfish/sting",
+        "stream": true
+      },
+      {
+        "name":  "jellyfishing:entity/jellyfish/sting2",
+        "stream": true
+      }
+    ]
   }
-}
+  }
