@@ -63,7 +63,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
             --this.stingCounter;
         }
         if (dropCounter == 0) {
-            this.entityDropItem(new ItemStack(JELLY_ITEM, 1), -0.3F);
+            this.entityDropItem(new ItemStack(JELLY_ITEM, 1), -0.5F);
             dropCounter = (int) (Math.random() * 24000 / dailyDrops);
         }
         dropCounter--;
