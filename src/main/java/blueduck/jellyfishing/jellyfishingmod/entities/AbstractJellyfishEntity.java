@@ -3,7 +3,9 @@ package blueduck.jellyfishing.jellyfishingmod.entities;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingSounds;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.passive.fish.AbstractFishEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,9 +15,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.*;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
+
+import javax.annotation.Nullable;
 
 public class AbstractJellyfishEntity extends AbstractFishEntity {
 
@@ -32,7 +37,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public boolean canThisEntitySting;
 
 
-    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, int stingTicks, double dropsPerDay, boolean canSting) {
+    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage) {
         super(type, worldIn);
         JELLYFISH_ITEM = JItem;
         JELLY_ITEM = JellyItem;
@@ -77,7 +82,6 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
             this.playSound(JellyfishingSounds.STING.get(), 1, 1);
         }
     }
-
 
 
     @Override

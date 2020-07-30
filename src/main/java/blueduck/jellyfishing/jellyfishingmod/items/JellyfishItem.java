@@ -1,15 +1,19 @@
 package blueduck.jellyfishing.jellyfishingmod.items;
 
+import blueduck.jellyfishing.jellyfishingmod.entities.AbstractJellyfishEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.passive.fish.AbstractFishEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
+import net.minecraft.nbt.IntNBT;
 import net.minecraft.stats.Stats;
 import net.minecraft.tileentity.MobSpawnerTileEntity;
 import net.minecraft.tileentity.TileEntity;
@@ -27,8 +31,6 @@ import java.util.function.Supplier;
 public class JellyfishItem extends Item {
 
 
-    public boolean BREEDABLE;
-    public ResourceLocation entityTexture;
     Supplier<EntityType<?>> entityType;
 
     public JellyfishItem(Properties properties, Supplier<EntityType<?>> etype) {
@@ -38,13 +40,6 @@ public class JellyfishItem extends Item {
 
 
 
-    public boolean isBreedable() {
-        return BREEDABLE;
-    }
-
-    public ResourceLocation getEntityTexture() {
-        return entityTexture;
-    }
 
     @Override
     public ActionResultType onItemUse(ItemUseContext context) {
@@ -64,44 +59,43 @@ public class JellyfishItem extends Item {
                 blockpos1 = blockpos.offset(direction);
             }
 
-            EntityType<?> entitytype = this.entityType.get();
-            if (entitytype.spawn(world, itemstack, context.getPlayer(), blockpos1, SpawnReason.SPAWN_EGG, true, !Objects.equals(blockpos, blockpos1) && direction == Direction.UP) != null) {
-                itemstack.shrink(1);
+            Entity entity = this.entityType.get().spawn(world, itemstack, (PlayerEntity)null, blockpos1, SpawnReason.BUCKET, true, false);
+            if (entity != null) {
+                ((AbstractFishEntity)entity).setFromBucket(true);
             }
 
             return ActionResultType.SUCCESS;
         }
     }
 
-    @Override
-    public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        ItemStack itemstack = playerIn.getHeldItem(handIn);
-        RayTraceResult raytraceresult = rayTrace(worldIn, playerIn, RayTraceContext.FluidMode.SOURCE_ONLY);
-        if (raytraceresult.getType() != RayTraceResult.Type.BLOCK) {
-            return ActionResult.resultPass(itemstack);
-        } else if (worldIn.isRemote) {
-            return ActionResult.resultSuccess(itemstack);
-        } else {
-            BlockRayTraceResult blockraytraceresult = (BlockRayTraceResult)raytraceresult;
-            BlockPos blockpos = blockraytraceresult.getPos();
-            if (!(worldIn.getBlockState(blockpos).getBlock() instanceof FlowingFluidBlock)) {
-                return ActionResult.resultPass(itemstack);
-            } else if (worldIn.isBlockModifiable(playerIn, blockpos) && playerIn.canPlayerEdit(blockpos, blockraytraceresult.getFace(), itemstack)) {
-                EntityType<?> entitytype = this.entityType.get();
-                if (entitytype.spawn(worldIn, itemstack, playerIn, blockpos, SpawnReason.SPAWN_EGG, false, false) == null) {
-                    return ActionResult.resultPass(itemstack);
-                } else {
-                    if (!playerIn.abilities.isCreativeMode) {
-                        itemstack.shrink(1);
-                    }
-
-                    playerIn.addStat(Stats.ITEM_USED.get(this));
-                    return ActionResult.resultSuccess(itemstack);
-                }
-            } else {
-                return ActionResult.resultFail(itemstack);
-            }
-        }
-    }
+//    @Override
+//    public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
+//        ItemStack itemstack = playerIn.getHeldItem(handIn);
+//        RayTraceResult raytraceresult = rayTrace(worldIn, playerIn, RayTraceContext.FluidMode.SOURCE_ONLY);
+//        if (raytraceresult.getType() != RayTraceResult.Type.BLOCK) {
+//            return ActionResult.resultPass(itemstack);
+//        } else if (worldIn.isRemote) {
+//            return ActionResult.resultSuccess(itemstack);
+//        } else {
+//            BlockRayTraceResult blockraytraceresult = (BlockRayTraceResult)raytraceresult;
+//            BlockPos blockpos = blockraytraceresult.getPos();
+//            if (!(worldIn.getBlockState(blockpos).getBlock() instanceof FlowingFluidBlock)) {
+//                return ActionResult.resultPass(itemstack);
+//            } else if (worldIn.isBlockModifiable(playerIn, blockpos) && playerIn.canPlayerEdit(blockpos, blockraytraceresult.getFace(), itemstack)) {
+//                 if (false) {
+//                    return ActionResult.resultFail(itemstack);
+//                } else {
+//                    if (!playerIn.abilities.isCreativeMode) {
+//                        itemstack.shrink(1);
+//                    }
+//
+//                    playerIn.addStat(Stats.ITEM_USED.get(this));
+//                    return ActionResult.resultFail(itemstack);
+//                }
+//            } else {
+//                return ActionResult.resultFail(itemstack);
+//            }
+//        }
+//    }
 
 }
