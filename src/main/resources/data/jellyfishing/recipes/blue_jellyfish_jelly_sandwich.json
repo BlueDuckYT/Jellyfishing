@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "$",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bread"
+    },
+    "$": {
+      "item": "jellyfishing:blue_jellyfish_jelly"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:blue_jellyfish_jelly_sandwich"
+  }
+}

@@ -4,6 +4,9 @@
 
   "block.jellyfishing.coral_plant": "Coral Plant",
   "block.jellyfishing.scrap_metal": "Scrap Metal",
+  "block.jellyfishing.coralstone": "Coralstone",
+  "block.jellyfishing.algae_grass": "Algae Grass",
+  "block.jellyfishing.algae_block": "Algae Block",
 
   "item.jellyfishing.jellyfish_net": "Jellyfish Net",
   "item.jellyfishing.jellyfish_jelly": "Jellyfish Jelly",
@@ -14,6 +17,9 @@
 
   "item.jellyfishing.jellyfish_spawn_egg": "Jellyfish Spawn Egg",
   "item.jellyfishing.blue_jellyfish_spawn_egg": "Blue Jellyfish Spawn Egg",
+
+  "item.jellyfishing.jellyfish_jelly_sandwich": "Jellyfish Jelly Sandwich",
+  "item.jellyfishing.blue_jellyfish_jelly_sandwich": "Blue Jellyfish Jelly Sandwich",
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
   "entity.jellyfishing.blue_jellyfish": "Blue Jellyfish",

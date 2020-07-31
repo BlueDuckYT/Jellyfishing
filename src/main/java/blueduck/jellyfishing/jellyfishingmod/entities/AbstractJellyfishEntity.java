@@ -26,8 +26,11 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
 
     public int stingTime;
     public int stingCounter;
+    public int stingDmg;
+    public double stingChance;
     public double dailyDrops;
     public int dropCounter;
+
 
     public static final DamageSource JELLYFISH_STING = (new DamageSource("sting")).setDamageBypassesArmor();
 
@@ -37,7 +40,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public boolean canThisEntitySting;
 
 
-    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage) {
+    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage, double stingChance) {
         super(type, worldIn);
         JELLYFISH_ITEM = JItem;
         JELLY_ITEM = JellyItem;
@@ -46,6 +49,8 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         dailyDrops = dropsPerDay;
         dropCounter = (int) (Math.random() * 24000 / dropsPerDay);
         canThisEntitySting = canSting;
+        stingDmg = stingDamage;
+        this.stingChance = stingChance;
     }
 
     @Override
@@ -58,6 +63,10 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         return SoundEvents.ENTITY_COD_FLOP;
     }
 
+    protected SoundEvent getHurtSound() {
+        return SoundEvents.ENTITY_COD_HURT;
+    }
+
 
     public ItemStack getJellyfishItem() {
         return JELLYFISH_ITEM;
@@ -67,19 +76,23 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if (this.stingCounter > 0) {
             --this.stingCounter;
         }
-        if (dropCounter == 0) {
+        if (dropCounter == 0 && this.isInWater()) {
             this.entityDropItem(new ItemStack(JELLY_ITEM, 1), -0.5F);
             dropCounter = (int) (Math.random() * 24000 / dailyDrops);
         }
-        dropCounter--;
+        if (dropCounter > 0) {
+            dropCounter--;
+        }
         super.livingTick();
     }
 
     public void onCollideWithPlayer(PlayerEntity entityIn) {
-        if (canThisEntitySting && stingCounter == 0 && this.isInWater()) {
+        if (canThisEntitySting && stingCounter == 0 && this.isInWater() ) {
             stingCounter = stingTime;
-            entityIn.attackEntityFrom(JELLYFISH_STING, 3);
-            this.playSound(JellyfishingSounds.STING.get(), 1, 1);
+            if (Math.random() < stingChance/1) {
+                entityIn.attackEntityFrom(JELLYFISH_STING, stingDmg);
+                this.playSound(JellyfishingSounds.STING.get(), 1, 1);
+            }
         }
     }
 
