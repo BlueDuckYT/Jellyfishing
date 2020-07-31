@@ -23,7 +23,7 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> BLUE_JELLY_BLOCK = BLOCKS.register("blue_jelly_block", () -> new BlueJellyBlock(Block.Properties.create(Material.CLAY, MaterialColor.ADOBE).speedFactor(0.4F).jumpFactor(2F).notSolid().sound(SoundType.field_226947_m_)));
     public static final RegistryObject<Item> BLUE_JELLY_BLOCK_ITEM = ITEMS.register("blue_jelly_block", () -> new BlockItemBase(BLUE_JELLY_BLOCK.get()));
 
-    public static final RegistryObject<Block> CORAL_PLANT = BLOCKS.register("coral_plant", () -> new CoralPlant(Block.Properties.create(Material.CLAY, MaterialColor.ADOBE).notSolid().sound(SoundType.SLIME).doesNotBlockMovement()));
+    public static final RegistryObject<Block> CORAL_PLANT = BLOCKS.register("coral_plant", () -> new CoralPlant(Block.Properties.create(Material.OCEAN_PLANT, MaterialColor.ADOBE).notSolid().sound(SoundType.SLIME).doesNotBlockMovement()));
     public static final RegistryObject<Item> CORAL_PLANT_ITEM = ITEMS.register("coral_plant", () -> new BlockItemBase(CORAL_PLANT.get()));
 
     public static final RegistryObject<Block> SCRAP_METAL = BLOCKS.register("scrap_metal", () -> new Block(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2)));
