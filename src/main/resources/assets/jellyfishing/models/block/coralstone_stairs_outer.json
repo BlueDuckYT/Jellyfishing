@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "jellyfishing:block/coralstone",
+    "top": "jellyfishing:block/coralstone",
+    "side": "jellyfishing:block/coralstone"
+  }
+}

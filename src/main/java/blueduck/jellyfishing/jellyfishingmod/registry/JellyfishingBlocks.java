@@ -32,6 +32,15 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> CORALSTONE = BLOCKS.register("coralstone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.PURPLE).sound(SoundType.STONE).hardnessAndResistance(1.5F, 1F).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
     public static final RegistryObject<Item> CORALSTONE_ITEM = ITEMS.register("coralstone", () -> new BlockItemBase(CORALSTONE.get()));
 
+    public static final RegistryObject<Block> CORALSTONE_WALL = BLOCKS.register("coralstone_wall", () -> new WallBlock(Block.Properties.from(CORALSTONE.get())));
+    public static final RegistryObject<Item> CORALSTONE_WALL_ITEM = ITEMS.register("coralstone_wall", () -> new BlockItemBase(CORALSTONE_WALL.get()));
+
+    public static final RegistryObject<Block> CORALSTONE_STAIRS = BLOCKS.register("coralstone_stairs", () -> new StairsBlock(() -> CORALSTONE.get().getDefaultState(), Block.Properties.from(CORALSTONE.get())));
+    public static final RegistryObject<Item> CORALSTONE_STAIRS_ITEM = ITEMS.register("coralstone_stairs", () -> new BlockItemBase(CORALSTONE_STAIRS.get()));
+
+    public static final RegistryObject<Block> CORALSTONE_SLAB = BLOCKS.register("coralstone_slab", () -> new SlabBlock(Block.Properties.from(CORALSTONE.get())));
+    public static final RegistryObject<Item> CORALSTONE_SLAB_ITEM = ITEMS.register("coralstone_slab", () -> new BlockItemBase(CORALSTONE_SLAB.get()));
+
     public static final RegistryObject<Block> ALGAE_GRASS = BLOCKS.register("algae_grass", () -> new AlgaeGrassBlock(Block.Properties.create(Material.EARTH, MaterialColor.LIME).sound(SoundType.WET_GRASS).hardnessAndResistance(1F, 1F).harvestTool(ToolType.SHOVEL).harvestLevel(0)));
     public static final RegistryObject<Item> ALGAE_GRASS_ITEM = ITEMS.register("algae_grass", () -> new BlockItemBase(ALGAE_GRASS.get()));
 

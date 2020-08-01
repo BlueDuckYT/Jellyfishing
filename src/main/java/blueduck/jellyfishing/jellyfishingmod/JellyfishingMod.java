@@ -15,13 +15,13 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.feature.BlockWithContextConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
-import net.minecraft.world.gen.placement.CaveEdgeConfig;
-import net.minecraft.world.gen.placement.CountRangeConfig;
-import net.minecraft.world.gen.placement.NoPlacementConfig;
-import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.*;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -84,21 +84,31 @@ public class JellyfishingMod
         ((JellyfishFields)JellyfishingBiomes.JELLYFISH_FIELDS.get()).addCreatureSpawn(EntityClassification.WATER_CREATURE, new Biome.SpawnListEntry(JellyfishingEntities.JELLYFISH.get(), 100, 1, 1));
         ((JellyfishFields)JellyfishingBiomes.JELLYFISH_FIELDS.get()).addCreatureSpawn(EntityClassification.WATER_CREATURE, new Biome.SpawnListEntry(JellyfishingEntities.BLUE_JELLYFISH.get(), 10, 1, 1));
 
+
+        BlockState WATER = Blocks.WATER.getDefaultState();
+
+        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 50)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 256))));
+        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 50)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(200, 35, 0, 60))));
+        DefaultBiomeFeatures.addOres(JellyfishingBiomes.JELLYFISH_FIELDS.get());
+        DefaultBiomeFeatures.addExtraEmeraldOre(JellyfishingBiomes.JELLYFISH_FIELDS.get());
+
+        Biomes.WARM_OCEAN.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 30)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 256))));
+        Biomes.LUKEWARM_OCEAN.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 30)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 256))));
+
+        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Blocks.GRANITE.getDefaultState(), 20)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 40))));
+        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Blocks.DIORITE.getDefaultState(), 20)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 40))));
+        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Blocks.ANDESITE.getDefaultState(), 20)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 40))));
+
+
+        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SIMPLE_BLOCK.withConfiguration(new BlockWithContextConfig(JellyfishingBlocks.CORAL_PLANT.get().getDefaultState(), new BlockState[]{JellyfishingBlocks.CORAL_PLANT.get().getDefaultState()}, new BlockState[]{WATER}, new BlockState[]{WATER})).withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(new NoPlacementConfig())));
+
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
 
-        BlockState WATER = Blocks.WATER.getDefaultState();
-
-        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 50)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 256))));
-        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 50)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(125, 35, 0, 60))));
-        DefaultBiomeFeatures.addOres(JellyfishingBiomes.JELLYFISH_FIELDS.get());
-        DefaultBiomeFeatures.addExtraEmeraldOre(JellyfishingBiomes.JELLYFISH_FIELDS.get());
-
-        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SIMPLE_BLOCK.withConfiguration(new BlockWithContextConfig(JellyfishingBlocks.CORAL_PLANT.get().getDefaultState(), new BlockState[]{JellyfishingBlocks.CORAL_PLANT.get().getDefaultState()}, new BlockState[]{WATER}, new BlockState[]{WATER})).withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(new NoPlacementConfig())));
-    }
+          }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
