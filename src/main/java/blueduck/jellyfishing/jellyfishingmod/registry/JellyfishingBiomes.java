@@ -28,6 +28,7 @@ public class JellyfishingBiomes {
         BiomeDictionary.addTypes(biome, types);
         //BiomeManager.addSpawnBiome(biome);
         BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(biome, 10));
+        BiomeManager.oceanBiomes.add(JELLYFISH_FIELDS.get());
 
     }
 
