@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Advancements">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/tags/items/jelly_blocks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixed advancements">
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/advancements/jellyfishing/jelly_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/advancements/jellyfishing/jelly_block.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -408,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596372184776</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Fixed advancements">
+      <created>1596372611912</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1596372611913</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -425,7 +429,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added placeholder textures for blue jellyfish item and blue jelly" />
     <MESSAGE value="Fixes stuff" />
     <MESSAGE value="Adds Blue Jellyfish" />
     <MESSAGE value="Language files" />
@@ -450,7 +453,8 @@
     <MESSAGE value="Tweaked Biome Gen" />
     <MESSAGE value="tweaks" />
     <MESSAGE value="Advancements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Advancements" />
+    <MESSAGE value="Fixed advancements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed advancements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596283600856">
