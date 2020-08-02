@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "$"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:seagrass"
+    },
+    "$": {
+      "item": "jellyfishing:coralstone"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:algae_grass"
+  }
+}
