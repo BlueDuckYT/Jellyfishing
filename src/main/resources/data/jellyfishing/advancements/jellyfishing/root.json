@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "jellyfishing:algae_grass"
+    },
+    "title": {
+      "translate": "advancements.jellyfishing.root.title"
+    },
+    "description": {
+      "translate": "advancements.jellyfishing.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "jellyfishing:textures/block/coralstone.png"
+  },
+  "criteria": {
+    "consumed_item": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:oak_boat"
+      }
+    }
+  }
+}

@@ -17,10 +17,7 @@ import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
-import net.minecraft.world.gen.feature.BlockWithContextConfig;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placement.*;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
@@ -104,7 +101,8 @@ public class JellyfishingMod
 
 
 
-        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SIMPLE_BLOCK.withConfiguration(new BlockWithContextConfig(JellyfishingBlocks.CORAL_PLANT.get().getDefaultState(), new BlockState[]{Blocks.STONE.getDefaultState()}, new BlockState[]{WATER}, new BlockState[]{WATER})).withPlacement(Placement.CARVING_MASK.configure(new CaveEdgeConfig(GenerationStage.Carving.LIQUID, 0.4F))));
+        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SIMPLE_BLOCK.withConfiguration(new BlockWithContextConfig(JellyfishingBlocks.CORAL_PLANT.get().getDefaultState(), new BlockState[]{Blocks.STONE.getDefaultState()}, new BlockState[]{WATER}, new BlockState[]{WATER})).withPlacement(Placement.CARVING_MASK.configure(new CaveEdgeConfig(GenerationStage.Carving.LIQUID, 0.02F))));
+        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SIMPLE_BLOCK.withConfiguration(new BlockWithContextConfig(JellyfishingBlocks.CORAL_PLANT.get().getDefaultState(), new BlockState[]{Blocks.STONE.getDefaultState()}, new BlockState[]{WATER}, new BlockState[]{WATER})).withPlacement(Placement.FOREST_ROCK.configure(new FrequencyConfig(5))));
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

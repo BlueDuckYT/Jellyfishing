@@ -1,0 +1,30 @@
+{
+  "parent": "jellyfishing:jellyfishing/jelly",
+  "display": {
+    "icon": {
+      "item": "jellyfishing:jellyfish_jelly_sandwich"
+    },
+    "title": {
+      "translate": "advancements.jellyfishing.jelly_sandwich.title"
+    },
+    "description": {
+      "translate": "advancements.jellyfishing.jelly_sandwich.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "net": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "jellyfishing:jelly_sandwiches"
+          }
+        ]
+      }
+    }
+  }
+}

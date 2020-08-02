@@ -1,0 +1,31 @@
+{
+  "parent": "jellyfishing:jellyfishing/root",
+  "display": {
+    "icon": {
+      "item": "jellyfishing:coral_plant"
+    },
+    "title": {
+      "translate": "advancements.jellyfishing.im_ready.title"
+    },
+    "description": {
+      "translate": "advancements.jellyfishing.im_ready.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "net": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "jellyfishing:jellyfish_fields"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "net"
+    ]
+  ]
+}

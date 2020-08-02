@@ -1,0 +1,35 @@
+{
+  "parent": "jellyfishing:jellyfishing/catch",
+  "display": {
+    "icon": {
+      "item": "jellyfishing:blue_jellyfish"
+    },
+    "title": {
+      "translate": "advancements.jellyfishing.catch_blue.title"
+    },
+    "description": {
+      "translate": "advancements.jellyfishing.catch_blue.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "net": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jellyfishing:blue_jellyfish"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "net"
+    ]
+  ]
+}

@@ -33,8 +33,25 @@
 
 
 
-  "advancements.jellyfishing.ready.title": "I'm Ready!",
-  "advancements.jellyfishing.ready.text": "Enter the Jellyfish Fields",
+  "advancements.jellyfishing.root.title": "Jellyfishing",
+  "advancements.jellyfishing.root.description": "Begin your Jellyfishing adventure",
+  "advancements.jellyfishing.im_ready.title": "I'm Ready!",
+  "advancements.jellyfishing.im_ready.description": "Enter the Jellyfish Fields",
+  "advancements.jellyfishing.firmly_grasp_it.title": "Firmly Grasp It",
+  "advancements.jellyfishing.firmly_grasp_it.description": "Obtain a Jellyfish Net",
+  "advancements.jellyfishing.catch.title": "Jellyfisherman",
+  "advancements.jellyfishing.catch.description": "Catch a Jellyfish",
+  "advancements.jellyfishing.catch_blue.title": "No-Name",
+  "advancements.jellyfishing.catch_blue.description": "Catch a Blue Jellyfish",
+  "advancements.jellyfishing.jelly.title": "Jellyfish Jam",
+  "advancements.jellyfishing.jelly.description": "Gather Jellyfish Jelly from a Jellyfish",
+  "advancements.jellyfishing.jelly_sandwich.title": "Jellyfish Jelly Sandwich",
+  "advancements.jellyfishing.jelly_sandwich.description": "Create a Jellyfish Jelly Sandwich",
+  "advancements.jellyfishing.jelly_block.title": "Not quite jello",
+  "advancements.jellyfishing.jelly_block.description": "Create a Jelly Block",
 
   "death.attack.sting.player": "{Player} was stung by Jellyfishs"
+
+
+
 }
