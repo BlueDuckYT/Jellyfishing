@@ -1,5 +1,5 @@
 {
-  "parent": "jellyfishing:jellyfishing/catch",
+  "parent": "jellyfishing:jellyfishing/jelly",
   "display": {
     "icon": {
       "item": "jellyfishing:jelly_block"
