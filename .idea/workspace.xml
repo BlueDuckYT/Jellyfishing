@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added new recipes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/AbstractJellyfishModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Optimized some code for addon creation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/renderer/AbstractJellyfishRenderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596372873016</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Optimized some code for addon creation">
+      <created>1596376193076</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1596376193076</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,7 +450,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Language files" />
     <MESSAGE value="Fixed item models" />
     <MESSAGE value="Added rudimentary animations to Jellyfish" />
     <MESSAGE value="Test Commit" />
@@ -470,7 +474,8 @@
     <MESSAGE value="Fixed advancements" />
     <MESSAGE value="typo in lang file" />
     <MESSAGE value="Added new recipes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new recipes" />
+    <MESSAGE value="Optimized some code for addon creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized some code for addon creation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596283600856">
