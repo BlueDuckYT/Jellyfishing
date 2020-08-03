@@ -146,7 +146,7 @@ public class JellyfishingMod
         @SubscribeEvent
         public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event) {
             JellyfishingBiomes.registerBiomes();
-            JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingFeatures.CORAL_PLANT_FEATURE.withConfiguration(new CountConfig(4)));
+            JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingFeatures.CORAL_PLANT_FEATURE.withConfiguration(new CountConfig(3)));
 
         }
     }
