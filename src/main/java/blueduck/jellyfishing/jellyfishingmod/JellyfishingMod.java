@@ -66,6 +66,7 @@ public class JellyfishingMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -95,6 +96,9 @@ public class JellyfishingMod
 
         Biomes.WARM_OCEAN.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 30)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 256))));
         Biomes.LUKEWARM_OCEAN.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 30)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 256))));
+        Biomes.DEEP_WARM_OCEAN.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 30)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 256))));
+        Biomes.DEEP_LUKEWARM_OCEAN.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 30)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 256))));
+
 
         JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Blocks.GRANITE.getDefaultState(), 20)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 40))));
         JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Blocks.DIORITE.getDefaultState(), 20)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 40))));
@@ -102,9 +106,7 @@ public class JellyfishingMod
 
 
 
-        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SIMPLE_BLOCK.withConfiguration(new BlockWithContextConfig(JellyfishingBlocks.CORAL_PLANT.get().getDefaultState(), new BlockState[]{Blocks.STONE.getDefaultState()}, new BlockState[]{WATER}, new BlockState[]{WATER})).withPlacement(Placement.CARVING_MASK.configure(new CaveEdgeConfig(GenerationStage.Carving.LIQUID, 0.02F))));
-        JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SIMPLE_BLOCK.withConfiguration(new BlockWithContextConfig(JellyfishingBlocks.CORAL_PLANT.get().getDefaultState(), new BlockState[]{Blocks.STONE.getDefaultState()}, new BlockState[]{WATER}, new BlockState[]{WATER})).withPlacement(Placement.FOREST_ROCK.configure(new FrequencyConfig(5))));
-    }
+           }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
@@ -144,6 +146,8 @@ public class JellyfishingMod
         @SubscribeEvent
         public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event) {
             JellyfishingBiomes.registerBiomes();
+            JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingFeatures.CORAL_PLANT_FEATURE.withConfiguration(new CountConfig(4)));
+
         }
     }
 }
