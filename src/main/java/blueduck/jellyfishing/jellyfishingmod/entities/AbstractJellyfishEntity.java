@@ -1,5 +1,7 @@
 package blueduck.jellyfishing.jellyfishingmod.entities;
 
+import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
+import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEntities;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingSounds;
 import net.minecraft.advancements.CriteriaTriggers;
@@ -11,9 +13,7 @@ import net.minecraft.entity.passive.fish.AbstractFishEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
