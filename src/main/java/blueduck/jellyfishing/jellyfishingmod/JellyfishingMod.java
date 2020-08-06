@@ -19,10 +19,12 @@ import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placement.*;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -153,4 +155,14 @@ public class JellyfishingMod
 
         }
     }
+
+/*
+    @Mod.EventBusSubscriber(Dist.CLIENT)
+    public static class RenderEventHandler {
+        @SubscribeEvent
+        public static void RenderTickEvent(final TickEvent.RenderTickEvent event) {
+        }
+    }
+*/
+
 }
