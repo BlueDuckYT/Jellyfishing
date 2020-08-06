@@ -7,8 +7,10 @@ import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.ActiveRenderInfo;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
@@ -156,11 +158,13 @@ public class JellyfishingMod
         }
     }
 
+
 /*
     @Mod.EventBusSubscriber(Dist.CLIENT)
     public static class RenderEventHandler {
         @SubscribeEvent
-        public static void RenderTickEvent(final TickEvent.RenderTickEvent event) {
+        public static void updateFogColor(ActiveRenderInfo activeRenderInfoIn, float partialTicks, ClientWorld worldIn, int renderDistanceChunks, float bossColorModifier) {
+
         }
     }
 */

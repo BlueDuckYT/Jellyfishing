@@ -92,6 +92,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
             if (Math.random() < stingChance/1) {
                 entityIn.attackEntityFrom(JELLYFISH_STING, stingDmg);
                 this.playSound(JellyfishingSounds.STING.get(), 1, 1);
+                this.setVelocity((this.getPosX() - entityIn.getPosX()) * 0.3, (this.getPosY() - entityIn.getPosY()) * 0.3, (this.getPosZ() - entityIn.getPosZ()) * 0.3);
             }
         }
     }
