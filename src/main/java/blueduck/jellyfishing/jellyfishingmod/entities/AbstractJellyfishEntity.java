@@ -120,7 +120,8 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     protected boolean processInteract(PlayerEntity player, Hand hand) {
         ItemStack itemstack = player.getHeldItem(hand);
         if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && this.isAlive() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
-            if (dodgeChance < Math.random()) {
+            if (!this.canDespawn(1) || dodgeChance < Math.random()) {
+                player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
                 this.playSound(SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1.0F, 1.0F);
                 itemstack.damageItem(1, player, (p_220045_0_) -> {
                     p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
