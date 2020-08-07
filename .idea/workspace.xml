@@ -19,14 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Jellyfish now run away after stinging you">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/BlueJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/BlueJellyfishEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/JellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/JellyfishEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBiomes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBiomes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/polished_coralstone_from_coralstone_stonecutting.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/polished_coralstone_from_coralstone_stonecutting.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added placeholder textures for blue jellyfish item and blue jelly">
-      <created>1595626425489</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1595626425489</updated>
     </task>
     <task id="LOCAL-00003" summary="Fixes stuff">
       <created>1595626467154</created>
@@ -530,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596680136072</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Bug fixes">
+      <created>1596766725028</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1596766725032</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Revamped some code and added more customizability to jellyfish" />
     <MESSAGE value="Added placeholder texture to algae grass, changed coralstone texture, reworked jellyfish fields biomegen" />
     <MESSAGE value="Ores now spawn in Jellyfish Fields" />
     <MESSAGE value="Updates textures for coralstone, and adds stairs, slabs, and walls" />
@@ -572,7 +570,8 @@
     <MESSAGE value="adds slab tag" />
     <MESSAGE value="e" />
     <MESSAGE value="Jellyfish now run away after stinging you" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jellyfish now run away after stinging you" />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -595,30 +594,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596327329836" />
-    <state width="1493" height="156" key="GridCell.Tab.0.bottom" timestamp="1596766199121">
+    <state width="1493" height="156" key="GridCell.Tab.0.bottom" timestamp="1596802666988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596766199121" />
-    <state width="1493" height="156" key="GridCell.Tab.0.center" timestamp="1596766199117">
+    <state width="1493" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596802666988" />
+    <state width="1493" height="156" key="GridCell.Tab.0.center" timestamp="1596802666988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596766199117" />
-    <state width="1493" height="156" key="GridCell.Tab.0.left" timestamp="1596766199117">
+    <state width="1493" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596802666988" />
+    <state width="1493" height="156" key="GridCell.Tab.0.left" timestamp="1596802666988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596766199117" />
-    <state width="1493" height="156" key="GridCell.Tab.0.right" timestamp="1596766199117">
+    <state width="1493" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596802666988" />
+    <state width="1493" height="156" key="GridCell.Tab.0.right" timestamp="1596802666988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596766199117" />
+    <state width="1493" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596802666988" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595688314039" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596680278882">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596766727760">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596680278882" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596766727760" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595473328169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

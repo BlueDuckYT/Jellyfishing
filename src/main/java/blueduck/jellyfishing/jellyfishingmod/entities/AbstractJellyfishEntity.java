@@ -31,6 +31,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public double stingChance;
     public double dailyDrops;
     public int dropCounter;
+    public double dodgeChance;
 
 
     public static final DamageSource JELLYFISH_STING = (new DamageSource("sting")).setDamageBypassesArmor();
@@ -41,7 +42,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public boolean canThisEntitySting;
 
 
-    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage, double stingChance) {
+    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage, double stingChance, double dodgeChance) {
         super(type, worldIn);
         JELLYFISH_ITEM = JItem;
         JELLY_ITEM = JellyItem;
@@ -52,6 +53,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         canThisEntitySting = canSting;
         stingDmg = stingDamage;
         this.stingChance = stingChance;
+        this.dodgeChance = dodgeChance;
     }
 
     @Override
@@ -91,12 +93,12 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     }
 
     public void onCollideWithPlayer(PlayerEntity entityIn) {
-        if (canThisEntitySting && stingCounter == 0 && this.isInWater() ) {
+        if (canThisEntitySting && stingCounter == 0 && this.isInWater()) {
             stingCounter = stingTime;
-            if (Math.random() < stingChance/1) {
+            if (Math.random() < stingChance / 1) {
                 entityIn.attackEntityFrom(JELLYFISH_STING, stingDmg);
                 this.playSound(JellyfishingSounds.STING.get(), 1, 1);
-                this.setVelocity((this.getPosX() - entityIn.getPosX()) * 0.3, (this.getPosY() - entityIn.getPosY()) * 0.3, (this.getPosZ() - entityIn.getPosZ()) * 0.3);
+                this.setNewVelocity(entityIn, 0.3);
             }
         }
     }
@@ -107,36 +109,41 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(6.0D);
     }
 
+    public void setNewVelocity(Entity entityIn, double multiplier) {
+        this.setVelocity((this.getPosX() - entityIn.getPosX()) * multiplier, (this.getPosY() - entityIn.getPosY()) * multiplier, (this.getPosZ() - entityIn.getPosZ()) * multiplier);
+
+    }
 
     @Override
     protected boolean processInteract(PlayerEntity player, Hand hand) {
         ItemStack itemstack = player.getHeldItem(hand);
-        if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && this.isAlive()) {
-            this.playSound(SoundEvents.BLOCK_WOOL_PLACE, 1.0F, 1.0F);
-            itemstack.damageItem(1, player, (p_220045_0_) -> {
-                p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
-            });
-            ItemStack itemstack1 = this.getJellyfishItem();
-            this.setBucketData(itemstack1);
-            if (!this.world.isRemote) {
-                CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayerEntity)player, itemstack1);
-            }
+        if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && this.isAlive() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
+            if (dodgeChance < Math.random()) {
+                this.playSound(SoundEvents.BLOCK_WOOL_PLACE, 1.0F, 1.0F);
+                itemstack.damageItem(1, player, (p_220045_0_) -> {
+                    p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+                });
+                ItemStack itemstack1 = this.getJellyfishItem();
+                this.setBucketData(itemstack1);
+                if (!this.world.isRemote) {
+                    CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayerEntity) player, itemstack1);
+                }
 
-            if (itemstack.isEmpty()) {
-                player.setHeldItem(hand, itemstack1);
-            } else if (!player.inventory.addItemStackToInventory(itemstack1)) {
-                player.dropItem(itemstack1, false);
-            }
+                if (itemstack.isEmpty()) {
+                    player.setHeldItem(hand, itemstack1);
+                } else if (!player.inventory.addItemStackToInventory(itemstack1)) {
+                    player.dropItem(itemstack1, false);
+                }
 
-            this.remove();
-            return true;
+                this.remove();
+                return true;
+            } else {
+                this.setNewVelocity(player, 0.4);
+                player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
+                return true;
+            }
         } else {
             return super.processInteract(player, hand);
         }
     }
-
-
-
-
-
 }
