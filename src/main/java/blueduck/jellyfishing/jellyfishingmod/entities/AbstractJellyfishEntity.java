@@ -32,6 +32,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public double dailyDrops;
     public int dropCounter;
     public double dodgeChance;
+    public double dodgeSpeed;
 
 
     public static final DamageSource JELLYFISH_STING = (new DamageSource("sting")).setDamageBypassesArmor();
@@ -42,7 +43,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public boolean canThisEntitySting;
 
 
-    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage, double stingChance, double dodgeChance) {
+    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage, double stingChance, double dodgeChance, double dodgeSpeed) {
         super(type, worldIn);
         JELLYFISH_ITEM = JItem;
         JELLY_ITEM = JellyItem;
@@ -54,6 +55,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         stingDmg = stingDamage;
         this.stingChance = stingChance;
         this.dodgeChance = dodgeChance;
+        this.dodgeSpeed = dodgeSpeed;
     }
 
     @Override
@@ -63,7 +65,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
 
     @Override
     protected SoundEvent getFlopSound() {
-        return SoundEvents.ENTITY_COD_FLOP;
+        return null;
     }
 
     protected SoundEvent getHurtSound() {
@@ -98,7 +100,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
             if (Math.random() < stingChance / 1) {
                 entityIn.attackEntityFrom(JELLYFISH_STING, stingDmg);
                 this.playSound(JellyfishingSounds.STING.get(), 1, 1);
-                this.setNewVelocity(entityIn, 0.3);
+                this.setNewVelocity(entityIn, dodgeSpeed);
             }
         }
     }
@@ -138,7 +140,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                 this.remove();
                 return true;
             } else {
-                this.setNewVelocity(player, 0.4);
+                this.setNewVelocity(player, dodgeSpeed);
                 player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
                 return true;
             }
