@@ -115,11 +115,9 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                 dirZ = Math.abs(dirZ)/dirZ * 0.5;
             }
         }
-        else {
+        else if (moveCounter > 0) {
             moveCounter--;
         }
-
-        this.writeAdditional(this.getPersistentData());
         super.livingTick();
         if (this.onGround && !this.isInWater()) {
             this.setVelocity(0.0, -0.3, 0.0);
@@ -127,6 +125,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                 dirY *= -1;
             }
         }
+        this.writeAdditional(this.getPersistentData());
     }
 
     public void onCollideWithPlayer(PlayerEntity entityIn) {
