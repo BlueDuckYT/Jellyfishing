@@ -34,6 +34,8 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public int dropCounter;
     public double dodgeChance;
     public double dodgeSpeed;
+    public double dirX, dirY, dirZ;
+    public int moveCounter;
 
 
     public static final DamageSource JELLYFISH_STING = (new DamageSource("sting")).setDamageBypassesArmor();
@@ -60,7 +62,11 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if (dropCounter == 0) {
             dropCounter = (int) (Math.random() * 24000 / dropsPerDay);
         }
+        dirX = (Math.random()) - .5;
+        dirY = (Math.random()) - .5;
+        dirZ = (Math.random()) - .5;
         this.writeAdditional(this.getPersistentData());
+        moveCounter = 80;
     }
 
     @Override
@@ -93,10 +99,33 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if (dropCounter > 0) {
             dropCounter--;
         }
+        if (moveCounter == 0 && this.isInWater()) {
+            moveCounter = 80;
+            this.setVelocity(dirX, dirY, dirZ);
+            dirX += (Math.random() * 0.2) - 0.1;
+            dirY += (Math.random() * 0.2) - 0.1;
+            dirZ += (Math.random() * 0.2) - 0.1;
+            if (Math.abs(dirX) > 0.5) {
+                dirX = Math.abs(dirX)/dirX * 0.5;
+            }
+            if (Math.abs(dirY) > 0.5) {
+                dirY = Math.abs(dirY)/dirY * 0.5;
+            }
+            if (Math.abs(dirZ) > 0.5) {
+                dirZ = Math.abs(dirZ)/dirZ * 0.5;
+            }
+        }
+        else {
+            moveCounter--;
+        }
+
         this.writeAdditional(this.getPersistentData());
         super.livingTick();
         if (this.onGround && !this.isInWater()) {
             this.setVelocity(0.0, -0.3, 0.0);
+            if (dirY > 0) {
+                dirY *= -1;
+            }
         }
     }
 
@@ -121,6 +150,9 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public void setNewVelocity(Entity entityIn, double multiplier) {
         this.setVelocity((this.getPosX() - entityIn.getPosX()) * multiplier, (this.getPosY() - entityIn.getPosY()) * multiplier, (this.getPosZ() - entityIn.getPosZ()) * multiplier);
 
+    }
+
+    protected void registerGoals() {
     }
 
     @Override
@@ -161,6 +193,9 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         super.writeAdditional(compound);
         compound.putInt("StingTicks", stingCounter);
         compound.putInt("DropTicks", dropCounter);
+        compound.putDouble("DirX", dirX);
+        compound.putDouble("DirY", dirY);
+        compound.putDouble("DirZ", dirZ);
     }
 
     /**
@@ -170,5 +205,8 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         super.readAdditional(compound);
         this.stingCounter = compound.getInt("StingTicks");
         this.dropCounter = compound.getInt("DropTicks");
+        this.dirX = compound.getDouble("DirX");
+        this.dirY = compound.getDouble("DirY");
+        this.dirZ = compound.getDouble("DirZ");
     }
 }
