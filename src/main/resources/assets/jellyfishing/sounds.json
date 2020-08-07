@@ -1,6 +1,6 @@
 {
   "entity.jellyfish.sting": {
-    "category": "block",
+    "category": "hostile",
     "subtitle": "jellyfishing.subtitle.sting",
     "sounds": [
       {

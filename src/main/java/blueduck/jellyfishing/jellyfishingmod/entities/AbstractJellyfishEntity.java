@@ -7,6 +7,7 @@ import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingSounds;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.passive.fish.AbstractFishEntity;
@@ -84,6 +85,9 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
             dropCounter--;
         }
         super.livingTick();
+        if (this.onGround && !this.isInWater()) {
+            this.setVelocity(0.0, -0.3, 0.0);
+        }
     }
 
     public void onCollideWithPlayer(PlayerEntity entityIn) {
@@ -95,6 +99,12 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                 this.setVelocity((this.getPosX() - entityIn.getPosX()) * 0.3, (this.getPosY() - entityIn.getPosY()) * 0.3, (this.getPosZ() - entityIn.getPosZ()) * 0.3);
             }
         }
+    }
+
+    @Override
+    protected void registerAttributes() {
+        super.registerAttributes();
+        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(6.0D);
     }
 
 

@@ -18,11 +18,7 @@ public class JellyfishEntity extends AbstractJellyfishEntity {
         super(type, worldIn, new ItemStack(JellyfishingItems.JELLYFISH.get(), 1), JellyfishingItems.JELLYFISH_JELLY.get(), 1, true, 500, 3, 0.1);
     }
 
-    @Override
-    protected void registerAttributes() {
-        super.registerAttributes();
-        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(12.0D);
-    }
+
 
 
 }

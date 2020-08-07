@@ -54,7 +54,9 @@
   "advancements.jellyfishing.jelly_block.title": "Jelly Block",
   "advancements.jellyfishing.jelly_block.description": "Create a Jelly Block",
 
-  "death.attack.sting.player": "{Player} was stung by Jellyfish"
+  "death.attack.sting.player": "{Player} was stung by Jellyfish",
+
+  "jellyfishing.subtitle.sting": "Jellyfish Stings"
 
 
 
