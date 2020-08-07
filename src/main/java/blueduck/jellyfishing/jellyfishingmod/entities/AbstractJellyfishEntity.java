@@ -121,7 +121,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         ItemStack itemstack = player.getHeldItem(hand);
         if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && this.isAlive() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
             if (dodgeChance < Math.random()) {
-                this.playSound(SoundEvents.BLOCK_WOOL_PLACE, 1.0F, 1.0F);
+                this.playSound(SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1.0F, 1.0F);
                 itemstack.damageItem(1, player, (p_220045_0_) -> {
                     p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
                 });
