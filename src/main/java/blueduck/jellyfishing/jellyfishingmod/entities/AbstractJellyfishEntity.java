@@ -15,6 +15,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -50,12 +51,16 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         stingTime = stingTicks;
         stingCounter = 0;
         dailyDrops = dropsPerDay;
-        dropCounter = (int) (Math.random() * 24000 / dropsPerDay);
         canThisEntitySting = canSting;
         stingDmg = stingDamage;
         this.stingChance = stingChance;
         this.dodgeChance = dodgeChance;
         this.dodgeSpeed = dodgeSpeed;
+        this.readAdditional(this.getPersistentData());
+        if (dropCounter == 0) {
+            dropCounter = (int) (Math.random() * 24000 / dropsPerDay);
+        }
+        this.writeAdditional(this.getPersistentData());
     }
 
     @Override
@@ -88,6 +93,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if (dropCounter > 0) {
             dropCounter--;
         }
+        this.writeAdditional(this.getPersistentData());
         super.livingTick();
         if (this.onGround && !this.isInWater()) {
             this.setVelocity(0.0, -0.3, 0.0);
@@ -101,6 +107,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                 entityIn.attackEntityFrom(JELLYFISH_STING, stingDmg);
                 this.playSound(JellyfishingSounds.STING.get(), 1, 1);
                 this.setNewVelocity(entityIn, dodgeSpeed);
+                this.writeAdditional(this.getPersistentData());
             }
         }
     }
@@ -148,5 +155,20 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         } else {
             return super.processInteract(player, hand);
         }
+    }
+
+    public void writeAdditional(CompoundNBT compound) {
+        super.writeAdditional(compound);
+        compound.putInt("StingTicks", stingCounter);
+        compound.putInt("DropTicks", dropCounter);
+    }
+
+    /**
+     * (abstract) Protected helper method to read subclass entity data from NBT.
+     */
+    public void readAdditional(CompoundNBT compound) {
+        super.readAdditional(compound);
+        this.stingCounter = compound.getInt("StingTicks");
+        this.dropCounter = compound.getInt("DropTicks");
     }
 }
