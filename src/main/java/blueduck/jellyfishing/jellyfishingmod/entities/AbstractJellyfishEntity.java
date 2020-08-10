@@ -194,6 +194,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         super.writeAdditional(compound);
         compound.putInt("StingTicks", stingCounter);
         compound.putInt("DropTicks", dropCounter);
+        compound.putInt("MoveTicks", moveCounter);
         compound.putDouble("DirX", dirX);
         compound.putDouble("DirY", dirY);
         compound.putDouble("DirZ", dirZ);
@@ -206,6 +207,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         super.readAdditional(compound);
         this.stingCounter = compound.getInt("StingTicks");
         this.dropCounter = compound.getInt("DropTicks");
+        this.moveCounter = compound.getInt("MoveTicks");
         this.dirX = compound.getDouble("DirX");
         this.dirY = compound.getDouble("DirY");
         this.dirZ = compound.getDouble("DirZ");
