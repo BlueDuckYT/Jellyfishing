@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Updated jellyfish movement">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="optimizations in code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/AbstractJellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/AbstractJellyfishModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/BlueJellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/BlueJellyfishModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/JellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/JellyfishModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
     </list>
@@ -184,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Test Commit">
-      <created>1595685904544</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1595685904544</updated>
     </task>
     <task id="LOCAL-00010" summary="Test Commit">
       <created>1595685949281</created>
@@ -528,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596820062859</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="optimizations in code">
+      <created>1596842704452</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1596842704454</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -545,7 +544,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed advancements" />
     <MESSAGE value="typo in lang file" />
     <MESSAGE value="Added new recipes" />
     <MESSAGE value="Optimized some code for addon creation" />
@@ -570,7 +568,8 @@
     <MESSAGE value="Added net cooldown" />
     <MESSAGE value="Changed values to NBT rather than fields, will solve issues w/ multiplayer" />
     <MESSAGE value="Updated jellyfish movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated jellyfish movement" />
+    <MESSAGE value="optimizations in code" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimizations in code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -593,22 +592,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596327329836" />
-    <state width="1493" height="156" key="GridCell.Tab.0.bottom" timestamp="1596842519413">
+    <state width="1493" height="156" key="GridCell.Tab.0.bottom" timestamp="1597027207342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596842519413" />
-    <state width="1493" height="156" key="GridCell.Tab.0.center" timestamp="1596842519413">
+    <state width="1493" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597027207342" />
+    <state width="1493" height="156" key="GridCell.Tab.0.center" timestamp="1597027207342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596842519413" />
-    <state width="1493" height="156" key="GridCell.Tab.0.left" timestamp="1596842519413">
+    <state width="1493" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597027207342" />
+    <state width="1493" height="156" key="GridCell.Tab.0.left" timestamp="1597027207341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596842519413" />
-    <state width="1493" height="156" key="GridCell.Tab.0.right" timestamp="1596842519413">
+    <state width="1493" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597027207341" />
+    <state width="1493" height="156" key="GridCell.Tab.0.right" timestamp="1597027207342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596842519413" />
+    <state width="1493" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597027207342" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

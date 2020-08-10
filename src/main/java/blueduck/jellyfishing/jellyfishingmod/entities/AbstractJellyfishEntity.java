@@ -19,6 +19,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 
@@ -118,6 +119,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         else if (moveCounter > 0) {
             moveCounter--;
         }
+        //this.setHeadRotation(90, (int)(Math.atan2(dirZ, dirX) * (180/Math.PI)));
         super.livingTick();
         if (this.onGround && !this.isInWater()) {
             this.setVelocity(0.0, -0.3, 0.0);

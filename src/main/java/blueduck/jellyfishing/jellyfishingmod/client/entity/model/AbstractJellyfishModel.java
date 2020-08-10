@@ -58,9 +58,6 @@ public class AbstractJellyfishModel extends EntityModel<AbstractJellyfishEntity>
         }
 
         float rotateVal = ageInTicks * 0.02F - 20;
-        if (ageInTicks % 80 < 60) {
-            rotateVal = 0;
-        }
 
         tentacle1.rotateAngleX = Math.abs(MathHelper.sin(rotateVal)) * 0.5F;
         tentacle1.rotateAngleZ = Math.abs(MathHelper.sin(rotateVal)) * -0.5F;
