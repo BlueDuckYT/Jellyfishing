@@ -63,6 +63,9 @@ public class JellyfishItem extends Item {
             if (entity != null) {
                 ((AbstractFishEntity)entity).setFromBucket(true);
             }
+            if (!context.getPlayer().abilities.isCreativeMode) {
+                itemstack.shrink(1);
+            }
 
             return ActionResultType.SUCCESS;
         }
