@@ -50,7 +50,7 @@ public class JellyfishingSpawnEgg extends SpawnEggItem {
         for (final SpawnEggItem egg : JELLYFISHING_SPAWN_EGGS) {
             EGGS.put(egg.getType(null), egg);
             DispenserBlock.registerDispenseBehavior(egg, defaultDispenseItemBehavior);
-               }
+        }
         JELLYFISHING_SPAWN_EGGS.clear();
     }
 
