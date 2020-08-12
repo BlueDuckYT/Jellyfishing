@@ -3,6 +3,7 @@ package blueduck.jellyfishing.jellyfishingmod;
 import blueduck.jellyfishing.jellyfishingmod.biomes.JellyfishFields;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.BlueJellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.JellyfishRenderer;
+import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -12,6 +13,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.EntityType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
@@ -27,6 +29,7 @@ import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -81,6 +84,7 @@ public class JellyfishingMod
         RenderTypeLookup.setRenderLayer(JellyfishingBlocks.JELLY_BLOCK.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(JellyfishingBlocks.BLUE_JELLY_BLOCK.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CORAL_PLANT.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(JellyfishingBlocks.SEANUT_BUSH.get(), RenderType.getCutoutMipped());
 
         RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.JELLYFISH.get(), manager -> new JellyfishRenderer(manager));
         RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.BLUE_JELLYFISH.get(), manager -> new BlueJellyfishRenderer(manager));
@@ -155,6 +159,10 @@ public class JellyfishingMod
             JellyfishingBiomes.registerBiomes();
             JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingFeatures.CORAL_PLANT_FEATURE.withConfiguration(new CountConfig(5)));
 
+        }
+        @SubscribeEvent(priority = EventPriority.LOWEST)
+        public static void onPostRegisterEntities(final RegistryEvent.Register<EntityType<?>> event) {
+            JellyfishingSpawnEgg.doDispenserSetup();
         }
     }
 

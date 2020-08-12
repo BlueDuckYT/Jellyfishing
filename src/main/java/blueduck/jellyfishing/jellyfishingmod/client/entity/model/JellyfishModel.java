@@ -56,7 +56,7 @@ public class JellyfishModel extends EntityModel<JellyfishEntity> {
         }
         else {
             //body.rotateAngleX = 30;//(float) (entityIn.dirY * -180) + 90;
-            //body.rotateAngleY = (float) (Math.atan2(entityIn.dirZ, entityIn.dirX)%Math.PI);// * (180/Math.PI))%360;
+            //body.rotateAngleY = (float) (360 +(Math.atan2(entityIn.dirZ, entityIn.dirX) % (Math.PI)))%360;
             body.rotateAngleX = 0f;
         }
 

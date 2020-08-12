@@ -19,9 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="NBT Based movement">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixed infinite jellyfish bug">
+      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/SeanutBush.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/blockstates/seanut_bush.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/block/seanut_plant_0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/block/seanut_plant_1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/block/seanut_plant_2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/block/seanut_plant_3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/seanut.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/blue_seanut_butter_sandwich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/seanut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/seanut_butter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/seanut_butter_sandwich.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/JellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/JellyfishModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishingSpawnEgg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishingSpawnEgg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,17 +112,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/block" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\tags\blocks" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\recipes" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\blockstates" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\block" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\item" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\data\jellyfishfields" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\textures\block" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="blueduck.jellyfishing.jellyfishingmod.client.entity.renderer" />
@@ -112,12 +131,12 @@
       <recent name="blueduck.jellyfishing.jellyfishingmod.entities" />
       <recent name="blueduck.jellyfishing.jellyfishingmod.items" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\data\jellyfishfields" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\textures\block" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\block" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\item" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\tags\blocks" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\recipes" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\blockstates" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -181,13 +200,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Test Commit">
-      <created>1595686978172</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1595686978172</updated>
     </task>
     <task id="LOCAL-00013" summary="Test Commit">
       <created>1595688223226</created>
@@ -525,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597027508969</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Fixed infinite jellyfish bug">
+      <created>1597061751740</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1597061751740</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,7 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Optimized some code for addon creation" />
     <MESSAGE value="more optimization" />
     <MESSAGE value="Polished Coralstone" />
     <MESSAGE value="Added Polished Coralstone recipes and Fixed generation" />
@@ -567,17 +585,18 @@
     <MESSAGE value="optimizations in code" />
     <MESSAGE value="Animations are hard" />
     <MESSAGE value="NBT Based movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="NBT Based movement" />
+    <MESSAGE value="Fixed infinite jellyfish bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed infinite jellyfish bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596477902922" />
-    <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596283600856">
+    <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597109869334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1596283600856" />
+    <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1597109869334" />
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1596476661840">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -590,30 +609,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596327329836" />
-    <state width="1493" height="156" key="GridCell.Tab.0.bottom" timestamp="1597027542436">
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1597232986592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597027542436" />
-    <state width="1493" height="156" key="GridCell.Tab.0.center" timestamp="1597027542436">
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597232986592" />
+    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1597232986591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597027542436" />
-    <state width="1493" height="156" key="GridCell.Tab.0.left" timestamp="1597027542436">
+    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597232986591" />
+    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1597232986591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597027542436" />
-    <state width="1493" height="156" key="GridCell.Tab.0.right" timestamp="1597027542436">
+    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597232986591" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1597232986591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597027542436" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597232986591" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595688314039" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597027513323">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597061754708">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597027513323" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597061754708" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595473328169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

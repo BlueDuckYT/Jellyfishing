@@ -56,6 +56,8 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> ALGAE_BLOCK = BLOCKS.register("algae_block", () -> new Block(Block.Properties.create(Material.WOOL, MaterialColor.LIME).sound(SoundType.WET_GRASS).hardnessAndResistance(1F, 1F).harvestTool(ToolType.SHOVEL).harvestLevel(0)));
     public static final RegistryObject<Item> ALGAE_BLOCK_ITEM = ITEMS.register("algae_block", () -> new BlockItemBase(ALGAE_BLOCK.get()));
 
+    public static final RegistryObject<Block> SEANUT_BUSH = BLOCKS.register("seanut_bush", () -> new SeanutBush(Block.Properties.create(Material.OCEAN_PLANT).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)));
+
 
     //public static final RegistryObject<Block> JELLYFISH_MACHINE = BLOCKS.register("jellyfish_machine", () -> new JellyfishMachineBlock(Block.Properties.create(Material.CLAY, MaterialColor.BROWN).sound(SoundType.METAL)));
     //public static final RegistryObject<Item> JELLYFISH_MACHINE_ITEM = ITEMS.register("jellyfish_machine", () -> new BlockItemBase(JELLYFISH_MACHINE.get()));
