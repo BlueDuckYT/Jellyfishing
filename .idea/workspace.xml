@@ -19,14 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Adds Seanut related achievements">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/features/SeanutBushFeature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/jellyfish.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/jellyfish_fields.png" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Seanut Bushes now spawn in the Jellyfish Fields">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/seanut_brittle.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/seanut_brittle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/seanut_brittle.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingPaintings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingPaintings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,17 +102,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/advancements/jellyfishing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\recipes" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\item" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\advancements\jellyfishing" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\tags\items" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\lang" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags\items" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\recipes" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="blueduck.jellyfishing.jellyfishingmod.features" />
@@ -191,13 +190,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Revamped some code and added more customizability to jellyfish">
-      <created>1596112865024</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1596112865024</updated>
     </task>
     <task id="LOCAL-00027" summary="Added placeholder texture to algae grass, changed coralstone texture, reworked jellyfish fields biomegen">
       <created>1596207487644</created>
@@ -535,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597343771099</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Seanut Bushes now spawn in the Jellyfish Fields">
+      <created>1597357207053</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1597357207053</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -552,7 +551,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Jellyfish now run away after stinging you" />
     <MESSAGE value="Bug fixes" />
     <MESSAGE value="Jellyfish can now dodge the net" />
     <MESSAGE value="More configurable dodging and bugfixing" />
@@ -577,7 +575,8 @@
     <MESSAGE value="Seanut plants now work as intended" />
     <MESSAGE value="Added Pirate Translation" />
     <MESSAGE value="Adds Seanut related achievements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds Seanut related achievements" />
+    <MESSAGE value="Seanut Bushes now spawn in the Jellyfish Fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seanut Bushes now spawn in the Jellyfish Fields" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -600,22 +599,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597333623459" />
-    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1597354567466">
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1597357679516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597354567466" />
-    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1597354567465">
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597357679516" />
+    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1597357679515">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597354567465" />
-    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1597354567465">
+    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597357679515" />
+    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1597357679515">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597354567465" />
-    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1597354567465">
+    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597357679515" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1597357679516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597354567465" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597357679516" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
