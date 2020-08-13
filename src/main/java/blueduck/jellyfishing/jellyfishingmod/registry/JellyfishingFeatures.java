@@ -2,6 +2,7 @@ package blueduck.jellyfishing.jellyfishingmod.registry;
 
 import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.features.CoralPlantFeature;
+import blueduck.jellyfishing.jellyfishingmod.features.SeanutBushFeature;
 import net.minecraft.block.Block;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -17,6 +18,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class JellyfishingFeatures extends net.minecraftforge.registries.ForgeRegistryEntry<Feature<?>> {
 
     public static final Feature<CountConfig> CORAL_PLANT_FEATURE = register("coral_plant_feature", new CoralPlantFeature(CountConfig::deserialize));
+    public static final Feature<CountConfig> SEANUT_BUSH_FEATURE = register("seanut_bush_feature", new SeanutBushFeature(CountConfig::deserialize));
+
 
     private static <C extends IFeatureConfig, F extends Feature<C>> F register(String key, F value) {
         return (F)(Registry.<Feature<?>>register(Registry.FEATURE, key, value));
