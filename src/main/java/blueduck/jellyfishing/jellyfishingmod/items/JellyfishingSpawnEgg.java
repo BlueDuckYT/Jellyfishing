@@ -35,7 +35,6 @@ public class JellyfishingSpawnEgg extends SpawnEggItem {
     }
 
 
-    //Method from Infernal Expansion's Spawn Egg Class
     public static void doDispenserSetup() {
         final Map<EntityType<?>, SpawnEggItem> EGGS = ObfuscationReflectionHelper.getPrivateValue(SpawnEggItem.class, null, "field_195987_b");
         DefaultDispenseItemBehavior defaultDispenseItemBehavior = new DefaultDispenseItemBehavior() {

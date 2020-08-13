@@ -1,10 +1,9 @@
 package blueduck.jellyfishing.jellyfishingmod.items;
 
 import blueduck.jellyfishing.jellyfishingmod.entities.AbstractJellyfishEntity;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.block.*;
+import net.minecraft.dispenser.DefaultDispenseItemBehavior;
+import net.minecraft.dispenser.IBlockSource;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
@@ -13,6 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.nbt.IntNBT;
 import net.minecraft.stats.Stats;
 import net.minecraft.tileentity.MobSpawnerTileEntity;
@@ -36,6 +36,17 @@ public class JellyfishItem extends Item {
     public JellyfishItem(Properties properties, Supplier<EntityType<?>> etype) {
         super(properties);
         entityType = etype;
+
+        DefaultDispenseItemBehavior defaultDispenseItemBehavior = new DefaultDispenseItemBehavior() {
+            public ItemStack dispenseStack(IBlockSource source, ItemStack stack) {
+                Direction direction = source.getBlockState().get(DispenserBlock.FACING);
+                EntityType<?> entitytype = ((JellyfishItem) stack.getItem()).entityType.get();
+                entitytype.spawn(source.getWorld(), stack, null, source.getBlockPos().offset(direction), SpawnReason.DISPENSER, direction != Direction.UP, false);
+                stack.shrink(1);
+                return stack;
+            }
+        };
+        DispenserBlock.registerDispenseBehavior(this, defaultDispenseItemBehavior);
     }
 
 
@@ -70,6 +81,7 @@ public class JellyfishItem extends Item {
             return ActionResultType.SUCCESS;
         }
     }
+
 
 //    @Override
 //    public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {

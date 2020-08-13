@@ -160,21 +160,22 @@ public class JellyfishingMod
             JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingFeatures.CORAL_PLANT_FEATURE.withConfiguration(new CountConfig(5)));
 
         }
+
+    }
+
+
+
+    @Mod.EventBusSubscriber(Dist.CLIENT)
+    public static class RenderEventHandler {
+        //@SubscribeEvent
+        //public static void updateFogColor(ActiveRenderInfo activeRenderInfoIn, float partialTicks, ClientWorld worldIn, int renderDistanceChunks, float bossColorModifier) {
+
+       // }
         @SubscribeEvent(priority = EventPriority.LOWEST)
         public static void onPostRegisterEntities(final RegistryEvent.Register<EntityType<?>> event) {
             JellyfishingSpawnEgg.doDispenserSetup();
         }
     }
 
-
-/*
-    @Mod.EventBusSubscriber(Dist.CLIENT)
-    public static class RenderEventHandler {
-        @SubscribeEvent
-        public static void updateFogColor(ActiveRenderInfo activeRenderInfoIn, float partialTicks, ClientWorld worldIn, int renderDistanceChunks, float bossColorModifier) {
-
-        }
-    }
-*/
 
 }
