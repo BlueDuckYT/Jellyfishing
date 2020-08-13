@@ -37,7 +37,7 @@ public class SeanutBush extends SweetBerryBushBlock implements IWaterLoggable {
         BlockPos blockpos = context.getPos();
         BlockState blockstate = context.getWorld().getBlockState(blockpos);
         if (blockstate.getBlock() == this) {
-            return blockstate.with(WATERLOGGED, Boolean.valueOf(false));
+            return blockstate.with(WATERLOGGED, Boolean.valueOf(true));
         } else {
             IFluidState ifluidstate = context.getWorld().getFluidState(blockpos);
             BlockState blockstate1 = this.getDefaultState().with(WATERLOGGED, Boolean.valueOf(ifluidstate.getFluid() == Fluids.WATER));

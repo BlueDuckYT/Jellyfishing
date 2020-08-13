@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "jellyfishing:seanut"
+  },
+  "result": "jellyfishing:roasted_seanut",
+  "experience": 0.35,
+  "cookingtime": 100
+}

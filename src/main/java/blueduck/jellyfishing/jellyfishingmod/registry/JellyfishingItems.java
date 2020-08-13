@@ -33,6 +33,9 @@ public class JellyfishingItems {
     public static final RegistryObject<Item> BLUE_JELLYFISH_SPAWN_EGG = ITEMS.register("blue_jellyfish_spawn_egg", () -> new JellyfishingSpawnEgg(() -> JellyfishingEntities.BLUE_JELLYFISH.get(),5733356, 5719532, new Item.Properties().group(ItemGroup.MISC)));
 
     public static final RegistryObject<Item> SEANUT = ITEMS.register("seanut", () -> new BlockNamedItem(JellyfishingBlocks.SEANUT_BUSH.get(), (new Item.Properties()).group(ItemGroup.FOOD).food(new Food.Builder().hunger(3).saturation(1).build())));
+    public static final RegistryObject<Item> ROASTED_SEANUT = ITEMS.register("roasted_seanut", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(5).saturation(2.0F).build())));
+    public static final RegistryObject<Item> SEANUT_BUTTER = ITEMS.register("seanut_butter", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(6).saturation(2.0F).build())));
+
 
 
     public static final RegistryObject<Item> JELLYFISH_JELLY_SANDWICH = ITEMS.register("jellyfish_jelly_sandwich", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(12).saturation(8F).build())));
