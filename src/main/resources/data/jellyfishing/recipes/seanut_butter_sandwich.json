@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jellyfishing:jellyfish_jelly_sandwich"
+    },
+    {
+      "item": "jellyfishing:seanut_butter"
+    }
+  ],
+  "result": {
+    "item": "jellyfishing:seanut_butter_jellyfish_jelly_sandwich"
+  }
+}

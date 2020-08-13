@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:bread"
+      "tag": "forge:bread"
     },
     "$": {
       "item": "jellyfishing:blue_jellyfish_jelly"
