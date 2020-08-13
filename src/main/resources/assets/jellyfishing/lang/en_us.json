@@ -61,6 +61,14 @@
   "advancements.jellyfishing.jelly_sandwich.description": "Create a Jellyfish Jelly Sandwich",
   "advancements.jellyfishing.jelly_block.title": "Jelly Block",
   "advancements.jellyfishing.jelly_block.description": "Create a Jelly Block",
+  "advancements.jellyfishing.seanut.title": "A Peanut from the Sea",
+  "advancements.jellyfishing.seanut.description": "Find a Seanut plant",
+  "advancements.jellyfishing.roasted_seanut.title": "Roasted Seanut",
+  "advancements.jellyfishing.roasted_seanut.description": "Roast a Seanut",
+  "advancements.jellyfishing.seanut_butter.title": "Seanut Butter",
+  "advancements.jellyfishing.seanut_butter.description": "Create Seanut Butter with a Seanut and Milk",
+  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Seanut Butter and Jellyfish Jelly Sandwich",
+  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Create a Seanut Butter and Jellyfish Jelly Sandwich",
 
   "death.attack.sting.player": "{Player} was stung by Jellyfish",
 

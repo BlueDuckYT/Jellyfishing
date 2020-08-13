@@ -1,14 +1,14 @@
 {
-  "parent": "jellyfishing:jellyfishing/catch",
+  "parent": "jellyfishing:jellyfishing/seanut",
   "display": {
     "icon": {
-      "item": "jellyfishing:jellyfish_jelly"
+      "item": "jellyfishing:roasted_seanut"
     },
     "title": {
-      "translate": "advancements.jellyfishing.jelly.title"
+      "translate": "advancements.jellyfishing.roasted_seanut.title"
     },
     "description": {
-      "translate": "advancements.jellyfishing.jelly.description"
+      "translate": "advancements.jellyfishing.roasted_seanut.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -21,10 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "jellyfishing:jelly"
-          },
-          {
-            "item": "jellyfishing:jellyfish_net"
+            "item": "jellyfishing:roasted_seanut"
           }
         ]
       }
