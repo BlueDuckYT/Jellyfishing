@@ -70,6 +70,7 @@ public class JellyfishingMod
         JellyfishingBiomes.init();
         JellyfishingSounds.init();
         JellyfishingTileEntities.init();
+        JellyfishingPaintings.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

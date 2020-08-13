@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Spawn Egg Changes and polishing">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Jellyfish Fields now has the OVERWORLD biome type">
+      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingPaintings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishingSpawnEgg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishingSpawnEgg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +82,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="Jellyfishing.main/invalid/Minecraft" />
+    </ignored-facets>
+  </component>
   <component name="ProjectId" id="1f4N7qBcn3YWcR8PGV77bH5IeE3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -95,7 +99,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/block" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Infernal-Expansion/build.gradle" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
@@ -183,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Tweaked animations">
-      <created>1595729390259</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1595729390259</updated>
     </task>
     <task id="LOCAL-00016" summary="Jellyfish now sting and have a custom death message">
       <created>1595855613173</created>
@@ -527,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597251201622</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Jellyfish Fields now has the OVERWORLD biome type">
+      <created>1597287456073</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1597287456073</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -544,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Polished Coralstone recipes and Fixed generation" />
     <MESSAGE value="config changes" />
     <MESSAGE value="Changed biome weight" />
     <MESSAGE value="Coral Plants now Glow" />
@@ -569,7 +572,8 @@
     <MESSAGE value="Fixed infinite jellyfish bug" />
     <MESSAGE value="Half working seanut bush" />
     <MESSAGE value="Spawn Egg Changes and polishing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spawn Egg Changes and polishing" />
+    <MESSAGE value="Jellyfish Fields now has the OVERWORLD biome type" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jellyfish Fields now has the OVERWORLD biome type" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -588,26 +592,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="411" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1595686976336" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1596327329836">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1597333623459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596327329836" />
-    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1597254958142">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597333623459" />
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1597333810100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597254958142" />
-    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1597254958141">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597333810100" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1597333810100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597254958141" />
-    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1597254958141">
+    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597333810100" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1597333810100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597254958141" />
-    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1597254958142">
+    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597333810100" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1597333810100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597254958142" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597333810100" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,0 +1,23 @@
+package blueduck.jellyfishing.jellyfishingmod.registry;
+
+import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
+import net.minecraft.entity.item.PaintingType;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+
+public class JellyfishingPaintings {
+
+    public static final DeferredRegister<PaintingType> PAINTINGS = new DeferredRegister<>(ForgeRegistries.PAINTING_TYPES, JellyfishingMod.MODID);
+
+    public static final RegistryObject<PaintingType> CAPTAIN = PAINTINGS.register("captain", ()-> new PaintingType(64, 48));
+    public static final RegistryObject<PaintingType> BOLD_AND_BRASH = PAINTINGS.register("bold_and_brash", ()-> new PaintingType(16, 32));
+
+
+    public static void init() {
+        PAINTINGS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    }
+
+}
