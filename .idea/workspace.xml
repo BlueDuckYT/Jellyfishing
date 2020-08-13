@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Bugfix on roasted seanut">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/jellies.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added tags to Jellyfish Jelly so they are compatible w/ pam's">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/blocks/seanut_bush.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/SeanutBush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/SeanutBush.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Added second jellyfish sting sound, changed a few values">
-      <created>1595894883934</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1595894883934</updated>
     </task>
     <task id="LOCAL-00023" summary="Fixed mods page crashing">
       <created>1595896326126</created>
@@ -529,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597340126649</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Added tags to Jellyfish Jelly so they are compatible w/ pam's">
+      <created>1597340520593</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1597340520593</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -546,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Changed version number" />
     <MESSAGE value="Seagrass tweaks" />
     <MESSAGE value="adds slab tag" />
     <MESSAGE value="e" />
@@ -571,7 +572,8 @@
     <MESSAGE value="Seanut Butter" />
     <MESSAGE value="Added Seanut Butter and Jellyfish Jelly Sandwiches" />
     <MESSAGE value="Bugfix on roasted seanut" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix on roasted seanut" />
+    <MESSAGE value="Added tags to Jellyfish Jelly so they are compatible w/ pam's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tags to Jellyfish Jelly so they are compatible w/ pam's" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -594,22 +596,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597333623459" />
-    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1597339982529">
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1597341411263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597339982529" />
-    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1597339982529">
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597341411263" />
+    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1597341411263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597339982529" />
-    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1597339982529">
+    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597341411263" />
+    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1597341411263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597339982529" />
-    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1597339982529">
+    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597341411263" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1597341411263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597339982529" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597341411263" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

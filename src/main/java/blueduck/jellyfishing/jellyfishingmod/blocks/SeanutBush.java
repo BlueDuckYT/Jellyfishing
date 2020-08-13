@@ -17,11 +17,13 @@ import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.state.properties.SlabType;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 
 public class SeanutBush extends SweetBerryBushBlock implements IWaterLoggable {
@@ -34,16 +36,9 @@ public class SeanutBush extends SweetBerryBushBlock implements IWaterLoggable {
 
     }
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-        BlockPos blockpos = context.getPos();
-        BlockState blockstate = context.getWorld().getBlockState(blockpos);
-        if (blockstate.getBlock() == this) {
-            return blockstate.with(WATERLOGGED, Boolean.valueOf(true));
-        } else {
-            IFluidState ifluidstate = context.getWorld().getFluidState(blockpos);
-            BlockState blockstate1 = this.getDefaultState().with(WATERLOGGED, Boolean.valueOf(ifluidstate.getFluid() == Fluids.WATER));
-            Direction direction = context.getFace();
-            return blockstate1;
-        }
+        IFluidState ifluidstate = context.getWorld().getFluidState(context.getPos());
+        return ifluidstate.isTagged(FluidTags.WATER) && ifluidstate.getLevel() == 8 ? super.getStateForPlacement(context) : null;
+
     }
 
     public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
@@ -75,6 +70,20 @@ public class SeanutBush extends SweetBerryBushBlock implements IWaterLoggable {
 
     public void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(AGE, WATERLOGGED);
+    }
+
+    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
+        BlockState blockstate = super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+        if (!blockstate.isAir()) {
+            worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+        }
+
+        return blockstate;
+    }
+
+    @Override
+    public IFluidState getFluidState(BlockState state) {
+        return Fluids.WATER.getStillFluidState(false);
     }
 
 }
