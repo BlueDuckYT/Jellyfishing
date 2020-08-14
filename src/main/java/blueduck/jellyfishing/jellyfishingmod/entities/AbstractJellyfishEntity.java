@@ -60,7 +60,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         this.dodgeChance = dodgeChance;
         this.dodgeSpeed = dodgeSpeed;
         this.readAdditional(this.getPersistentData());
-        if (dropCounter == 0) {
+        if (dropCounter <= 0) {
             dropCounter = (int) (Math.random() * 24000 / dropsPerDay);
         }
         dirX = (Math.random()) - .5;
