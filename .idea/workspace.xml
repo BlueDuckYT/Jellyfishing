@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Loot tables and recipes for seanut brittle block">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
-    </list>
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Localized Brittle Block's name" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Tweaked Biome Gen">
-      <created>1596287431145</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1596287431145</updated>
     </task>
     <task id="LOCAL-00031" summary="tweaks">
       <created>1596289967561</created>
@@ -529,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597361846507</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Localized Brittle Block's name">
+      <created>1597368132476</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1597368132481</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -546,7 +544,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Changed net sound" />
     <MESSAGE value="Added net cooldown" />
     <MESSAGE value="Changed values to NBT rather than fields, will solve issues w/ multiplayer" />
     <MESSAGE value="Updated jellyfish movement" />
@@ -571,7 +568,8 @@
     <MESSAGE value="Adds Seanut Brittle" />
     <MESSAGE value="Seanut Brittle Achievement and Block" />
     <MESSAGE value="Loot tables and recipes for seanut brittle block" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loot tables and recipes for seanut brittle block" />
+    <MESSAGE value="Localized Brittle Block's name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Localized Brittle Block's name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -614,10 +612,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595688314039" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597061754708">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597368171998">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597061754708" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597368171998" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595473328169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
