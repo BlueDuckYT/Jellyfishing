@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Seanut Brittle Achievement and Block">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/blocks/seanut_brittle_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/seanut_brittle_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/seanut_brittle_from_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Loot tables and recipes for seanut brittle block" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Updates textures for coralstone, and adds stairs, slabs, and walls">
-      <created>1596286419940</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1596286419940</updated>
     </task>
     <task id="LOCAL-00030" summary="Tweaked Biome Gen">
       <created>1596287431145</created>
@@ -532,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597361754985</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Loot tables and recipes for seanut brittle block">
+      <created>1597361846507</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1597361846507</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +544,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="More configurable dodging and bugfixing" />
     <MESSAGE value="Changed net sound" />
     <MESSAGE value="Added net cooldown" />
     <MESSAGE value="Changed values to NBT rather than fields, will solve issues w/ multiplayer" />
@@ -574,7 +568,8 @@
     <MESSAGE value="Seanut Bushes now spawn in the Jellyfish Fields" />
     <MESSAGE value="Adds Seanut Brittle" />
     <MESSAGE value="Seanut Brittle Achievement and Block" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seanut Brittle Achievement and Block" />
+    <MESSAGE value="Loot tables and recipes for seanut brittle block" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loot tables and recipes for seanut brittle block" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
