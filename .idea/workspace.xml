@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Bugs">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/renderer/PattyWagonRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/patty_wagon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/roasted_seanut_from_campfire.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Updated names and added non-functional non-rendering patty wagon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingEntities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/blue_seanut_butter_sandwich_raw.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/blue_seanut_butter_sandwich_raw.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/seanut_butter_sandwich_raw.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/seanut_butter_sandwich_raw.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Polished Coralstone">
-      <created>1596422796843</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1596422796843</updated>
     </task>
     <task id="LOCAL-00039" summary="Added Polished Coralstone recipes and Fixed generation">
       <created>1596478899546</created>
@@ -535,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597425073362</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Updated names and added non-functional non-rendering patty wagon">
+      <created>1597452993638</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1597452993638</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -552,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed infinite jellyfish bug" />
     <MESSAGE value="Half working seanut bush" />
     <MESSAGE value="Spawn Egg Changes and polishing" />
     <MESSAGE value="Jellyfish Fields now has the OVERWORLD biome type" />
@@ -577,7 +572,8 @@
     <MESSAGE value="Adds Tube Plants, fixes Brittle blocks not being craftable" />
     <MESSAGE value="Tube Plants now spawn in the Jellyfish Fields" />
     <MESSAGE value="Bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugs" />
+    <MESSAGE value="Updated names and added non-functional non-rendering patty wagon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated names and added non-functional non-rendering patty wagon" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -600,22 +596,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597333623459" />
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1597425651494">
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1597453388603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597425651494" />
-    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1597425651494">
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597453388603" />
+    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1597453388603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597425651494" />
-    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1597425651494">
+    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597453388603" />
+    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1597453388603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597425651494" />
-    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1597425651494">
+    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597453388603" />
+    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1597453388603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597425651494" />
+    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597453388603" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

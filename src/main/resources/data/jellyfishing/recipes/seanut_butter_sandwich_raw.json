@@ -8,8 +8,10 @@
       "item": "jellyfishing:seanut_butter"
     },
     {
-      "tag": "forge:bread",
-      "count": 2
+      "tag": "forge:bread"
+    },
+    {
+      "tag": "forge:bread"
     }
   ],
   "result": {
