@@ -3,6 +3,7 @@ package blueduck.jellyfishing.jellyfishingmod;
 import blueduck.jellyfishing.jellyfishingmod.biomes.JellyfishFields;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.BlueJellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.JellyfishRenderer;
+import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.PattyWagonRenderer;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import net.minecraft.block.Block;
@@ -90,6 +91,9 @@ public class JellyfishingMod
 
         RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.JELLYFISH.get(), manager -> new JellyfishRenderer(manager));
         RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.BLUE_JELLYFISH.get(), manager -> new BlueJellyfishRenderer(manager));
+
+        RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.PATTY_WAGON.get(), manager -> new PattyWagonRenderer(manager));
+
 
 
         ((JellyfishFields)JellyfishingBiomes.JELLYFISH_FIELDS.get()).addCreatureSpawn(EntityClassification.WATER_CREATURE, new Biome.SpawnListEntry(JellyfishingEntities.JELLYFISH.get(), 100, 1, 1));
