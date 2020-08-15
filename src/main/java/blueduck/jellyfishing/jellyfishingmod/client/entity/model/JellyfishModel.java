@@ -55,20 +55,24 @@ public class JellyfishModel extends EntityModel<JellyfishEntity> {
             body.rotateAngleX = (float) (30 + MathHelper.sin(limbSwing) * 0.5);
         }
         else {
-            body.rotateAngleX = 0;
+            //body.rotateAngleX = 30;//(float) (entityIn.dirY * -180) + 90;
+            //body.rotateAngleY = (float) (360 +(Math.atan2(entityIn.dirZ, entityIn.dirX) % (Math.PI)))%360;
+            body.rotateAngleX = 0f;
         }
 
-        tentacle1.rotateAngleX = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * 0.5F;
-        tentacle1.rotateAngleZ = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * -0.5F;
+        float rotateVal = ageInTicks * 0.1F;
 
-        tentacle2.rotateAngleX = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * 0.5F;
-        tentacle2.rotateAngleZ = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * 0.5F;
+        tentacle1.rotateAngleX = Math.abs(MathHelper.sin(rotateVal)) * 0.5F;
+        tentacle1.rotateAngleZ = Math.abs(MathHelper.sin(rotateVal)) * -0.5F;
 
-        tentacle3.rotateAngleX = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * -0.5F;
-        tentacle3.rotateAngleZ = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * 0.5F;
+        tentacle2.rotateAngleX = Math.abs(MathHelper.sin(rotateVal)) * 0.5F;
+        tentacle2.rotateAngleZ = Math.abs(MathHelper.sin(rotateVal)) * 0.5F;
 
-        tentacle4.rotateAngleX = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * -0.5F;
-        tentacle4.rotateAngleZ = Math.abs(MathHelper.sin(ageInTicks * 0.1F)) * -0.5F;
+        tentacle3.rotateAngleX = Math.abs(MathHelper.sin(rotateVal)) * -0.5F;
+        tentacle3.rotateAngleZ = Math.abs(MathHelper.sin(rotateVal)) * 0.5F;
+
+        tentacle4.rotateAngleX = Math.abs(MathHelper.sin(rotateVal)) * -0.5F;
+        tentacle4.rotateAngleZ = Math.abs(MathHelper.sin(rotateVal)) * -0.5F;
 
     }
 

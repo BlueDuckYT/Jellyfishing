@@ -1,0 +1,35 @@
+{
+  "parent": "jellyfishing:jellyfishing/seanut",
+  "display": {
+    "icon": {
+      "item": "jellyfishing:roasted_seanut"
+    },
+    "title": {
+      "translate": "advancements.jellyfishing.roasted_seanut.title"
+    },
+    "description": {
+      "translate": "advancements.jellyfishing.roasted_seanut.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "net": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jellyfishing:roasted_seanut"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "net"
+    ]
+  ]
+}

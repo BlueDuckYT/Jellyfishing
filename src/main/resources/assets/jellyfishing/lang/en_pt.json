@@ -1,0 +1,71 @@
+{
+  "block.jellyfishing.jelly_block": "Jelly Block",
+  "block.jellyfishing.blue_jelly_block": "Blue Jelly Block",
+
+  "block.jellyfishing.coral_plant": "Coral Plant",
+  "block.jellyfishing.scrap_metal": "Old Rusty Metal",
+  "block.jellyfishing.coralstone": "Coralstone",
+  "block.jellyfishing.coralstone_wall": "Coralstone Wall",
+  "block.jellyfishing.coralstone_stairs": "Coralstone Stairs",
+  "block.jellyfishing.coralstone_slab": "Coralstone Slab",
+
+  "block.jellyfishing.polished_coralstone": "Polished Coralstone",
+  "block.jellyfishing.polished_coralstone_stairs": "Polished Coralstone Stairs",
+  "block.jellyfishing.polished_coralstone_slab": "Polished Coralstone Slab",
+
+  "block.jellyfishing.algae_grass": "Algae Grass",
+  "block.jellyfishing.algae_block": "Algae Block",
+
+  "item.jellyfishing.jellyfish_net": "Ol' Reliable",
+  "item.jellyfishing.jellyfish_jelly": "Jellyfish Jelly",
+  "item.jellyfishing.blue_jellyfish_jelly": "Blue Jellyfish Jelly",
+
+  "item.jellyfishing.jellyfish": "Jellyfish",
+  "item.jellyfishing.blue_jellyfish": "Blue Jellyfish",
+
+  "item.jellyfishing.jellyfish_spawn_egg": "Jellyfish Spawn Egg",
+  "item.jellyfishing.blue_jellyfish_spawn_egg": "Blue Jellyfish Spawn Egg",
+
+  "item.jellyfishing.jellyfish_jelly_sandwich": "Jellyfish Jelly Sandwich",
+  "item.jellyfishing.blue_jellyfish_jelly_sandwich": "Blue Jellyfish Jelly Sandwich",
+
+  "item.jellyfishing.seanut_butter_jellyfish_jelly_sandwich": "Sea Peanut Butter and Jellyfish Jelly Sandwich",
+  "item.jellyfishing.seanut_butter_blue_jellyfish_jelly_sandwich": "Sea Peanut Butter and Blue Jellyfish Jelly Sandwich",
+
+  "item.jellyfishing.seanut": "Peanut of the Sea",
+  "item.jellyfishing.roasted_seanut": "Roasted Sea Peanut",
+  "item.jellyfishing.seanut_butter": "Sea Peanut Butter",
+
+
+  "entity.jellyfishing.jellyfish": "Jellyfish",
+  "entity.jellyfishing.blue_jellyfish": "Blue Jellyfish",
+
+  "biome.jellyfishing.jellyfish_fields": "Jellyfish Fields",
+
+
+
+
+  "advancements.jellyfishing.root.title": "Jellyfishing",
+  "advancements.jellyfishing.root.description": "Begin your Jellyfishing adventure",
+  "advancements.jellyfishing.im_ready.title": "I'm Ready!",
+  "advancements.jellyfishing.im_ready.description": "Enter the Jellyfish Fields",
+  "advancements.jellyfishing.firmly_grasp_it.title": "Firmly Grasp It",
+  "advancements.jellyfishing.firmly_grasp_it.description": "Obtain a Jellyfish Net",
+  "advancements.jellyfishing.catch.title": "Jellyfisherman",
+  "advancements.jellyfishing.catch.description": "Catch a Jellyfish",
+  "advancements.jellyfishing.catch_blue.title": "No-Name",
+  "advancements.jellyfishing.catch_blue.description": "Catch a Blue Jellyfish",
+  "advancements.jellyfishing.jelly.title": "Jellyfish Jam",
+  "advancements.jellyfishing.jelly.description": "Gather Jellyfish Jelly from a Jellyfish",
+  "advancements.jellyfishing.jelly_sandwich.title": "Jellyfish Jelly Sandwich",
+  "advancements.jellyfishing.jelly_sandwich.description": "Create a Jellyfish Jelly Sandwich",
+  "advancements.jellyfishing.jelly_block.title": "Jelly Block",
+  "advancements.jellyfishing.jelly_block.description": "Create a Jelly Block",
+
+  "death.attack.sting.player": "{Player} was stung by Jellyfish",
+
+  "jellyfishing.subtitle.sting": "Jellyfish Stings"
+
+
+
+}

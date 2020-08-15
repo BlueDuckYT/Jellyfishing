@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "jellyfishing:seanut_brittle"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:seanut_brittle_block"
+  }
+}

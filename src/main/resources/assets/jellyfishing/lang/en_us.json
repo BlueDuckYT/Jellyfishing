@@ -2,12 +2,19 @@
   "block.jellyfishing.jelly_block": "Jelly Block",
   "block.jellyfishing.blue_jelly_block": "Blue Jelly Block",
 
+  "block.jellyfishing.seanut_brittle_block": "Seanut Brittle Block",
+
   "block.jellyfishing.coral_plant": "Coral Plant",
+  "block.jellyfishing.tube_plant": "Tube Plant",
   "block.jellyfishing.scrap_metal": "Scrap Metal",
   "block.jellyfishing.coralstone": "Coralstone",
   "block.jellyfishing.coralstone_wall": "Coralstone Wall",
   "block.jellyfishing.coralstone_stairs": "Coralstone Stairs",
   "block.jellyfishing.coralstone_slab": "Coralstone Slab",
+
+  "block.jellyfishing.polished_coralstone": "Polished Coralstone",
+  "block.jellyfishing.polished_coralstone_stairs": "Polished Coralstone Stairs",
+  "block.jellyfishing.polished_coralstone_slab": "Polished Coralstone Slab",
 
   "block.jellyfishing.algae_grass": "Algae Grass",
   "block.jellyfishing.algae_block": "Algae Block",
@@ -24,6 +31,15 @@
 
   "item.jellyfishing.jellyfish_jelly_sandwich": "Jellyfish Jelly Sandwich",
   "item.jellyfishing.blue_jellyfish_jelly_sandwich": "Blue Jellyfish Jelly Sandwich",
+
+  "item.jellyfishing.seanut_butter_jellyfish_jelly_sandwich": "Seanut Butter and Jellyfish Jelly Sandwich",
+  "item.jellyfishing.seanut_butter_blue_jellyfish_jelly_sandwich": "Seanut Butter and Blue Jellyfish Jelly Sandwich",
+
+  "item.jellyfishing.seanut": "Seanut",
+  "item.jellyfishing.roasted_seanut": "Roasted Seanut",
+  "item.jellyfishing.seanut_butter": "Seanut Butter",
+  "item.jellyfishing.seanut_brittle": "Seanut Brittle",
+
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
   "entity.jellyfishing.blue_jellyfish": "Blue Jellyfish",
@@ -49,8 +65,20 @@
   "advancements.jellyfishing.jelly_sandwich.description": "Create a Jellyfish Jelly Sandwich",
   "advancements.jellyfishing.jelly_block.title": "Jelly Block",
   "advancements.jellyfishing.jelly_block.description": "Create a Jelly Block",
+  "advancements.jellyfishing.seanut.title": "A Peanut from the Sea",
+  "advancements.jellyfishing.seanut.description": "Find a Seanut plant",
+  "advancements.jellyfishing.roasted_seanut.title": "Sit Around the Campfire",
+  "advancements.jellyfishing.roasted_seanut.description": "Roast a Seanut",
+  "advancements.jellyfishing.seanut_butter.title": "Seanut Butter",
+  "advancements.jellyfishing.seanut_butter.description": "Create Seanut Butter with a Seanut and Milk",
+  "advancements.jellyfishing.seanut_brittle.title": "Oh Boy! Seanut Brittle!",
+  "advancements.jellyfishing.seanut_brittle.description": "Craft some Seanut Brittle",
+  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Seanut Butter and Jellyfish Jelly Sandwich",
+  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Create a Seanut Butter and Jellyfish Jelly Sandwich",
 
-  "death.attack.sting.player": "{Player} was stung by Jellyfish"
+  "death.attack.sting.player": "{Player} was stung by Jellyfish",
+
+  "jellyfishing.subtitle.sting": "Jellyfish Stings"
 
 
 

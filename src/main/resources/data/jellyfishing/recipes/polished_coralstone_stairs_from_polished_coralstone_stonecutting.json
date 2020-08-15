@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "jellyfishing:polished_coralstone"
+  },
+  "result": "jellyfishing:polished_coralstone_stairs",
+  "count": 1
+}

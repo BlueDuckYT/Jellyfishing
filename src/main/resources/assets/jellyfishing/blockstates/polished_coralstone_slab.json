@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "jellyfishing:block/polished_coralstone_slab" },
+    "type=top": { "model": "jellyfishing:block/polished_coralstone_slab_top" },
+    "type=double": { "model": "jellyfishing:block/polished_coralstone" }
+  }
+}

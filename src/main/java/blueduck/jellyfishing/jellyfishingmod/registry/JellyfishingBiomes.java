@@ -22,15 +22,17 @@ public class JellyfishingBiomes {
     }
 
     public static void registerBiomes() {
-        registerBiome(JELLYFISH_FIELDS.get(), BiomeManager.BiomeType.WARM, BiomeDictionary.Type.OCEAN);
+        registerBiome(JELLYFISH_FIELDS.get(), BiomeManager.BiomeType.WARM, BiomeDictionary.Type.OCEAN, BiomeDictionary.Type.OVERWORLD);
     }
     public static void registerBiome(Biome biome, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
         BiomeDictionary.addTypes(biome, types);
         //BiomeManager.addSpawnBiome(biome);
-        BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(biome, 10));
-        //BiomeManager.oceanBiomes.add(JELLYFISH_FIELDS.get());
+        BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(biome, 6));
 
     }
+
+    //For Porting to 1.16.2
+    //https://gist.github.com/CorgiTaco/3eb2d9128a1ec41bd5d5846d17994851
 
 }
 

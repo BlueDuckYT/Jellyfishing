@@ -22,6 +22,9 @@
         "items": [
           {
             "tag": "jellyfishing:jelly"
+          },
+          {
+            "item": "jellyfishing:jellyfish_net"
           }
         ]
       }
