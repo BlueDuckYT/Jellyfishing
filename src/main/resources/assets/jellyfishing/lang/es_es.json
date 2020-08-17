@@ -1,20 +1,27 @@
 {
-  "block.jellyfishing.jelly_block": "Bloque de Mermelada",
-  "block.jellyfishing.blue_jelly_block": "Bloque de Mermelada Azul",
+  "block.jellyfishing.jelly_block": "Bloque de mermelada",
+  "block.jellyfishing.blue_jelly_block": "Bloque de mermelada azul",
 
-  "block.jellyfishing.coral_plant": "Planta de Coral",
+  "block.jellyfishing.seanut_brittle_block": "Bloque de bocadillos de alga",
+
+  "block.jellyfishing.coral_plant": "Planta de coral",
+  "block.jellyfishing.tube_plant": "Planta tubo",
   "block.jellyfishing.scrap_metal": "Chatarra",
   "block.jellyfishing.coralstone": "Rocoral",
-  "block.jellyfishing.coralstone_wall": "Muro de Rocoral",
-  "block.jellyfishing.coralstone_stairs": "Escaleras de Rocoral",
-  "block.jellyfishing.coralstone_slab": "Losa de Rocoral",
+  "block.jellyfishing.coralstone_wall": "Muro de rocoral",
+  "block.jellyfishing.coralstone_stairs": "Escaleras de rocoral",
+  "block.jellyfishing.coralstone_slab": "Losa de rocoral",
 
-  "block.jellyfishing.algae_grass": "Césped de Algas",
-  "block.jellyfishing.algae_block": "Bloque de Algas",
+  "block.jellyfishing.polished_coralstone": "Rocoral pulida",
+  "block.jellyfishing.polished_coralstone_stairs": "Escaleras de rocoral pulida",
+  "block.jellyfishing.polished_coralstone_slab": "Losa de Rocoral pulida",
 
-  "item.jellyfishing.jellyfish_net": "Red de Medusas",
-  "item.jellyfishing.jellyfish_jelly": "Mermelada de Medusa",
-  "item.jellyfishing.blue_jellyfish_jelly": "Mermelada de Medusa Azul",
+  "block.jellyfishing.algae_grass": "Césped de algas",
+  "block.jellyfishing.algae_block": "Bloque de algas",
+
+  "item.jellyfishing.jellyfish_net": "Red de medusas",
+  "item.jellyfishing.jellyfish_jelly": "Mermelada de medusa",
+  "item.jellyfishing.blue_jellyfish_jelly": "Mermelada de medusa azul",
 
   "item.jellyfishing.jellyfish": "Medusa",
   "item.jellyfishing.blue_jellyfish": "Medusa Azul",
@@ -22,13 +29,22 @@
   "item.jellyfishing.jellyfish_spawn_egg": "Invocar Medusa",
   "item.jellyfishing.blue_jellyfish_spawn_egg": "Invocar Medusa Azul",
 
-  "item.jellyfishing.jellyfish_jelly_sandwich": "Sandwich de Mermelada de Medusa",
-  "item.jellyfishing.blue_jellyfish_jelly_sandwich": "Sandwich de Mermelada de Medusa Azul",
+  "item.jellyfishing.jellyfish_jelly_sandwich": "Sandwich de mermelada de medusa",
+  "item.jellyfishing.blue_jellyfish_jelly_sandwich": "Sandwich de mermelada de medusa azul",
+
+  "item.jellyfishing.seanut_butter_jellyfish_jelly_sandwich": "Mantequilla de bocadillos de alga y Sandwich de mermelada de medusa",
+  "item.jellyfishing.seanut_butter_blue_jellyfish_jelly_sandwich": "Mantequilla de bocadillos de alga y Sandwich de mermelada de medusa azul",
+
+  "item.jellyfishing.seanut": "Bocadillos de alga",
+  "item.jellyfishing.roasted_seanut": "Bocadillos de alga cocinados",
+  "item.jellyfishing.seanut_butter": "Mantequilla de bocadillos de alga",
+  "item.jellyfishing.seanut_brittle": "Bocadillos de Algas",
+
 
   "entity.jellyfishing.jellyfish": "Medusa",
   "entity.jellyfishing.blue_jellyfish": "Medusa Azul",
 
-  "biome.jellyfishing.jellyfish_fields": "Campos de Medusas",
+  "biome.jellyfishing.jellyfish_fields": "Campos de Medusa",
 
 
 
@@ -49,8 +65,20 @@
   "advancements.jellyfishing.jelly_sandwich.description": "Crea un Sandwich de Mermelada de Medusa",
   "advancements.jellyfishing.jelly_block.title": "Bloque de Mermelada",
   "advancements.jellyfishing.jelly_block.description": "Crea un Bloque de Mermelada",
+  "advancements.jellyfishing.seanut.title": "Un Bocadillo del Mar",
+  "advancements.jellyfishing.seanut.description": "Encuentra una planta de bocadillos de alga",
+  "advancements.jellyfishing.roasted_seanut.title": "Siéntate alrededor de la Fogata",
+  "advancements.jellyfishing.roasted_seanut.description": "Cocina bocadillos de alga",
+  "advancements.jellyfishing.seanut_butter.title": "Mantequilla de Bocadillos de Alga",
+  "advancements.jellyfishing.seanut_butter.description": "Crea mantequilla de bocadillos de alga con leche y bocadillos de alga",
+  "advancements.jellyfishing.seanut_brittle.title": "Oh sí! Bocadillos de Algas!",
+  "advancements.jellyfishing.seanut_brittle.description": "Craftea un poco de Bocadillos de Algas",
+  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Mantequilla y Sandwich de Mermelada de Medusa",
+  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Crea Mantequilla de bocadillos de alga y Sandwich de mermelada de medusa",
 
-  "death.attack.sting.player": "{Player} fue picado por medusas"
+  "death.attack.sting.player": "{Player} fue picado por medusas",
+
+  "jellyfishing.subtitle.sting": "Medusa pica"
 
 
 
