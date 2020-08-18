@@ -2,15 +2,22 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "jellyfishing:roasted_seanut",
-      "count": 2
+      "item": "jellyfishing:roasted_seanut"
+    },
+    {
+      "item": "jellyfishing:roasted_seanut"
     },
     {
       "item": "jellyfishing:seanut_butter"
     },
     {
-      "item": "minecraft:sugar",
-      "count": 3
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
     }
   ],
   "result": {
