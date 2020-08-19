@@ -61,11 +61,11 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         this.dodgeSpeed = dodgeSpeed;
         this.readAdditional(this.getPersistentData());
         if (dropCounter <= 0) {
-            dropCounter = (int) (Math.random() * 24000 / dropsPerDay);
+            dropCounter = (int) (worldIn.getRandom().nextDouble() * 24000 / dropsPerDay);
         }
-        dirX = (Math.random()) - .5;
-        dirY = (Math.random()) - .5;
-        dirZ = (Math.random()) - .5;
+        dirX = (worldIn.getRandom().nextDouble()) - .5;
+        dirY = (worldIn.getRandom().nextDouble()) - .5;
+        dirZ = (worldIn.getRandom().nextDouble()) - .5;
         this.writeAdditional(this.getPersistentData());
         moveCounter = 80;
     }
@@ -95,7 +95,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         }
         if (dropCounter == 0 && this.isInWater()) {
             this.entityDropItem(new ItemStack(JELLY_ITEM, 1), -0.5F);
-            dropCounter = (int) (Math.random() * 24000 / dailyDrops);
+            dropCounter = (int) (this.getEntityWorld().getRandom().nextDouble() * 24000 / dailyDrops);
         }
         if (dropCounter > 0) {
             dropCounter--;
@@ -103,9 +103,9 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if (moveCounter == 0 && this.isInWater()) {
             moveCounter = 80;
             this.setVelocity(dirX, dirY, dirZ);
-            dirX += (Math.random() * 0.2) - 0.1;
-            dirY += (Math.random() * 0.2) - 0.1;
-            dirZ += (Math.random() * 0.2) - 0.1;
+            dirX += (this.getEntityWorld().getRandom().nextDouble() * 0.2) - 0.1;
+            dirY += (this.getEntityWorld().getRandom().nextDouble() * 0.2) - 0.1;
+            dirZ += (this.getEntityWorld().getRandom().nextDouble() * 0.2) - 0.1;
             if (Math.abs(dirX) > 0.5) {
                 dirX = Math.abs(dirX)/dirX * 0.5;
             }
@@ -133,7 +133,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public void onCollideWithPlayer(PlayerEntity entityIn) {
         if (canThisEntitySting && stingCounter == 0 && this.isInWater()) {
             stingCounter = stingTime;
-            if (Math.random() < stingChance / 1) {
+            if (this.getEntityWorld().getRandom().nextDouble() < stingChance) {
                 entityIn.attackEntityFrom(JELLYFISH_STING, stingDmg);
                 this.playSound(JellyfishingSounds.STING.get(), 1, 1);
                 this.setNewVelocity(entityIn, dodgeSpeed);
@@ -160,7 +160,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     protected boolean processInteract(PlayerEntity player, Hand hand) {
         ItemStack itemstack = player.getHeldItem(hand);
         if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && this.isAlive() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
-            if (!this.canDespawn(1) || dodgeChance < Math.random()) {
+            if (!this.canDespawn(1) || dodgeChance < this.getEntityWorld().getRandom().nextDouble()) {
                 player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
                 this.playSound(SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1.0F, 1.0F);
                 itemstack.damageItem(1, player, (p_220045_0_) -> {
