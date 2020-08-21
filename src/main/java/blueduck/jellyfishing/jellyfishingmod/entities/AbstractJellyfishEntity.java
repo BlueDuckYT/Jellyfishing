@@ -102,7 +102,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         }
         if (moveCounter == 0 && this.isInWater()) {
             moveCounter = 80;
-            this.setVelocity(dirX, dirY, dirZ);
+            this.setMotion(dirX, dirY, dirZ);
             dirX += (this.getEntityWorld().getRandom().nextDouble() * 0.2) - 0.1;
             dirY += (this.getEntityWorld().getRandom().nextDouble() * 0.2) - 0.1;
             dirZ += (this.getEntityWorld().getRandom().nextDouble() * 0.2) - 0.1;
@@ -122,7 +122,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         //this.setHeadRotation(90, (int)(Math.atan2(dirZ, dirX) * (180/Math.PI)));
         super.livingTick();
         if (this.onGround && !this.isInWater()) {
-            this.setVelocity(0.0, -0.3, 0.0);
+            this.setMotion(0.0, -0.3, 0.0);
             if (dirY > 0) {
                 dirY *= -1;
             }
@@ -149,7 +149,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     }
 
     public void setNewVelocity(Entity entityIn, double multiplier) {
-        this.setVelocity((this.getPosX() - entityIn.getPosX()) * multiplier, (this.getPosY() - entityIn.getPosY()) * multiplier, (this.getPosZ() - entityIn.getPosZ()) * multiplier);
+        this.setMotion((this.getPosX() - entityIn.getPosX()) * multiplier, (this.getPosY() - entityIn.getPosY()) * multiplier, (this.getPosZ() - entityIn.getPosZ()) * multiplier);
 
     }
 

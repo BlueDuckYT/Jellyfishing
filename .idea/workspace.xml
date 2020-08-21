@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixed server crash">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Converted math to random object, now should sync properly if it didn't before">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
     </list>
@@ -186,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Fixed Jellyfish Spawn Eggs">
-      <created>1596495347174</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1596495347174</updated>
     </task>
     <task id="LOCAL-00044" summary="Changed Coralstone texture">
       <created>1596545011495</created>
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597806274154</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Converted math to random object, now should sync properly if it didn't before">
+      <created>1597840410990</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1597840410990</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added codysquirtle to mod credits" />
     <MESSAGE value="Updated painting, added roasted seanuts" />
     <MESSAGE value="Seanut Butter" />
     <MESSAGE value="Added Seanut Butter and Jellyfish Jelly Sandwiches" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Fixed recipe" />
     <MESSAGE value="Hopefully fixed server crash" />
     <MESSAGE value="Fixed server crash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed server crash" />
+    <MESSAGE value="Converted math to random object, now should sync properly if it didn't before" />
+    <option name="LAST_COMMIT_MESSAGE" value="Converted math to random object, now should sync properly if it didn't before" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -595,30 +595,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597536372550" />
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1597806278742">
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1597971596642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597806278742" />
-    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1597806278742">
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597971596642" />
+    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1597971596641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597806278742" />
-    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1597806278742">
+    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597971596641" />
+    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1597971596641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597806278742" />
-    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1597806278742">
+    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597971596641" />
+    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1597971596642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597806278742" />
+    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597971596642" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595688314039" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597806275897">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597840413219">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597806275897" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597840413219" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595473328169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
