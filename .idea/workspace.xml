@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Converted math to random object, now should sync properly if it didn't before">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixed another server crash">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +129,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.runClient">
+  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
     <configuration name="Jellyfishing [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -186,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Changed Coralstone texture">
-      <created>1596545011495</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1596545011495</updated>
     </task>
     <task id="LOCAL-00045" summary="Adds Seagrass and stuff">
       <created>1596586127862</created>
@@ -530,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597840410990</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Fixed another server crash">
+      <created>1597974103307</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1597974103309</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated painting, added roasted seanuts" />
     <MESSAGE value="Seanut Butter" />
     <MESSAGE value="Added Seanut Butter and Jellyfish Jelly Sandwiches" />
     <MESSAGE value="Bugfix on roasted seanut" />
@@ -572,7 +570,8 @@
     <MESSAGE value="Hopefully fixed server crash" />
     <MESSAGE value="Fixed server crash" />
     <MESSAGE value="Converted math to random object, now should sync properly if it didn't before" />
-    <option name="LAST_COMMIT_MESSAGE" value="Converted math to random object, now should sync properly if it didn't before" />
+    <MESSAGE value="Fixed another server crash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed another server crash" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -615,10 +614,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595688314039" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597840413219">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597974119280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597840413219" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597974119280" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595473328169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
