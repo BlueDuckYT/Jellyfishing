@@ -1,8 +1,8 @@
 {
-  "block.jellyfishing.jelly_block": "Jelly Block",
-  "block.jellyfishing.blue_jelly_block": "Blue Jelly Block",
+  "block.jellyfishing.jelly_block": "Bloquer du Gelée",
+  "block.jellyfishing.blue_jelly_block": "Bloquer du Gelée Bleu",
 
-  "block.jellyfishing.seanut_brittle_block": "Seanut Brittle Block",
+  "block.jellyfishing.seanut_brittle_block": "Bloquer du Pot de Beurre de Cacahuète de la Mer",
 
   "block.jellyfishing.coral_plant": "Coral Plant",
   "block.jellyfishing.tube_plant": "Tube Plant",
@@ -35,10 +35,10 @@
   "item.jellyfishing.seanut_butter_jellyfish_jelly_sandwich": "Seanut Butter and Jellyfish Jelly Sandwich",
   "item.jellyfishing.seanut_butter_blue_jellyfish_jelly_sandwich": "Seanut Butter and Blue Jellyfish Jelly Sandwich",
 
-  "item.jellyfishing.seanut": "Seanut",
+  "item.jellyfishing.seanut": "Cacahuète de la Mer",
   "item.jellyfishing.roasted_seanut": "Roasted Seanut",
-  "item.jellyfishing.seanut_butter": "Seanut Butter",
-  "item.jellyfishing.seanut_brittle": "Seanut Brittle",
+  "item.jellyfishing.seanut_butter": "Beurre du Cacahuète de la Mer",
+  "item.jellyfishing.seanut_brittle": "Pot de Beurre de Cacahuète de la Mer",
 
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
