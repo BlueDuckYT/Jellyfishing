@@ -12,5 +12,15 @@
         "stream": true
       }
     ]
+  },
+  "music.jellyfishfields": {
+    "category": "music",
+    "subtitle": "jellyfishing.subtitle.jellyfishfields",
+    "sounds": [
+      {
+        "name":  "jellyfishing:music/jellyfishfields",
+        "stream": true
+      }
+    ]
   }
   }

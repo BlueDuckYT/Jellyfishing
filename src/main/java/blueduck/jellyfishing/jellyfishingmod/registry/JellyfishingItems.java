@@ -4,6 +4,7 @@ import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.blocks.BlueJellyBlock;
 import blueduck.jellyfishing.jellyfishingmod.blocks.JellyBlock;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishItem;
+import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingMusicDisc;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -45,6 +46,7 @@ public class JellyfishingItems {
     public static final RegistryObject<Item> SEANUT_JELLYFISH_JELLY_SANDWICH = ITEMS.register("seanut_butter_jellyfish_jelly_sandwich", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(15).saturation(10F).build())));
     public static final RegistryObject<Item> SEANUT_BLUE_JELLYFISH_JELLY_SANDWICH = ITEMS.register("seanut_butter_blue_jellyfish_jelly_sandwich", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(17).saturation(12F).build())));
 
+    public static final RegistryObject<Item> MUSIC_DISC_JELLYFISH_FIELDS = ITEMS.register("music_disc_jellyfish_fields", () -> new JellyfishingMusicDisc(15, () -> JellyfishingSounds.JELLYFISH_FIELDS.get(), new Item.Properties().group(ItemGroup.MISC).rarity(Rarity.RARE)));
 
 
 

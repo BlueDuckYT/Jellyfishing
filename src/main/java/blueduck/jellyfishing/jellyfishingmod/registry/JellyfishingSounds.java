@@ -16,6 +16,9 @@ public class JellyfishingSounds {
 
     public static final RegistryObject<SoundEvent> STING = SOUNDS.register("sting", () -> new SoundEvent(new ResourceLocation("jellyfishing", "entity.jellyfish.sting")));
 
+    public static final RegistryObject<SoundEvent> JELLYFISH_FIELDS = SOUNDS.register("jellyfish_fields", () -> new SoundEvent(new ResourceLocation("jellyfishing", "music.jellyfishfields")));
+
+
     public static void init() {
         SOUNDS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }

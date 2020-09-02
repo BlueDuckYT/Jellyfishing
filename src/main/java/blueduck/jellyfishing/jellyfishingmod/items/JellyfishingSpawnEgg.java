@@ -27,15 +27,6 @@ public class JellyfishingSpawnEgg extends SpawnEggItem {
     public JellyfishingSpawnEgg(Supplier<? extends EntityType<?>> typeIn, int primaryColorIn, int secondaryColorIn, Properties builder) {
         super(null, primaryColorIn, secondaryColorIn, builder);
         type = typeIn;
-    }
-
-    @Override
-    public EntityType<?> getType(@Nullable CompoundNBT p_208076_1_) {
-        return type.get();
-    }
-
-
-    public static void doDispenserSetup() {
         final Map<EntityType<?>, SpawnEggItem> EGGS = ObfuscationReflectionHelper.getPrivateValue(SpawnEggItem.class, null, "field_195987_b");
         DefaultDispenseItemBehavior defaultDispenseItemBehavior = new DefaultDispenseItemBehavior() {
             public ItemStack dispenseStack(IBlockSource source, ItemStack stack) {
@@ -46,12 +37,17 @@ public class JellyfishingSpawnEgg extends SpawnEggItem {
                 return stack;
             }
         };
-        for (final SpawnEggItem egg : JELLYFISHING_SPAWN_EGGS) {
-            EGGS.put(egg.getType(null), egg);
-            DispenserBlock.registerDispenseBehavior(egg, defaultDispenseItemBehavior);
+
+        EGGS.put(this.getType(null), this);
+        DispenserBlock.registerDispenseBehavior(this, defaultDispenseItemBehavior);
         }
-        JELLYFISHING_SPAWN_EGGS.clear();
+
+    @Override
+    public EntityType<?> getType(@Nullable CompoundNBT p_208076_1_) {
+        return type.get();
     }
+
+
 
 
 }

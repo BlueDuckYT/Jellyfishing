@@ -42,6 +42,9 @@
   "item.jellyfishing.seanut_butter": "Seanut Butter",
   "item.jellyfishing.seanut_brittle": "Seanut Brittle",
 
+  "item.jellyfishing.music_disc_jellyfish_fields": "Music Disc",
+  "item.jellyfishing.music_disc_jellyfish_fields.desc": "WhirlingWinds - Jellyfish Fields",
+
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
   "entity.jellyfishing.blue_jellyfish": "Blue Jellyfish",
