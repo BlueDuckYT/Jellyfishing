@@ -32,6 +32,12 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> SCRAP_METAL = BLOCKS.register("scrap_metal", () -> new Block(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2)));
     public static final RegistryObject<Item> SCRAP_METAL_ITEM = ITEMS.register("scrap_metal", () -> new BlockItemBase(SCRAP_METAL.get()));
 
+    public static final RegistryObject<Block> SCRAP_METAL_STAIRS = BLOCKS.register("scrap_metal_stairs", () -> new StairsBlock(() -> SCRAP_METAL.get().getDefaultState(), Block.Properties.from(SCRAP_METAL.get())));
+    public static final RegistryObject<Item> SCRAP_METAL_STAIRS_ITEM = ITEMS.register("scrap_metal_stairs", () -> new BlockItemBase(SCRAP_METAL_STAIRS.get()));
+
+    public static final RegistryObject<Block> SCRAP_METAL_SLAB = BLOCKS.register("scrap_metal_slab", () -> new SlabBlock(Block.Properties.from(SCRAP_METAL.get())));
+    public static final RegistryObject<Item> SCRAP_METAL_SLAB_ITEM = ITEMS.register("scrap_metal_slab", () -> new BlockItemBase(SCRAP_METAL_SLAB.get()));
+
     public static final RegistryObject<Block> SEANUT_BRITTLE_BLOCK = BLOCKS.register("seanut_brittle_block", () -> new Block(Block.Properties.create(Material.GLASS, MaterialColor.BROWN).sound(SoundType.STONE).hardnessAndResistance(0.3F, 0.3F).harvestTool(ToolType.PICKAXE).harvestLevel(0)));
     public static final RegistryObject<Item> SEANUT_BRITTLE_BLOCK_ITEM = ITEMS.register("seanut_brittle_block", () -> new BlockItemBase(SEANUT_BRITTLE_BLOCK.get()));
 

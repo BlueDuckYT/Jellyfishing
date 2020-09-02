@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "jellyfishing:block/machine_side",
+    "top": "jellyfishing:block/machine_side",
+    "side": "jellyfishing:block/machine_side"
+  }
+}
