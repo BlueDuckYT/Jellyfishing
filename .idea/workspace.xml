@@ -19,10 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added Agility Enchantment">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Loot spawning in chests">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay/fishing/fish.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingEnchantments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingEnchantments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/shipwreck_treasure.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/shipwreck_treasure.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,13 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Added net cooldown">
-      <created>1596804222686</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1596804222686</updated>
     </task>
     <task id="LOCAL-00056" summary="Changed values to NBT rather than fields, will solve issues w/ multiplayer">
       <created>1596809688775</created>
@@ -532,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599141569901</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Loot spawning in chests">
+      <created>1599143881384</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1599143881384</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Loot tables and recipes for seanut brittle block" />
     <MESSAGE value="Localized Brittle Block's name" />
     <MESSAGE value="Changed mod version to 1.2.0" />
     <MESSAGE value="bugfixes" />
@@ -574,7 +576,8 @@
     <MESSAGE value="Adds Triple Gooberberry Sunrises and Kelp Items" />
     <MESSAGE value="Changed recipe for Triple Gooberberry Sunrise" />
     <MESSAGE value="Added Agility Enchantment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Agility Enchantment" />
+    <MESSAGE value="Loot spawning in chests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loot spawning in chests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -597,22 +600,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597536372550" />
-    <state width="1493" height="138" key="GridCell.Tab.0.bottom" timestamp="1599140894351">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1599150275075">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599140894351" />
-    <state width="1493" height="138" key="GridCell.Tab.0.center" timestamp="1599140894351">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599150275075" />
+    <state width="1493" height="139" key="GridCell.Tab.0.center" timestamp="1599150275075">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599140894351" />
-    <state width="1493" height="138" key="GridCell.Tab.0.left" timestamp="1599140894351">
+    <state width="1493" height="139" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599150275075" />
+    <state width="1493" height="139" key="GridCell.Tab.0.left" timestamp="1599150275073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599140894351" />
-    <state width="1493" height="138" key="GridCell.Tab.0.right" timestamp="1599140894351">
+    <state width="1493" height="139" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599150275073" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right" timestamp="1599150275075">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599140894351" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599150275075" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

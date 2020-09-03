@@ -10,16 +10,18 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "min": 5.0,
-                "max": 39.0,
+                "min": 10.0,
+                "max": 25.0,
                 "type": "minecraft:uniform"
               },
-              "treasure": true,
-          "weight": 4,
+              "treasure": true
+            }
+          ],
           "name": "jellyfishing:jellyfish_net"
         },
         {
@@ -66,11 +68,6 @@
             }
           ],
           "name": "jellyfishing:seanut"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "jellyfishing:kelp_mustache"
         }
       ]
     }

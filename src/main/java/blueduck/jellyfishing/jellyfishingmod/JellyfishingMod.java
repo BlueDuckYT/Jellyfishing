@@ -25,7 +25,9 @@ import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placement.*;
+import net.minecraft.world.storage.loot.LootEntry;
 import net.minecraft.world.storage.loot.LootPool;
+import net.minecraft.world.storage.loot.LootTable;
 import net.minecraft.world.storage.loot.TableLootEntry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.BiomeDictionary;
@@ -39,6 +41,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
@@ -49,6 +52,7 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.List;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -181,6 +185,12 @@ public class JellyfishingMod
             }
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/underwater_ruin_small"))) {
                 event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).build());
+            }
+            if (event.getName().equals(new ResourceLocation("minecraft", "gameplay/fishing/fish"))) {
+                List<LootPool> pools = ObfuscationReflectionHelper.getPrivateValue(LootTable.class, event.getTable(), "pools");
+                //List<LootEntry> entries = ObfuscationReflectionHelper.getPrivateValue(LootEntry.class, pools.get(0), "lootEntries");
+
+                //(TableLootEntry.builder(new ResourceLocation(MODID, "gameplay/fishing/fish")));
             }
         }
     }

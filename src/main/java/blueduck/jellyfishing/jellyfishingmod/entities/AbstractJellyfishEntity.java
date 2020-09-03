@@ -164,7 +164,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         ItemStack itemstack = player.getHeldItem(hand);
         if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && this.isAlive() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
             if (!this.canDespawn(1) || dodgeChance / (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.AGILITY.get(), itemstack) + 1) < this.getEntityWorld().getRandom().nextDouble()) {
-                if (0.02 > this.getEntityWorld().getRandom().nextDouble()) {
+                if (0.02 > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
                     this.entityDropItem(new ItemStack(JellyfishingItems.MUSIC_DISC_JELLYFISH_FIELDS.get(), 1), -0.5F);
                 }
                 player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
