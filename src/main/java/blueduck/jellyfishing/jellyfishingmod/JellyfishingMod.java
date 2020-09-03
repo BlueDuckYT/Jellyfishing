@@ -15,6 +15,7 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.item.Items;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
@@ -24,10 +25,13 @@ import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placement.*;
+import net.minecraft.world.storage.loot.LootPool;
+import net.minecraft.world.storage.loot.TableLootEntry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -41,6 +45,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -72,6 +77,7 @@ public class JellyfishingMod
         JellyfishingSounds.init();
         JellyfishingTileEntities.init();
         JellyfishingPaintings.init();
+        JellyfishingEnchantments.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -155,8 +161,29 @@ public class JellyfishingMod
 
         }
 
+
+
     }
 
+
+    @Mod.EventBusSubscriber(modid = "jellyfishing")
+    public static class LootEvents {
+        @SubscribeEvent
+        public static void onLootLoad(LootTableLoadEvent event) {
+            if (event.getName().equals(new ResourceLocation("minecraft", "chests/shipwreck_treasure"))) {
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_treasure"))).build());
+            }
+            if (event.getName().equals(new ResourceLocation("minecraft", "chests/shipwreck_supply"))) {
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).build());
+            }
+            if (event.getName().equals(new ResourceLocation("minecraft", "chests/underwater_ruin_big"))) {
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).build());
+            }
+            if (event.getName().equals(new ResourceLocation("minecraft", "chests/underwater_ruin_small"))) {
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).build());
+            }
+        }
+    }
 
 
     @Mod.EventBusSubscriber(Dist.CLIENT)

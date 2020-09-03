@@ -56,7 +56,7 @@
 
   "biome.jellyfishing.jellyfish_fields": "Jellyfish Fields",
 
-
+  "enchantment.jellyfishing.agility": "Agility",
 
 
   "advancements.jellyfishing.root.title": "Jellyfishing",
@@ -85,6 +85,10 @@
   "advancements.jellyfishing.seanut_brittle.description": "Craft some Seanut Brittle",
   "advancements.jellyfishing.seanut_jelly_sandwich.title": "Seanut Butter and Jellyfish Jelly Sandwich",
   "advancements.jellyfishing.seanut_jelly_sandwich.description": "Create a Seanut Butter and Jellyfish Jelly Sandwich",
+  "advancements.jellyfishing.mustache.title": "Now that we're Men!",
+  "advancements.jellyfishing.mustache.description": "Craft a Kelp Mustache",
+  "advancements.jellyfishing.ice_cream.title": "Oh, Waiter!",
+  "advancements.jellyfishing.ice_cream.description": "Craft a Triple Gooberberry Sunrise",
 
   "death.attack.sting.player": "{Player} was stung by Jellyfish",
 

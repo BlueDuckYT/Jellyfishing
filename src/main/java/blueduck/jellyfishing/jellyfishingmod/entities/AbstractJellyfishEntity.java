@@ -1,10 +1,12 @@
 package blueduck.jellyfishing.jellyfishingmod.entities;
 
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
+import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEnchantments;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEntities;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingSounds;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -160,7 +162,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     protected boolean processInteract(PlayerEntity player, Hand hand) {
         ItemStack itemstack = player.getHeldItem(hand);
         if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && this.isAlive() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
-            if (!this.canDespawn(1) || dodgeChance < this.getEntityWorld().getRandom().nextDouble()) {
+            if (!this.canDespawn(1) || dodgeChance / (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.AGILITY.get(), itemstack) + 1) < this.getEntityWorld().getRandom().nextDouble()) {
                 if (0.02 > this.getEntityWorld().getRandom().nextDouble()) {
                     this.entityDropItem(new ItemStack(JellyfishingItems.MUSIC_DISC_JELLYFISH_FIELDS.get(), 1), -0.5F);
                 }

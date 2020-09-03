@@ -1,0 +1,35 @@
+{
+  "parent": "jellyfishing:jellyfishing/root",
+  "display": {
+    "icon": {
+      "item": "jellyfishing:kelp_mustache"
+    },
+    "title": {
+      "translate": "advancements.jellyfishing.mustache.title"
+    },
+    "description": {
+      "translate": "advancements.jellyfishing.mustache.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "net": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jellyfishing:kelp_mustache"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "net"
+    ]
+  ]
+}

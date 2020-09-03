@@ -1,0 +1,35 @@
+{
+  "parent": "jellyfishing:jellyfishing/root",
+  "display": {
+    "icon": {
+      "item": "jellyfishing:triple_gooberberry_sunrise"
+    },
+    "title": {
+      "translate": "advancements.jellyfishing.ice_cream.title"
+    },
+    "description": {
+      "translate": "advancements.jellyfishing.ice_cream.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "net": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jellyfishing:triple_gooberberry_sunrise"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "net"
+    ]
+  ]
+}
