@@ -10,7 +10,7 @@
       "item": "minecraft:kelp"
     },
     "$": {
-      "item": "minecraft:water_bottle"
+      "item": "minecraft:potion"
     }
   },
   "result": {

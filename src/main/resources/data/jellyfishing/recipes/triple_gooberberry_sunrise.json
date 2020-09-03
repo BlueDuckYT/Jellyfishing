@@ -1,19 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " ^  ",
+    "%^%",
     "^#^",
     " $ "
   ],
   "key": {
     "#": {
-      "item": "minecraft:cocoa_beans"
+      "tag": "forge:berries"
     },
     "$": {
       "tag": "forge:milk"
     },
     "^": {
       "tag": "forge:fruits"
+    },
+    "%": {
+      "item": "minecraft:cocoa_beans"
     }
   },
   "result": {

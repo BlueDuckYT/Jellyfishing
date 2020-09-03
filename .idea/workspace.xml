@@ -19,16 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Adds Kelp Items">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/triple_gooberberry_sunrise.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/fruits.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/kelp_mustache.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/kelp_shake.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/triple_gooberberry_sunrise.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Adds Triple Gooberberry Sunrises and Kelp Items">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/berries.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/KelpMustacheItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/KelpMustacheItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/KelpShakeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/KelpShakeItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/fruits.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/fruits.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/kelp_shake.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/kelp_shake.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/triple_gooberberry_sunrise.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/triple_gooberberry_sunrise.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,13 +190,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Jellyfish can now dodge the net">
-      <created>1596802909485</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1596802909486</updated>
     </task>
     <task id="LOCAL-00053" summary="More configurable dodging and bugfixing">
       <created>1596803571013</created>
@@ -537,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599073115660</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Adds Triple Gooberberry Sunrises and Kelp Items">
+      <created>1599093948744</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1599093948744</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,7 +551,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Seanut Bushes now spawn in the Jellyfish Fields" />
     <MESSAGE value="Adds Seanut Brittle" />
     <MESSAGE value="Seanut Brittle Achievement and Block" />
     <MESSAGE value="Loot tables and recipes for seanut brittle block" />
@@ -579,7 +575,8 @@
     <MESSAGE value="Added Music Disc" />
     <MESSAGE value="Jellyfish now have a 1/500 chance of dropping a disc when caught" />
     <MESSAGE value="Adds Kelp Items" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds Kelp Items" />
+    <MESSAGE value="Adds Triple Gooberberry Sunrises and Kelp Items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds Triple Gooberberry Sunrises and Kelp Items" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
@@ -602,22 +599,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597536372550" />
-    <state width="1493" height="146" key="GridCell.Tab.0.bottom" timestamp="1599093616220">
+    <state width="1493" height="146" key="GridCell.Tab.0.bottom" timestamp="1599097345868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="146" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599093616220" />
-    <state width="1493" height="146" key="GridCell.Tab.0.center" timestamp="1599093616220">
+    <state width="1493" height="146" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599097345868" />
+    <state width="1493" height="146" key="GridCell.Tab.0.center" timestamp="1599097345868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="146" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599093616220" />
-    <state width="1493" height="146" key="GridCell.Tab.0.left" timestamp="1599093616220">
+    <state width="1493" height="146" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599097345868" />
+    <state width="1493" height="146" key="GridCell.Tab.0.left" timestamp="1599097345868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="146" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599093616220" />
-    <state width="1493" height="146" key="GridCell.Tab.0.right" timestamp="1599093616220">
+    <state width="1493" height="146" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599097345868" />
+    <state width="1493" height="146" key="GridCell.Tab.0.right" timestamp="1599097345868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="146" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599093616220" />
+    <state width="1493" height="146" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599097345868" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
