@@ -10,6 +10,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 5.0,
+                "max": 39.0,
+                "type": "minecraft:uniform"
+              },
+              "treasure": true,
           "weight": 4,
           "name": "jellyfishing:jellyfish_net"
         },

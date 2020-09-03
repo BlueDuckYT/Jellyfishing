@@ -30,9 +30,6 @@ public class JellyfishingEnchantments {
 
     public static final RegistryObject<Enchantment> AGILITY = ENCHANTMENTS.register("agility", () -> new AgilityEnchantment(Enchantment.Rarity.UNCOMMON, EquipmentSlotType.values()));
 
-
-
-
     public static void init() {
         ENCHANTMENTS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }

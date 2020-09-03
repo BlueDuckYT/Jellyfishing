@@ -7,6 +7,7 @@ import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingSounds;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -168,9 +169,11 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                 }
                 player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
                 this.playSound(SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1.0F, 1.0F);
-                itemstack.damageItem(1, player, (p_220045_0_) -> {
-                    p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
-                });
+                if (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack) == 0 || (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack) > 0 && player.getEntityWorld().getRandom().nextDouble() < (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack)/3))) {
+                    itemstack.damageItem(1, player, (p_220045_0_) -> {
+                        p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+                    });
+                }
                 ItemStack itemstack1 = this.getJellyfishItem();
                 this.setBucketData(itemstack1);
                 if (!this.world.isRemote) {
