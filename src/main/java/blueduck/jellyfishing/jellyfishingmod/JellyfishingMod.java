@@ -186,11 +186,18 @@ public class JellyfishingMod
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/underwater_ruin_small"))) {
                 event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).build());
             }
+            if (event.getName().equals(new ResourceLocation("minecraft", "chests/spawn_bonus_chest"))) {
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/kelp_mustache"))).build());
+            }
+
+
+
             if (event.getName().equals(new ResourceLocation("minecraft", "gameplay/fishing/fish"))) {
                 List<LootPool> pools = ObfuscationReflectionHelper.getPrivateValue(LootTable.class, event.getTable(), "pools");
-                //List<LootEntry> entries = ObfuscationReflectionHelper.getPrivateValue(LootEntry.class, pools.get(0), "lootEntries");
+                //List<LootEntry> entries = ObfuscationReflectionHelper.getPrivateValue(LootPool.class, event.getTable(), "lootEntries");
 
                 //(TableLootEntry.builder(new ResourceLocation(MODID, "gameplay/fishing/fish")));
+                //event.getTable().pools.get(0).entries.add();
             }
         }
     }

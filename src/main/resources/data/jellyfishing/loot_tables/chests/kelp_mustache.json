@@ -10,13 +10,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "jellyfishing:jellyfish"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "jellyfishing:blue_jellyfish"
+          "weight": 1,
+          "name": "jellyfishing:kelp_mustache"
         }
       ]
     }

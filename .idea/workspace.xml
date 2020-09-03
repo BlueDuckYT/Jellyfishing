@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Loot spawning in chests">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay/fishing/fish.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Access Transformers">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/kelp_mustache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/gameplay/fishing.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/shipwreck_treasure.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/shipwreck_treasure.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay/fishing/fish.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay/fishing/fish.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,12 +95,12 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\data\jellyfishfields" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\loot_tables\chests" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\advancements\jellyfishing" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags\items" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\item" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\recipes" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="blueduck.jellyfishing.jellyfishingmod.registry" />
@@ -122,17 +109,19 @@
       <recent name="blueduck.jellyfishing.jellyfishingmod.client.entity.model" />
       <recent name="blueduck.jellyfishing.jellyfishingmod.entities" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\loot_tables\chests" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\advancements\jellyfishing" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags\items" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\item" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\recipes" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\loot_tables\gameplay" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle genIntellijRuns" />
+      <command value="gradle setupDecompWorkspace" />
+      <command value="gradle --refresh-dependencies" />
     </option>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -174,8 +163,46 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Jellyfishing [setupDecompWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="setupDecompWorkspace" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Jellyfishing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--refresh-dependencies" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Jellyfishing" />
+        <item itemvalue="Gradle.Jellyfishing [setupDecompWorkspace]" />
         <item itemvalue="Gradle.Jellyfishing [build]" />
         <item itemvalue="Gradle.Jellyfishing [genIntellijRuns]" />
       </list>
@@ -191,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Changed values to NBT rather than fields, will solve issues w/ multiplayer">
-      <created>1596809688775</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1596809688776</updated>
     </task>
     <task id="LOCAL-00057" summary="Updated jellyfish movement">
       <created>1596820062859</created>
@@ -535,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599143881384</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Access Transformers">
+      <created>1599153417357</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1599153417358</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -552,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Localized Brittle Block's name" />
     <MESSAGE value="Changed mod version to 1.2.0" />
     <MESSAGE value="bugfixes" />
     <MESSAGE value="bugfixes and all that" />
@@ -577,9 +603,14 @@
     <MESSAGE value="Changed recipe for Triple Gooberberry Sunrise" />
     <MESSAGE value="Added Agility Enchantment" />
     <MESSAGE value="Loot spawning in chests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loot spawning in chests" />
+    <MESSAGE value="Access Transformers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Access Transformers" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1599157394026" />
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596477902922">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -600,22 +631,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597536372550" />
-    <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1599150275075">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1599163886866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599150275075" />
-    <state width="1493" height="139" key="GridCell.Tab.0.center" timestamp="1599150275075">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599163886866" />
+    <state width="1493" height="139" key="GridCell.Tab.0.center" timestamp="1599163886865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599150275075" />
-    <state width="1493" height="139" key="GridCell.Tab.0.left" timestamp="1599150275073">
+    <state width="1493" height="139" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599163886865" />
+    <state width="1493" height="139" key="GridCell.Tab.0.left" timestamp="1599163886865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599150275073" />
-    <state width="1493" height="139" key="GridCell.Tab.0.right" timestamp="1599150275075">
+    <state width="1493" height="139" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599163886865" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right" timestamp="1599163886865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599150275075" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599163886865" />
+    <state x="349" y="155" key="IDE.errors.dialog" timestamp="1599159649193">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="155" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1599159649193" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1595688314039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -628,10 +663,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1595473328169" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1596332788006">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1599155383627">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1596332788006" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599155383627" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597420381219">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
