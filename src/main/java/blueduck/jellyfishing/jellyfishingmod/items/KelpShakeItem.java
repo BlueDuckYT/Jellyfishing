@@ -5,6 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.*;
+import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.stats.Stats;
@@ -13,7 +14,7 @@ import net.minecraft.world.World;
 public class KelpShakeItem extends Item {
 
     public KelpShakeItem(Properties properties) {
-        super(properties);
+        super(properties.maxStackSize(16));
     }
 
     public UseAction getUseAction(ItemStack stack) {
@@ -30,6 +31,8 @@ public class KelpShakeItem extends Item {
             if (!playerentity.abilities.isCreativeMode) {
                 stack.shrink(1);
             }
+            playerentity.addPotionEffect(new EffectInstance(Effect.get(9), 200, 4));
+            playerentity.addPotionEffect(new EffectInstance(Effect.get(1), 160, 0));
         }
 
         if (playerentity == null || !playerentity.abilities.isCreativeMode) {

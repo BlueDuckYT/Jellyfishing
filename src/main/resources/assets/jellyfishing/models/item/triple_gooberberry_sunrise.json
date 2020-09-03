@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jellyfishing:item/triple_gooberberry_sunrise"
+  }
+}

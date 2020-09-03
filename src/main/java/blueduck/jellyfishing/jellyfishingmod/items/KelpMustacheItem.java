@@ -7,6 +7,8 @@ import net.minecraft.item.ElytraItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.potion.Effect;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.world.World;
 
 public class KelpMustacheItem extends ArmorItem {
@@ -21,5 +23,6 @@ public class KelpMustacheItem extends ArmorItem {
                 p_213360_0_.sendBreakAnimation(EquipmentSlotType.HEAD);
             });
         }
+        player.addPotionEffect(new EffectInstance(Effect.get(11), 10, 0));
     }
 }
