@@ -12,7 +12,7 @@ public class PlunderingEnchantment extends Enchantment {
         super(rarityIn, EnchantmentType.create("jellyfish_net", JellyfishingEnchantments.NET), slots);
     }
     public int getMinEnchantability(int enchantmentLevel) {
-        return 0;
+        return 10 + 10 * (enchantmentLevel - 1);
     }
 
     public int getMaxEnchantability(int enchantmentLevel) {
