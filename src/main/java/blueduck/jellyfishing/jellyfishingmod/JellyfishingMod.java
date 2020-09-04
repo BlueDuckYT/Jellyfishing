@@ -81,6 +81,7 @@ public class JellyfishingMod
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+        JellyfishingEnchantments.init();
         JellyfishingBlocks.init();
         JellyfishingItems.init();
         JellyfishingEntities.init();
@@ -88,7 +89,7 @@ public class JellyfishingMod
         JellyfishingSounds.init();
         JellyfishingTileEntities.init();
         JellyfishingPaintings.init();
-        JellyfishingEnchantments.init();
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

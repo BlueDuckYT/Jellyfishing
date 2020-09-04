@@ -3,6 +3,7 @@ package blueduck.jellyfishing.jellyfishingmod.registry;
 import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.biomes.JellyfishFields;
 import blueduck.jellyfishing.jellyfishingmod.misc.AgilityEnchantment;
+import blueduck.jellyfishing.jellyfishingmod.misc.PlunderingEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -29,6 +30,7 @@ public class JellyfishingEnchantments {
     public static final DeferredRegister<Enchantment> ENCHANTMENTS = new DeferredRegister<>(ForgeRegistries.ENCHANTMENTS, JellyfishingMod.MODID);
 
     public static final RegistryObject<Enchantment> AGILITY = ENCHANTMENTS.register("agility", () -> new AgilityEnchantment(Enchantment.Rarity.UNCOMMON, EquipmentSlotType.values()));
+    public static final RegistryObject<Enchantment> PLUNDERING = ENCHANTMENTS.register("plundering", () -> new PlunderingEnchantment(Enchantment.Rarity.UNCOMMON, EquipmentSlotType.values()));
 
     public static void init() {
         ENCHANTMENTS.register(FMLJavaModLoadingContext.get().getModEventBus());

@@ -24,9 +24,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.storage.loot.*;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 
 import javax.annotation.Nullable;
+import java.util.List;
 
 public class AbstractJellyfishEntity extends AbstractFishEntity {
 
@@ -173,6 +176,19 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                     itemstack.damageItem(1, player, (p_220045_0_) -> {
                         p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
                     });
+                }
+                if (this.canDespawn(1) && player.getEntityWorld().getRandom().nextDouble() < (0.1 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack))) {
+                    try {
+                        LootContext.Builder lootcontext$builder = (new LootContext.Builder(this.getServer().getWorld(this.dimension))).withParameter(LootParameters.POSITION, new BlockPos(this)).withParameter(LootParameters.TOOL, itemstack).withRandom(this.rand).withLuck(player.getLuck() + (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) - 1));
+                        lootcontext$builder.withParameter(LootParameters.KILLER_ENTITY, player).withParameter(LootParameters.THIS_ENTITY, this);
+                        LootTable loottable = this.world.getServer().getLootTableManager().getLootTableFromLocation(LootTables.GAMEPLAY_FISHING);
+                        List<ItemStack> list = loottable.generate(lootcontext$builder.build(LootParameterSets.FISHING));
+                        this.entityDropItem(list.get(0));
+                        this.playSound(SoundEvents.ENTITY_FISHING_BOBBER_SPLASH, 0.25F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.4F);
+                    }
+                    catch(Exception e) {
+                        this.playSound(SoundEvents.ENTITY_FISHING_BOBBER_RETRIEVE, 1.0F, 1.0F);
+                    }
                 }
                 ItemStack itemstack1 = this.getJellyfishItem();
                 this.setBucketData(itemstack1);
