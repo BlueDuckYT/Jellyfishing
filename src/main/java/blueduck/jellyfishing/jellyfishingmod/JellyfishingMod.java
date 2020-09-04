@@ -15,7 +15,11 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.merchant.villager.VillagerProfession;
+import net.minecraft.entity.merchant.villager.VillagerTrades;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.item.MerchantOffer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
@@ -36,6 +40,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.village.VillagerTradesEvent;
+import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
@@ -46,6 +52,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
+import net.minecraftforge.fml.event.server.FMLServerAboutToStartEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.Level;
@@ -127,11 +134,15 @@ public class JellyfishingMod
 
           }
 
+
+
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
         // some example code to dispatch IMC to another mod
         InterModComms.sendTo("jellyfishing", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
     }
+
+
 
     private void processIMC(final InterModProcessEvent event)
     {
@@ -146,6 +157,8 @@ public class JellyfishingMod
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
+
+
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
@@ -164,8 +177,6 @@ public class JellyfishingMod
             JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingFeatures.SEANUT_BUSH_FEATURE.withConfiguration(new CountConfig(3)));
 
         }
-
-
 
     }
 
@@ -199,6 +210,39 @@ public class JellyfishingMod
                 //(TableLootEntry.builder(new ResourceLocation(MODID, "gameplay/fishing/fish")));
                 //event.getTable().pools.get(0).entries.add();
             }
+        }
+        @SubscribeEvent
+        public static void villagerTrades(final VillagerTradesEvent event) {
+            if (event.getType() == VillagerProfession.FISHERMAN) {
+                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.JELLYFISH_JELLY.get(), 3), 5, 10, 0.05F));
+                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.BLUE_JELLYFISH_JELLY.get(), 3), 5, 10, 0.05F));
+
+                event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(JellyfishingItems.JELLYFISH_NET.get()), 5, 10, 0.05F));
+
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 7), new ItemStack(JellyfishingItems.JELLYFISH.get()), 3, 10, 0.05F));
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 9), new ItemStack(JellyfishingItems.BLUE_JELLYFISH.get()), 3, 10, 0.05F));
+
+
+
+            }
+            if (event.getType() == VillagerProfession.MASON) {
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingBlocks.POLISHED_CORALSTONE_ITEM.get(), 4), 5, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 8), new ItemStack(Items.EMERALD, 1), 5, 10, 0.05F));
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 8), 5, 10, 0.05F));
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 16), new ItemStack(Items.EMERALD, 1), 5, 10, 0.05F));
+            }
+        }
+
+        @SubscribeEvent
+        public static void traderTrades(final WandererTradesEvent event) {
+            event.getGenericTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.JELLYFISH_JELLY.get(), 12), 8, 10, 0.05F));
+            event.getGenericTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(JellyfishingItems.BLUE_JELLYFISH_JELLY.get(), 8), 8, 10, 0.05F));
+            event.getGenericTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingItems.KELP_MUSTACHE.get(), 1), 5, 10, 0.05F));
+
+            event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get(), 1), 3, 10, 0.05F));
+            event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.JELLYFISH.get(), 1), 3, 10, 0.05F));
+            event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.BLUE_JELLYFISH.get(), 1), 2, 10, 0.05F));
+            event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.SEANUT.get(), 1), 4, 10, 0.05F));
         }
     }
 
