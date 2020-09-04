@@ -235,8 +235,8 @@ public class JellyfishingMod
 
         @SubscribeEvent
         public static void traderTrades(final WandererTradesEvent event) {
-            event.getGenericTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.JELLYFISH_JELLY.get(), 12), 8, 10, 0.05F));
-            event.getGenericTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(JellyfishingItems.BLUE_JELLYFISH_JELLY.get(), 8), 8, 10, 0.05F));
+            event.getGenericTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.JELLYFISH_JELLY.get(), 6), 8, 10, 0.05F));
+            event.getGenericTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(JellyfishingItems.BLUE_JELLYFISH_JELLY.get(), 4), 8, 10, 0.05F));
             event.getGenericTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingItems.KELP_MUSTACHE.get(), 1), 5, 10, 0.05F));
 
             event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get(), 1), 3, 10, 0.05F));
