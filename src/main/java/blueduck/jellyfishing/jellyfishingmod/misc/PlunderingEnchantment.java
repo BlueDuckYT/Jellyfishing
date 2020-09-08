@@ -9,7 +9,7 @@ public class PlunderingEnchantment extends Enchantment {
 
 
     public PlunderingEnchantment(Rarity rarityIn, EquipmentSlotType[] slots) {
-        super(rarityIn, EnchantmentType.create("jellyfish_net", JellyfishingEnchantments.NET), slots);
+        super(rarityIn, JellyfishingEnchantments.ENCHANTMENT_TYPE, slots);
     }
     public int getMinEnchantability(int enchantmentLevel) {
         return 10 + 10 * (enchantmentLevel - 1);
@@ -19,6 +19,10 @@ public class PlunderingEnchantment extends Enchantment {
         return 50;
     }
 
+
+    public int getMinLevel() {
+        return 1;
+    }
     /**
      * Returns the maximum level that the enchantment can have.
      */

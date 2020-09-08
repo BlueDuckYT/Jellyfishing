@@ -11,7 +11,7 @@ public class AgilityEnchantment extends Enchantment {
 
 
     public AgilityEnchantment(Rarity rarityIn, EquipmentSlotType[] slots) {
-        super(rarityIn, EnchantmentType.create("jellyfish_net", JellyfishingEnchantments.NET), slots);
+        super(rarityIn, JellyfishingEnchantments.ENCHANTMENT_TYPE, slots);
     }
     public int getMinEnchantability(int enchantmentLevel) {
         return 0;
@@ -21,6 +21,10 @@ public class AgilityEnchantment extends Enchantment {
         return 50;
     }
 
+
+    public int getMinLevel() {
+        return 1;
+    }
     /**
      * Returns the maximum level that the enchantment can have.
      */

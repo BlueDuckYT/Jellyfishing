@@ -5,8 +5,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Adds Plundering and textures">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Changes to plundering enchantment">
+      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingPointofInterests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/AgilityEnchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/AgilityEnchantment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/PlunderingEnchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/PlunderingEnchantment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingEnchantments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingEnchantments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/music_disc_jellyfish_fields.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/music_disc_jellyfish_fields.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Fixed infinite jellyfish bug">
-      <created>1597061751740</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1597061751740</updated>
     </task>
     <task id="LOCAL-00062" summary="Half working seanut bush">
       <created>1597251172256</created>
@@ -555,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599220917698</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Changes to plundering enchantment">
+      <created>1599221150884</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1599221150884</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -572,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Tube Plants now spawn in the Jellyfish Fields" />
     <MESSAGE value="Bugs" />
     <MESSAGE value="Updated names and added non-functional non-rendering patty wagon" />
     <MESSAGE value="Fixed recipes" />
@@ -597,7 +603,8 @@
     <MESSAGE value="Adds Trades to Fisherman, Mason, and Wandering Trader" />
     <MESSAGE value="Changed trades" />
     <MESSAGE value="Adds Plundering and textures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds Plundering and textures" />
+    <MESSAGE value="Changes to plundering enchantment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to plundering enchantment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -624,22 +631,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597536372550" />
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1599220960179">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1599226494924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599220960179" />
-    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1599220960178">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599226494924" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1599226494924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599220960178" />
-    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1599220960178">
+    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599226494924" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1599226494924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599220960178" />
-    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1599220960178">
+    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599226494924" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1599226494924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599220960178" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599226494924" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1599159649193">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
