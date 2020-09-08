@@ -89,6 +89,7 @@ public class JellyfishingMod
         JellyfishingSounds.init();
         JellyfishingTileEntities.init();
         JellyfishingPaintings.init();
+        JellyfishingPointofInterests.init();
 
 
 

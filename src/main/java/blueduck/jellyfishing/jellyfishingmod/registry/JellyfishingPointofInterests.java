@@ -19,7 +19,7 @@ public class JellyfishingPointofInterests {
     public static final DeferredRegister<PointOfInterestType> POINTS = new DeferredRegister<>(ForgeRegistries.POI_TYPES, JellyfishingMod.MODID);
 
 
-    public static final RegistryObject<PointOfInterestType> FRYCOOK = POINTS.register("frycook", () -> new PointOfInterestType(JellyfishingBlocks.SEANUT_BRITTLE_BLOCK.get().getDefaultState(), 0, 1));
+    public static final RegistryObject<PointOfInterestType> FRYCOOK = POINTS.register("frycook", () -> new PointOfInterestType("frycook", getAllStates(JellyfishingBlocks.SEANUT_BRITTLE_BLOCK.get()), 0, 1));
 
     public static void init() {
         POINTS.register(FMLJavaModLoadingContext.get().getModEventBus());
