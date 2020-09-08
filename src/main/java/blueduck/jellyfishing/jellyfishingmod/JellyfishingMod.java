@@ -6,6 +6,7 @@ import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.JellyfishRen
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.PattyWagonRenderer;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
+import com.google.common.collect.ImmutableSet;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -21,6 +22,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.MerchantOffer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.village.PointOfInterestType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -55,6 +57,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerAboutToStartEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -89,7 +92,8 @@ public class JellyfishingMod
         JellyfishingSounds.init();
         JellyfishingTileEntities.init();
         JellyfishingPaintings.init();
-        JellyfishingPointofInterests.init();
+        //JellyfishingPointofInterests.init();
+        //JellyfishingProfessions.init();
 
 
 
@@ -181,6 +185,7 @@ public class JellyfishingMod
 
         }
 
+
     }
 
 
@@ -214,6 +219,25 @@ public class JellyfishingMod
                 //event.getTable().pools.get(0).entries.add();
             }
         }
+
+        @SubscribeEvent
+        public static void onRegisterProfessions(final RegistryEvent.Register<VillagerProfession> event) {
+            IForgeRegistry<VillagerProfession> registry = event.getRegistry();
+
+            registry.register(new VillagerProfession("frycook", JellyfishingPointofInterests.FRYCOOK, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(MODID, "frycook"));
+            //JellyfishingProfessions.FRYCOOK = registry.getValue(new ResourceLocation("jellyfishing:frycook"));
+
+        }
+
+        @SubscribeEvent
+        public static void registerPointOfInterestTypes(RegistryEvent.Register<PointOfInterestType> event)
+        {
+            IForgeRegistry<PointOfInterestType> registry = event.getRegistry();
+
+            //registry.register(new PointOfInterestType("arms_dealer", JellyfishingPointofInterests.getAllStates(JellyfishingBlocks.SEANUT_BRITTLE_BLOCK.get()), 1, 1).setRegistryName(MODID, "frycook"));
+            //JellyfishingPointofInterests.FRYCOOK = registry.getValue(new ResourceLocation("jellyfishing:frycook"));
+
+        }
         @SubscribeEvent
         public static void villagerTrades(final VillagerTradesEvent event) {
             if (event.getType() == VillagerProfession.FISHERMAN) {
@@ -233,6 +257,9 @@ public class JellyfishingMod
                 event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 8), new ItemStack(Items.EMERALD, 1), 5, 10, 0.05F));
                 event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 8), 5, 10, 0.05F));
                 event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 16), new ItemStack(Items.EMERALD, 1), 5, 10, 0.05F));
+            }
+            if (event.getType() == JellyfishingProfessions.FRYCOOK) {
+                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingBlocks.POLISHED_CORALSTONE_ITEM.get(), 4), 5, 10, 0.05F));
             }
         }
 
