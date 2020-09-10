@@ -5,11 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added Jellyfish to Loot Table">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay/fishing/treasure_net.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added Jellyfish Nets to Fishing Loot Table">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay/toolsmith_net.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay/fishing/fish.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay/fishing/fish.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.15.2-31.2.36_mapped_snapshot_20200514-1.15.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/gameplay" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -94,12 +93,12 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\loot_tables\gameplay" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\loot_tables\gameplay" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\loot_tables\chests" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\advancements\jellyfishing" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags\items" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\item" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="blueduck.jellyfishing.jellyfishingmod.items" />
@@ -108,12 +107,12 @@
       <recent name="blueduck.jellyfishing.jellyfishingmod.features" />
       <recent name="blueduck.jellyfishing.jellyfishingmod.client.entity.renderer" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\loot_tables\chests" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\advancements\jellyfishing" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags\items" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\models\item" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\jellyfishing\recipes" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\loot_tables\gameplay" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -217,13 +216,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Updated painting, added roasted seanuts">
-      <created>1597338618802</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1597338618802</updated>
     </task>
     <task id="LOCAL-00068" summary="Seanut Butter">
       <created>1597339350118</created>
@@ -561,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599776799133</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Added Jellyfish Nets to Fishing Loot Table">
+      <created>1599778147030</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1599778147030</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -578,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Converted math to random object, now should sync properly if it didn't before" />
     <MESSAGE value="Fixed another server crash" />
     <MESSAGE value="Added kazmurenko's russian translation" />
     <MESSAGE value="Added russian language" />
@@ -603,7 +601,8 @@
     <MESSAGE value="Removed Frycook code" />
     <MESSAGE value="shwDF" />
     <MESSAGE value="Added Jellyfish to Loot Table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Jellyfish to Loot Table" />
+    <MESSAGE value="Added Jellyfish Nets to Fishing Loot Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Jellyfish Nets to Fishing Loot Table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -634,22 +633,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599771209547" />
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1599777202898">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1599778724236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599777202898" />
-    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1599777202898">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599778724236" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1599778724236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599777202898" />
-    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1599777202898">
+    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599778724236" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1599778724236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599777202898" />
-    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1599777202898">
+    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599778724236" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1599778724236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599777202898" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599778724236" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1599159649193">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

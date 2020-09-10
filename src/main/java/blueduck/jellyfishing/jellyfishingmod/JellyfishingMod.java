@@ -213,11 +213,26 @@ public class JellyfishingMod
             if (name.equals(LootTables.GAMEPLAY_FISHING)) {
                 LootPool pool = event.getTable().getPool("main");
                 if (pool != null) {
-                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/fish"), 30, 2));
-                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/treasure_net"), 3, 5));
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/fish"), 20, 1));
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/treasure_net"), 3, 1));
 
                 }
             }
+            if (name.equals(LootTables.GAMEPLAY_HERO_OF_THE_VILLAGE_FISHERMAN_GIFT)) {
+                LootPool pool = event.getTable().getPool("main");
+                if (pool != null) {
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/fish"), 1, 1));
+                }
+            }
+            if (name.equals(LootTables.GAMEPLAY_HERO_OF_THE_VILLAGE_TOOLSMITH_GIFT)) {
+                LootPool pool = event.getTable().getPool("main");
+                if (pool != null) {
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/toolsmith_net"), 1, 1));
+                }
+            }
+
+
+
         }
 
         private static LootEntry getInjectEntry(ResourceLocation location, int weight, int quality) {
