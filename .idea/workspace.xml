@@ -5,18 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Removed Frycook code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/DiverSuitItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SandySuitItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Jellyfishing.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Jellyfishing.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Jellyfishing.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Jellyfishing.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="shwDF">
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/gameplay/fishing.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,13 +214,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Added custom paintings">
-      <created>1597336531325</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1597336531327</updated>
     </task>
     <task id="LOCAL-00066" summary="Added codysquirtle to mod credits">
       <created>1597336577392</created>
@@ -568,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599574700744</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="shwDF">
+      <created>1599775848688</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1599775848689</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +575,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Hopefully fixed server crash" />
     <MESSAGE value="Fixed server crash" />
     <MESSAGE value="Converted math to random object, now should sync properly if it didn't before" />
     <MESSAGE value="Fixed another server crash" />
@@ -610,7 +599,8 @@
     <MESSAGE value="Updated forge, fixed errors" />
     <MESSAGE value="Attempted to add frycook" />
     <MESSAGE value="Removed Frycook code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Frycook code" />
+    <MESSAGE value="shwDF" />
+    <option name="LAST_COMMIT_MESSAGE" value="shwDF" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">

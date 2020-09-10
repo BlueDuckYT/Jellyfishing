@@ -190,7 +190,7 @@ public class JellyfishingMod
     @Mod.EventBusSubscriber(modid = "jellyfishing")
     public static class LootEvents {
         @SubscribeEvent
-        public static void onLootLoad(LootTableLoadEvent event) {
+        public static void onLootLoad(LootTableLoadEvent event) throws IllegalAccessException {
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/shipwreck_treasure"))) {
                 event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_treasure"))).build());
             }
@@ -208,10 +208,31 @@ public class JellyfishingMod
             }
 
 
+            //Fishing Loot Injection from Aquaculture 2 by Team Metallurgy
+            ResourceLocation name = event.getName();
+            if (name.equals(LootTables.GAMEPLAY_FISHING)) {
+                LootPool pool = event.getTable().getPool("main");
+                if (pool != null) {
 
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/fish"), 50, 2));
+
+                }
+            }
+        }
+
+        private static LootEntry getInjectEntry(ResourceLocation location, int weight, int quality) {
+            return TableLootEntry.builder(location).weight(weight).quality(quality).build();
         }
 
 
+
+        private static void addEntry(LootPool pool, LootEntry entry) throws IllegalAccessException {
+            List<LootEntry> lootEntries = (List<LootEntry>) ObfuscationReflectionHelper.findField(LootPool.class, "field_186453_a").get(pool);
+            if (lootEntries.stream().anyMatch(e -> e == entry)) {
+                throw new RuntimeException("Attempted to add a duplicate entry to pool: " + entry);
+            }
+            lootEntries.add(entry);
+        }
 
 
         @SubscribeEvent
