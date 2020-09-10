@@ -215,7 +215,7 @@ public class JellyfishingMod
                 if (pool != null) {
                     addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/fish"), 20, 1));
                     addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/treasure_net"), 3, 1));
-
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/junk_plants"), 1, -2));
                 }
             }
             if (name.equals(LootTables.GAMEPLAY_HERO_OF_THE_VILLAGE_FISHERMAN_GIFT)) {
@@ -261,8 +261,8 @@ public class JellyfishingMod
                 event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 7), new ItemStack(JellyfishingItems.JELLYFISH.get()), 3, 10, 0.05F));
                 event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 9), new ItemStack(JellyfishingItems.BLUE_JELLYFISH.get()), 3, 10, 0.05F));
 
-
-
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingBlocks.CORAL_PLANT_ITEM.get(), 3),   5, 10, 0.05F));
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingBlocks.TUBE_PLANT_ITEM.get(), 2),   5, 10, 0.05F));
             }
             if (event.getType() == VillagerProfession.MASON) {
                 event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingBlocks.POLISHED_CORALSTONE_ITEM.get(), 4), 5, 10, 0.05F));
@@ -285,6 +285,9 @@ public class JellyfishingMod
             if (event.getType() == VillagerProfession.ARMORER) {
                 event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD,  2), new ItemStack(JellyfishingItems.KELP_MUSTACHE.get()),  5, 10, 0.05F));
             }
+            if (event.getType() == VillagerProfession.BUTCHER) {
+                event.getTrades().get(5).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(JellyfishingItems.KRABBY_PATTY.get()),   5, 10, 0.05F));
+            }
         }
 
         @SubscribeEvent
@@ -297,6 +300,7 @@ public class JellyfishingMod
             event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.JELLYFISH.get(), 1), 3, 10, 0.05F));
             event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.BLUE_JELLYFISH.get(), 1), 2, 10, 0.05F));
             event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.SEANUT.get(), 1), 4, 10, 0.05F));
+            event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(JellyfishingItems.KRABBY_PATTY.get(), 1), 3, 10, 0.05F));
         }
     }
 

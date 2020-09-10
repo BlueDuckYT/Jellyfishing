@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:gameplay",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1.0,
+        "max": 1.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "jellyfishing:coral_plant"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "jellyfishing:tube_plant"
+        }
+      ]
+    }
+  ]
+}

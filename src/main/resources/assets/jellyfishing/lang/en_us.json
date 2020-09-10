@@ -46,6 +46,7 @@
   "item.jellyfishing.kelp_mustache": "Kelp Mustache",
 
   "item.jellyfishing.triple_gooberberry_sunrise": "Triple Gooberberry Sunrise",
+  "item.jellyfishing.krabby_patty": "Krabby Patty",
 
   "item.jellyfishing.music_disc_jellyfish_fields": "Music Disc",
   "item.jellyfishing.music_disc_jellyfish_fields.desc": "WhirlingWinds - Jellyfish Fields",
@@ -90,6 +91,8 @@
   "advancements.jellyfishing.mustache.description": "Craft a Kelp Mustache",
   "advancements.jellyfishing.ice_cream.title": "Oh, Waiter!",
   "advancements.jellyfishing.ice_cream.description": "Craft a Triple Gooberberry Sunrise",
+  "advancements.jellyfishing.krabby_patty.title": "100 Dollars for a Krabby Patty?",
+  "advancements.jellyfishing.krabby_patty.description": "Purchase a Krabby Patty",
 
   "death.attack.sting.player": "{Player} was stung by Jellyfish",
 
