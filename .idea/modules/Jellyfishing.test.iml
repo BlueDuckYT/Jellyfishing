@@ -11,6 +11,9 @@
     </facet>
   </component>
   <component name="McpModuleSettings">
-    <option name="srgType" value="SRG" />
+    <option name="mappingFile" value="C:\Users\Max\IdeaProjects\Jellyfishing\build\createMcpToSrg\output.tsrg" />
+    <option name="mcpVersion" value="snapshot_20200514-1.15.1" />
+    <option name="minecraftVersion" value="1.15.2" />
+    <option name="srgType" value="TSRG" />
   </component>
 </module>

@@ -7,6 +7,7 @@ import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.PattyWagonRe
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import com.google.common.collect.ImmutableSet;
+import io.netty.util.internal.ReflectionUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -31,10 +32,7 @@ import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placement.*;
-import net.minecraft.world.storage.loot.LootEntry;
-import net.minecraft.world.storage.loot.LootPool;
-import net.minecraft.world.storage.loot.LootTable;
-import net.minecraft.world.storage.loot.TableLootEntry;
+import net.minecraft.world.storage.loot.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
@@ -211,33 +209,11 @@ public class JellyfishingMod
 
 
 
-            if (event.getName().equals(new ResourceLocation("minecraft", "gameplay/fishing/fish"))) {
-                List<LootPool> pools = ObfuscationReflectionHelper.getPrivateValue(LootTable.class, event.getTable(), "pools");
-                //List<LootEntry> entries = ObfuscationReflectionHelper.getPrivateValue(LootPool.class, event.getTable(), "lootEntries");
-
-                //(TableLootEntry.builder(new ResourceLocation(MODID, "gameplay/fishing/fish")));
-                //event.getTable().pools.get(0).entries.add();
-            }
         }
 
-        @SubscribeEvent
-        public static void onRegisterProfessions(final RegistryEvent.Register<VillagerProfession> event) {
-            IForgeRegistry<VillagerProfession> registry = event.getRegistry();
 
-            registry.register(new VillagerProfession("frycook", JellyfishingPointofInterests.FRYCOOK, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(MODID, "frycook"));
-            //JellyfishingProfessions.FRYCOOK = registry.getValue(new ResourceLocation("jellyfishing:frycook"));
 
-        }
 
-        @SubscribeEvent
-        public static void registerPointOfInterestTypes(RegistryEvent.Register<PointOfInterestType> event)
-        {
-            IForgeRegistry<PointOfInterestType> registry = event.getRegistry();
-
-            //registry.register(new PointOfInterestType("arms_dealer", JellyfishingPointofInterests.getAllStates(JellyfishingBlocks.SEANUT_BRITTLE_BLOCK.get()), 1, 1).setRegistryName(MODID, "frycook"));
-            //JellyfishingPointofInterests.FRYCOOK = registry.getValue(new ResourceLocation("jellyfishing:frycook"));
-
-        }
         @SubscribeEvent
         public static void villagerTrades(final VillagerTradesEvent event) {
             if (event.getType() == VillagerProfession.FISHERMAN) {
@@ -254,12 +230,24 @@ public class JellyfishingMod
             }
             if (event.getType() == VillagerProfession.MASON) {
                 event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingBlocks.POLISHED_CORALSTONE_ITEM.get(), 4), 5, 10, 0.05F));
-                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 8), new ItemStack(Items.EMERALD, 1), 5, 10, 0.05F));
                 event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 8), 5, 10, 0.05F));
                 event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 16), new ItemStack(Items.EMERALD, 1), 5, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingBlocks.CORALSTONE_ITEM.get(), 8), new ItemStack(Items.EMERALD, 1), 5, 10, 0.05F));
             }
-            if (event.getType() == JellyfishingProfessions.FRYCOOK) {
-                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingBlocks.POLISHED_CORALSTONE_ITEM.get(), 4), 5, 10, 0.05F));
+
+            if (event.getType() == VillagerProfession.CLERIC) {
+                event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.JELLYFISH_JELLY.get(), 4), new ItemStack(Items.EMERALD, 1),  8, 10, 0.05F));
+                event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.BLUE_JELLYFISH_JELLY.get(), 3), new ItemStack(Items.EMERALD, 1),  8, 10, 0.05F));
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.SEANUT_BUTTER.get(), 3), new ItemStack(Items.EMERALD, 1),  6, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.KELP_SHAKE.get(), 1),  6, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get(), 1),  5, 10, 0.05F));
+
+            }
+            if (event.getType() == VillagerProfession.TOOLSMITH) {
+                event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(JellyfishingItems.JELLYFISH_NET.get()),   5, 10, 0.05F));
+            }
+            if (event.getType() == VillagerProfession.ARMORER) {
+                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD,  2), new ItemStack(JellyfishingItems.KELP_MUSTACHE.get()),  5, 10, 0.05F));
             }
         }
 
