@@ -213,8 +213,8 @@ public class JellyfishingMod
             if (name.equals(LootTables.GAMEPLAY_FISHING)) {
                 LootPool pool = event.getTable().getPool("main");
                 if (pool != null) {
-
-                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/fish"), 50, 2));
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/fish"), 30, 2));
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:gameplay/fishing/treasure_net"), 3, 5));
 
                 }
             }
