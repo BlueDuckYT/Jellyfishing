@@ -10,12 +10,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "jellyfishing:jellyfish"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 1,
           "name": "jellyfishing:blue_jellyfish"
         }
       ]
