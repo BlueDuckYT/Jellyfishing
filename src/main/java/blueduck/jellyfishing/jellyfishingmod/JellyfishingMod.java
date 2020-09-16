@@ -192,19 +192,19 @@ public class JellyfishingMod
         @SubscribeEvent
         public static void onLootLoad(LootTableLoadEvent event) throws IllegalAccessException {
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/shipwreck_treasure"))) {
-                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_treasure"))).build());
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_treasure"))).name("jellyfishing_inject").build());
             }
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/shipwreck_supply"))) {
-                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).build());
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).name("jellyfishing_inject").build());
             }
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/underwater_ruin_big"))) {
-                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).build());
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).name("jellyfishing_inject").build());
             }
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/underwater_ruin_small"))) {
-                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).build());
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/shipwreck_supply"))).name("jellyfishing_inject").build());
             }
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/spawn_bonus_chest"))) {
-                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/kelp_mustache"))).build());
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/kelp_mustache"))).name("jellyfishing_inject").build());
             }
 
 
