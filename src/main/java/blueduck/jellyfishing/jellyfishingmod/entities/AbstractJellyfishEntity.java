@@ -43,6 +43,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     public double dodgeSpeed;
     public double dirX, dirY, dirZ;
     public int moveCounter;
+    public int moveTime;
 
 
     public static final DamageSource JELLYFISH_STING = (new DamageSource("sting")).setDamageBypassesArmor();
@@ -74,6 +75,30 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         dirZ = (worldIn.getRandom().nextDouble()) - .5;
         this.writeAdditional(this.getPersistentData());
         moveCounter = 80;
+        moveTime = 80;
+    }
+    public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage, double stingChance, double dodgeChance, double dodgeSpeed, int moveTicks) {
+        super(type, worldIn);
+        JELLYFISH_ITEM = JItem;
+        JELLY_ITEM = JellyItem;
+        stingTime = stingTicks;
+        stingCounter = 0;
+        dailyDrops = dropsPerDay;
+        canThisEntitySting = canSting;
+        stingDmg = stingDamage;
+        this.stingChance = stingChance;
+        this.dodgeChance = dodgeChance;
+        this.dodgeSpeed = dodgeSpeed;
+        this.readAdditional(this.getPersistentData());
+        if (dropCounter <= 0) {
+            dropCounter = (int) (worldIn.getRandom().nextDouble() * 24000 / dropsPerDay);
+        }
+        dirX = (worldIn.getRandom().nextDouble()) - .5;
+        dirY = (worldIn.getRandom().nextDouble()) - .5;
+        dirZ = (worldIn.getRandom().nextDouble()) - .5;
+        this.writeAdditional(this.getPersistentData());
+        moveCounter = 80;
+        moveTime = moveTicks;
     }
 
     @Override
@@ -107,7 +132,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
             dropCounter--;
         }
         if (moveCounter == 0 && this.isInWater()) {
-            moveCounter = 80;
+            moveCounter = moveTime;
             this.setMotion(dirX, dirY, dirZ);
             dirX += (this.getEntityWorld().getRandom().nextDouble() * 0.2) - 0.1;
             dirY += (this.getEntityWorld().getRandom().nextDouble() * 0.2) - 0.1;

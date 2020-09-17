@@ -22,7 +22,7 @@ displayURL="https://curseforge.com/minecraft/mc-mods/jellyfishing" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="src/main/resources/assets/jellyfishing/textures/Jellyfishing.png" #optional
 # A text field displayed in the mod UI
-credits="Developed by Blue Duck, Textures by Coda1552, SaikoChan, Chikorita Lover, and codysquirtle.  Spanish Translation by Amgelo563, Russian Translation by kazmurenko" #optional
+credits="Developed by Blue Duck, Textures by Coda1552, SaikoChan, Chikorita Lover, and codysquirtle.  Spanish Translation by Amgelo563, Russian Translation by kazmurenko.  Jellyfish Fields Music Disc by WhirlingWinds" #optional
 # A text field displayed in the mod UI
 authors="Blue Duck" #optional
 # The description text for the mod (multi line!) (#mandatory)
