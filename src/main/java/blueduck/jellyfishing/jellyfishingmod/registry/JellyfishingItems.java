@@ -49,9 +49,9 @@ public class JellyfishingItems {
 
     public static final RegistryObject<Item> KELP_MUSTACHE = ITEMS.register("kelp_mustache", () -> new KelpMustacheItem(new KelpMaterial(), new Item.Properties().group(ItemGroup.COMBAT)));
 
-    public static final RegistryObject<Item> TRIPLE_GOOBERBERRY_SUNRISE = ITEMS.register("triple_gooberberry_sunrise", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(10).saturation(3.0F).meat().build())));
+    public static final RegistryObject<Item> TRIPLE_GOOBERBERRY_SUNRISE = ITEMS.register("triple_gooberberry_sunrise", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(10).saturation(3.0F).fastToEat().build())));
 
-    public static final RegistryObject<Item> KRABBY_PATTY = ITEMS.register("krabby_patty", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(10).saturation(6.0F).fastToEat().build()).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> KRABBY_PATTY = ITEMS.register("krabby_patty", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(10).saturation(6.0F).meat().build()).rarity(Rarity.RARE)));
 
 
     public static final SuitMaterial SUIT_MATERIAL = new SuitMaterial();
@@ -60,8 +60,9 @@ public class JellyfishingItems {
 //    public static final RegistryObject<Item> AIR_SUIT_CHESTPLATE = ITEMS.register("air_suit_chestplate", () -> new SandySuitItem(SUIT_MATERIAL, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)));
 //    public static final RegistryObject<Item> AIR_SUIT_LEGGINGS = ITEMS.register("air_suit_leggings", () -> new SandySuitItem(SUIT_MATERIAL, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)));
 //    public static final RegistryObject<Item> AIR_SUIT_BOOTS = ITEMS.register("air_suit_boots", () -> new SandySuitItem(SUIT_MATERIAL, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)));
-//
-//
+
+
+
     public static final RegistryObject<Item> DIVER_SUIT_HELMET = null;//ITEMS.register("diver_suit_helmet", () -> new DiverSuitItem(SUIT_MATERIAL, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)));
 
 

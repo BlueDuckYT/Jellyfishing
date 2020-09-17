@@ -5,8 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Preparations for 1.3 release">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added ability to define move timer (quicker/slower movement)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,13 +216,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Seanut Bushes now spawn in the Jellyfish Fields">
-      <created>1597357207053</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1597357207053</updated>
     </task>
     <task id="LOCAL-00076" summary="Adds Seanut Brittle">
       <created>1597361264055</created>
@@ -559,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600348649205</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Added ability to define move timer (quicker/slower movement)">
+      <created>1600358988108</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1600358988109</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adds Kelp Items" />
     <MESSAGE value="Adds Triple Gooberberry Sunrises and Kelp Items" />
     <MESSAGE value="Changed recipe for Triple Gooberberry Sunrise" />
     <MESSAGE value="Added Agility Enchantment" />
@@ -601,7 +601,8 @@
     <MESSAGE value="Texture change" />
     <MESSAGE value="Loot Pool Bugfix" />
     <MESSAGE value="Preparations for 1.3 release" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparations for 1.3 release" />
+    <MESSAGE value="Added ability to define move timer (quicker/slower movement)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ability to define move timer (quicker/slower movement)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -632,22 +633,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599771209547" />
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1599844191660">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1600367012865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599844191660" />
-    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1599844191659">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600367012865" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1600367012865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599844191659" />
-    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1599844191659">
+    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600367012865" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1600367012865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599844191659" />
-    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1599844191659">
+    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600367012865" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1600367012865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599844191659" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600367012865" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1599159649193">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
