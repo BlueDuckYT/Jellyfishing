@@ -33,7 +33,7 @@ public class JellyfishingSpawnEgg extends SpawnEggItem {
         type = typeIn;
         primColor = primaryColorIn;
         secColor = secondaryColorIn;
-
+        JELLYFISHING_SPAWN_EGGS.add(this);
     }
 
     @Override
