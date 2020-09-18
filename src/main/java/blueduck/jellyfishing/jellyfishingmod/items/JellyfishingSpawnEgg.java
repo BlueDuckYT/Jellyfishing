@@ -1,6 +1,7 @@
 package blueduck.jellyfishing.jellyfishingmod.items;
 
 import net.minecraft.block.DispenserBlock;
+import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.dispenser.IBlockSource;
 import net.minecraft.entity.EntityType;
@@ -23,10 +24,16 @@ public class JellyfishingSpawnEgg extends SpawnEggItem {
 
     public static final ArrayList<JellyfishingSpawnEgg> JELLYFISHING_SPAWN_EGGS = new ArrayList<>();
 
+    public int primColor;
+    public int secColor;
+
     Supplier<? extends EntityType<?>> type;
     public JellyfishingSpawnEgg(Supplier<? extends EntityType<?>> typeIn, int primaryColorIn, int secondaryColorIn, Properties builder) {
         super(null, primaryColorIn, secondaryColorIn, builder);
         type = typeIn;
+        primColor = primaryColorIn;
+        secColor = secondaryColorIn;
+
     }
 
     @Override
@@ -47,10 +54,13 @@ public class JellyfishingSpawnEgg extends SpawnEggItem {
             }
         };
         for (final SpawnEggItem egg : JELLYFISHING_SPAWN_EGGS) {
-            EGGS.put(egg.getType(null), egg);
-            DispenserBlock.registerDispenseBehavior(egg, defaultDispenseItemBehavior);
+            SpawnEggItem.EGGS.put(egg.getType(null), egg);
         }
-        JELLYFISHING_SPAWN_EGGS.clear();
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    public int getColor(int tintIndex) {
+        return tintIndex == 0 ? this.primColor : this.secColor;
     }
 
 
