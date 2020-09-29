@@ -11,6 +11,9 @@ import net.minecraft.entity.item.minecart.AbstractMinecartEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.particles.BlockParticleData;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.Tag;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -20,6 +23,7 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.common.Tags;
 
 public class JellyBlock extends HoneyBlock {
     protected static final VoxelShape field_226930_a_ = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 15.0D, 15.0D);
@@ -143,7 +147,7 @@ public class JellyBlock extends HoneyBlock {
     @Override
     public boolean canStickTo(BlockState state, BlockState other)
     {
-        if (other.getBlock() == JellyfishingBlocks.BLUE_JELLY_BLOCK.get() || state.getBlock() == JellyfishingBlocks.BLUE_JELLY_BLOCK.get()) {
+        if (new BlockTags.Wrapper(new ResourceLocation("jellyfishing:jelly_blocks")).contains(other.getBlock()) && state != other) {
             return false;
         }
         return true;

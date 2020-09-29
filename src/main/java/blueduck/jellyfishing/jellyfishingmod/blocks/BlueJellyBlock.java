@@ -2,15 +2,20 @@ package blueduck.jellyfishing.jellyfishingmod.blocks;
 
 import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlimeBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.Tag;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
+import net.minecraftforge.common.Tags;
 
 public class BlueJellyBlock extends SlimeBlock {
     public BlueJellyBlock(Properties properties) {
@@ -46,7 +51,7 @@ public class BlueJellyBlock extends SlimeBlock {
     @Override
     public boolean canStickTo(BlockState state, BlockState other)
     {
-        if (other.getBlock() == JellyfishingBlocks.JELLY_BLOCK.get() || state.getBlock() == JellyfishingBlocks.JELLY_BLOCK.get()) {
+        if (new BlockTags.Wrapper(new ResourceLocation("jellyfishing:jelly_blocks")).contains(other.getBlock()) && state != other) {
             return false;
         }
         return true;
