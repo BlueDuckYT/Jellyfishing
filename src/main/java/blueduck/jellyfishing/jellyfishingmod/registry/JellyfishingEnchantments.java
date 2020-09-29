@@ -2,6 +2,7 @@ package blueduck.jellyfishing.jellyfishingmod.registry;
 
 import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.biomes.JellyfishFields;
+import blueduck.jellyfishing.jellyfishingmod.items.JellyfishNetItem;
 import blueduck.jellyfishing.jellyfishingmod.misc.AgilityEnchantment;
 import blueduck.jellyfishing.jellyfishingmod.misc.PlunderingEnchantment;
 import net.minecraft.enchantment.Enchantment;
@@ -24,7 +25,7 @@ public class JellyfishingEnchantments {
     public static java.util.function.Predicate<Item> NET = new java.util.function.Predicate<Item>() {
         @Override
         public boolean test(Item item) {
-            return item.getName().equals(JellyfishingItems.JELLYFISH_NET.get().getName());
+            return item instanceof JellyfishNetItem;
         }
     };
     public static EnchantmentType ENCHANTMENT_TYPE = EnchantmentType.create("jellyfish_net", JellyfishingEnchantments.NET);

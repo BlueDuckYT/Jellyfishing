@@ -76,6 +76,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         this.writeAdditional(this.getPersistentData());
         moveCounter = 80;
         moveTime = 80;
+        this.rotationYaw = 0;
     }
     public AbstractJellyfishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn, ItemStack JItem, Item JellyItem, double dropsPerDay, boolean canSting, int stingTicks, int stingDamage, double stingChance, double dodgeChance, double dodgeSpeed, int moveTicks) {
         super(type, worldIn);
@@ -146,11 +147,12 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
             if (Math.abs(dirZ) > 0.5) {
                 dirZ = Math.abs(dirZ)/dirZ * 0.5;
             }
+            //this.rotationYaw = (float) Math.atan2(dirZ, dirX);
         }
         else if (moveCounter > 0) {
             moveCounter--;
         }
-        //this.setHeadRotation(90, (int)(Math.atan2(dirZ, dirX) * (180/Math.PI)));
+
         super.livingTick();
         if (this.onGround && !this.isInWater()) {
             this.setMotion(0.0, -0.3, 0.0);
