@@ -4,6 +4,7 @@ import blueduck.jellyfishing.jellyfishingmod.biomes.JellyfishFields;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.BlueJellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.JellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.PattyWagonRenderer;
+import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.SpatulaRenderer;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import com.google.common.collect.ImmutableSet;
@@ -341,6 +342,7 @@ public class JellyfishingMod
 
             RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.PATTY_WAGON.get(), manager -> new PattyWagonRenderer(manager));
 
+            RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.SPATULA.get(), manager -> new SpatulaRenderer(manager));
 
         }
         @SubscribeEvent

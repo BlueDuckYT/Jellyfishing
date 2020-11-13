@@ -1,0 +1,21 @@
+{
+  "loader": "forge:separate-perspective",
+  "base": {
+    "parent": "item/generated",
+    "textures": {
+      "layer0": "jellyfishing:item/spatula"
+    }
+  },
+  "thirdperson_righthand": {
+    "parent": "jellyfishing:item/spatula_in_hand"
+  },
+  "thirdperson_lefthand": {
+    "parent": "jellyfishing:item/spatula_in_hand"
+  },
+  "firstperson_righthand": {
+    "parent": "jellyfishing:item/spatula_in_hand"
+  },
+  "firstperson_lefthand": {
+    "parent": "jellyfishing:item/spatula_in_hand"
+  }
+}
