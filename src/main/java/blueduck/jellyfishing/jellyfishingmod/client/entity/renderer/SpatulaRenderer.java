@@ -1,5 +1,6 @@
 package blueduck.jellyfishing.jellyfishingmod.client.entity.renderer;
 
+import blueduck.jellyfishing.jellyfishingmod.client.entity.model.SpatulaModel;
 import blueduck.jellyfishing.jellyfishingmod.entities.SpatulaEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -17,7 +18,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 @OnlyIn(Dist.CLIENT)
 public class SpatulaRenderer extends EntityRenderer<SpatulaEntity> {
     public static final ResourceLocation TRIDENT = new ResourceLocation("jellyfishing:textures/entity/spatula.png");
-    private final TridentModel tridentModel = new TridentModel();
+    private final SpatulaModel tridentModel = new SpatulaModel();
 
     public SpatulaRenderer(EntityRendererManager renderManagerIn) {
         super(renderManagerIn);
