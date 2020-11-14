@@ -1,6 +1,5 @@
 package blueduck.jellyfishing.jellyfishingmod.blocks;
 
-import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingTileEntities;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.state.IntegerProperty;

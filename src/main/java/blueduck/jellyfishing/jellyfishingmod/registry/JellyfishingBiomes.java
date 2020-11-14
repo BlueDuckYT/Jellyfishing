@@ -2,6 +2,10 @@ package blueduck.jellyfishing.jellyfishingmod.registry;
 
 import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.biomes.JellyfishFields;
+import net.minecraft.util.RegistryKey;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
@@ -13,9 +17,9 @@ import org.apache.logging.log4j.core.util.Loader;
 
 public class JellyfishingBiomes {
 
-    public static final DeferredRegister<Biome> BIOMES = new DeferredRegister<>(ForgeRegistries.BIOMES, JellyfishingMod.MODID);
+    public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, JellyfishingMod.MODID);
 
-    public static final RegistryObject<Biome> JELLYFISH_FIELDS = BIOMES.register("jellyfish_fields", () -> new JellyfishFields());
+    public static final RegistryObject<Biome> JELLYFISH_FIELDS = BIOMES.register("jellyfish_fields", () -> new JellyfishFields().getBiome());
 
 
     public static void init() {
@@ -26,10 +30,7 @@ public class JellyfishingBiomes {
         registerBiome(JELLYFISH_FIELDS.get(), BiomeManager.BiomeType.WARM, BiomeDictionary.Type.OCEAN, BiomeDictionary.Type.OVERWORLD);
     }
     public static void registerBiome(Biome biome, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
-        BiomeDictionary.addTypes(biome, types);
-        //BiomeManager.addSpawnBiome(biome);
-        BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(biome, 6));
-
+        BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, new ResourceLocation("jellyfishing:jellyfish_fields")), 6));
     }
 
     //For Porting to 1.16.2

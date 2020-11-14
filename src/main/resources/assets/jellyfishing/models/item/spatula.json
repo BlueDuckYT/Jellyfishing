@@ -6,16 +6,18 @@
       "layer0": "jellyfishing:item/spatula"
     }
   },
-  "thirdperson_righthand": {
-    "parent": "jellyfishing:item/spatula_in_hand"
-  },
-  "thirdperson_lefthand": {
-    "parent": "jellyfishing:item/spatula_in_hand"
-  },
-  "firstperson_righthand": {
-    "parent": "jellyfishing:item/spatula_in_hand"
-  },
-  "firstperson_lefthand": {
-    "parent": "jellyfishing:item/spatula_in_hand"
+  "perspectives": {
+    "third_person_right_hand": {
+      "parent": "jellyfishing:item/spatula_in_hand"
+    },
+    "third_person_left_hand": {
+      "parent": "jellyfishing:item/spatula_in_hand"
+    },
+    "first_person_right_hand": {
+      "parent": "jellyfishing:item/spatula_in_hand"
+    },
+    "first_person_left_hand": {
+      "parent": "jellyfishing:item/spatula_in_hand"
+    }
   }
 }

@@ -23,6 +23,7 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.spawner.AbstractSpawner;
 
 import java.util.Objects;
@@ -70,7 +71,7 @@ public class JellyfishItem extends Item {
                 blockpos1 = blockpos.offset(direction);
             }
 
-            Entity entity = this.entityType.get().spawn(world, itemstack, (PlayerEntity)null, blockpos1, SpawnReason.BUCKET, true, false);
+            Entity entity = this.entityType.get().spawn((ServerWorld) world, itemstack, (PlayerEntity)null, blockpos1, SpawnReason.BUCKET, true, false);
             if (entity != null) {
                 ((AbstractFishEntity)entity).setFromBucket(true);
             }

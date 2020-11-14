@@ -2,7 +2,6 @@ package blueduck.jellyfishing.jellyfishingmod.entities;
 
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;

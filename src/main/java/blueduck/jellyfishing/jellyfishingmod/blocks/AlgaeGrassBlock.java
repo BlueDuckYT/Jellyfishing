@@ -10,7 +10,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.DecoratedFeatureConfig;
 import net.minecraft.world.gen.feature.FlowersFeature;
-import net.minecraft.world.gen.placement.CountConfig;
 import net.minecraft.world.server.ServerWorld;
 
 import java.util.ArrayList;

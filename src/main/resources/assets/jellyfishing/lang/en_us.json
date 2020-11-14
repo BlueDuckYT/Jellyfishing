@@ -50,10 +50,13 @@
 
   "item.jellyfishing.music_disc_jellyfish_fields": "Music Disc",
   "item.jellyfishing.music_disc_jellyfish_fields.desc": "WhirlingWinds - Jellyfish Fields",
+  "item.jellyfishing.spatula": "Spatula",
+
 
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
   "entity.jellyfishing.blue_jellyfish": "Blue Jellyfish",
+  "entity.jellyfishing.spatula": "Spatula",
 
   "biome.jellyfishing.jellyfish_fields": "Jellyfish Fields",
 

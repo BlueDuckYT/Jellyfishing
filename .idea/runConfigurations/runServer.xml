@@ -5,15 +5,15 @@
     <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=SCAN,REGISTRIES,REGISTRYDUMP"/>
     <option name="PROGRAM_PARAMETERS" value=""/>
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\run"/>
-    <module name="Jellyfishing.main"/>
+    <module name="Jellyfishing 1.16.4.main"/>
     <envs>
       <env name="MOD_CLASSES" value="examplemod%%$PROJECT_DIR$\build\resources\main;examplemod%%$PROJECT_DIR$\build\classes\java\main"/>
-      <env name="MCP_MAPPINGS" value="snapshot_20200514-1.15.1"/>
-      <env name="MCP_VERSION" value="20200515.085601"/>
-      <env name="FORGE_VERSION" value="31.2.0"/>
+      <env name="MCP_MAPPINGS" value="snapshot_20201028-1.16.3"/>
+      <env name="MCP_VERSION" value="20201102.104115"/>
+      <env name="FORGE_VERSION" value="35.0.15"/>
       <env name="FORGE_GROUP" value="net.minecraftforge"/>
       <env name="target" value="fmluserdevserver"/>
-      <env name="MC_VERSION" value="1.15.2"/>
+      <env name="MC_VERSION" value="1.16.4"/>
     </envs>
     <method v="2">
       <option enabled="true" name="Make"/>

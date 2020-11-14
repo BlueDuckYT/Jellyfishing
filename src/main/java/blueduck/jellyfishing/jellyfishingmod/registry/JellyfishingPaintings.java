@@ -10,7 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class JellyfishingPaintings {
 
-    public static final DeferredRegister<PaintingType> PAINTINGS = new DeferredRegister<>(ForgeRegistries.PAINTING_TYPES, JellyfishingMod.MODID);
+    public static final DeferredRegister<PaintingType> PAINTINGS = DeferredRegister.create(ForgeRegistries.PAINTING_TYPES, JellyfishingMod.MODID);
 
     public static final RegistryObject<PaintingType> CAPTAIN = PAINTINGS.register("captain", ()-> new PaintingType(64, 48));
     public static final RegistryObject<PaintingType> BOLD_AND_BRASH = PAINTINGS.register("bold_and_brash", ()-> new PaintingType(16, 32));

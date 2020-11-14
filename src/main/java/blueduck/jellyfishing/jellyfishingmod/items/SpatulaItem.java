@@ -14,7 +14,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 
 public class SpatulaItem extends TridentItem {
@@ -38,8 +38,8 @@ public class SpatulaItem extends TridentItem {
                             p_220047_1_.sendBreakAnimation(entityLiving.getActiveHand());
                         });
                         if (j == 0) {
-                            SpatulaEntity tridententity = new SpatulaEntity(worldIn, playerentity, stack);
-                            tridententity.shoot(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
+                            SpatulaEntity tridententity = new SpatulaEntity(playerentity, worldIn, stack);
+                            tridententity.func_234612_a_(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
                             if (playerentity.abilities.isCreativeMode) {
                                 tridententity.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
                             }
@@ -66,9 +66,9 @@ public class SpatulaItem extends TridentItem {
                         f3 = f3 * (f5 / f4);
                         playerentity.addVelocity((double)f1, (double)f2, (double)f3);
                         playerentity.startSpinAttack(20);
-                        if (playerentity.onGround) {
+                        if (playerentity.isOnGround()) {
                             float f6 = 1.1999999F;
-                            playerentity.move(MoverType.SELF, new Vec3d(0.0D, (double)1.1999999F, 0.0D));
+                            playerentity.move(MoverType.SELF, new Vector3d(0.0D, (double)1.1999999F, 0.0D));
                         }
 
                         SoundEvent soundevent;

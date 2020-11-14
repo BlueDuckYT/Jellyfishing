@@ -44,4 +44,9 @@ public class SuitMaterial implements IArmorMaterial {
     public float getToughness() {
         return 0;
     }
+
+    @Override
+    public float getKnockbackResistance() {
+        return 0;
+    }
 }

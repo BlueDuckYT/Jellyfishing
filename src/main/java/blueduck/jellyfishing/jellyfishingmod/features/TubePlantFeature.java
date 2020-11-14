@@ -1,37 +1,38 @@
 package blueduck.jellyfishing.jellyfishingmod.features;
 
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingBlocks;
-import com.mojang.datafixers.Dynamic;
+import com.mojang.serialization.Codec;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SeaPickleBlock;
+import net.minecraft.block.TallSeaGrassBlock;
+import net.minecraft.state.properties.DoubleBlockHalf;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.gen.ChunkGenerator;
-import net.minecraft.world.gen.GenerationSettings;
 import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.placement.CountConfig;
+import net.minecraft.world.gen.feature.*;
 
 import java.util.Random;
 import java.util.function.Function;
 
-public class TubePlantFeature extends Feature<CountConfig> {
-    public TubePlantFeature(Function<Dynamic<?>, ? extends CountConfig> configFactoryIn) {
-        super(configFactoryIn);
+public class TubePlantFeature extends Feature<ProbabilityConfig> {
+    public TubePlantFeature(Codec<ProbabilityConfig> p_i231988_1_) {
+        super(p_i231988_1_);
     }
 
-    @Override
-    public boolean place(IWorld worldIn, ChunkGenerator<? extends GenerationSettings> generator, Random rand, BlockPos pos, CountConfig config) {
+    public boolean generate(ISeedReader reader, ChunkGenerator generator, Random rand, BlockPos pos, ProbabilityConfig config) {
         int i = 0;
 
-        for(int j = 0; j < config.count; ++j) {
+        for(int j = 0; j < config.probability; ++j) {
             int k = rand.nextInt(8) - rand.nextInt(8);
             int l = rand.nextInt(8) - rand.nextInt(8);
-            int i1 = worldIn.getHeight(Heightmap.Type.OCEAN_FLOOR, pos.getX() + k, pos.getZ() + l);
+            int i1 = reader.getHeight(Heightmap.Type.OCEAN_FLOOR, pos.getX() + k, pos.getZ() + l);
             BlockPos blockpos = new BlockPos(pos.getX() + k, i1, pos.getZ() + l);
             BlockState blockstate = JellyfishingBlocks.TUBE_PLANT.get().getDefaultState();
-            if (worldIn.getBlockState(blockpos).getBlock() == Blocks.WATER && blockstate.isValidPosition(worldIn, blockpos)) {
-                worldIn.setBlockState(blockpos, blockstate, 2);
+            if (reader.getBlockState(blockpos).getBlock() == Blocks.WATER && blockstate.isValidPosition(reader, blockpos)) {
+                reader.setBlockState(blockpos, blockstate, 2);
                 ++i;
             }
         }
@@ -39,3 +40,4 @@ public class TubePlantFeature extends Feature<CountConfig> {
         return i > 0;
     }
 }
+

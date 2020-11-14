@@ -12,7 +12,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.Tag;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.common.Tags;
@@ -33,7 +33,7 @@ public class BlueJellyBlock extends SlimeBlock {
     }
 
     private void func_226946_a_(Entity p_226946_1_) {
-        Vec3d vec3d = p_226946_1_.getMotion();
+        Vector3d vec3d = p_226946_1_.getMotion();
         if (vec3d.y < 0.0D) {
             double d0 = p_226946_1_ instanceof LivingEntity ? 1.0D : 0.8D;
             p_226946_1_.setMotion(vec3d.x, -vec3d.y * d0 * 1.2, vec3d.z);
@@ -51,7 +51,7 @@ public class BlueJellyBlock extends SlimeBlock {
     @Override
     public boolean canStickTo(BlockState state, BlockState other)
     {
-        if (new BlockTags.Wrapper(new ResourceLocation("jellyfishing:jelly_blocks")).contains(other.getBlock()) && state != other) {
+        if (BlockTags.makeWrapperTag("jellyfishing:jelly_blocks").contains(other.getBlock()) && state != other) {
             return false;
         }
         return true;
