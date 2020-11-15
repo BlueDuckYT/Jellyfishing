@@ -7,6 +7,8 @@ import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.PattyWagonRe
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.SpatulaRenderer;
 import blueduck.jellyfishing.jellyfishingmod.entities.AbstractJellyfishEntity;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
+import blueduck.jellyfishing.jellyfishingmod.misc.ConfigHelper;
+import blueduck.jellyfishing.jellyfishingmod.misc.JellyfishingConfig;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import com.google.common.collect.ImmutableSet;
 import io.netty.util.internal.ReflectionUtil;
@@ -60,6 +62,7 @@ import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
@@ -84,7 +87,10 @@ public class JellyfishingMod
 
     public static String MODID = "jellyfishing";
 
+    public static JellyfishingConfig CONFIG;
+
     public JellyfishingMod() {
+        CONFIG = ConfigHelper.register(ModConfig.Type.COMMON, JellyfishingConfig::new);
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

@@ -1,5 +1,6 @@
 package blueduck.jellyfishing.jellyfishingmod.entities;
 
+import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEnchantments;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEntities;
@@ -165,7 +166,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     }
 
     public void onCollideWithPlayer(PlayerEntity entityIn) {
-        if (canThisEntitySting && stingCounter == 0 && this.isInWater()) {
+        if (canThisEntitySting && stingCounter == 0 && this.isInWater() && JellyfishingMod.CONFIG.JELLYFISH_STING.get()) {
             stingCounter = stingTime;
             if (this.getEntityWorld().getRandom().nextDouble() < stingChance) {
                 entityIn.attackEntityFrom(JELLYFISH_STING, stingDmg);
