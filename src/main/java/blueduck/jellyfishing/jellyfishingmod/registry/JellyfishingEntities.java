@@ -28,7 +28,7 @@ public class JellyfishingEntities {
 
     public static final RegistryObject<EntityType<MinecartEntity>> PATTY_WAGON = ENTITIES.register("patty_wagon", () -> EntityType.Builder.<MinecartEntity>create(MinecartEntity::new, EntityClassification.MISC).size(0.98F, 0.7F).build(new ResourceLocation("jellyfishing", "textures/entities/patty_wagon").toString()));
 
-    public static final RegistryObject<EntityType<SpatulaEntity>> SPATULA = ENTITIES.register("spatula", () -> EntityType.Builder.<SpatulaEntity>create(SpatulaEntity::new, EntityClassification.MISC).size(0.5F, 0.5F).build(new ResourceLocation("jellyfishing", "textures/entities/patty_wagon").toString()));
+    public static final RegistryObject<EntityType<SpatulaEntity>> SPATULA = ENTITIES.register("spatula", () -> EntityType.Builder.<SpatulaEntity>create(SpatulaEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build(new ResourceLocation("jellyfishing", "textures/entities/patty_wagon").toString()));
 
 
 

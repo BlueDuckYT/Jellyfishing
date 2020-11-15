@@ -52,7 +52,7 @@ public class SpatulaItem extends TridentItem {
                             p_220047_1_.sendBreakAnimation(entityLiving.getActiveHand());
                         });
                         if (j == 0) {
-                            SpatulaEntity spatulaentity = new SpatulaEntity(playerentity, worldIn, stack);
+                            SpatulaEntity spatulaentity = new SpatulaEntity( worldIn, playerentity, stack);
                             spatulaentity.func_234612_a_(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
                             if (playerentity.abilities.isCreativeMode) {
                                 spatulaentity.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
