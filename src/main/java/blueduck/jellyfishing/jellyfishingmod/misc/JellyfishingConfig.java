@@ -12,6 +12,8 @@ public class JellyfishingConfig {
 
     public ConfigHelper.ConfigValueListener<Integer> BIOME_WEIGHT;
     public ConfigHelper.ConfigValueListener<Boolean> JELLYFISH_STING;
+    public ConfigHelper.ConfigValueListener<Boolean> JELLYFISH_FISHABLE;
+    public ConfigHelper.ConfigValueListener<Boolean> NETS_FISHABLE;
 
 
     public JellyfishingConfig(ForgeConfigSpec.Builder builder, ConfigHelper.Subscriber subscriber) {
@@ -22,6 +24,9 @@ public class JellyfishingConfig {
         this.JELLYFISH_STING= subscriber.subscribe(builder
                 .comment("Should Jellyfish sting?")
                 .define("jellyfish_sting", true, o -> o instanceof Boolean));
+        this.JELLYFISH_FISHABLE= subscriber.subscribe(builder
+                .comment("Should Jellyfish Nets be fishable with a fishing rod?")
+                .define("nets_fishable", true, o -> o instanceof Boolean));
         builder.pop();
     }
 
