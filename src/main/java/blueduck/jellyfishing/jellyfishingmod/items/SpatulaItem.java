@@ -38,14 +38,14 @@ public class SpatulaItem extends TridentItem {
                             p_220047_1_.sendBreakAnimation(entityLiving.getActiveHand());
                         });
                         if (j == 0) {
-                            SpatulaEntity tridententity = new SpatulaEntity(playerentity, worldIn, stack);
-                            tridententity.func_234612_a_(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
+                            SpatulaEntity spatulaentity = new SpatulaEntity(playerentity, worldIn, stack);
+                            spatulaentity.func_234612_a_(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
                             if (playerentity.abilities.isCreativeMode) {
-                                tridententity.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
+                                spatulaentity.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
                             }
 
-                            worldIn.addEntity(tridententity);
-                            worldIn.playMovingSound((PlayerEntity)null, tridententity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                            worldIn.addEntity(spatulaentity);
+                            worldIn.playMovingSound((PlayerEntity)null, spatulaentity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0F, 1.0F);
                             if (!playerentity.abilities.isCreativeMode) {
                                 playerentity.inventory.deleteStack(stack);
                             }
