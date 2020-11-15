@@ -16,7 +16,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class SpatulaRenderer extends EntityRenderer<SpatulaEntity> {
-    public static final ResourceLocation SPATULA = new ResourceLocation("jellyfishing:textures/entity/spatula.png");
+    public static final ResourceLocation SPATULA = new ResourceLocation("jellyfishing:textures/entity/spatula_entity.png");
     private final SpatulaModel spatulaModel = new SpatulaModel();
 
     public SpatulaRenderer(EntityRendererManager renderManagerIn) {

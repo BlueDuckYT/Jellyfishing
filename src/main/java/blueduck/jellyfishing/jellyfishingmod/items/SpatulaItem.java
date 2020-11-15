@@ -1,11 +1,17 @@
 package blueduck.jellyfishing.jellyfishingmod.items;
 
 import blueduck.jellyfishing.jellyfishingmod.entities.SpatulaEntity;
+import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Multimap;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MoverType;
+import net.minecraft.entity.ai.attributes.Attribute;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.TridentItem;
 import net.minecraft.item.UseAction;
@@ -18,14 +24,22 @@ import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 
 public class SpatulaItem extends TridentItem {
+
+    private final Multimap<Attribute, AttributeModifier> spatulaAttributes;
+
     public SpatulaItem(Properties builder) {
         super(builder);
+        ImmutableMultimap.Builder<Attribute, AttributeModifier> builderTwo = ImmutableMultimap.builder();
+        builderTwo.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Tool modifier", 4.0D, AttributeModifier.Operation.ADDITION));
+        builderTwo.put(Attributes.ATTACK_SPEED, new AttributeModifier(ATTACK_SPEED_MODIFIER, "Tool modifier", (double)-2.3F, AttributeModifier.Operation.ADDITION));
+        this.spatulaAttributes = builderTwo.build();
     }
 
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.SPEAR;
     }
 
+    @Override
     public void onPlayerStoppedUsing(ItemStack stack, World worldIn, LivingEntity entityLiving, int timeLeft) {
         if (entityLiving instanceof PlayerEntity) {
             PlayerEntity playerentity = (PlayerEntity)entityLiving;
@@ -86,5 +100,8 @@ public class SpatulaItem extends TridentItem {
                 }
             }
         }
+    }
+    public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
+        return equipmentSlot == EquipmentSlotType.MAINHAND ? this.spatulaAttributes : super.getAttributeModifiers(equipmentSlot);
     }
 }

@@ -1,4 +1,4 @@
-package blueduck.jellyfishing.jellyfishingmod.client.entity.model;// Made with Blockbench 3.7.3
+package blueduck.jellyfishing.jellyfishingmod.client.entity.model;// Made with Blockbench 3.7.4
 // Exported for Minecraft version 1.15
 // Paste this class into your mod and generate all required imports
 
@@ -8,7 +8,6 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.entity.Entity;
 
 public class SpatulaModel extends EntityModel<SpatulaEntity> {
 	private final ModelRenderer bone;
@@ -19,18 +18,17 @@ public class SpatulaModel extends EntityModel<SpatulaEntity> {
 
 		bone = new ModelRenderer(this);
 		bone.setRotationPoint(8.0F, 24.0F, -8.0F);
-		bone.setTextureOffset(22, 28).addBox(-10.0F, -7.0F, 7.0F, 3.0F, 7.0F, 3.0F, 0.0F, false);
-		bone.setTextureOffset(23, 8).addBox(-9.0F, -16.0F, 8.0F, 1.0F, 9.0F, 1.0F, 0.0F, false);
-		bone.setTextureOffset(22, 9).addBox(-10.0F, -17.0F, 8.0F, 3.0F, 1.0F, 1.0F, 0.0F, false);
-		bone.setTextureOffset(24, 8).addBox(-11.0F, -18.0F, 8.0F, 5.0F, 1.0F, 1.0F, 0.0F, true);
-		bone.setTextureOffset(20, 3).addBox(-12.0F, -23.0F, 8.0F, 7.0F, 5.0F, 1.0F, 0.0F, false);
+		bone.setTextureOffset(0, 18).addBox(-10.0F, -7.0F, 7.0F, 3.0F, 7.0F, 3.0F, 0.0F, false);
+		bone.setTextureOffset(12, 18).addBox(-9.0F, -16.0F, 8.0F, 1.0F, 9.0F, 1.0F, 0.0F, false);
+		bone.setTextureOffset(0, 28).addBox(-10.0F, -17.0F, 8.0F, 3.0F, 1.0F, 1.0F, 0.0F, false);
+		bone.setTextureOffset(0, 30).addBox(-11.0F, -18.0F, 8.0F, 5.0F, 1.0F, 1.0F, 0.0F, true);
+		bone.setTextureOffset(0, 12).addBox(-12.0F, -23.0F, 8.0F, 7.0F, 5.0F, 1.0F, 0.0F, false);
 	}
 
 	@Override
-	public void setRotationAngles(SpatulaEntity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
+	public void setRotationAngles(SpatulaEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
+		//previously the render function, render code was moved to a method below
 	}
-
 
 	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
