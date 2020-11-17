@@ -8,7 +8,7 @@ import net.minecraft.network.IPacket;
 import net.minecraft.network.play.server.SSpawnObjectPacket;
 import net.minecraft.world.World;
 
-public class PattyWagonEntity extends Entity {
+public class PattyWagonEntity extends MinecartEntity {
     public PattyWagonEntity(EntityType<?> p_i50126_1_, World p_i50126_2_) {
         super(p_i50126_1_, p_i50126_2_);
     }

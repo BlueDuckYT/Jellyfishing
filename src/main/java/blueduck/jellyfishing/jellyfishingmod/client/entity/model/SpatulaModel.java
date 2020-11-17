@@ -18,11 +18,11 @@ public class SpatulaModel extends EntityModel<SpatulaEntity> {
 
 		bone = new ModelRenderer(this);
 		bone.setRotationPoint(8.0F, 24.0F, -8.0F);
-		bone.setTextureOffset(0, 18).addBox(-10.0F, -7.0F, 7.0F, 3.0F, 7.0F, 3.0F, 0.0F, false);
-		bone.setTextureOffset(12, 18).addBox(-9.0F, -16.0F, 8.0F, 1.0F, 9.0F, 1.0F, 0.0F, false);
-		bone.setTextureOffset(0, 28).addBox(-10.0F, -17.0F, 8.0F, 3.0F, 1.0F, 1.0F, 0.0F, false);
-		bone.setTextureOffset(0, 30).addBox(-11.0F, -18.0F, 8.0F, 5.0F, 1.0F, 1.0F, 0.0F, true);
-		bone.setTextureOffset(0, 12).addBox(-12.0F, -23.0F, 8.0F, 7.0F, 5.0F, 1.0F, 0.0F, false);
+		bone.setTextureOffset(0, 18).addBox(-10.0F, -8.0F, 7.0F, 3.0F, 7.0F, 3.0F, 0.0F, false);
+		bone.setTextureOffset(12, 18).addBox(-9.0F, -17.0F, 8.0F, 1.0F, 9.0F, 1.0F, 0.0F, false);
+		bone.setTextureOffset(0, 28).addBox(-10.0F, -18.0F, 8.0F, 3.0F, 1.0F, 1.0F, 0.0F, false);
+		bone.setTextureOffset(0, 30).addBox(-11.0F, -19.0F, 8.0F, 5.0F, 1.0F, 1.0F, 0.0F, true);
+		bone.setTextureOffset(0, 12).addBox(-12.0F, -24.0F, 8.0F, 7.0F, 5.0F, 1.0F, 0.0F, false);
 	}
 
 	@Override

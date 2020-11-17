@@ -231,11 +231,11 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
 
                 this.remove();
 
-                return ActionResultType.PASS;
+                return ActionResultType.SUCCESS;
             } else {
                 this.setNewVelocity(player, dodgeSpeed);
                 player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
-                return ActionResultType.PASS;
+                return ActionResultType.SUCCESS;
             }
         } else {
             return super.func_230254_b_(player, hand);
