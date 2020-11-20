@@ -6,7 +6,7 @@
     "textures": {
       "layer0": "jellyfishing:item/golden_spatula"
     }
-  }
+  },
   "perspectives": {
     "third_person_right_hand": {
       "parent": "jellyfishing:item/golden_spatula_in_hand"

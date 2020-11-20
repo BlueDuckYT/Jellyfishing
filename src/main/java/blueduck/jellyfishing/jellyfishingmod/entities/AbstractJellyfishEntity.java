@@ -192,55 +192,58 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     @Override
     protected ActionResultType func_230254_b_(PlayerEntity player, Hand hand) {
         ItemStack itemstack = player.getHeldItem(hand);
-        player.swingArm(hand);
-        if (!player.getEntityWorld().isRemote() && itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && this.isAlive() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
-            if (!this.canDespawn(1) || dodgeChance / (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.AGILITY.get(), itemstack) + 1) < this.getEntityWorld().getRandom().nextDouble()) {
-                if (0.02 > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
-                    this.entityDropItem(new ItemStack(JellyfishingItems.MUSIC_DISC_JELLYFISH_FIELDS.get(), 1), -0.5F);
-                }
-                player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
-                this.playSound(SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1.0F, 1.0F);
-                if (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack) == 0 || (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack) > 0 && player.getEntityWorld().getRandom().nextDouble() < (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack)/3))) {
-                    itemstack.damageItem(1, player, (p_220045_0_) -> {
-                        p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
-                    });
-                }
-                if (this.canDespawn(1) && player.getEntityWorld().getRandom().nextDouble() < (0.1 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack))) {
-                    try {
-                        LootContext.Builder lootcontext$builder = (new LootContext.Builder(this.getServer().getWorld(this.getEntityWorld().getDimensionKey()))).withParameter(LootParameters.field_237457_g_, this.getMotion()).withParameter(LootParameters.TOOL, itemstack).withRandom(this.rand).withLuck(player.getLuck() + (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) - 1));
-                        lootcontext$builder.withParameter(LootParameters.KILLER_ENTITY, player).withParameter(LootParameters.THIS_ENTITY, this);
-                        LootTable loottable = this.world.getServer().getLootTableManager().getLootTableFromLocation(LootTables.GAMEPLAY_FISHING);
-                        List<ItemStack> list = loottable.generate(lootcontext$builder.build(LootParameterSets.FISHING));
-                        this.entityDropItem(list.get(0));
-                        this.playSound(SoundEvents.ENTITY_FISHING_BOBBER_SPLASH, 0.25F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.4F);
+        if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
+            player.swingArm(hand);
+            if (!player.getEntityWorld().isRemote() && this.isAlive()) {
+                if (!this.canDespawn(1) || dodgeChance / (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.AGILITY.get(), itemstack) + 1) < this.getEntityWorld().getRandom().nextDouble()) {
+                    if (0.01 > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
+                        this.entityDropItem(new ItemStack(JellyfishingItems.MUSIC_DISC_JELLYFISH_FIELDS.get(), 1), -0.5F);
                     }
-                    catch(Exception e) {
-                        this.playSound(SoundEvents.ENTITY_FISHING_BOBBER_RETRIEVE, 1.0F, 1.0F);
+                    if (0.01 > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
+                        this.entityDropItem(new ItemStack(JellyfishingItems.GREASE_BALL.get(), 1), -0.5F);
                     }
-                }
-                ItemStack itemstack1 = this.getJellyfishItem();
-                this.setBucketData(itemstack1);
-                if (!this.world.isRemote) {
-                    CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayerEntity) player, itemstack1);
-                }
+                    player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
+                    this.playSound(SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1.0F, 1.0F);
+                    if (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack) == 0 || (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack) > 0 && player.getEntityWorld().getRandom().nextDouble() < (EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, itemstack) / 3))) {
+                        itemstack.damageItem(1, player, (p_220045_0_) -> {
+                            p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+                        });
+                    }
+                    if (this.canDespawn(1) && player.getEntityWorld().getRandom().nextDouble() < (0.1 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack))) {
+                        try {
+                            LootContext.Builder lootcontext$builder = (new LootContext.Builder(this.getServer().getWorld(this.getEntityWorld().getDimensionKey()))).withParameter(LootParameters.field_237457_g_, this.getMotion()).withParameter(LootParameters.TOOL, itemstack).withRandom(this.rand).withLuck(player.getLuck() + (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) - 1));
+                            lootcontext$builder.withParameter(LootParameters.KILLER_ENTITY, player).withParameter(LootParameters.THIS_ENTITY, this);
+                            LootTable loottable = this.world.getServer().getLootTableManager().getLootTableFromLocation(LootTables.GAMEPLAY_FISHING);
+                            List<ItemStack> list = loottable.generate(lootcontext$builder.build(LootParameterSets.FISHING));
+                            this.entityDropItem(list.get(0));
+                            this.playSound(SoundEvents.ENTITY_FISHING_BOBBER_SPLASH, 0.25F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.4F);
+                        } catch (Exception e) {
+                            this.playSound(SoundEvents.ENTITY_FISHING_BOBBER_RETRIEVE, 1.0F, 1.0F);
+                        }
+                    }
+                    ItemStack itemstack1 = this.getJellyfishItem();
+                    this.setBucketData(itemstack1);
+                    if (!this.world.isRemote) {
+                        CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayerEntity) player, itemstack1);
+                    }
 
-                if (itemstack.isEmpty()) {
-                    player.setHeldItem(hand, itemstack1);
-                } else if (!player.inventory.addItemStackToInventory(itemstack1)) {
-                    player.dropItem(itemstack1, false);
+                    if (itemstack.isEmpty()) {
+                        player.setHeldItem(hand, itemstack1);
+                    } else if (!player.inventory.addItemStackToInventory(itemstack1)) {
+                        player.dropItem(itemstack1, false);
+                    }
+
+                    this.remove();
+
+                    return ActionResultType.SUCCESS;
+                } else {
+                    this.setNewVelocity(player, dodgeSpeed);
+                    player.getCooldownTracker().setCooldown(itemstack.getItem(), 20 - 10 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.AGILITY.get(), itemstack));
+                    return ActionResultType.SUCCESS;
                 }
-
-                this.remove();
-
-                return ActionResultType.SUCCESS;
-            } else {
-                this.setNewVelocity(player, dodgeSpeed);
-                player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
-                return ActionResultType.SUCCESS;
             }
-        } else {
-            return super.func_230254_b_(player, hand);
         }
+        return  super.func_230254_b_(player, hand);
     }
 
     public void writeAdditional(CompoundNBT compound) {
