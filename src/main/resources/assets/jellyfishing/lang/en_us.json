@@ -108,8 +108,10 @@
 
   "death.attack.sting.player": "{Player} was stung by Jellyfish",
 
-  "jellyfishing.subtitle.sting": "Jellyfish Stings"
+  "jellyfishing.subtitle.sting": "Jellyfish Stings",
 
+  "enchantment.jellyfishing.agility.desc": "Lessens the chance that a Jellyfish will dodge your net",
+  "enchantment.jellyfishing.plundering.desc": "Has a chance to drop fishing loot when catching Jellyfish"
 
 
 }
