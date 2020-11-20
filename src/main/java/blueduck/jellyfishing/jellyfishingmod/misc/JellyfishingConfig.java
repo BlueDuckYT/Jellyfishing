@@ -25,8 +25,11 @@ public class JellyfishingConfig {
                 .comment("Should Jellyfish sting?")
                 .define("jellyfish_sting", true, o -> o instanceof Boolean));
         this.JELLYFISH_FISHABLE= subscriber.subscribe(builder
+                .comment("Should Jellyfish be fishable with a fishing rod?")
+                .define("jellyfish_fishable", true, o -> o instanceof Boolean));
+        this.NETS_FISHABLE = subscriber.subscribe(builder
                 .comment("Should Jellyfish Nets be fishable with a fishing rod?")
-                .define("nets_fishable", true, o -> o instanceof Boolean));
+                .define("nets_fishable", true, (o) -> { return o instanceof Boolean; }));
         builder.pop();
     }
 

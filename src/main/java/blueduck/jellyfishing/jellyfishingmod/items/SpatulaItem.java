@@ -103,6 +103,14 @@ public class SpatulaItem extends TridentItem {
             }
         }
     }
+    public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        stack.damageItem(1, attacker, (entity) -> {
+            entity.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+        });
+        target.setMotion(target.getMotion().getX(), target.getMotion().getY() + 0.5, target.getMotion().getZ());
+        return true;
+    }
+
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
         return equipmentSlot == EquipmentSlotType.MAINHAND ? this.spatulaAttributes : super.getAttributeModifiers(equipmentSlot);
     }

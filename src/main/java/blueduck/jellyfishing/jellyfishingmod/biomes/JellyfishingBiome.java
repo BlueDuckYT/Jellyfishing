@@ -41,11 +41,6 @@ public class JellyfishingBiome {
         return BiomeManager.BiomeType.WARM;
     }
 
-    public int getWeight() {
-        return 5;
-    }
-
-
     public RegistryKey<Biome> getKey() {
         return RegistryKey.getOrCreateKey(Registry.BIOME_KEY, Objects.requireNonNull(WorldGenRegistries.BIOME.getKey(this.biome)));
     }
