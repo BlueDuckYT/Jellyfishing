@@ -44,7 +44,10 @@ public class JellyfishingItems {
     public static final RegistryObject<Item> TRIPLE_GOOBERBERRY_SUNRISE = ITEMS.register("triple_gooberberry_sunrise", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(10).saturation(0.35F).fastToEat().build())));
 
     public static final RegistryObject<Item> KRABBY_PATTY = ITEMS.register("krabby_patty", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(10).saturation(1.5F).meat().build()).rarity(Rarity.RARE)));
-    public static final RegistryObject<Item> SPATULA = ITEMS.register("spatula", () -> new SpatulaItem(new Item.Properties().maxDamage(100).group(ItemGroup.COMBAT).addToolType(ToolType.SHOVEL, 2)));
+
+    public static final RegistryObject<Item> SPATULA = ITEMS.register("spatula", () -> new SpatulaItem(new Item.Properties().maxDamage(250).group(ItemGroup.COMBAT), 3, -2, ItemTier.IRON));
+
+    public static final RegistryObject<Item> GOLDEN_SPATULA = ITEMS.register("golden_spatula", () -> new SpatulaItem(new Item.Properties().maxDamage(2031).group(ItemGroup.COMBAT), 3, -1.5F, ItemTier.NETHERITE));
 
 
     public static final SuitMaterial SUIT_MATERIAL = new SuitMaterial();

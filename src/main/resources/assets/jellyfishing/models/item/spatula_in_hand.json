@@ -71,14 +71,6 @@
 			}
 		}
 	],
-	"overrides": [
-		{
-			"predicate": {
-				"throwing": 1
-			},
-			"model": "jellyfishing:item/spatula_throwing"
-		}
-	],
 	"display": {
 		"thirdperson_righthand": {
 			"translation": [-0.5, 2.75, 1.5]

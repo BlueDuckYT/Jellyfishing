@@ -207,7 +207,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                 }
                 if (this.canDespawn(1) && player.getEntityWorld().getRandom().nextDouble() < (0.1 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack))) {
                     try {
-                        LootContext.Builder lootcontext$builder = (new LootContext.Builder((ServerWorld) this.world)).withParameter(LootParameters.TOOL, itemstack).withRandom(this.rand).withLuck(player.getLuck() + (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) - 1));
+                        LootContext.Builder lootcontext$builder = (new LootContext.Builder(this.getServer().getWorld(this.getEntityWorld().getDimensionKey()))).withParameter(LootParameters.field_237457_g_, this.getMotion()).withParameter(LootParameters.TOOL, itemstack).withRandom(this.rand).withLuck(player.getLuck() + (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) - 1));
                         lootcontext$builder.withParameter(LootParameters.KILLER_ENTITY, player).withParameter(LootParameters.THIS_ENTITY, this);
                         LootTable loottable = this.world.getServer().getLootTableManager().getLootTableFromLocation(LootTables.GAMEPLAY_FISHING);
                         List<ItemStack> list = loottable.generate(lootcontext$builder.build(LootParameterSets.FISHING));

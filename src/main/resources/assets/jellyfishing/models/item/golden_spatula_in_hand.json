@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "jellyfishing:entity/spatula",
-		"particle": "jellyfishing:entity/spatula"
+		"0": "jellyfishing:entity/golden_spatula",
+		"particle": "jellyfishing:entity/golden_spatula"
 	},
 	"elements": [
 		{
@@ -73,20 +73,13 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [-180, 0, 0],
 			"translation": [-0.5, 2.75, 1.5]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [-180, 0, 0],
 			"translation": [0.5, 2.75, 1.5]
 		},
 		"firstperson_righthand": {
-			"rotation": [-117, 0, 0],
-			"translation": [-0.5, 13, 5.5]
-		},
-		"firstperson_lefthand": {
-			"rotation": [-117, 0, 0],
-			"translation": [-0.5, 13, 5.5]
+			"rotation": [-24, 0, 0]
 		},
 		"head": {
 			"translation": [0, 9, 0]
