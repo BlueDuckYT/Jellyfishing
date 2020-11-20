@@ -101,6 +101,10 @@
   "advancements.jellyfishing.ice_cream.description": "Craft a Triple Gooberberry Sunrise",
   "advancements.jellyfishing.krabby_patty.title": "100 Dollars for a Krabby Patty?",
   "advancements.jellyfishing.krabby_patty.description": "Purchase a Krabby Patty",
+  "advancements.jellyfishing.spatula.title": "World's Best Frycook",
+  "advancements.jellyfishing.spatula.description": "Craft a Spatula",
+  "advancements.jellyfishing.golden_spatula.title": "The Golden Spatula",
+  "advancements.jellyfishing.golden_spatula.description": "Create a Golden Spatula",
 
   "death.attack.sting.player": "{Player} was stung by Jellyfish",
 
