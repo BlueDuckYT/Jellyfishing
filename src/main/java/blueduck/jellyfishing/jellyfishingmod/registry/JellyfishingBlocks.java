@@ -55,7 +55,7 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> CORALSTONE_SLAB = BLOCKS.register("coralstone_slab", () -> new SlabBlock(Block.Properties.from(CORALSTONE.get())));
     public static final RegistryObject<Item> CORALSTONE_SLAB_ITEM = ITEMS.register("coralstone_slab", () -> new BlockItemBase(CORALSTONE_SLAB.get()));
 
-    public static final RegistryObject<Block> POLISHED_CORALSTONE = BLOCKS.register("polished_coralstone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.PURPLE).sound(SoundType.STONE).hardnessAndResistance(1.5F, 1F).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
+    public static final RegistryObject<Block> POLISHED_CORALSTONE = BLOCKS.register("polished_coralstone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.PURPLE).sound(SoundType.STONE).hardnessAndResistance(1.5F, 1F).harvestTool(ToolType.PICKAXE).setRequiresTool()));
     public static final RegistryObject<Item> POLISHED_CORALSTONE_ITEM = ITEMS.register("polished_coralstone", () -> new BlockItemBase(POLISHED_CORALSTONE.get()));
 
     public static final RegistryObject<Block> POLISHED_CORALSTONE_STAIRS = BLOCKS.register("polished_coralstone_stairs", () -> new StairsBlock(() -> POLISHED_CORALSTONE.get().getDefaultState(), Block.Properties.from(POLISHED_CORALSTONE.get())));
