@@ -33,7 +33,7 @@ public class JellyfishFields extends JellyfishingBiome {
     static final BiomeGenerationSettings.Builder GENERATION_SETTINGS = (new BiomeGenerationSettings.Builder()).withSurfaceBuilder(SURFACE_BUILDER);
 
     public JellyfishFields() {
-        super(CLIMATE, Biome.Category.OCEAN, -.8F, .15F, (new BiomeAmbience.Builder()).setWaterColor(4566523).setWaterFogColor(604792).setFogColor(12638463).withSkyColor(3448555).setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).build(), GENERATION_SETTINGS.build(), SPAWN_SETTINGS.copy());
+        super(CLIMATE, Biome.Category.OCEAN, -1.2F, .15F, (new BiomeAmbience.Builder()).setWaterColor(4566523).setWaterFogColor(604792).setFogColor(12638463).withSkyColor(3448555).setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).build(), GENERATION_SETTINGS.build(), SPAWN_SETTINGS.copy());
     }
     static {
         GENERATION_SETTINGS.withStructure(StructureFeatures.VILLAGE_PLAINS);

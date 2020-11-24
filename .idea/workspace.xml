@@ -5,9 +5,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Advancements">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="1.16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/machine_front.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/machine_front.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/machine_front_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/machine_front_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/machine_front_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/machine_front_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/machine_front_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/machine_front_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_brittle_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_brittle_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_full.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/seanut_plant_full.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/tube_plant.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/tube_plant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/blue_jellyfish.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/blue_jellyfish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/jellyfish.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/jellyfish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/roasted_seanut.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/roasted_seanut.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/seanut.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/seanut.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/seanut_brittle.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/seanut_brittle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/jellyfish.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/jellyfish.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,13 +255,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Added kazmurenko's russian translation">
-      <created>1598010573773</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1598010573774</updated>
     </task>
     <task id="LOCAL-00095" summary="Added russian language">
       <created>1598184119112</created>
@@ -583,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605899942587</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Enchantment Description compat">
+      <created>1605908114586</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1605908114587</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +616,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="More stuff and krabby patty added" />
     <MESSAGE value="fixed stuff" />
     <MESSAGE value="Added texture for krabby patty, changed stuff" />
     <MESSAGE value="Texture change" />
@@ -625,7 +640,8 @@
     <MESSAGE value="Fixes models, adds golden spatula" />
     <MESSAGE value="Added swing anim, grease, golden spatula" />
     <MESSAGE value="Advancements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Advancements" />
+    <MESSAGE value="Enchantment Description compat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enchantment Description compat" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -656,22 +672,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601160840090" />
-    <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1605900763489">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1606012382639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605900763489" />
-    <state width="1493" height="139" key="GridCell.Tab.0.center" timestamp="1605900763488">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606012382639" />
+    <state width="1493" height="139" key="GridCell.Tab.0.center" timestamp="1606012382639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605900763488" />
-    <state width="1493" height="139" key="GridCell.Tab.0.left" timestamp="1605900763488">
+    <state width="1493" height="139" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606012382639" />
+    <state width="1493" height="139" key="GridCell.Tab.0.left" timestamp="1606012382639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605900763488" />
-    <state width="1493" height="139" key="GridCell.Tab.0.right" timestamp="1605900763489">
+    <state width="1493" height="139" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606012382639" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right" timestamp="1606012382639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605900763489" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606012382639" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1599159649193">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
