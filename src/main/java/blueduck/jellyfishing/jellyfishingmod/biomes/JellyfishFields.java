@@ -47,7 +47,7 @@ public class JellyfishFields extends JellyfishingBiome {
 //        GENERATION_SETTINGS.withFeature(8, () -> JellyfishingConfiguredFeatures.CONFIGURED_SEANUT_BUSH);
 //        GENERATION_SETTINGS.withFeature(6, () -> JellyfishingConfiguredFeatures.CONFIGURED_CORALSTONE_REPLACEMENT);
 
-        SPAWN_SETTINGS.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(JellyfishingEntities.JELLYFISH.get(), 100, 1, 1));
-        SPAWN_SETTINGS.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(JellyfishingEntities.BLUE_JELLYFISH.get(), 10, 1, 1));
+        SPAWN_SETTINGS.withSpawner(EntityClassification.WATER_AMBIENT, new MobSpawnInfo.Spawners(JellyfishingEntities.JELLYFISH.get(), 100, 1, 1));
+        SPAWN_SETTINGS.withSpawner(EntityClassification.WATER_AMBIENT, new MobSpawnInfo.Spawners(JellyfishingEntities.BLUE_JELLYFISH.get(), 10, 1, 1));
     }
 }
