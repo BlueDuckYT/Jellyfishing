@@ -43,7 +43,7 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> SEANUT_BRITTLE_BLOCK = BLOCKS.register("seanut_brittle_block", () -> new Block(Block.Properties.create(Material.GLASS, MaterialColor.BROWN).sound(SoundType.STONE).hardnessAndResistance(0.3F, 0.3F).harvestTool(ToolType.PICKAXE).harvestLevel(0)));
     public static final RegistryObject<Item> SEANUT_BRITTLE_BLOCK_ITEM = ITEMS.register("seanut_brittle_block", () -> new BlockItemBase(SEANUT_BRITTLE_BLOCK.get()));
 
-    public static final RegistryObject<Block> CORALSTONE = BLOCKS.register("coralstone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.PURPLE).sound(SoundType.STONE).hardnessAndResistance(1.5F, 1F).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
+    public static final RegistryObject<Block> CORALSTONE = BLOCKS.register("coralstone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.PURPLE).sound(SoundType.STONE).hardnessAndResistance(1.5F, 1F).harvestTool(ToolType.PICKAXE).setRequiresTool()));
     public static final RegistryObject<Item> CORALSTONE_ITEM = ITEMS.register("coralstone", () -> new BlockItemBase(CORALSTONE.get()));
 
     public static final RegistryObject<Block> CORALSTONE_WALL = BLOCKS.register("coralstone_wall", () -> new WallBlock(Block.Properties.from(CORALSTONE.get())));
