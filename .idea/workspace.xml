@@ -5,8 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixes nether portals in Jellyfish Fields">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added coral plants to the block tag, will now spawn in coral reefs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/kelp_shake.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/kelp_shake.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,13 +239,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00103" summary="Added Agility Enchantment">
-      <created>1599141569901</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1599141569901</updated>
     </task>
     <task id="LOCAL-00104" summary="Loot spawning in chests">
       <created>1599143881384</created>
@@ -582,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606263266286</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="Added coral plants to the block tag, will now spawn in coral reefs">
+      <created>1606264548813</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1606264548813</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -599,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Actually Fixed Spawn Eggs" />
     <MESSAGE value="Fixed absurdly large saturation values" />
     <MESSAGE value="Allows for new Jelly Blocks to be made and adds patty wagon assets" />
     <MESSAGE value="1.16.4 Port and spatula" />
@@ -624,7 +624,8 @@
     <MESSAGE value="Fixes jellyfish spawning" />
     <MESSAGE value="Actually fixed" />
     <MESSAGE value="Fixes nether portals in Jellyfish Fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes nether portals in Jellyfish Fields" />
+    <MESSAGE value="Added coral plants to the block tag, will now spawn in coral reefs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added coral plants to the block tag, will now spawn in coral reefs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -679,10 +680,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606261537764">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606264691674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606261537764" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606264691674" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
