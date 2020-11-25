@@ -5,9 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Actually fixed">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixes nether portals in Jellyfish Fields">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +123,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
+  <component name="RunManager" selected="Application.runClient">
     <configuration name="Jellyfishing 1.16.4 [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -239,13 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00102" summary="Changed recipe for Triple Gooberberry Sunrise">
-      <created>1599098048306</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1599098048306</updated>
     </task>
     <task id="LOCAL-00103" summary="Added Agility Enchantment">
       <created>1599141569901</created>
@@ -583,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606261535966</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Fixes nether portals in Jellyfish Fields">
+      <created>1606263266286</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1606263266286</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed spawn eggs" />
     <MESSAGE value="Actually Fixed Spawn Eggs" />
     <MESSAGE value="Fixed absurdly large saturation values" />
     <MESSAGE value="Allows for new Jelly Blocks to be made and adds patty wagon assets" />
@@ -625,7 +623,8 @@
     <MESSAGE value="Removed jolly box compat from this mod's end" />
     <MESSAGE value="Fixes jellyfish spawning" />
     <MESSAGE value="Actually fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actually fixed" />
+    <MESSAGE value="Fixes nether portals in Jellyfish Fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes nether portals in Jellyfish Fields" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
