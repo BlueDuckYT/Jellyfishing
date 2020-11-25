@@ -37,7 +37,7 @@ public class JellyfishFields extends JellyfishingBiome {
     }
     static {
         GENERATION_SETTINGS.withStructure(StructureFeatures.VILLAGE_PLAINS);
-        GENERATION_SETTINGS.withStructure(StructureFeatures.RUINED_PORTAL);
+        GENERATION_SETTINGS.withStructure(StructureFeatures.RUINED_PORTAL_OCEAN);
 
         DefaultBiomeFeatures.withOverworldOres(GENERATION_SETTINGS);
 
