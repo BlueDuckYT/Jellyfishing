@@ -176,6 +176,7 @@ public class JellyfishingMod
                 event.getGeneration().withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingConfiguredFeatures.CONFIGURED_TUBE_PLANT);
                 event.getGeneration().withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingConfiguredFeatures.CONFIGURED_SEANUT_BUSH);
                 event.getGeneration().withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, JellyfishingConfiguredFeatures.CONFIGURED_CORALSTONE_REPLACEMENT);
+
             }
         }
         @SubscribeEvent
@@ -194,6 +195,9 @@ public class JellyfishingMod
             }
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/spawn_bonus_chest"))) {
                 event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/kelp_mustache"))).name("jellyfishing_inject").build());
+            }
+            if (event.getName().equals(new ResourceLocation("minecraft", "chests/end_city_treasure"))) {
+                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/end_city_treasure"))).name("jellyfishing_inject").build());
             }
 
 
