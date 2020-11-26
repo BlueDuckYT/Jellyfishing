@@ -25,18 +25,22 @@ public class CloudParticle extends SpriteTexturedParticle {
     public CloudParticle(World worldIn, double xCoordIn, double yCoordIn, double zCoordIn, double xSpeedIn,
                          double ySpeedIn, double zSpeedIn) {
         super((ClientWorld) worldIn, xCoordIn, yCoordIn, zCoordIn, xSpeedIn, ySpeedIn, zSpeedIn);
+//        if (this.rand.nextFloat() < 0.975) {
+//            this.posY = 0;
+//            this.setExpired();
+//        }
 
-        this.motionX = xSpeedIn;
-        this.motionY = ySpeedIn;
-        this.motionZ = zSpeedIn;
+        this.motionX = 0.1f * (this.rand.nextFloat()) - 0.05f;
+        this.motionY = 0.1f * (this.rand.nextFloat()) - 0.05f;
+        this.motionZ = 0.1f * (this.rand.nextFloat()) - 0.05f;
         this.posX = xCoordIn;
         this.posY = yCoordIn;
         this.posZ = zCoordIn;
-        this.particleScale = 0.1f * (this.rand.nextFloat() * 0.2f + 1.7f);
+        this.particleScale = 0.1f * (this.rand.nextFloat() * 0.5f + 1.7f);
         this.particleRed = .5F;
         this.particleGreen = .5F;
         this.particleBlue = .5F;
-        this.maxAge = (int) (Math.random() * 10.0d) + 40;
+        this.maxAge = (int) (Math.random() * 100.0d) + 400;
     }
 
     @Override
@@ -46,13 +50,10 @@ public class CloudParticle extends SpriteTexturedParticle {
         this.prevPosZ = this.posZ;
         if (this.age++ >= this.maxAge) {
             this.setExpired();
-        } else {
-            float f = (float) this.age / (float) this.maxAge;
-            float f1 = -f + f * f * 2.0F;
-            float f2 = 1.0F - f1;
-            this.posX = this.posX + this.motionX * (double) f2;
-            this.posY = this.posY + this.motionY * (double) f2 + (double) (0.2F - f);
-            this.posZ = this.posZ + this.motionZ * (double) f2;
+        } else if (false) {
+            this.posX += this.motionX;
+            this.posY += this.motionY;
+            this.posZ += this.motionZ;
         }
     }
 

@@ -1,5 +1,8 @@
 {
   "textures": [
-    "jellyfishing:cloud_red"
+    "jellyfishing:cloud_red",
+    "jellyfishing:cloud_blue",
+    "jellyfishing:cloud_green",
+    "jellyfishing:cloud_orange"
   ]
 }
