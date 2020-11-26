@@ -82,6 +82,7 @@ public class JellyfishingMod
         JellyfishingBiomes.init();
         JellyfishingSounds.init();
         JellyfishingPaintings.init();
+        JellyfishingParticles.init();
 
 
 
