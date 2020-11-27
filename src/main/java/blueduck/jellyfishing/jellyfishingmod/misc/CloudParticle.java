@@ -32,7 +32,7 @@ public class CloudParticle extends SpriteTexturedParticle {
         this.posX = xCoordIn;
         this.posY = yCoordIn;
         this.posZ = zCoordIn;
-        this.particleScale = 5f * (this.rand.nextFloat() * 0.5f + 1.7f);
+        this.particleScale = 10f * (this.rand.nextFloat() * 0.5f + 1.7f);
         this.particleRed = .5F;
         this.particleGreen = .5F;
         this.particleBlue = .5F;
@@ -70,7 +70,7 @@ public class CloudParticle extends SpriteTexturedParticle {
         @Override
         public Particle makeParticle(BasicParticleType typeIn, ClientWorld worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
             if (worldIn.isDaytime()) {
-                y = 128;
+                y = 116;
             }
             else {
                 y = 0;

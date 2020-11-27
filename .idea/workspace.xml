@@ -5,11 +5,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="End City Loot">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Clouds now spawn in the clouds">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_combo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_combo_two.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/CloudParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/CloudParticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/shipwreck_treasure.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/shipwreck_treasure.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_green.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_orange.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_orange.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_red.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/particle/cloud_red.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,13 +245,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Adds Plundering and textures">
-      <created>1599220917698</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1599220917698</updated>
     </task>
     <task id="LOCAL-00110" summary="Changes to plundering enchantment">
       <created>1599221150884</created>
@@ -585,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606430525643</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Clouds now spawn in the clouds">
+      <created>1606440906975</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1606440906975</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed model" />
     <MESSAGE value="Spatulas now work properly" />
     <MESSAGE value="Basic config" />
     <MESSAGE value="Added more config options" />
@@ -627,7 +630,8 @@
     <MESSAGE value="Particles now work, added more placeholder textures" />
     <MESSAGE value="Backgroud music, plundering buff" />
     <MESSAGE value="End City Loot" />
-    <option name="LAST_COMMIT_MESSAGE" value="End City Loot" />
+    <MESSAGE value="Clouds now spawn in the clouds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clouds now spawn in the clouds" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -658,22 +662,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601160840090" />
-    <state width="1493" height="124" key="GridCell.Tab.0.bottom" timestamp="1606440266101">
+    <state width="1493" height="124" key="GridCell.Tab.0.bottom" timestamp="1606496016203">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="124" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606440266101" />
-    <state width="1493" height="124" key="GridCell.Tab.0.center" timestamp="1606440266101">
+    <state width="1493" height="124" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606496016203" />
+    <state width="1493" height="124" key="GridCell.Tab.0.center" timestamp="1606496016202">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="124" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606440266101" />
-    <state width="1493" height="124" key="GridCell.Tab.0.left" timestamp="1606440266101">
+    <state width="1493" height="124" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606496016202" />
+    <state width="1493" height="124" key="GridCell.Tab.0.left" timestamp="1606496016202">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="124" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606440266101" />
-    <state width="1493" height="124" key="GridCell.Tab.0.right" timestamp="1606440266101">
+    <state width="1493" height="124" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606496016202" />
+    <state width="1493" height="124" key="GridCell.Tab.0.right" timestamp="1606496016203">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="124" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606440266101" />
+    <state width="1493" height="124" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606496016203" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1599159649193">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
