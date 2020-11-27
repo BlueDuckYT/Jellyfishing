@@ -25,22 +25,18 @@ public class CloudParticle extends SpriteTexturedParticle {
     public CloudParticle(World worldIn, double xCoordIn, double yCoordIn, double zCoordIn, double xSpeedIn,
                          double ySpeedIn, double zSpeedIn) {
         super((ClientWorld) worldIn, xCoordIn, yCoordIn, zCoordIn, xSpeedIn, ySpeedIn, zSpeedIn);
-//        if (this.rand.nextFloat() < 0.975) {
-//            this.posY = 0;
-//            this.setExpired();
-//        }
 
-        this.motionX = 0.1f * (this.rand.nextFloat()) - 0.05f;
+        this.motionX = 0.1f * (this.rand.nextFloat()) - 0.05f + 2;
         this.motionY = 0.1f * (this.rand.nextFloat()) - 0.05f;
         this.motionZ = 0.1f * (this.rand.nextFloat()) - 0.05f;
         this.posX = xCoordIn;
         this.posY = yCoordIn;
         this.posZ = zCoordIn;
-        this.particleScale = 0.1f * (this.rand.nextFloat() * 0.5f + 1.7f);
+        this.particleScale = 5f * (this.rand.nextFloat() * 0.5f + 1.7f);
         this.particleRed = .5F;
         this.particleGreen = .5F;
         this.particleBlue = .5F;
-        this.maxAge = (int) (Math.random() * 100.0d) + 400;
+        this.maxAge = (int) (Math.random() * 100.0d) + 2000;
     }
 
     @Override
@@ -73,7 +69,13 @@ public class CloudParticle extends SpriteTexturedParticle {
         @Nullable
         @Override
         public Particle makeParticle(BasicParticleType typeIn, ClientWorld worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-            CloudParticle particle = new CloudParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed);
+            if (worldIn.isDaytime()) {
+                y = 128;
+            }
+            else {
+                y = 0;
+            }
+            CloudParticle particle = new CloudParticle(worldIn, x + (256 * worldIn.rand.nextDouble()) - 128, y, z + (256 * worldIn.rand.nextDouble()) - 128, xSpeed, ySpeed, zSpeed);
             particle.selectSpriteRandomly(spriteSet);
             return particle;
         }

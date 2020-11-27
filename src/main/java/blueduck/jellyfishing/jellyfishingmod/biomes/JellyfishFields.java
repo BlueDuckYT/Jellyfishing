@@ -31,7 +31,7 @@ public class JellyfishFields extends JellyfishingBiome {
     static final BiomeGenerationSettings.Builder GENERATION_SETTINGS = (new BiomeGenerationSettings.Builder()).withSurfaceBuilder(SURFACE_BUILDER);
     //3448555
     public JellyfishFields() {
-        super(CLIMATE, Biome.Category.OCEAN, -1.2F, .15F, (new BiomeAmbience.Builder()).setWaterColor(4566523).setWaterFogColor(2587774).setFogColor(12638463).withSkyColor(7842047).setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).setParticle(new ParticleEffectAmbience(JellyfishingParticles.CLOUD_PARTICLE.get(), 0.00005F)).setMusic(new BackgroundMusicSelector(JellyfishingSounds.JELLYFISH_FIELDS.get(), 200, 4000, false)).build(), GENERATION_SETTINGS.build(), SPAWN_SETTINGS.copy());
+        super(CLIMATE, Biome.Category.OCEAN, -1.2F, .15F, (new BiomeAmbience.Builder()).setWaterColor(4566523).setWaterFogColor(2587774).setFogColor(12638463).withSkyColor(7842047).setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).setParticle(new ParticleEffectAmbience(JellyfishingParticles.CLOUD_PARTICLE.get(), 0.000005F)).setMusic(new BackgroundMusicSelector(JellyfishingSounds.JELLYFISH_FIELDS.get(), 200, 4000, false)).build(), GENERATION_SETTINGS.build(), SPAWN_SETTINGS.copy());
     }
     static {
         GENERATION_SETTINGS.withStructure(StructureFeatures.VILLAGE_PLAINS);
