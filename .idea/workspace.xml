@@ -5,13 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Clouds">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Sandwich Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/CloudParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/CloudParticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/blue_jellyfish_jelly_sandwich.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/blue_jellyfish_jelly_sandwich.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/blue_seanut_butter_sandwich_raw.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/blue_seanut_butter_sandwich_raw.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/jellyfish_jelly_sandwich.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/jellyfish_jelly_sandwich.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/seanut_butter_sandwich_raw.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/seanut_butter_sandwich_raw.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,13 +239,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00111" summary="Added some stuff, errors">
-      <created>1599564997158</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1599564997158</updated>
     </task>
     <task id="LOCAL-00112" summary="Updated forge, fixed errors">
       <created>1599565722748</created>
@@ -587,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606496294579</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="Sandwich Changes">
+      <created>1606575595163</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1606575595164</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -604,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Basic config" />
     <MESSAGE value="Added more config options" />
     <MESSAGE value="Added Spatula Recipe" />
     <MESSAGE value="Compatibility and bugfixes" />
@@ -629,7 +624,8 @@
     <MESSAGE value="End City Loot" />
     <MESSAGE value="Clouds now spawn in the clouds" />
     <MESSAGE value="Clouds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clouds" />
+    <MESSAGE value="Sandwich Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sandwich Changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -684,10 +680,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606496304398">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606576226141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606496304398" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606576226141" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

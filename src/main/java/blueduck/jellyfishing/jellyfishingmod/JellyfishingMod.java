@@ -280,7 +280,7 @@ public class JellyfishingMod
                 event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(JellyfishingItems.JELLYFISH_NET.get()),   5, 10, 0.05F));
             }
             if (event.getType() == VillagerProfession.WEAPONSMITH) {
-                event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 16), new ItemStack(JellyfishingItems.SPATULA.get()),   3, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 16), new ItemStack(JellyfishingItems.SPATULA.get()),   3, 10, 0.05F));
             }
             if (event.getType() == VillagerProfession.ARMORER) {
                 event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD,  2), new ItemStack(JellyfishingItems.KELP_MUSTACHE.get()),  5, 10, 0.05F));
