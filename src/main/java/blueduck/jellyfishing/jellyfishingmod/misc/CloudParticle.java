@@ -70,7 +70,7 @@ public class CloudParticle extends SpriteTexturedParticle {
         @Override
         public Particle makeParticle(BasicParticleType typeIn, ClientWorld worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
             if (worldIn.isDaytime()) {
-                y = 116;
+                y = 148;
             }
             else {
                 y = 0;
