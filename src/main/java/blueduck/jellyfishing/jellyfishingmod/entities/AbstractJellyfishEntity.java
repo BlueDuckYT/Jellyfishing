@@ -94,7 +94,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         this.dodgeSpeed = dodgeSpeed;
         this.readAdditional(this.getPersistentData());
         if (dropCounter <= 0) {
-            dropCounter = (int) (worldIn.getRandom().nextDouble() * 24000 / dropsPerDay);
+            dropCounter = (int) (24000 / dropsPerDay);
         }
         dirX = (worldIn.getRandom().nextDouble()) - .5;
         dirY = (worldIn.getRandom().nextDouble()) - .5;
@@ -129,7 +129,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         }
         if (dropCounter == 0 && this.isInWater()) {
             this.entityDropItem(new ItemStack(JELLY_ITEM, 1), -0.5F);
-            dropCounter = (int) (this.getEntityWorld().getRandom().nextDouble() * 24000 / dailyDrops);
+            dropCounter = (int) (24000 / dailyDrops);
         }
         if (dropCounter > 0) {
             dropCounter--;
