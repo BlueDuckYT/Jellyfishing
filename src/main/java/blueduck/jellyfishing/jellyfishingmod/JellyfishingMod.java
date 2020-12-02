@@ -8,6 +8,7 @@ import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.jellyfishingmod.misc.CloudParticle;
 import blueduck.jellyfishing.jellyfishingmod.misc.ConfigHelper;
 import blueduck.jellyfishing.jellyfishingmod.misc.JellyfishingConfig;
+import blueduck.jellyfishing.jellyfishingmod.misc.JellyfishingVillageStructures;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -88,6 +89,7 @@ public class JellyfishingMod
         JellyfishingSounds.init();
         JellyfishingPaintings.init();
         JellyfishingParticles.init();
+        JellyfishingVillageStructures.init();
 
 
 
