@@ -9,7 +9,7 @@ import net.minecraft.util.SoundEvent;
 public class SuitMaterial implements IArmorMaterial {
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
-    private static final int[] ARMOR_ARRAY = new int[]{6, 8, 6, 4};
+    private static final int[] ARMOR_ARRAY = new int[]{6, 7, 5, 4};
 
     @Override
     public int getDurability(EquipmentSlotType slotIn) {

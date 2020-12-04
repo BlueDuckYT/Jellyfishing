@@ -5,9 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Grill model and texture and suit changes">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Recipe change">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/advancements/jellyfishing/sandy_suit.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_leggings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,13 +244,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00120" summary="Added texture for krabby patty, changed stuff">
-      <created>1599842605833</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1599842605835</updated>
     </task>
     <task id="LOCAL-00121" summary="Texture change">
       <created>1599844119086</created>
@@ -586,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607106396946</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="Recipe change">
+      <created>1607106451654</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1607106451654</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed jellyfish fields, texture update" />
     <MESSAGE value="One more fix" />
     <MESSAGE value="Coralstone now actually requires a pickaxe" />
     <MESSAGE value="Normal Sky Color" />
@@ -628,7 +629,8 @@
     <MESSAGE value="Added config option for caught jellyfish stinging cause they sting through blocks and it's annoying" />
     <MESSAGE value="Adds sandy's suit" />
     <MESSAGE value="Grill model and texture and suit changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Grill model and texture and suit changes" />
+    <MESSAGE value="Recipe change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recipe change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -663,38 +665,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601160840090" />
-    <state width="1493" height="189" key="GridCell.Tab.0.bottom" timestamp="1607105959287">
+    <state width="1493" height="128" key="GridCell.Tab.0.bottom" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607105959287" />
-    <state width="1493" height="189" key="GridCell.Tab.0.center" timestamp="1607105959287">
+    <state width="1493" height="128" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
+    <state width="1493" height="128" key="GridCell.Tab.0.center" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607105959287" />
-    <state width="1493" height="189" key="GridCell.Tab.0.left" timestamp="1607105959287">
+    <state width="1493" height="128" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
+    <state width="1493" height="128" key="GridCell.Tab.0.left" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607105959287" />
-    <state width="1493" height="189" key="GridCell.Tab.0.right" timestamp="1607105959287">
+    <state width="1493" height="128" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
+    <state width="1493" height="128" key="GridCell.Tab.0.right" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607105959287" />
-    <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607090283188">
+    <state width="1493" height="128" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
+    <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607090283188" />
-    <state width="1493" height="128" key="GridCell.Tab.1.center" timestamp="1607090283188">
+    <state width="1493" height="128" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
+    <state width="1493" height="128" key="GridCell.Tab.1.center" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607090283188" />
-    <state width="1493" height="128" key="GridCell.Tab.1.left" timestamp="1607090283188">
+    <state width="1493" height="128" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
+    <state width="1493" height="128" key="GridCell.Tab.1.left" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607090283188" />
-    <state width="1493" height="128" key="GridCell.Tab.1.right" timestamp="1607090283188">
+    <state width="1493" height="128" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
+    <state width="1493" height="128" key="GridCell.Tab.1.right" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607090283188" />
+    <state width="1493" height="128" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1599159649193">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -703,10 +705,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607100902544">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607106475895">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607100902544" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607106475895" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,0 +1,48 @@
+{
+  "parent": "jellyfishing:jellyfishing/root",
+  "display": {
+    "icon": {
+      "item": "jellyfishing:air_suit_helmet",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.jellyfishing.sandy_suit.title"
+    },
+    "description": {
+      "translate": "advancements.jellyfishing.sandy_suit.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "air_suit_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jellyfishing:air_suit_helmet"
+          },
+          {
+            "item": "jellyfishing:air_suit_chestplate"
+          },
+          {
+            "item": "jellyfishing:air_suit_leggings"
+          },
+          {
+            "item": "jellyfishing:air_suit_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "air_suit_armor"
+    ]
+  ]
+}
