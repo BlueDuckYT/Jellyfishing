@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "jellyfishing:scrap_metal"
+    },
+    "$": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:grill"
+  }
+}

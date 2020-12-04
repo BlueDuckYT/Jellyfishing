@@ -17,8 +17,11 @@ import net.minecraft.client.particle.ParticleManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.entity.merchant.villager.VillagerProfession;
+import net.minecraft.entity.monster.DrownedEntity;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.MerchantOffer;
@@ -38,6 +41,7 @@ import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.entity.living.LivingSpawnEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -154,7 +158,27 @@ public class JellyfishingMod
         LOGGER.info("HELLO from server starting");
     }
 
+    @SubscribeEvent
+    public void entitySpawn(LivingSpawnEvent.SpecialSpawn event) {
+        if (!event.getWorld().isRemote()) {
+            if (event.getEntityLiving() instanceof DrownedEntity) {
+                if (event.getEntityLiving().getEntityWorld().getRandom().nextDouble() < 0.025) {
+                    if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).isEmpty()) {
+                        event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(JellyfishingItems.KELP_MUSTACHE.get()));
+                        ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.HEAD, 0.085F);
 
+                    }
+                }
+                if (event.getEntityLiving().getEntityWorld().getRandom().nextDouble() < 0.01) {
+                    if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.MAINHAND).isEmpty()) {
+                        event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(JellyfishingItems.JELLYFISH_NET.get()));
+                        ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.MAINHAND, 0.085F);
+
+                    }
+                }
+            }
+        }
+    }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)

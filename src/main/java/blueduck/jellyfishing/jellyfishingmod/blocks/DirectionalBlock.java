@@ -3,6 +3,7 @@ package blueduck.jellyfishing.jellyfishingmod.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
+import net.minecraft.block.IWaterLoggable;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
@@ -19,7 +20,7 @@ public class DirectionalBlock extends Block {
     }
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-        return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+        return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing());
     }
 
     public void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {

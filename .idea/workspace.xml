@@ -5,30 +5,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added config option for caught jellyfish stinging cause they sting through blocks and it's annoying">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/ClientReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/SandySuitModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/air_suit_boots.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/air_suit_chestplate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/air_suit_helmet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/air_suit_leggings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/sandy_suit_boots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/sandy_suit_chestplate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/sandy_suit_helmet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/sandy_suit_leggings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/models/armor/sandy_suit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/models/armor/sandy_suit_legs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_boots.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_chestplate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_helmet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_leggings.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Adds sandy's suit">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/block/grill.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/grill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/grill.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SandySuitItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SandySuitItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/DirectionalBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/DirectionalBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,13 +247,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00118" summary="More stuff and krabby patty added">
-      <created>1599780988454</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1599780988454</updated>
     </task>
     <task id="LOCAL-00119" summary="fixed stuff">
       <created>1599784486207</created>
@@ -607,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607049098153</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="Adds sandy's suit">
+      <created>1607100899645</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1607100899646</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -624,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Advancements" />
     <MESSAGE value="Enchantment Description compat" />
     <MESSAGE value="fixed jellyfish fields, texture update" />
     <MESSAGE value="One more fix" />
@@ -649,7 +632,8 @@
     <MESSAGE value="New music by TurtwigX" />
     <MESSAGE value="Oh yeah and the frycook villager" />
     <MESSAGE value="Added config option for caught jellyfish stinging cause they sting through blocks and it's annoying" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added config option for caught jellyfish stinging cause they sting through blocks and it's annoying" />
+    <MESSAGE value="Adds sandy's suit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds sandy's suit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -684,22 +668,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601160840090" />
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1607099143140">
+    <state width="1493" height="189" key="GridCell.Tab.0.bottom" timestamp="1607105959287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607099143140" />
-    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1607099143140">
+    <state width="1493" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607105959287" />
+    <state width="1493" height="189" key="GridCell.Tab.0.center" timestamp="1607105959287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607099143140" />
-    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1607099143139">
+    <state width="1493" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607105959287" />
+    <state width="1493" height="189" key="GridCell.Tab.0.left" timestamp="1607105959287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607099143139" />
-    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1607099143140">
+    <state width="1493" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607105959287" />
+    <state width="1493" height="189" key="GridCell.Tab.0.right" timestamp="1607105959287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607099143140" />
+    <state width="1493" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607105959287" />
     <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607090283188">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -724,10 +708,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607049102940">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607100902544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607049102940" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607100902544" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
