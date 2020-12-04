@@ -2,6 +2,7 @@ package blueduck.jellyfishing.jellyfishingmod.registry;
 
 import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.blocks.*;
+import blueduck.jellyfishing.jellyfishingmod.blocks.DirectionalBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -31,7 +32,7 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> TUBE_PLANT = BLOCKS.register("tube_plant", () -> new CoralPlant(Block.Properties.create(Material.OCEAN_PLANT, MaterialColor.ADOBE).notSolid().sound(SoundType.SLIME).doesNotBlockMovement()));
     public static final RegistryObject<Item> TUBE_PLANT_ITEM = ITEMS.register("tube_plant", () -> new BlockItemBase(TUBE_PLANT.get()));
 
-    public static final RegistryObject<Block> SCRAP_METAL = BLOCKS.register("scrap_metal", () -> new Block(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2)));
+    public static final RegistryObject<Block> SCRAP_METAL = BLOCKS.register("scrap_metal", () -> new Block(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
     public static final RegistryObject<Item> SCRAP_METAL_ITEM = ITEMS.register("scrap_metal", () -> new BlockItemBase(SCRAP_METAL.get()));
 
     public static final RegistryObject<Block> SCRAP_METAL_STAIRS = BLOCKS.register("scrap_metal_stairs", () -> new StairsBlock(() -> SCRAP_METAL.get().getDefaultState(), Block.Properties.from(SCRAP_METAL.get())));
@@ -72,6 +73,8 @@ public class JellyfishingBlocks {
 
     public static final RegistryObject<Block> SEANUT_BUSH = BLOCKS.register("seanut_bush", () -> new SeanutBush(Block.Properties.create(Material.OCEAN_PLANT).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)));
 
+    public static final RegistryObject<Block> GRILL = BLOCKS.register("grill", () -> new DirectionalBlock(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2)));
+    public static final RegistryObject<Item> GRILL_ITEM = ITEMS.register("grill", () -> new BlockItemBase(GRILL.get()));
 
 
     //public static final RegistryObject<Block> JELLYFISH_MACHINE = BLOCKS.register("jellyfish_machine", () -> new JellyfishMachineBlock(Block.Properties.create(Material.CLAY, MaterialColor.BROWN).sound(SoundType.METAL)));

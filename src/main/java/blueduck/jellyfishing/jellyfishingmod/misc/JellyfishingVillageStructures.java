@@ -20,13 +20,8 @@ public class JellyfishingVillageStructures {
 
         public static void init() {
                 PlainsVillagePools.init();
-                SavannaVillagePools.init();
-                TaigaVillagePools.init();
-                DesertVillagePools.init();
-                SnowyVillagePools.init();
 
-
-                addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/coralstone_house"), 1);
+                addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_plains"), 1);
                 addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/scrap_metal_forge"), 4);
 
             }

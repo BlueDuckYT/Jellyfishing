@@ -21,6 +21,8 @@
   "block.jellyfishing.algae_grass": "Algae Grass",
   "block.jellyfishing.algae_block": "Algae Block",
 
+  "block.jellyfishing.grill": "Grill",
+
   "item.jellyfishing.jellyfish_net": "Jellyfish Net",
   "item.jellyfishing.jellyfish_jelly": "Jellyfish Jelly",
   "item.jellyfishing.blue_jellyfish_jelly": "Blue Jellyfish Jelly",
@@ -59,7 +61,7 @@
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
   "entity.jellyfishing.blue_jellyfish": "Blue Jellyfish",
-  "entity.jellyfishing.spatula": "Spatula",
+  "entity.minecraft.villager.jellyfishing.frycook": "Frycook",
 
   "biome.jellyfishing.jellyfish_fields": "Jellyfish Fields",
 

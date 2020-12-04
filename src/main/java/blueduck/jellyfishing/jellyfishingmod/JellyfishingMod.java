@@ -28,6 +28,7 @@ import net.minecraft.loot.LootTables;
 import net.minecraft.loot.TableLootEntry;
 import net.minecraft.particles.ParticleType;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.village.PointOfInterestType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraftforge.api.distmarker.Dist;
@@ -90,6 +91,7 @@ public class JellyfishingMod
         JellyfishingPaintings.init();
         JellyfishingParticles.init();
         JellyfishingVillageStructures.init();
+        JellyfishingVillagers.init();
 
 
 
@@ -105,6 +107,10 @@ public class JellyfishingMod
         GlobalEntityTypeAttributes.put(JellyfishingEntities.JELLYFISH.get(), AbstractJellyfishEntity.func_234176_m_().create()/*(or your own)*/);
         GlobalEntityTypeAttributes.put(JellyfishingEntities.BLUE_JELLYFISH.get(), AbstractJellyfishEntity.func_234176_m_().create()/*(or your own)*/);
 
+        event.enqueueWork(() -> {
+            PointOfInterestType.registerBlockStates(JellyfishingVillagers.FRYCOOK_POI.get());
+            PointOfInterestType.BLOCKS_OF_INTEREST.addAll(JellyfishingVillagers.FRYCOOK_POI.get().blockStates);
+        });
         // JellyfishingFeatures.registerConfiguredFeatures();
 
 
@@ -278,6 +284,9 @@ public class JellyfishingMod
                 event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get(), 1),  5, 10, 0.05F));
 
             }
+            if (event.getType() == VillagerProfession.FARMER) {
+                event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.SEANUT.get(), 24), new ItemStack(Items.EMERALD, 1), 8, 10, 0.05F));
+            }
             if (event.getType() == VillagerProfession.TOOLSMITH) {
                 event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(JellyfishingItems.JELLYFISH_NET.get()),   5, 10, 0.05F));
             }
@@ -289,6 +298,30 @@ public class JellyfishingMod
             }
             if (event.getType() == VillagerProfession.BUTCHER) {
                 event.getTrades().get(5).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(JellyfishingItems.KRABBY_PATTY.get()),   5, 10, 0.05F));
+            }
+
+            if (event.getType() == JellyfishingVillagers.FRYCOOK.get()) {
+                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.JELLYFISH_JELLY.get(), 20), new ItemStack(Items.EMERALD, 1), 8, 10, 0.05F));
+                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.BLUE_JELLYFISH_JELLY.get(), 16), new ItemStack(Items.EMERALD, 1), 8, 10, 0.05F));
+                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.SEANUT_BUTTER.get(), 8), new ItemStack(Items.EMERALD, 1), 8, 10, 0.05F));
+                event.getTrades().get(1).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.SEANUT.get(), 20), new ItemStack(Items.EMERALD, 1), 8, 10, 0.05F));
+
+                event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.JELLYFISH.get(), 5), new ItemStack(Items.EMERALD, 1), 8, 10, 0.05F));
+                event.getTrades().get(2).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.BLUE_JELLYFISH.get(), 2), new ItemStack(Items.EMERALD, 1), 8, 10, 0.05F));
+
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.ROASTED_SEANUT.get(), 36),  16, 10, 0.05F));
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingItems.JELLYFISH_JELLY_SANDWICH.get(), 2),  16, 10, 0.05F));
+                event.getTrades().get(3).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingItems.BLUE_JELLYFISH_JELLY_SANDWICH.get(), 1),  16, 10, 0.05F));
+
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get(), 3),  16, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingItems.SEANUT_JELLYFISH_JELLY_SANDWICH.get(), 1),  16, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.SEANUT_BLUE_JELLYFISH_JELLY_SANDWICH.get(), 1),  16, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.SEANUT_BRITTLE.get(), 8),  16, 10, 0.05F));
+
+                event.getTrades().get(5).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.GREASE_BALL.get(), 1), new ItemStack(Items.EMERALD, 32), 8, 10, 0.05F));
+                event.getTrades().get(5).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.KRABBY_PATTY.get(), 1),  8, 10, 0.05F));
+                event.getTrades().get(5).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 8), new ItemStack(JellyfishingItems.SPATULA.get(), 1),  3, 10, 0.05F));
+
             }
         }
 

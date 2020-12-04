@@ -17,6 +17,7 @@ public class JellyfishingSounds {
     public static final RegistryObject<SoundEvent> STING = SOUNDS.register("sting", () -> new SoundEvent(new ResourceLocation("jellyfishing", "entity.jellyfish.sting")));
 
     public static final RegistryObject<SoundEvent> JELLYFISH_FIELDS = SOUNDS.register("jellyfish_fields", () -> new SoundEvent(new ResourceLocation("jellyfishing", "music.jellyfishfields")));
+    public static final RegistryObject<SoundEvent> BACKGROUND_MUSIC = SOUNDS.register("background_music", () -> new SoundEvent(new ResourceLocation("jellyfishing", "music.general")));
 
 
     public static void init() {

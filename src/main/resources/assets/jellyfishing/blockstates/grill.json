@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "jellyfishing:block/grill" },
+    "facing=west": { "model": "jellyfishing:block/grill", "y": 90 },
+    "facing=north": { "model": "jellyfishing:block/grill", "y": 180 },
+    "facing=east": { "model": "jellyfishing:block/grill", "y": 270 }
+  }
+}

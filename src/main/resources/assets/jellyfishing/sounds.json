@@ -22,5 +22,27 @@
         "stream": true
       }
     ]
+  },
+  "music.general": {
+    "category": "record",
+    "subtitle": "jellyfishing.subtitle.jellyfishfields",
+    "sounds": [
+      {
+        "name":  "jellyfishing:music/jellyfish_fields_background",
+        "stream": true
+      },
+      {
+        "name":  "jellyfishing:music/downtown_background",
+        "stream": true
+      },
+      {
+        "name":  "jellyfishing:music/goo_lagoon_background",
+        "stream": true
+      },
+      {
+        "name":  "jellyfishing:music/bikini_bottom_background",
+        "stream": true
+      }
+    ]
   }
   }
