@@ -166,6 +166,9 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     }
 
     public void onCollideWithPlayer(PlayerEntity entityIn) {
+        if (!this.canDespawn(1) && !(JellyfishingMod.CONFIG.CAUGHT_JELLYFISH_STING.get())) {
+            return;
+        }
         if (canThisEntitySting && stingCounter == 0 && this.isInWater() && JellyfishingMod.CONFIG.JELLYFISH_STING.get()) {
             stingCounter = stingTime;
             if (this.getEntityWorld().getRandom().nextDouble() < stingChance) {

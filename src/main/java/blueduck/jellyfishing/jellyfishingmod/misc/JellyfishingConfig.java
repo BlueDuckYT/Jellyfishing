@@ -12,6 +12,7 @@ public class JellyfishingConfig {
 
     public ConfigHelper.ConfigValueListener<Integer> BIOME_WEIGHT;
     public ConfigHelper.ConfigValueListener<Boolean> JELLYFISH_STING;
+    public ConfigHelper.ConfigValueListener<Boolean> CAUGHT_JELLYFISH_STING;
     public ConfigHelper.ConfigValueListener<Boolean> JELLYFISH_FISHABLE;
     public ConfigHelper.ConfigValueListener<Boolean> NETS_FISHABLE;
 
@@ -24,6 +25,9 @@ public class JellyfishingConfig {
         this.JELLYFISH_STING= subscriber.subscribe(builder
                 .comment("Should Jellyfish sting?")
                 .define("jellyfish_sting", true, o -> o instanceof Boolean));
+        this.CAUGHT_JELLYFISH_STING= subscriber.subscribe(builder
+                .comment("Should Caught and Released Jellyfish sting?")
+                .define("caught_jellyfish_sting", false, o -> o instanceof Boolean));
         this.JELLYFISH_FISHABLE= subscriber.subscribe(builder
                 .comment("Should Jellyfish be fishable with a fishing rod?")
                 .define("jellyfish_fishable", true, o -> o instanceof Boolean));
