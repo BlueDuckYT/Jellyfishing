@@ -5,14 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Adds sandy's suit">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/block/grill.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/grill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/grill.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Grill model and texture and suit changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/DirectionalBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/DirectionalBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_leggings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,13 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00119" summary="fixed stuff">
-      <created>1599784486207</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1599784486207</updated>
     </task>
     <task id="LOCAL-00120" summary="Added texture for krabby patty, changed stuff">
       <created>1599842605833</created>
@@ -591,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607100899646</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="Grill model and texture and suit changes">
+      <created>1607106396946</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1607106396946</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Enchantment Description compat" />
     <MESSAGE value="fixed jellyfish fields, texture update" />
     <MESSAGE value="One more fix" />
     <MESSAGE value="Coralstone now actually requires a pickaxe" />
@@ -633,7 +627,8 @@
     <MESSAGE value="Oh yeah and the frycook villager" />
     <MESSAGE value="Added config option for caught jellyfish stinging cause they sting through blocks and it's annoying" />
     <MESSAGE value="Adds sandy's suit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds sandy's suit" />
+    <MESSAGE value="Grill model and texture and suit changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grill model and texture and suit changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">

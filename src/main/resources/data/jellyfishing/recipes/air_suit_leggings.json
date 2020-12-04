@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
+    "$#$",
     "# #",
     "# #"
   ],
@@ -10,7 +10,7 @@
       "item": "minecraft:iron_ingot"
     },
     "$": {
-      "item": "jellyfishing:scrap_metal"
+      "item": "minecraft:diamond"
     }
   },
   "result": {
