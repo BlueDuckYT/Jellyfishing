@@ -5,26 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Added Village Houses">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/DirectionalBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingVillagers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/blockstates/grill.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/grill.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds/music/bikini_bottom_background.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds/music/downtown_background.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds/music/goo_lagoon_background.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds/music/jellyfish_fields_background.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_plains.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingVillageStructures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingVillageStructures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingSounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingSounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/sounds.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/coralstone_house.nbt" beforeDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="New music by TurtwigX">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,13 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Added Jellyfish to Loot Table">
-      <created>1599776799133</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1599776799133</updated>
     </task>
     <task id="LOCAL-00116" summary="Added Jellyfish Nets to Fishing Loot Table">
       <created>1599778147030</created>
@@ -600,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606930518669</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="New music by TurtwigX">
+      <created>1607042696717</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1607042696718</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -617,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixes config issue, fixes jolly obxes compat" />
     <MESSAGE value="Fixes models, adds golden spatula" />
     <MESSAGE value="Added swing anim, grease, golden spatula" />
     <MESSAGE value="Advancements" />
@@ -642,7 +623,8 @@
     <MESSAGE value="Villager change" />
     <MESSAGE value="Balanced jellyfish" />
     <MESSAGE value="Added Village Houses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Village Houses" />
+    <MESSAGE value="New music by TurtwigX" />
+    <option name="LAST_COMMIT_MESSAGE" value="New music by TurtwigX" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
