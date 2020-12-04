@@ -12,12 +12,12 @@ public class SuitMaterial implements IArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlotType slotIn) {
-        return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * 25;
+        return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * 33;
     }
 
     @Override
     public int getDamageReductionAmount(EquipmentSlotType slotIn) {
-        return (int) (MAX_DAMAGE_ARRAY[slotIn.getIndex()] * 0.1);
+        return (int) (MAX_DAMAGE_ARRAY[slotIn.getIndex()] * 0.5);
     }
 
     @Override

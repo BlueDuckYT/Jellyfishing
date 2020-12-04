@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "$ $"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "$": {
+      "item": "jellyfishing:scrap_metal"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:air_suit_boots"
+  }
+}

@@ -1,5 +1,6 @@
 package blueduck.jellyfishing.jellyfishingmod;
 
+import blueduck.jellyfishing.jellyfishingmod.client.ClientReference;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.BlueJellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.JellyfishRenderer;
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.PattyWagonRenderer;

@@ -2,6 +2,7 @@ package blueduck.jellyfishing.jellyfishingmod.entities;
 
 import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
+import blueduck.jellyfishing.jellyfishingmod.items.SandySuitItem;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEnchantments;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEntities;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
@@ -166,7 +167,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     }
 
     public void onCollideWithPlayer(PlayerEntity entityIn) {
-        if (!this.canDespawn(1) && !(JellyfishingMod.CONFIG.CAUGHT_JELLYFISH_STING.get())) {
+        if ((!this.canDespawn(1) && !(JellyfishingMod.CONFIG.CAUGHT_JELLYFISH_STING.get())) || SandySuitItem.hasAllPieces(entityIn)) {
             return;
         }
         if (canThisEntitySting && stingCounter == 0 && this.isInWater() && JellyfishingMod.CONFIG.JELLYFISH_STING.get()) {
@@ -221,11 +222,11 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                                 this.playSound(SoundEvents.ENTITY_FISHING_BOBBER_RETRIEVE, 1.0F, 1.0F);
                             }
                         }
-                        if (0.01 > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
+                        if (0.005 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
                             this.entityDropItem(new ItemStack(JellyfishingItems.GREASE_BALL.get(), 1), -0.5F);
-                            this.playSound(SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, 0.25F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.4F);
+                            this.playSound(SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, 1.0F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.4F);
                         }
-                        if (0.01 > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
+                        if (0.005 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
                             this.entityDropItem(new ItemStack(JellyfishingItems.MUSIC_DISC_JELLYFISH_FIELDS.get(), 1), -0.5F);
                         }
                     }

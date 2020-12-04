@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "$": {
+      "item": "jellyfishing:grease_ball"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:air_suit_helmet"
+  }
+}
