@@ -176,6 +176,24 @@ public class JellyfishingMod
 
                     }
                 }
+                if (event.getEntityLiving().getEntityWorld().getRandom().nextDouble() < 0.01) {
+                    if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.MAINHAND).isEmpty()) {
+                        event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(JellyfishingItems.SPATULA.get()));
+                        ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.MAINHAND, 0.085F);
+
+                    }
+                }
+                if (event.getEntityLiving().getEntityWorld().getRandom().nextDouble() < 0.02) {
+                    if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.MAINHAND).isEmpty()) {
+                        event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(JellyfishingItems.KARATE_GLOVE.get()));
+                        ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.MAINHAND, 0.085F);
+                    }
+                    if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.OFFHAND).isEmpty()) {
+                        event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(JellyfishingItems.KARATE_GLOVE.get()));
+                        ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.OFFHAND, 0.085F);
+
+                    }
+                }
             }
         }
     }

@@ -52,6 +52,8 @@ public class JellyfishingItems {
 
     public static final RegistryObject<Item> GOLDEN_SPATULA = ITEMS.register("golden_spatula", () -> new SpatulaItem(new Item.Properties().maxDamage(2031).group(ItemGroup.COMBAT).rarity(Rarity.RARE), 3, -2F, ItemTier.NETHERITE));
 
+    public static final RegistryObject<Item> KARATE_GLOVE = ITEMS.register("karate_glove", () -> new GloveItem(new Item.Properties().maxDamage(1000).group(ItemGroup.COMBAT), 3, -1.5F));
+
 
     public static final SuitMaterial SUIT_MATERIAL = new SuitMaterial();
 

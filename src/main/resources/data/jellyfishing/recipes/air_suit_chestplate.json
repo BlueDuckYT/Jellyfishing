@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "# #",
+    "% %",
     "#$#",
     "###"
   ],
@@ -11,6 +11,9 @@
     },
     "$": {
       "item": "jellyfishing:grease_ball"
+    },
+    "%": {
+      "item": "minecraft:diamond"
     }
   },
   "result": {

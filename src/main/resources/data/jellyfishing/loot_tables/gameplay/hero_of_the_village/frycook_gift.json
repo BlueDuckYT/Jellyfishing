@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jellyfishing:krabby_patty"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jellyfishing:triple_gooberberry_sunrise"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jellyfishing:blue_jellyfish"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jellyfishing:spatula"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jellyfishing:wad_of_grease"
+        }
+      ]
+    }
+  ]
+}

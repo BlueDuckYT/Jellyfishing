@@ -23,6 +23,9 @@
 
   "block.jellyfishing.grill": "Grill",
 
+  "block.jellyfishing.vault_door": "Vault Door",
+  "block.jellyfishing.vault_trapdoor": "Vault Trapdoor",
+
   "item.jellyfishing.jellyfish_net": "Jellyfish Net",
   "item.jellyfishing.jellyfish_jelly": "Jellyfish Jelly",
   "item.jellyfishing.blue_jellyfish_jelly": "Blue Jellyfish Jelly",
@@ -61,6 +64,9 @@
   "item.jellyfishing.air_suit_chestplate": "Air Suit Chestplate",
   "item.jellyfishing.air_suit_leggings": "Air Suit Leggings",
   "item.jellyfishing.air_suit_boots": "Air Suit Boots",
+
+
+  "item.jellyfishing.karate_glove": "Karate Glove",
 
 
   "entity.jellyfishing.jellyfish": "Jellyfish",

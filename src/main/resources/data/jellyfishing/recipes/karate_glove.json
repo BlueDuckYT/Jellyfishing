@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ##",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:red_wool"
+    },
+    "$": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:karate_glove"
+  }
+}

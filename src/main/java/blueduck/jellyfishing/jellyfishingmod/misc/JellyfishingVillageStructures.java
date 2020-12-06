@@ -19,12 +19,20 @@ import java.util.stream.Collectors;
 public class JellyfishingVillageStructures {
 
         public static void init() {
-                PlainsVillagePools.init();
+            PlainsVillagePools.init();
+            TaigaVillagePools.init();
+            SnowyVillagePools.init();
+            DesertVillagePools.init();
+            SavannaVillagePools.init();
 
-                addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_plains"), 1);
-                addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/scrap_metal_forge"), 4);
+            addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_plains"), 4);
+            addToPool(new ResourceLocation("village/snowy/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_snowy"), 4);
+            addToPool(new ResourceLocation("village/taiga/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_taiga"), 4);
+            addToPool(new ResourceLocation("village/desert/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_desert"), 4);
+            addToPool(new ResourceLocation("village/savanna/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_savanna"), 4);
+            addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/scrap_metal_forge"), 4);
 
-            }
+        }
 
         private static void addToPool(ResourceLocation pool, ResourceLocation toAdd, int weight) {
             JigsawPattern old = WorldGenRegistries.JIGSAW_POOL.getOrDefault(pool);

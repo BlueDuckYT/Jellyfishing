@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "jellyfishing:block/vault_door_bottom",
+        "top": "jellyfishing:block/vault_door_top"
+    }
+}
