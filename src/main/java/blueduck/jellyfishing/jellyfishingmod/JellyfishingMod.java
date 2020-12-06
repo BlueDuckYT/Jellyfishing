@@ -360,6 +360,7 @@ public class JellyfishingMod
                 event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingItems.SEANUT_JELLYFISH_JELLY_SANDWICH.get(), 1),  16, 10, 0.05F));
                 event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.SEANUT_BLUE_JELLYFISH_JELLY_SANDWICH.get(), 1),  16, 10, 0.05F));
                 event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.SEANUT_BRITTLE.get(), 8),  16, 10, 0.05F));
+                event.getTrades().get(4).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(JellyfishingItems.KELP_SHAKE.get(), 1),  16, 10, 0.05F));
 
                 event.getTrades().get(5).add((entity, random) -> new MerchantOffer(new ItemStack(JellyfishingItems.GREASE_BALL.get(), 1), new ItemStack(Items.EMERALD, 32), 8, 10, 0.05F));
                 event.getTrades().get(5).add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.KRABBY_PATTY.get(), 1),  8, 10, 0.05F));

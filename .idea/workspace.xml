@@ -5,8 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Karate Gloves">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/entity/villager/profession/frycook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/entity/villager/profession/frycook.png" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Final Changes">
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove_left.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove_left.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove_right.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove_right.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,13 +243,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Preparations for 1.3 release">
-      <created>1600348649204</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1600348649205</updated>
     </task>
     <task id="LOCAL-00124" summary="Added ability to define move timer (quicker/slower movement)">
       <created>1600358988108</created>
@@ -585,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607221267719</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Final Changes">
+      <created>1607221631928</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1607221631928</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Normal Sky Color" />
     <MESSAGE value="Removed jolly box compat from this mod's end" />
     <MESSAGE value="Fixes jellyfish spawning" />
     <MESSAGE value="Actually fixed" />
@@ -627,7 +628,8 @@
     <MESSAGE value="Recipe change" />
     <MESSAGE value="Advancement" />
     <MESSAGE value="Karate Gloves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Karate Gloves" />
+    <MESSAGE value="Final Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -662,22 +664,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601160840090" />
-    <state width="1493" height="188" key="GridCell.Tab.0.bottom" timestamp="1607221285450">
+    <state width="1493" height="188" key="GridCell.Tab.0.bottom" timestamp="1607221656970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607221285450" />
-    <state width="1493" height="188" key="GridCell.Tab.0.center" timestamp="1607221285449">
+    <state width="1493" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607221656970" />
+    <state width="1493" height="188" key="GridCell.Tab.0.center" timestamp="1607221656968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607221285449" />
-    <state width="1493" height="188" key="GridCell.Tab.0.left" timestamp="1607221285449">
+    <state width="1493" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607221656968" />
+    <state width="1493" height="188" key="GridCell.Tab.0.left" timestamp="1607221656967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607221285449" />
-    <state width="1493" height="188" key="GridCell.Tab.0.right" timestamp="1607221285449">
+    <state width="1493" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607221656967" />
+    <state width="1493" height="188" key="GridCell.Tab.0.right" timestamp="1607221656969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607221285449" />
+    <state width="1493" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607221656969" />
     <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
