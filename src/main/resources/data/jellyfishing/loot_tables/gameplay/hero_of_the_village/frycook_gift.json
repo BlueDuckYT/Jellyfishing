@@ -22,7 +22,11 @@
         },
         {
           "type": "minecraft:item",
-          "name": "jellyfishing:wad_of_grease"
+          "name": "jellyfishing:grease_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jellyfishing:karate_glove"
         }
       ]
     }
