@@ -17,7 +17,7 @@ import net.minecraft.world.IBlockReader;
 
 public class DirectionalBlock extends Block {
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
-    public static final VoxelShape SHAPE = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 16D, 11.0D, 16.0D);
+    public static final VoxelShape SHAPE = Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16D, 11.0D, 16.0D);
 
 
     public DirectionalBlock(Properties properties) {

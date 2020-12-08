@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "jellyfishing:karate_glove"
+  },
+  "addition": {
+    "item": "jellyfishing:grease_ball"
+  },
+  "result": {
+    "item": "jellyfishing:master_karate_glove"
+  }
+}

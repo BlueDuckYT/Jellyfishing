@@ -16,6 +16,11 @@ public class JellyfishingConfig {
     public ConfigHelper.ConfigValueListener<Boolean> JELLYFISH_FISHABLE;
     public ConfigHelper.ConfigValueListener<Boolean> NETS_FISHABLE;
 
+    public ConfigHelper.ConfigValueListener<Integer> SPATULA_DAMAGE;
+    public ConfigHelper.ConfigValueListener<Integer> GOLDEN_SPATULA_DAMAGE;
+    public ConfigHelper.ConfigValueListener<Integer> KARATE_DAMAGE;
+    public ConfigHelper.ConfigValueListener<Integer> MASTER_KARATE_DAMAGE;
+
 
     public JellyfishingConfig(ForgeConfigSpec.Builder builder, ConfigHelper.Subscriber subscriber) {
         builder.push("General");
@@ -34,6 +39,19 @@ public class JellyfishingConfig {
         this.NETS_FISHABLE = subscriber.subscribe(builder
                 .comment("Should Jellyfish Nets be fishable with a fishing rod?")
                 .define("nets_fishable", true, (o) -> { return o instanceof Boolean; }));
+        builder.push("Attack Damages");
+        this.SPATULA_DAMAGE= subscriber.subscribe(builder
+                .comment("Damage of the Spatula")
+                .defineInRange("spatula_damage", 6, 1, 1000));
+        this.GOLDEN_SPATULA_DAMAGE= subscriber.subscribe(builder
+                .comment("Damage of the Golden Spatula")
+                .defineInRange("golden_spatula_damage", 8, 1, 1000));
+        this.KARATE_DAMAGE= subscriber.subscribe(builder
+                .comment("Damage of the Karate Glove")
+                .defineInRange("karate_damage", 3, 1, 1000));
+        this.MASTER_KARATE_DAMAGE= subscriber.subscribe(builder
+                .comment("Damage of the Master Karate Glove")
+                .defineInRange("master_karate_damage", 5, 1, 1000));
         builder.pop();
     }
 

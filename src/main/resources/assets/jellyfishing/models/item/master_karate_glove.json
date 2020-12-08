@@ -4,21 +4,21 @@
   "base": {
     "parent": "minecraft:item/generated",
     "textures": {
-      "layer0": "jellyfishing:item/karate_glove_item"
+      "layer0": "jellyfishing:item/master_karate_glove_item"
     }
     },
   "perspectives": {
     "third_person_left_hand": {
-      "parent": "jellyfishing:item/karate_glove_left"
+      "parent": "jellyfishing:item/master_karate_glove_left"
     },
     "first_person_left_hand": {
-      "parent": "jellyfishing:item/karate_glove_left"
+      "parent": "jellyfishing:item/master_karate_glove_left"
     },
     "third_person_right_hand": {
-      "parent": "jellyfishing:item/karate_glove_right"
+      "parent": "jellyfishing:item/master_karate_glove_right"
     },
     "first_person_right_hand": {
-      "parent": "jellyfishing:item/karate_glove_right"
+      "parent": "jellyfishing:item/master_karate_glove_right"
     }
   }
 }

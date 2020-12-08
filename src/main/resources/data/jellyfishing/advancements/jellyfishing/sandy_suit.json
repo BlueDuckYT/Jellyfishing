@@ -11,13 +11,10 @@
     "description": {
       "translate": "advancements.jellyfishing.sandy_suit.description"
     },
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
-  },
-  "rewards": {
-    "experience": 100
   },
   "criteria": {
     "air_suit_armor": {

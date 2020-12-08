@@ -67,6 +67,7 @@
 
 
   "item.jellyfishing.karate_glove": "Karate Glove",
+  "item.jellyfishing.master_karate_glove": "Master Karate Glove",
 
 
   "entity.jellyfishing.jellyfish": "Jellyfish",
@@ -119,6 +120,8 @@
   "advancements.jellyfishing.golden_spatula.description": "Create a Golden Spatula",
   "advancements.jellyfishing.sandy_suit.title": "Straight Outta Texas",
   "advancements.jellyfishing.sandy_suit.description": "Create a full Air Suit",
+  "advancements.jellyfishing.karate.title": "Kara-tay",
+  "advancements.jellyfishing.karate.description": "Create a Master Karate Glove",
 
   "death.attack.sting.player": "{Player} was stung by Jellyfish",
 

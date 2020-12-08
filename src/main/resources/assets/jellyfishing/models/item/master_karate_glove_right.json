@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"2": "jellyfishing:item/karate_glove",
-		"particle": "jellyfishing:item/karate_glove"
+		"2": "jellyfishing:item/master_karate_glove",
+		"particle": "jellyfishing:item/master_karate_glove"
 	},
 	"elements": [
 		{
