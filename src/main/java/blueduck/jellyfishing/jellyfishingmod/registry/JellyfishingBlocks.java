@@ -7,6 +7,7 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -42,10 +43,10 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Item> SCRAP_METAL_SLAB_ITEM = ITEMS.register("scrap_metal_slab", () -> new BlockItemBase(SCRAP_METAL_SLAB.get()));
 
     public static final RegistryObject<Block> VAULT_DOOR = BLOCKS.register("vault_door", () -> new DoorBlock(Block.Properties.create(Material.PISTON, MaterialColor.GRAY).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
-    public static final RegistryObject<Item> VAULT_DOOR_ITEM = ITEMS.register("vault_door", () -> new BlockItemBase(VAULT_DOOR.get()));
+    public static final RegistryObject<Item> VAULT_DOOR_ITEM = ITEMS.register("vault_door", () -> new BlockItemBase(VAULT_DOOR.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
 
     public static final RegistryObject<Block> VAULT_TRAPDOOR = BLOCKS.register("vault_trapdoor", () -> new TrapDoorBlock(Block.Properties.from(VAULT_DOOR.get())));
-    public static final RegistryObject<Item> VAULT_TRAPDOOR_ITEM = ITEMS.register("vault_trapdoor", () -> new BlockItemBase(VAULT_TRAPDOOR.get()));
+    public static final RegistryObject<Item> VAULT_TRAPDOOR_ITEM = ITEMS.register("vault_trapdoor", () -> new BlockItemBase(VAULT_TRAPDOOR.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
 
     public static final RegistryObject<Block> SEANUT_BRITTLE_BLOCK = BLOCKS.register("seanut_brittle_block", () -> new Block(Block.Properties.create(Material.GLASS, MaterialColor.BROWN).sound(SoundType.STONE).hardnessAndResistance(0.3F, 0.3F).harvestTool(ToolType.PICKAXE).harvestLevel(0)));
     public static final RegistryObject<Item> SEANUT_BRITTLE_BLOCK_ITEM = ITEMS.register("seanut_brittle_block", () -> new BlockItemBase(SEANUT_BRITTLE_BLOCK.get()));

@@ -1,0 +1,24 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:separate-perspective",
+  "base": {
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "jellyfishing:item/power_karate_glove_item"
+    }
+    },
+  "perspectives": {
+    "third_person_left_hand": {
+      "parent": "jellyfishing:item/power_karate_glove_left"
+    },
+    "first_person_left_hand": {
+      "parent": "jellyfishing:item/power_karate_glove_left"
+    },
+    "third_person_right_hand": {
+      "parent": "jellyfishing:item/power_karate_glove_right"
+    },
+    "first_person_right_hand": {
+      "parent": "jellyfishing:item/power_karate_glove_right"
+    }
+  }
+}

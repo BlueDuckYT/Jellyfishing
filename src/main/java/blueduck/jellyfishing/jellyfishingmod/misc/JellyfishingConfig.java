@@ -20,6 +20,7 @@ public class JellyfishingConfig {
     public ConfigHelper.ConfigValueListener<Integer> GOLDEN_SPATULA_DAMAGE;
     public ConfigHelper.ConfigValueListener<Integer> KARATE_DAMAGE;
     public ConfigHelper.ConfigValueListener<Integer> MASTER_KARATE_DAMAGE;
+    public ConfigHelper.ConfigValueListener<Integer> POWER_KARATE_DAMAGE;
 
 
     public JellyfishingConfig(ForgeConfigSpec.Builder builder, ConfigHelper.Subscriber subscriber) {
@@ -52,6 +53,10 @@ public class JellyfishingConfig {
         this.MASTER_KARATE_DAMAGE= subscriber.subscribe(builder
                 .comment("Damage of the Master Karate Glove")
                 .defineInRange("master_karate_damage", 5, 1, 1000));
+        this.POWER_KARATE_DAMAGE= subscriber.subscribe(builder
+                .comment("Damage of the Power Karate Glove")
+                .defineInRange("power_karate_damage", 10, 1, 1000));
+
         builder.pop();
     }
 

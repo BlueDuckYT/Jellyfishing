@@ -5,29 +5,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Actual Final Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/master_karate_glove.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/master_karate_glove_left.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/master_karate_glove_right.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/karate_glove_item.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/master_karate_glove.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/master_karate_glove_item.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/advancements/jellyfishing/karate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/blocks/grill.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/master_karate_glove.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Grill Loot Table">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/power_karate_glove.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/power_karate_glove_left.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/power_karate_glove_right.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/power_karate_glove.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/DirectionalBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/DirectionalBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/BlockItemBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/BlockItemBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove_left.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove_left.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove_right.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/models/item/karate_glove_right.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/karate_glove.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/item/karate_glove.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/advancements/jellyfishing/sandy_suit.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/advancements/jellyfishing/sandy_suit.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes/air_suit_leggings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/algae_grass.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/algae_grass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/algae_grass_side.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/block/algae_grass_side.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/jellyfish_fields.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/jellyfish_fields.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/patty_wagon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/patty_wagon.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +97,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/blocks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/recipes" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -116,12 +108,12 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="blueduck.jellyfishing.jellyfishingmod.items" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\forge\tags\items\jolly_boxes" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\loot_tables\gameplay" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\recipes" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\models\item" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\blocks" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\advancements\jellyfishing" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\gameplay\hero_of_the_village" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="blueduck.jellyfishing.jellyfishingmod.blocks" />
@@ -130,12 +122,12 @@
       <recent name="blueduck.jellyfishing.jellyfishingmod.registry" />
       <recent name="blueduck.jellyfishing.jellyfishingmod.features" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\blocks" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\advancements\jellyfishing" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\models\item" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\recipes" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\gameplay\hero_of_the_village" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\forge\tags\items\jolly_boxes" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\loot_tables\gameplay" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -147,7 +139,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
+  <component name="RunManager" selected="Application.runClient">
     <configuration name="Jellyfishing 1.16.4 [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -262,13 +254,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00125" summary="Final 1.3.0 commit">
-      <created>1600370188176</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1600370188176</updated>
     </task>
     <task id="LOCAL-00126" summary="Fixed spawn eggs">
       <created>1600438765124</created>
@@ -606,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607221890255</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="Grill Loot Table">
+      <created>1607442377184</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1607442377185</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -623,7 +615,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixes jellyfish spawning" />
     <MESSAGE value="Actually fixed" />
     <MESSAGE value="Fixes nether portals in Jellyfish Fields" />
     <MESSAGE value="Added coral plants to the block tag, will now spawn in coral reefs" />
@@ -648,7 +639,8 @@
     <MESSAGE value="Karate Gloves" />
     <MESSAGE value="Final Changes" />
     <MESSAGE value="Actual Final Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actual Final Changes" />
+    <MESSAGE value="Grill Loot Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grill Loot Table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1599157394026">
@@ -683,22 +675,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601160840090" />
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1607379329586">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1607644168544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607379329586" />
-    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1607379329586">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607644168544" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1607644168543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607379329586" />
-    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1607379329586">
+    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607644168543" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1607644168543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607379329586" />
-    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1607379329586">
+    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607644168543" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1607644168543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607379329586" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607644168543" />
     <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

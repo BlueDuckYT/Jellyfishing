@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "jellyfishing:karate_glove"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "item": "jellyfishing:power_karate_glove"
+  }
+}
