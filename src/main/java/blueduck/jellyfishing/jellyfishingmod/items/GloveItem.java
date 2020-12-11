@@ -42,14 +42,9 @@ public class GloveItem extends Item {
         return !player.isCreative();
     }
 
-    public float getDestroySpeed(ItemStack stack, BlockState state) {
-        if (state.isIn(Blocks.COBWEB) || state.getBlock().getHarvestTool(state).equals(ToolType.AXE)) {
-            return 15.0F;
-        } else {
-            Material material = state.getMaterial();
-            return material != Material.PLANTS && material != Material.TALL_PLANTS && material != Material.CORAL && !state.isIn(BlockTags.LEAVES) && material != Material.GOURD ? 1.0F : 1.5F;
-        }
-    }
+//    public float getDestroySpeed(ItemStack stack, BlockState state) {
+//        return 0;
+//    }
 
     /**
      * Current implementations of this method in child classes do not use the entry argument beside ev. They just raise

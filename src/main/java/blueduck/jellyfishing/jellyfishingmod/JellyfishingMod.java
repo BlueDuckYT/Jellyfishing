@@ -195,7 +195,7 @@ public class JellyfishingMod
 
                         }
                     }
-                    else {
+                    else if (event.getEntityLiving().getEntityWorld().getRandom().nextDouble() < 0.5) {
                         if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.MAINHAND).isEmpty()) {
                             event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(JellyfishingItems.MASTER_KARATE_GLOVE.get()));
                             ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.MAINHAND, 0.085F);
@@ -205,6 +205,29 @@ public class JellyfishingMod
                             ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.OFFHAND, 0.085F);
 
                         }
+                    }
+                    else {
+                        if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.MAINHAND).isEmpty()) {
+                            event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(JellyfishingItems.POWER_KARATE_GLOVE.get()));
+                            ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.MAINHAND, 0.085F);
+                        }
+                        if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.OFFHAND).isEmpty()) {
+                            event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(JellyfishingItems.POWER_KARATE_GLOVE.get()));
+                            ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.OFFHAND, 0.085F);
+
+                        }
+                    }
+                }
+                if (event.getEntityLiving().getEntityWorld().getRandom().nextDouble() < 0.01) {
+                    event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(JellyfishingItems.AIR_SUIT_HELMET.get()));
+                    ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.HEAD, 0.01F);
+
+                    if (event.getEntityLiving().getEntityWorld().getRandom().nextDouble() < 0.5) {
+                        event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(JellyfishingItems.MASTER_KARATE_GLOVE.get()));
+                        ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.MAINHAND, 0.01F);
+                        event.getEntityLiving().setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(JellyfishingItems.MASTER_KARATE_GLOVE.get()));
+                        ((MobEntity) (event.getEntityLiving())).setDropChance(EquipmentSlotType.OFFHAND, 0.01F);
+
                     }
                 }
             }
