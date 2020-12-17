@@ -5,81 +5,132 @@
   "block.jellyfishing.seanut_brittle_block": "Шонат Хрупкий блок",
 
   "block.jellyfishing.coral_plant": "Коралловое растение",
-  "block.jellyfishing.tube_plant": "Трубный завод",
+  "block.jellyfishing.tube_plant": "Трубчатое растение",
   "block.jellyfishing.scrap_metal": "Металлолом",
-  "block.jellyfishing.coralstone": "Кораловый камень",
-  "block.jellyfishing.coralstone_wall": "Коралово камена стена",
-  "block.jellyfishing.coralstone_stairs": "Коралова камена лестница",
-  "block.jellyfishing.coralstone_slab": "Коралово каменый полублок",
+  "block.jellyfishing.scrap_metal_slab": "Плита из металлолома",
+  "block.jellyfishing.scrap_metal_stairs": "Ступеньки из металлолома",
+  "block.jellyfishing.coralstone": "Коралловый камень",
+  "block.jellyfishing.coralstone_wall": "Коралловая стена",
+  "block.jellyfishing.coralstone_stairs": "Ступеньки из кораллового камня",
+  "block.jellyfishing.coralstone_slab": "Плита из кораллового камня",
 
   "block.jellyfishing.polished_coralstone": "Полированый кораловый камень",
   "block.jellyfishing.polished_coralstone_stairs": "Полирована коралова камена лестница",
   "block.jellyfishing.polished_coralstone_slab": "Полированый кораловый каменый полублок",
 
-  "block.jellyfishing.algae_grass": "Стекло водоростей",
+  "block.jellyfishing.algae_grass": "Водоросли",
   "block.jellyfishing.algae_block": "Блок водоростей",
+  
+  "block.jellyfishing.grill": "Гриль",
 
-  "item.jellyfishing.jellyfish_net": "Медузова сеть",
-  "item.jellyfishing.jellyfish_jelly": "Медуза Желе",
-  "item.jellyfishing.blue_jellyfish_jelly": "Синия медуза желе",
+  "block.jellyfishing.vault_door": "Дверь убежища",
+  "block.jellyfishing.vault_trapdoor": "Люк убежища",
+
+  "item.jellyfishing.jellyfish_net": "Сеть для медуз",
+  "item.jellyfishing.jellyfish_jelly": "Желе из медузы",
+  "item.jellyfishing.blue_jellyfish_jelly": "Желе из синей медузы",
 
   "item.jellyfishing.jellyfish": "Медуза",
-  "item.jellyfishing.blue_jellyfish": "Синия медуза",
+  "item.jellyfishing.blue_jellyfish": "Синяя медуза",
 
   "item.jellyfishing.jellyfish_spawn_egg": "Яйцо призыва медузы",
   "item.jellyfishing.blue_jellyfish_spawn_egg": "Яйцо призыва синей медузы",
 
-  "item.jellyfishing.jellyfish_jelly_sandwich": "Медуза желе сендвич",
-  "item.jellyfishing.blue_jellyfish_jelly_sandwich": "Синий медуза желе сендвич",
+  "item.jellyfishing.jellyfish_jelly_sandwich": "Сендвич с желе из медузы",
+  "item.jellyfishing.blue_jellyfish_jelly_sandwich": "Сендвич с желе из синей медузы",
 
-  "item.jellyfishing.seanut_butter_jellyfish_jelly_sandwich": "Бутерброд с шоколадным маслом и желе",
-  "item.jellyfishing.seanut_butter_blue_jellyfish_jelly_sandwich": "Бутерброд с шоколадным маслом и синия медузами с желе",
+  "item.jellyfishing.seanut_butter_jellyfish_jelly_sandwich": "Бутерброд с арахисовым маслом и желе из медузы",
+  "item.jellyfishing.seanut_butter_blue_jellyfish_jelly_sandwich": "Бутерброд с арахисовым маслом и желе из синей медузы",
 
   "item.jellyfishing.seanut": "Арахис",
-  "item.jellyfishing.roasted_seanut": "Жареный арахес",
+  "item.jellyfishing.roasted_seanut": "Жареный арахис",
   "item.jellyfishing.seanut_butter": "Арахисовое масло",
-  "item.jellyfishing.seanut_brittle": "Хрупкий арахес",
+  "item.jellyfishing.seanut_brittle": "Хрупкий арахис",
+  
+  "item.jellyfishing.kelp_shake": "Хлюпик",
+  "item.jellyfishing.kelp_mustache": "Усы из водорослей",
+
+  "item.jellyfishing.triple_gooberberry_sunrise": "Тройной ореховый рассвет",
+  "item.jellyfishing.krabby_patty": "Крабсбургер",
+
+  "item.jellyfishing.music_disc_jellyfish_fields": "Музыкальный диск",
+  "item.jellyfishing.music_disc_jellyfish_fields.desc": "WhirlingWinds - Поля медуз",
+  "item.jellyfishing.spatula": "Лопатка",
+  "item.jellyfishing.golden_spatula": "Золотой лопатка",
+
+  "item.jellyfishing.grease_ball": "Комок жира",
+
+  "item.jellyfishing.air_suit_helmet": "Шлем водолазного костюма",
+  "item.jellyfishing.air_suit_chestplate": "Нагрудник водолазного костюма",
+  "item.jellyfishing.air_suit_leggings": "Штаны водолазного костюма",
+  "item.jellyfishing.air_suit_boots": "Обувь водолазного костюма",
+
+
+  "item.jellyfishing.karate_glove": "Перчатка для каратэ",
+  "item.jellyfishing.master_karate_glove": "Перчатка мастера каратэ",
+  "item.jellyfishing.power_karate_glove": "Перчатка силового каратэ",
 
 
   "entity.jellyfishing.jellyfish": "Медуза",
-  "entity.jellyfishing.blue_jellyfish": "Синя медуза",
+  "entity.jellyfishing.blue_jellyfish": "Синяя медуза",
+  "entity.minecraft.villager.jellyfishing.frycook": "Фритюрница",
 
   "biome.jellyfishing.jellyfish_fields": "Медузивые поля",
+  
+  "enchantment.jellyfishing.agility": "Ловкость",
+  "enchantment.jellyfishing.plundering": "Грабёж",
 
 
-
-
-  "advancements.jellyfishing.root.title": "Медуза",
+  "advancements.jellyfishing.root.title": "Медузы",
   "advancements.jellyfishing.root.description": "Начните свое приключение с медузами",
   "advancements.jellyfishing.im_ready.title": "Я готов!",
-  "advancements.jellyfishing.im_ready.description": "Войдите в поля медуз",
-  "advancements.jellyfishing.firmly_grasp_it.title": "Крепко возьмитесь за это",
+  "advancements.jellyfishing.im_ready.description": "Посетите поля с медузами",
+  "advancements.jellyfishing.firmly_grasp_it.title": "Крепко ухватитесь за неё",
   "advancements.jellyfishing.firmly_grasp_it.description": "Получите сеть для медуз",
-  "advancements.jellyfishing.catch.title": "Медузавство",
-  "advancements.jellyfishing.catch.description": "Поймать медузу",
+  "advancements.jellyfishing.ol_reliable.title": "Надёжный старина",
+  "advancements.jellyfishing.ol_reliable.description": "Зачаруйте сеть для медуз",
+  "advancements.jellyfishing.catch.title": "Человек-медуза",
+  "advancements.jellyfishing.catch.description": "Поймайте медузу",
   "advancements.jellyfishing.catch_blue.title": "Без имени",
-  "advancements.jellyfishing.catch_blue.description": "Поймать синюю медузу",
-  "advancements.jellyfishing.jelly.title": "Джем из медуз",
-  "advancements.jellyfishing.jelly.description": "Соберите желе с медузы",
-  "advancements.jellyfishing.jelly_sandwich.title": "Медуза желе сендвич",
-  "advancements.jellyfishing.jelly_sandwich.description": "Создать бутерброд с медузами и желе",
-  "advancements.jellyfishing.jelly_block.title": "Желе блок",
+  "advancements.jellyfishing.catch_blue.description": "Поймайте синюю медузу",
+  "advancements.jellyfishing.jelly.title": "Желе из медуз",
+  "advancements.jellyfishing.jelly.description": "Соберите желе из медузы у медузы",
+  "advancements.jellyfishing.jelly_sandwich.title": "Сэндвич с желе из медузы",
+  "advancements.jellyfishing.jelly_sandwich.description": "Создайте сэндвич с желе из медузы",
+  "advancements.jellyfishing.jelly_block.title": "Желейный блок",
   "advancements.jellyfishing.jelly_block.description": "Создайте желейный блок",
   "advancements.jellyfishing.seanut.title": "Арахис из моря",
-  "advancements.jellyfishing.seanut.description": "Найдите растение арахес",
-  "advancements.jellyfishing.roasted_seanut.title": "Сядьте у костра",
-  "advancements.jellyfishing.roasted_seanut.description": "Жареный арахес",
-  "advancements.jellyfishing.seanut_butter.title": "Арахесовае масло",
-  "advancements.jellyfishing.seanut_butter.description": "Приготовьте шоколадное масло с орехами и молоком",
-  "advancements.jellyfishing.seanut_brittle.title": "О, парень! арахес Хрупкий!",
-  "advancements.jellyfishing.seanut_brittle.description": "О, парень! арахес Хрупкий!",
-  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Бутерброд с шоколадным маслом и медузами",
-  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Приготовьте бутерброд с шоколадным маслом и медузами",
+  "advancements.jellyfishing.seanut.description": "Найдите арахисовое растение",
+  "advancements.jellyfishing.roasted_seanut.title": "Посидите у костра",
+  "advancements.jellyfishing.roasted_seanut.description": "Жареный арахис",
+  "advancements.jellyfishing.seanut_butter.title": "Арахисовое масло",
+  "advancements.jellyfishing.seanut_butter.description": "Приготовьте арахисовое масло с орехами и молоком",
+  "advancements.jellyfishing.seanut_brittle.title": "О, Боже! Арахисовые леденцы!",
+  "advancements.jellyfishing.seanut_brittle.description": "Сделайте немного арахисовых леденцов",
+  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Сендвич с арахисовым маслом и желе из медузы",
+  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Сделайте бутерброд с арахисовым маслом и желе из медузы",
+  "advancements.jellyfishing.mustache.title": "Теперь, когда мы мужчины!",
+  "advancements.jellyfishing.mustache.description": "Сделайте усы из водорослей",
+  "advancements.jellyfishing.ice_cream.title": "О, официант!",
+  "advancements.jellyfishing.ice_cream.description": "Сделайте тройной ореховый рассвет",
+  "advancements.jellyfishing.krabby_patty.title": "100 долларов за крабсбургер?",
+  "advancements.jellyfishing.krabby_patty.description": "Купите крабсбургер",
+  "advancements.jellyfishing.spatula.title": "Лучшая в мире фритюрница",
+  "advancements.jellyfishing.spatula.description": "Создайте лопатку",
+  "advancements.jellyfishing.golden_spatula.title": "Золотая лопатка",
+  "advancements.jellyfishing.golden_spatula.description": "Создайте золотую лопатку",
+  "advancements.jellyfishing.sandy_suit.title": "Прямо из Техаса",
+  "advancements.jellyfishing.sandy_suit.description": "Создайте полный водолазный костюм",
+  "advancements.jellyfishing.karate.title": "Кара-тэй",
+  "advancements.jellyfishing.karate.description": "Создайте перчатку мастера карате",
 
-  "death.attack.sting.player": "{Player} был ужален медузами",
+  "death.attack.sting.player": "{Player} был ужален медузой",
 
-  "jellyfishing.subtitle.sting": "Медуза укус"
+  "jellyfishing.subtitle.sting": "Укусы медуз",
+  "jellyfishing.subtitle.jellyfishfields": "Поля медуз",
 
+  "enchantment.jellyfishing.agility.desc": "Уменьшает шанс того, что медуза увернется от вашей сети",
+  "enchantment.jellyfishing.plundering.desc": "Есть шанс получить дополнительную добычу при ловле медуз"
 
 
 }
