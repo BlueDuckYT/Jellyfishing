@@ -6,10 +6,7 @@ import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.JellyfishRen
 import blueduck.jellyfishing.jellyfishingmod.client.entity.renderer.PattyWagonRenderer;
 import blueduck.jellyfishing.jellyfishingmod.entities.AbstractJellyfishEntity;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
-import blueduck.jellyfishing.jellyfishingmod.misc.CloudParticle;
-import blueduck.jellyfishing.jellyfishingmod.misc.ConfigHelper;
-import blueduck.jellyfishing.jellyfishingmod.misc.JellyfishingConfig;
-import blueduck.jellyfishing.jellyfishingmod.misc.JellyfishingVillageStructures;
+import blueduck.jellyfishing.jellyfishingmod.misc.*;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -74,9 +71,11 @@ public class JellyfishingMod
     public static String MODID = "jellyfishing";
 
     public static JellyfishingConfig CONFIG;
+    public static JellyfishingClientConfig CLIENT_CONFIG;
 
     public JellyfishingMod() {
         CONFIG = ConfigHelper.register(ModConfig.Type.COMMON, JellyfishingConfig::new);
+        CLIENT_CONFIG = ConfigHelper.register(ModConfig.Type.CLIENT, JellyfishingClientConfig::new);
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

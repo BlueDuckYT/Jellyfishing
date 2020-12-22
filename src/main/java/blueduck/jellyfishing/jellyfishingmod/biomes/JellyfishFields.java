@@ -1,9 +1,11 @@
 package blueduck.jellyfishing.jellyfishingmod.biomes;
 
+import blueduck.jellyfishing.jellyfishingmod.JellyfishingMod;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
 import com.google.common.collect.Lists;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.audio.BackgroundMusicSelector;
+import net.minecraft.client.audio.BackgroundMusicTracks;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.util.registry.Registry;
@@ -29,9 +31,13 @@ public class JellyfishFields extends JellyfishingBiome {
     static final MobSpawnInfo.Builder SPAWN_SETTINGS = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 
     static final BiomeGenerationSettings.Builder GENERATION_SETTINGS = (new BiomeGenerationSettings.Builder()).withSurfaceBuilder(SURFACE_BUILDER);
+
+    static float CLOUDS = JellyfishingMod.CLIENT_CONFIG.FLOWER_CLOUDS.get() ? 0.000005F : 0f;
+    static BackgroundMusicSelector MUSIC = JellyfishingMod.CLIENT_CONFIG.MUSIC.get() ? new BackgroundMusicSelector(JellyfishingSounds.BACKGROUND_MUSIC.get(), 200, 4000, false) : BackgroundMusicTracks.WORLD_MUSIC;
+
     //3448555
     public JellyfishFields() {
-        super(CLIMATE, Biome.Category.OCEAN, -1.2F, .15F, (new BiomeAmbience.Builder()).setWaterColor(4566523).setWaterFogColor(2587774).setFogColor(12638463).withSkyColor(7842047).setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).setParticle(new ParticleEffectAmbience(JellyfishingParticles.CLOUD_PARTICLE.get(), 0.000005F)).setMusic(new BackgroundMusicSelector(JellyfishingSounds.BACKGROUND_MUSIC.get(), 200, 4000, false)).build(), GENERATION_SETTINGS.build(), SPAWN_SETTINGS.copy());
+        super(CLIMATE, Biome.Category.OCEAN, -1.2F, .15F, (new BiomeAmbience.Builder()).setWaterColor(4566523).setWaterFogColor(2587774).setFogColor(12638463).withSkyColor(7842047).setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).setParticle(new ParticleEffectAmbience(JellyfishingParticles.CLOUD_PARTICLE.get(), CLOUDS)).setMusic(new BackgroundMusicSelector(JellyfishingSounds.BACKGROUND_MUSIC.get(), 200, 4000, false)).build(), GENERATION_SETTINGS.build(), SPAWN_SETTINGS.copy());
     }
     static {
         GENERATION_SETTINGS.withStructure(StructureFeatures.VILLAGE_PLAINS);

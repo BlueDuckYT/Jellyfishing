@@ -55,7 +55,7 @@ public class JellyfishingConfig {
                 .defineInRange("master_karate_damage", 5, 1, 1000));
         this.POWER_KARATE_DAMAGE= subscriber.subscribe(builder
                 .comment("Damage of the Power Karate Glove")
-                .defineInRange("power_karate_damage", 10, 1, 1000));
+                .defineInRange("power_karate_damage", 18, 1, 1000));
 
         builder.pop();
     }
