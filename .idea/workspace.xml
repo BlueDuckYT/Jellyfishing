@@ -5,7 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Client config">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Waterloggable grills and chinese translation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +126,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
+  <component name="RunManager" selected="Application.runClient">
     <configuration name="Jellyfishing 1.16.4 [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -241,13 +241,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00129" summary="Allows for new Jelly Blocks to be made and adds patty wagon assets">
-      <created>1601423322568</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1601423322569</updated>
     </task>
     <task id="LOCAL-00130" summary="1.16.4 Port and spatula">
       <created>1605370455419</created>
@@ -585,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608662766221</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="Waterloggable grills and chinese translation">
+      <created>1608730459963</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1608730459966</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed kelp shake recipe" />
     <MESSAGE value="Broken particles" />
     <MESSAGE value="Particles now work, added more placeholder textures" />
     <MESSAGE value="Backgroud music, plundering buff" />
@@ -627,7 +626,8 @@
     <MESSAGE value="Power Karate Glove, new algae grass, bugfixes" />
     <MESSAGE value="Fixed crash w/ quark" />
     <MESSAGE value="Client config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client config" />
+    <MESSAGE value="Waterloggable grills and chinese translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Waterloggable grills and chinese translation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606333348388">
