@@ -5,15 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixed crash w/ quark">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/textures/painting/millionth_dollar.png" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Client config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingPaintings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingPaintings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +126,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.runClient">
+  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
     <configuration name="Jellyfishing 1.16.4 [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -248,13 +241,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00128" summary="Fixed absurdly large saturation values">
-      <created>1601380998397</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1601380998398</updated>
     </task>
     <task id="LOCAL-00129" summary="Allows for new Jelly Blocks to be made and adds patty wagon assets">
       <created>1601423322568</created>
@@ -592,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607656763119</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="Client config">
+      <created>1608662766220</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1608662766221</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -609,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added coral plants to the block tag, will now spawn in coral reefs" />
     <MESSAGE value="Fixed kelp shake recipe" />
     <MESSAGE value="Broken particles" />
     <MESSAGE value="Particles now work, added more placeholder textures" />
@@ -634,7 +626,8 @@
     <MESSAGE value="Grill Loot Table" />
     <MESSAGE value="Power Karate Glove, new algae grass, bugfixes" />
     <MESSAGE value="Fixed crash w/ quark" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed crash w/ quark" />
+    <MESSAGE value="Client config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client config" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606333348388">
@@ -661,22 +654,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601160840090" />
-    <state width="1493" height="143" key="GridCell.Tab.0.bottom" timestamp="1608517035222">
+    <state width="1493" height="143" key="GridCell.Tab.0.bottom" timestamp="1608662995980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608517035222" />
-    <state width="1493" height="143" key="GridCell.Tab.0.center" timestamp="1608517035222">
+    <state width="1493" height="143" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608662995980" />
+    <state width="1493" height="143" key="GridCell.Tab.0.center" timestamp="1608662995979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608517035222" />
-    <state width="1493" height="143" key="GridCell.Tab.0.left" timestamp="1608517035221">
+    <state width="1493" height="143" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608662995979" />
+    <state width="1493" height="143" key="GridCell.Tab.0.left" timestamp="1608662995979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608517035221" />
-    <state width="1493" height="143" key="GridCell.Tab.0.right" timestamp="1608517035222">
+    <state width="1493" height="143" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608662995979" />
+    <state width="1493" height="143" key="GridCell.Tab.0.right" timestamp="1608662995979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608517035222" />
+    <state width="1493" height="143" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608662995979" />
     <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -697,10 +690,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607656769150">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608662773686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607656769150" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608662773686" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
