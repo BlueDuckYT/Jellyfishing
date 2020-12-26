@@ -283,8 +283,10 @@ public class JellyfishingMod
                 event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/kelp_mustache"))).name("jellyfishing_inject").build());
             }
             if (event.getName().equals(new ResourceLocation("minecraft", "chests/end_city_treasure"))) {
-                event.getTable().addPool(LootPool.builder().addEntry(TableLootEntry.builder(new ResourceLocation(MODID, "chests/end_city_treasure"))).name("jellyfishing_inject").build());
-            }
+                LootPool pool = event.getTable().getPool("main");
+                if (pool != null) {
+                    addEntry(pool, getInjectEntry(new ResourceLocation("jellyfishing:chests/end_city_treasure"), 10, 1));
+                }}
 
 
             //Fishing Loot Injection from Aquaculture 2 by Team Metallurgy
