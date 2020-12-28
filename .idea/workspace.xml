@@ -5,10 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="one more thing">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="loot changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/end_city_treasure.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/end_city_treasure.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.runClient">
+  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
     <configuration name="Jellyfishing 1.16.4 [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -225,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Jellyfishing [build]" />
         <item itemvalue="Gradle.Jellyfishing 1.16.4 [genIntellijRuns]" />
         <item itemvalue="Gradle.Jellyfishing [gradlew --stop]" />
         <item itemvalue="Gradle.Jellyfishing" />
         <item itemvalue="Gradle.Jellyfishing [setupDecompWorkspace]" />
-        <item itemvalue="Gradle.Jellyfishing [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -243,13 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00131" summary="Spatula Fix">
-      <created>1605370558407</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1605370558407</updated>
     </task>
     <task id="LOCAL-00132" summary="Spatulas now Render">
       <created>1605398409683</created>
@@ -587,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608730586842</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="loot changes">
+      <created>1608998919294</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1608998919294</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -604,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Particles now work, added more placeholder textures" />
     <MESSAGE value="Backgroud music, plundering buff" />
     <MESSAGE value="End City Loot" />
     <MESSAGE value="Clouds now spawn in the clouds" />
@@ -629,7 +627,8 @@
     <MESSAGE value="Client config" />
     <MESSAGE value="Waterloggable grills and chinese translation" />
     <MESSAGE value="one more thing" />
-    <option name="LAST_COMMIT_MESSAGE" value="one more thing" />
+    <MESSAGE value="loot changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="loot changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606333348388">
@@ -656,22 +655,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601160840090" />
-    <state width="1493" height="143" key="GridCell.Tab.0.bottom" timestamp="1608997130909">
+    <state width="1493" height="143" key="GridCell.Tab.0.bottom" timestamp="1609097449716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608997130909" />
-    <state width="1493" height="143" key="GridCell.Tab.0.center" timestamp="1608997130908">
+    <state width="1493" height="143" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609097449716" />
+    <state width="1493" height="143" key="GridCell.Tab.0.center" timestamp="1609097449716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608997130908" />
-    <state width="1493" height="143" key="GridCell.Tab.0.left" timestamp="1608997130908">
+    <state width="1493" height="143" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609097449716" />
+    <state width="1493" height="143" key="GridCell.Tab.0.left" timestamp="1609097449715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608997130908" />
-    <state width="1493" height="143" key="GridCell.Tab.0.right" timestamp="1608997130908">
+    <state width="1493" height="143" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609097449715" />
+    <state width="1493" height="143" key="GridCell.Tab.0.right" timestamp="1609097449716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608997130908" />
+    <state width="1493" height="143" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609097449716" />
     <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -692,10 +691,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608730589117">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608998974105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608730589117" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608998974105" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
