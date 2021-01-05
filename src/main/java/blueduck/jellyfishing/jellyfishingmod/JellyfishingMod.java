@@ -8,6 +8,8 @@ import blueduck.jellyfishing.jellyfishingmod.entities.AbstractJellyfishEntity;
 import blueduck.jellyfishing.jellyfishingmod.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.jellyfishingmod.misc.*;
 import blueduck.jellyfishing.jellyfishingmod.registry.*;
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.ImmutableSet;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.ParticleManager;
@@ -16,13 +18,11 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
+import net.minecraft.entity.merchant.villager.VillagerEntity;
 import net.minecraft.entity.merchant.villager.VillagerProfession;
 import net.minecraft.entity.monster.DrownedEntity;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.item.MerchantOffer;
-import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.*;
 import net.minecraft.loot.LootEntry;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTables;
@@ -58,7 +58,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -115,17 +118,18 @@ public class JellyfishingMod
             PointOfInterestType.registerBlockStates(JellyfishingVillagers.FRYCOOK_POI.get());
             PointOfInterestType.BLOCKS_OF_INTEREST.addAll(JellyfishingVillagers.FRYCOOK_POI.get().blockStates);
         });
-        // JellyfishingFeatures.registerConfiguredFeatures();
+
+        ImmutableMap.Builder<Item,Integer> FOOD_VALUES_BUILDER = ImmutableMap.builder();
+        ImmutableSet.Builder<Item> ALLOWED_ITEMS_BUILDER = ImmutableSet.builder();
+
+        VillagerEntity.FOOD_VALUES = FOOD_VALUES_BUILDER.putAll(VillagerEntity.FOOD_VALUES).put(JellyfishingItems.ROASTED_SEANUT.get(), 2).put(JellyfishingItems.SEANUT_BRITTLE.get(), 5).put(JellyfishingItems.JELLYFISH_JELLY_SANDWICH.get(), 4).put(JellyfishingItems.BLUE_JELLYFISH_JELLY_SANDWICH.get(), 5).put(JellyfishingItems.SEANUT_JELLYFISH_JELLY_SANDWICH.get(), 5).put(JellyfishingItems.SEANUT_BLUE_JELLYFISH_JELLY_SANDWICH.get(), 6).put(JellyfishingItems.KRABBY_PATTY.get(), 20).put(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get(), 8).build();
+        VillagerEntity.ALLOWED_INVENTORY_ITEMS = ALLOWED_ITEMS_BUILDER.addAll(VillagerEntity.ALLOWED_INVENTORY_ITEMS).add(JellyfishingItems.ROASTED_SEANUT.get()).add(JellyfishingItems.SEANUT_BRITTLE.get()).add(JellyfishingItems.JELLYFISH_JELLY_SANDWICH.get()).add(JellyfishingItems.BLUE_JELLYFISH_JELLY_SANDWICH.get()).add(JellyfishingItems.SEANUT_JELLYFISH_JELLY_SANDWICH.get()).add(JellyfishingItems.SEANUT_BLUE_JELLYFISH_JELLY_SANDWICH.get()).add(JellyfishingItems.KRABBY_PATTY.get()).add(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get()).build();
 
 
-//        JellyfishingBiomes.JELLYFISH_FIELDS.get().func_203611_a(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 50)).withPlacement(Placement.field_215028_n.configure(new CountRangeConfig(10, 0, 0, 256))));
-//        JellyfishingBiomes.JELLYFISH_FIELDS.get().func_203611_a(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 50)).withPlacement(Placement.field_215028_n.configure(new CountRangeConfig(250, 35, 0, 60))));
-//        DefaultBiomeFeatures.func_222288_h(JellyfishingBiomes.JELLYFISH_FIELDS.get());
-//        DefaultBiomeFeatures.func_222291_j(JellyfishingBiomes.JELLYFISH_FIELDS.get());
-        //JellyfishingBiomes.JELLYFISH_FIELDS.get().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(8, 0.1D)).withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 
 
-           }
+
+    }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
@@ -155,6 +159,7 @@ public class JellyfishingMod
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
+
     }
 
     @SubscribeEvent
