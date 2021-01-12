@@ -8,6 +8,7 @@ import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingEntities;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingItems;
 import blueduck.jellyfishing.jellyfishingmod.registry.JellyfishingSounds;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.client.Minecraft;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
@@ -27,6 +28,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
@@ -170,7 +172,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if ((!this.canDespawn(1) && !(JellyfishingMod.CONFIG.CAUGHT_JELLYFISH_STING.get())) || SandySuitItem.hasAllPieces(entityIn)) {
             return;
         }
-        if (canThisEntitySting && stingCounter == 0 && this.isInWater() && JellyfishingMod.CONFIG.JELLYFISH_STING.get()) {
+        if (canThisEntitySting && stingCounter == 0 && this.isInWater() && JellyfishingMod.CONFIG.JELLYFISH_STING.get() && !entityIn.getEntityWorld().getDifficulty().equals(Difficulty.PEACEFUL)) {
             stingCounter = stingTime;
             if (this.getEntityWorld().getRandom().nextDouble() < stingChance) {
                 entityIn.attackEntityFrom(JELLYFISH_STING, stingDmg);
