@@ -30,6 +30,7 @@ public class JellyfishingBiomes {
         registerBiome(JELLYFISH_FIELDS.get(), BiomeManager.BiomeType.WARM, BiomeDictionary.Type.OCEAN, BiomeDictionary.Type.OVERWORLD);
     }
     public static void registerBiome(Biome biome, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
+        BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, new ResourceLocation("jellyfishing:jellyfish_fields")), types);
         BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, new ResourceLocation("jellyfishing:jellyfish_fields")), JellyfishingMod.CONFIG.BIOME_WEIGHT.get()));
     }
 
