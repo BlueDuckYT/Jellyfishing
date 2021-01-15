@@ -1,0 +1,15 @@
+{
+  "required": false,
+  "package": "blueduck.jellyfishing.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "outer_end.refmap.json",
+  "client": [
+  ],
+  "mixins": [
+    "HoneyBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

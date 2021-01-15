@@ -5,9 +5,74 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixed suit bug">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Jellyfish only sting on difficulty levels above peaceful">
+      <change afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/mixin/HoneyBlockMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jellyfishing.mixins.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/JellyfishingMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/biomes/JellyfishFields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/biomes/JellyfishingBiome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/biomes/JellyfishingBiome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/AlgaeGrassBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/AlgaeGrassBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/BlueJellyBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/BlueJellyBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/CoralPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/CoralPlant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/DirectionalBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/DirectionalBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/JellyBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/JellyBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/JellyMachineTE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/JellyMachineTE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/JellyfishMachineBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/JellyfishMachineBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/JellyfishingDoor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/JellyfishingDoor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/JellyfishingTrapDoor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/JellyfishingTrapDoor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/blocks/SeanutBush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/blocks/SeanutBush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/ClientReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/ClientReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/AbstractJellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/model/AbstractJellyfishModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/BlueJellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/model/BlueJellyfishModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/JellyfishModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/model/JellyfishModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/PattyWagonModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/model/PattyWagonModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/model/SandySuitModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/model/SandySuitModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/renderer/AbstractJellyfishRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/renderer/AbstractJellyfishRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/renderer/BlueJellyfishRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/renderer/BlueJellyfishRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/renderer/JellyfishRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/renderer/JellyfishRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/client/entity/renderer/PattyWagonRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/client/entity/renderer/PattyWagonRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/AbstractJellyfishEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/BlueJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/BlueJellyfishEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/JellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/JellyfishEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/entities/PattyWagonEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/PattyWagonEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/features/CoralPlantFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/features/CoralPlantFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/features/SeanutBushFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/features/SeanutBushFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/features/TubePlantFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/features/TubePlantFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/DiverSuitItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/DiverSuitItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/GloveItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/GloveItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/InvisibilitySpray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/InvisibilitySpray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/JellyfishItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishNetItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/JellyfishNetItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishingMusicDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/JellyfishingMusicDisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/JellyfishingSpawnEgg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/JellyfishingSpawnEgg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/KelpMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/KelpMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/KelpMustacheItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/KelpMustacheItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/KelpShakeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/KelpShakeItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SandySuitItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/SandySuitItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SpatulaItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/SpatulaItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/items/SuitMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/items/SuitMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/AgilityEnchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/AgilityEnchantment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/CloudParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/CloudParticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/ConfigHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/ConfigHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/JellyfishingClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/JellyfishingConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/JellyfishingVillageStructures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/JellyfishingVillageStructures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/misc/PlunderingEnchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/PlunderingEnchantment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/BlockItemBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/BlockItemBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBiomes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingBiomes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingConfiguredFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingConfiguredFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingEnchantments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingEnchantments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingEntities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingPaintings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingPaintings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingParticles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingParticles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingSounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingSounds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/jellyfishingmod/registry/JellyfishingVillagers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/registry/JellyfishingVillagers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips/grease.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips/grease.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +150,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -96,26 +161,26 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="blueduck.jellyfishing.jellyfishingmod.items" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\textures\entity" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\recipes" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\models\item" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\blocks" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\advancements\jellyfishing" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="blueduck.jellyfishing.jellyfishingmod.misc" />
-      <recent name="blueduck.jellyfishing.jellyfishingmod.blocks" />
-      <recent name="blueduck.jellyfishing.jellyfishingmod.items" />
-      <recent name="blueduck.jellyfishing.jellyfishingmod.registry" />
-      <recent name="blueduck.jellyfishing.jellyfishingmod.features" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\forge\tags\items\jolly_boxes" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\loot_tables\gameplay" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="blueduck.jellyfishing.mixin" />
+      <recent name="blueduck.jellyfishing.jellyfishingmod.misc" />
+      <recent name="blueduck.jellyfishing.jellyfishingmod.blocks" />
+      <recent name="blueduck.jellyfishing.jellyfishingmod.items" />
+      <recent name="blueduck.jellyfishing.jellyfishingmod.registry" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\textures\entity" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\recipes" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\models\item" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\blocks" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -127,7 +192,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
+  <component name="RunManager" selected="Application.runClient">
     <configuration name="Jellyfishing 1.16.4 [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -242,13 +307,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Basic config">
-      <created>1605440178476</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1605440178476</updated>
     </task>
     <task id="LOCAL-00136" summary="Added more config options">
       <created>1605441468129</created>
@@ -586,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610420522699</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="Jellyfish only sting on difficulty levels above peaceful">
+      <created>1610422394816</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1610422394816</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +668,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Clouds" />
     <MESSAGE value="Sandwich Changes" />
     <MESSAGE value="Villager change" />
     <MESSAGE value="Balanced jellyfish" />
@@ -628,13 +692,14 @@
     <MESSAGE value="zombie villager" />
     <MESSAGE value="Food can be used with villagers" />
     <MESSAGE value="Fixed suit bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed suit bug" />
+    <MESSAGE value="Jellyfish only sting on difficulty levels above peaceful" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jellyfish only sting on difficulty levels above peaceful" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606333348388">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1610723287580">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606333348388" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1610723287580" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605888210849">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -655,22 +720,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609862179059" />
-    <state width="1493" height="141" key="GridCell.Tab.0.bottom" timestamp="1609956997329">
+    <state width="1493" height="141" key="GridCell.Tab.0.bottom" timestamp="1610422447246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="141" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609956997329" />
-    <state width="1493" height="141" key="GridCell.Tab.0.center" timestamp="1609956997329">
+    <state width="1493" height="141" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610422447246" />
+    <state width="1493" height="141" key="GridCell.Tab.0.center" timestamp="1610422447246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="141" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609956997329" />
-    <state width="1493" height="141" key="GridCell.Tab.0.left" timestamp="1609956997329">
+    <state width="1493" height="141" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610422447246" />
+    <state width="1493" height="141" key="GridCell.Tab.0.left" timestamp="1610422447246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="141" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609956997329" />
-    <state width="1493" height="141" key="GridCell.Tab.0.right" timestamp="1609956997329">
+    <state width="1493" height="141" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610422447246" />
+    <state width="1493" height="141" key="GridCell.Tab.0.right" timestamp="1610422447246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="141" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609956997329" />
+    <state width="1493" height="141" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610422447246" />
     <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607106503551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -691,18 +756,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1609871660115">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610422398383">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609871660115" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610422398383" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1605305366054" />
-    <state x="486" y="201" key="git4idea.merge.GitPullDialog" timestamp="1601381000820">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="486" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1601381000820" />
     <state x="475" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1606401035523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -711,9 +772,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607023506792" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609821774063">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610722888978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609821774063" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610722888978" />
   </component>
 </project>
