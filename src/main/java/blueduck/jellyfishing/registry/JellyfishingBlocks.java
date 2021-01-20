@@ -6,6 +6,7 @@ import blueduck.jellyfishing.blocks.DirectionalBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.ToolType;
@@ -97,10 +98,61 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> BLUE_BAMBOO_WALL = BLOCKS.register("blue_bamboo_wall", () -> new RotatedPillarBlock(Block.Properties.from(Blocks.BAMBOO)));
     public static final RegistryObject<Item> BLUE_BAMBOO_WALL_ITEM = ITEMS.register("blue_bamboo_wall", () -> new BlockItemBase(BLUE_BAMBOO_WALL.get()));
 
+    public static final RegistryObject<Block> WHITE_CARPETED_TILES = BLOCKS.register("white_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> WHITE_CARPETED_TILES_ITEM = ITEMS.register("white_carpeted_tiles", () -> new BlockItemBase(WHITE_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> ORANGE_CARPETED_TILES = BLOCKS.register("orange_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.ORANGE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> ORANGE_CARPETED_TILES_ITEM = ITEMS.register("orange_carpeted_tiles", () -> new BlockItemBase(ORANGE_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> MAGENTA_CARPETED_TILES = BLOCKS.register("magenta_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.MAGENTA_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> MAGENTA_CARPETED_TILES_ITEM = ITEMS.register("magenta_carpeted_tiles", () -> new BlockItemBase(MAGENTA_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_CARPETED_TILES = BLOCKS.register("light_blue_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.LIGHT_BLUE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> LIGHT_BLUE_CARPETED_TILES_ITEM = ITEMS.register("light_blue_carpeted_tiles", () -> new BlockItemBase(LIGHT_BLUE_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> YELLOW_CARPETED_TILES = BLOCKS.register("yellow_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.YELLOW_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> YELLOW_CARPETED_TILES_ITEM = ITEMS.register("yellow_carpeted_tiles", () -> new BlockItemBase(YELLOW_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> LIME_CARPETED_TILES = BLOCKS.register("lime_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.LIME_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> LIME_CARPETED_TILES_ITEM = ITEMS.register("lime_carpeted_tiles", () -> new BlockItemBase(LIME_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> PINK_CARPETED_TILES = BLOCKS.register("pink_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.PINK_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> PINK_CARPETED_TILES_ITEM = ITEMS.register("pink_carpeted_tiles", () -> new BlockItemBase(PINK_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> GRAY_CARPETED_TILES = BLOCKS.register("gray_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.GRAY_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> GRAY_CARPETED_TILES_ITEM = ITEMS.register("gray_carpeted_tiles", () -> new BlockItemBase(GRAY_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_CARPETED_TILES = BLOCKS.register("light_gray_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.LIGHT_GRAY_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> LIGHT_GRAY_CARPETED_TILES_ITEM = ITEMS.register("light_gray_carpeted_tiles", () -> new BlockItemBase(LIGHT_GRAY_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> CYAN_CARPETED_TILES = BLOCKS.register("cyan_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.CYAN_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> CYAN_CARPETED_TILES_ITEM = ITEMS.register("cyan_carpeted_tiles", () -> new BlockItemBase(CYAN_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> PURPLE_CARPETED_TILES = BLOCKS.register("purple_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.PURPLE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> PURPLE_CARPETED_TILES_ITEM = ITEMS.register("purple_carpeted_tiles", () -> new BlockItemBase(PURPLE_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> BLUE_CARPETED_TILES = BLOCKS.register("blue_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.BLUE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> BLUE_CARPETED_TILES_ITEM = ITEMS.register("blue_carpeted_tiles", () -> new BlockItemBase(BLUE_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> BROWN_CARPETED_TILES = BLOCKS.register("brown_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> BROWN_CARPETED_TILES_ITEM = ITEMS.register("brown_carpeted_tiles", () -> new BlockItemBase(BROWN_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> GREEN_CARPETED_TILES = BLOCKS.register("green_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.GREEN_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> GREEN_CARPETED_TILES_ITEM = ITEMS.register("green_carpeted_tiles", () -> new BlockItemBase(GREEN_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> RED_CARPETED_TILES = BLOCKS.register("red_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.RED_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> RED_CARPETED_TILES_ITEM = ITEMS.register("red_carpeted_tiles", () -> new BlockItemBase(RED_CARPETED_TILES.get()));
+
+    public static final RegistryObject<Block> BLACK_CARPETED_TILES = BLOCKS.register("black_carpeted_tiles", () -> new Block(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.BLACK_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.CLOTH)));
+    public static final RegistryObject<Item> BLACK_CARPETED_TILES_ITEM = ITEMS.register("black_carpeted_tiles", () -> new BlockItemBase(BLACK_CARPETED_TILES.get()));
+
+
+
+
     public static final RegistryObject<Block> SEANUT_BUSH = BLOCKS.register("seanut_bush", () -> new SeanutBush(Block.Properties.create(Material.OCEAN_PLANT).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)));
 
     public static final RegistryObject<Block> GRILL = BLOCKS.register("grill", () -> new DirectionalBlock(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool().notSolid()));
-    public static final RegistryObject<Item> GRILL_ITEM = ITEMS.register("grill", () -> new BlockItemBase(GRILL.get()));
+    public static final RegistryObject<Item> GRILL_ITEM = ITEMS.register("grill", () -> new BlockItem(GRILL.get(), new Item.Properties().group(ItemGroup.DECORATIONS)));
 
 
     //public static final RegistryObject<Block> JELLYFISH_MACHINE = BLOCKS.register("jellyfish_machine", () -> new JellyfishMachineBlock(Block.Properties.create(Material.CLAY, MaterialColor.BROWN).sound(SoundType.METAL)));
