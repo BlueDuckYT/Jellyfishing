@@ -56,7 +56,7 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> VAULT_TRAPDOOR = BLOCKS.register("vault_trapdoor", () -> new TrapDoorBlock(Block.Properties.from(VAULT_DOOR.get())));
     public static final RegistryObject<Item> VAULT_TRAPDOOR_ITEM = ITEMS.register("vault_trapdoor", () -> new BlockItemBase(VAULT_TRAPDOOR.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
 
-    public static final RegistryObject<Block> SCRAP_METAL_WINDOW = BLOCKS.register("scrap_metal_window", () -> new TrapDoorBlock(Block.Properties.from(VAULT_DOOR.get())));
+    public static final RegistryObject<Block> SCRAP_METAL_WINDOW = BLOCKS.register("scrap_metal_window", () -> new TrapDoorBlock(Block.Properties.from(VAULT_DOOR.get()).notSolid()));
     public static final RegistryObject<Item> SCRAP_METAL_WINDOW_ITEM = ITEMS.register("scrap_metal_window", () -> new BlockItemBase(SCRAP_METAL_WINDOW.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
 
     public static final RegistryObject<Block> SEANUT_BRITTLE_BLOCK = BLOCKS.register("seanut_brittle_block", () -> new Block(Block.Properties.create(Material.GLASS, MaterialColor.BROWN).sound(SoundType.STONE).hardnessAndResistance(0.3F, 0.3F).harvestTool(ToolType.PICKAXE).harvestLevel(0)));

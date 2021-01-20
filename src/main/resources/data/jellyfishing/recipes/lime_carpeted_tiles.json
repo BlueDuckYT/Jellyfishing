@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#$",
+    "$#"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "$": {
+      "item": "minecraft:lime_wool"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:lime_carpeted_tiles"
+  }
+}
