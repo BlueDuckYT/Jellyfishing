@@ -25,7 +25,7 @@ public class JellyfishFields extends JellyfishingBiome {
 
     static final BiomeGenerationSettings.Builder GENERATION_SETTINGS = (new BiomeGenerationSettings.Builder()).withSurfaceBuilder(SURFACE_BUILDER);
 
-    static float CLOUDS = JellyfishingMod.CLIENT_CONFIG.FLOWER_CLOUDS.get() ? 0.000005F : 0f;
+    static float CLOUDS = JellyfishingMod.CONFIG.FLOWER_CLOUDS.get() ? 0.000005F : 0f;
     static BackgroundMusicSelector MUSIC = JellyfishingMod.CLIENT_CONFIG.MUSIC.get() ? new BackgroundMusicSelector(JellyfishingSounds.BACKGROUND_MUSIC.get(), 200, 4000, false) : BackgroundMusicTracks.WORLD_MUSIC;
 
     //3448555

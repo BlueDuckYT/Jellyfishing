@@ -18,6 +18,9 @@ public class JellyfishingConfig {
     public ConfigHelper.ConfigValueListener<Integer> POWER_KARATE_DAMAGE;
 
 
+    public ConfigHelper.ConfigValueListener<Boolean> FLOWER_CLOUDS;
+
+
     public JellyfishingConfig(ForgeConfigSpec.Builder builder, ConfigHelper.Subscriber subscriber) {
         builder.push("General");
         this.BIOME_WEIGHT= subscriber.subscribe(builder
@@ -51,6 +54,10 @@ public class JellyfishingConfig {
         this.POWER_KARATE_DAMAGE= subscriber.subscribe(builder
                 .comment("Damage of the Power Karate Glove")
                 .defineInRange("power_karate_damage", 18, 1, 1000));
+
+        this.FLOWER_CLOUDS = subscriber.subscribe(builder
+                .comment("Enable Flower Clouds?")
+                .define("flower_clouds", true, o -> o instanceof Boolean));
 
         builder.pop();
     }
