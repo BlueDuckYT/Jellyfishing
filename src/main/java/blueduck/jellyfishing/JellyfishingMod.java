@@ -10,6 +10,7 @@ import blueduck.jellyfishing.registry.*;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.block.Block;
+import net.minecraft.block.FireBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -108,10 +109,7 @@ public class JellyfishingMod
         GlobalEntityTypeAttributes.put(JellyfishingEntities.JELLYFISH.get(), AbstractJellyfishEntity.func_234176_m_().create()/*(or your own)*/);
         GlobalEntityTypeAttributes.put(JellyfishingEntities.BLUE_JELLYFISH.get(), AbstractJellyfishEntity.func_234176_m_().create()/*(or your own)*/);
 
-        event.enqueueWork(() -> {
-            PointOfInterestType.registerBlockStates(JellyfishingVillagers.FRYCOOK_POI.get());
-            PointOfInterestType.BLOCKS_OF_INTEREST.addAll(JellyfishingVillagers.FRYCOOK_POI.get().blockStates);
-        });
+
 
         ImmutableMap.Builder<Item,Integer> FOOD_VALUES_BUILDER = ImmutableMap.builder();
         ImmutableSet.Builder<Item> ALLOWED_ITEMS_BUILDER = ImmutableSet.builder();
@@ -121,7 +119,12 @@ public class JellyfishingMod
 
 
 
+        event.enqueueWork(() -> {
+            PointOfInterestType.registerBlockStates(JellyfishingVillagers.FRYCOOK_POI.get());
+            PointOfInterestType.BLOCKS_OF_INTEREST.addAll(JellyfishingVillagers.FRYCOOK_POI.get().blockStates);
 
+            //FireBlock.flammabilities
+        });
 
     }
 

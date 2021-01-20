@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "jellyfishing:chrome_metal"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:chrome_metal_slab",
+    "count": 6
+  }
+}

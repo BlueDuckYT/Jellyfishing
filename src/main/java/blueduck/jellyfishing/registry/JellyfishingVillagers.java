@@ -2,8 +2,16 @@ package blueduck.jellyfishing.registry;
 
 import blueduck.jellyfishing.JellyfishingMod;
 import com.google.common.collect.ImmutableSet;
+import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.entity.merchant.villager.VillagerProfession;
+import net.minecraft.item.Item;
 import net.minecraft.village.PointOfInterestType;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,6 +36,5 @@ public class JellyfishingVillagers {
         PROFESSIONS.register(FMLJavaModLoadingContext.get().getModEventBus());
         POI_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
-
 
 }

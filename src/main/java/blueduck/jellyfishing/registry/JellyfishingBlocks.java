@@ -40,11 +40,23 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> SCRAP_METAL_SLAB = BLOCKS.register("scrap_metal_slab", () -> new SlabBlock(Block.Properties.from(SCRAP_METAL.get())));
     public static final RegistryObject<Item> SCRAP_METAL_SLAB_ITEM = ITEMS.register("scrap_metal_slab", () -> new BlockItemBase(SCRAP_METAL_SLAB.get()));
 
+    public static final RegistryObject<Block> CHROME_METAL = BLOCKS.register("chrome_metal", () -> new Block(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
+    public static final RegistryObject<Item> CHROME_METAL_ITEM = ITEMS.register("chrome_metal", () -> new BlockItemBase(CHROME_METAL.get()));
+
+    public static final RegistryObject<Block> CHROME_METAL_STAIRS = BLOCKS.register("chrome_metal_stairs", () -> new StairsBlock(() -> CHROME_METAL.get().getDefaultState(), Block.Properties.from(CHROME_METAL.get())));
+    public static final RegistryObject<Item> CHROME_METAL_STAIRS_ITEM = ITEMS.register("chrome_metal_stairs", () -> new BlockItemBase(CHROME_METAL_STAIRS.get()));
+
+    public static final RegistryObject<Block> CHROME_METAL_SLAB = BLOCKS.register("chrome_metal_slab", () -> new SlabBlock(Block.Properties.from(CHROME_METAL.get())));
+    public static final RegistryObject<Item> CHROME_METAL_SLAB_ITEM = ITEMS.register("chrome_metal_slab", () -> new BlockItemBase(CHROME_METAL_SLAB.get()));
+
     public static final RegistryObject<Block> VAULT_DOOR = BLOCKS.register("vault_door", () -> new DoorBlock(Block.Properties.create(Material.PISTON, MaterialColor.GRAY).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
     public static final RegistryObject<Item> VAULT_DOOR_ITEM = ITEMS.register("vault_door", () -> new BlockItemBase(VAULT_DOOR.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
 
     public static final RegistryObject<Block> VAULT_TRAPDOOR = BLOCKS.register("vault_trapdoor", () -> new TrapDoorBlock(Block.Properties.from(VAULT_DOOR.get())));
     public static final RegistryObject<Item> VAULT_TRAPDOOR_ITEM = ITEMS.register("vault_trapdoor", () -> new BlockItemBase(VAULT_TRAPDOOR.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
+
+    public static final RegistryObject<Block> SCRAP_METAL_WINDOW = BLOCKS.register("scrap_metal_window", () -> new TrapDoorBlock(Block.Properties.from(VAULT_DOOR.get())));
+    public static final RegistryObject<Item> SCRAP_METAL_WINDOW_ITEM = ITEMS.register("scrap_metal_window", () -> new BlockItemBase(SCRAP_METAL_WINDOW.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
 
     public static final RegistryObject<Block> SEANUT_BRITTLE_BLOCK = BLOCKS.register("seanut_brittle_block", () -> new Block(Block.Properties.create(Material.GLASS, MaterialColor.BROWN).sound(SoundType.STONE).hardnessAndResistance(0.3F, 0.3F).harvestTool(ToolType.PICKAXE).harvestLevel(0)));
     public static final RegistryObject<Item> SEANUT_BRITTLE_BLOCK_ITEM = ITEMS.register("seanut_brittle_block", () -> new BlockItemBase(SEANUT_BRITTLE_BLOCK.get()));
@@ -75,6 +87,15 @@ public class JellyfishingBlocks {
 
     public static final RegistryObject<Block> ALGAE_BLOCK = BLOCKS.register("algae_block", () -> new Block(Block.Properties.create(Material.WOOL, MaterialColor.LIME).sound(SoundType.WET_GRASS).hardnessAndResistance(1F, 1F).harvestTool(ToolType.SHOVEL).harvestLevel(0)));
     public static final RegistryObject<Item> ALGAE_BLOCK_ITEM = ITEMS.register("algae_block", () -> new BlockItemBase(ALGAE_BLOCK.get()));
+
+    public static final RegistryObject<Block> BAMBOO_WALL = BLOCKS.register("bamboo_wall", () -> new RotatedPillarBlock(Block.Properties.from(Blocks.BAMBOO)));
+    public static final RegistryObject<Item> BAMBOO_WALL_ITEM = ITEMS.register("bamboo_wall", () -> new BlockItemBase(BAMBOO_WALL.get()));
+
+    public static final RegistryObject<Block> PINK_BAMBOO_WALL = BLOCKS.register("pink_bamboo_wall", () -> new RotatedPillarBlock(Block.Properties.from(Blocks.BAMBOO)));
+    public static final RegistryObject<Item> PINK_BAMBOO_WALL_ITEM = ITEMS.register("pink_bamboo_wall", () -> new BlockItemBase(PINK_BAMBOO_WALL.get()));
+
+    public static final RegistryObject<Block> BLUE_BAMBOO_WALL = BLOCKS.register("blue_bamboo_wall", () -> new RotatedPillarBlock(Block.Properties.from(Blocks.BAMBOO)));
+    public static final RegistryObject<Item> BLUE_BAMBOO_WALL_ITEM = ITEMS.register("blue_bamboo_wall", () -> new BlockItemBase(BLUE_BAMBOO_WALL.get()));
 
     public static final RegistryObject<Block> SEANUT_BUSH = BLOCKS.register("seanut_bush", () -> new SeanutBush(Block.Properties.create(Material.OCEAN_PLANT).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)));
 

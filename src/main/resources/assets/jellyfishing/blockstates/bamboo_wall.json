@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "jellyfishing:block/bamboo_wall" },
+    "axis=z":   { "model": "jellyfishing:block/bamboo_wall", "x": 90 },
+    "axis=x":   { "model": "jellyfishing:block/bamboo_wall", "x": 90, "y": 90 }
+  }
+}
