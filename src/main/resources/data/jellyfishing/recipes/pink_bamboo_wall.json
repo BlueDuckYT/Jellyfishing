@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "$": {
+      "item": "jellyfishing:jellyfish_jelly"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:pink_bamboo_wall",
+    "count": 4
+  }
+}
