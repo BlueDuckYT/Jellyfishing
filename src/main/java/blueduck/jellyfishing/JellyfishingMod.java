@@ -10,6 +10,7 @@ import blueduck.jellyfishing.registry.*;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.FireBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
@@ -123,7 +124,7 @@ public class JellyfishingMod
             PointOfInterestType.registerBlockStates(JellyfishingVillagers.FRYCOOK_POI.get());
             PointOfInterestType.BLOCKS_OF_INTEREST.addAll(JellyfishingVillagers.FRYCOOK_POI.get().blockStates);
 
-            //FireBlock.flammabilities
+            JellyfishingBlocks.registerFlammables();
         });
 
     }
