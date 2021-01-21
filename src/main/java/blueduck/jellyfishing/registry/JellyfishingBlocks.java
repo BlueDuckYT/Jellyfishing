@@ -151,6 +151,8 @@ public class JellyfishingBlocks {
 
     public static final RegistryObject<Block> SEANUT_BUSH = BLOCKS.register("seanut_bush", () -> new SeanutBush(Block.Properties.create(Material.OCEAN_PLANT).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)));
 
+    public static final RegistryObject<Block> BUBBLE_BLOCK = BLOCKS.register("bubble_block", () -> new BubbleBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+
     public static final RegistryObject<Block> GRILL = BLOCKS.register("grill", () -> new DirectionalBlock(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool().notSolid()));
     public static final RegistryObject<Item> GRILL_ITEM = ITEMS.register("grill", () -> new BlockItem(GRILL.get(), new Item.Properties().group(ItemGroup.DECORATIONS)));
 
