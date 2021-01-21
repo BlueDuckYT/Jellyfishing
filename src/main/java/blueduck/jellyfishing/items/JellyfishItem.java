@@ -1,5 +1,8 @@
 package blueduck.jellyfishing.items;
 
+import blueduck.jellyfishing.JellyfishingMod;
+import blueduck.jellyfishing.entities.AbstractJellyfishEntity;
+import blueduck.jellyfishing.registry.JellyfishingItems;
 import net.minecraft.block.*;
 import net.minecraft.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.dispenser.IBlockSource;
@@ -36,7 +39,9 @@ public class JellyfishItem extends Item {
                 return stack;
             }
         };
-        DispenserBlock.registerDispenseBehavior(this, defaultDispenseItemBehavior);
+        if (!JellyfishingMod.CONFIG.NOPLACE_JELLYFISH.get()) {
+            DispenserBlock.registerDispenseBehavior(this, defaultDispenseItemBehavior);
+        }
     }
 
 
@@ -44,8 +49,9 @@ public class JellyfishItem extends Item {
 
     @Override
     public ActionResultType onItemUse(ItemUseContext context) {
+
         World world = context.getWorld();
-        if (world.isRemote) {
+        if (world.isRemote || JellyfishingMod.CONFIG.NOPLACE_JELLYFISH.get()) {
             return ActionResultType.SUCCESS;
         } else {
             ItemStack itemstack = context.getItem();
@@ -73,34 +79,14 @@ public class JellyfishItem extends Item {
     }
 
 
-//    @Override
-//    public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-//        ItemStack itemstack = playerIn.getHeldItem(handIn);
-//        RayTraceResult raytraceresult = rayTrace(worldIn, playerIn, RayTraceContext.FluidMode.SOURCE_ONLY);
-//        if (raytraceresult.getType() != RayTraceResult.Type.BLOCK) {
-//            return ActionResult.resultPass(itemstack);
-//        } else if (worldIn.isRemote) {
-//            return ActionResult.resultSuccess(itemstack);
-//        } else {
-//            BlockRayTraceResult blockraytraceresult = (BlockRayTraceResult)raytraceresult;
-//            BlockPos blockpos = blockraytraceresult.getPos();
-//            if (!(worldIn.getBlockState(blockpos).getBlock() instanceof FlowingFluidBlock)) {
-//                return ActionResult.resultPass(itemstack);
-//            } else if (worldIn.isBlockModifiable(playerIn, blockpos) && playerIn.canPlayerEdit(blockpos, blockraytraceresult.getFace(), itemstack)) {
-//                 if (false) {
-//                    return ActionResult.resultFail(itemstack);
-//                } else {
-//                    if (!playerIn.abilities.isCreativeMode) {
-//                        itemstack.shrink(1);
-//                    }
-//
-//                    playerIn.addStat(Stats.ITEM_USED.get(this));
-//                    return ActionResult.resultFail(itemstack);
-//                }
-//            } else {
-//                return ActionResult.resultFail(itemstack);
-//            }
-//        }
-//    }
+    @Override
+    public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
+        if (JellyfishingMod.CONFIG.NOPLACE_JELLYFISH.get()) {
+            AbstractJellyfishEntity ent = (AbstractJellyfishEntity) this.entityType.get().create(worldIn);
+            playerIn.entityDropItem(new ItemStack(ent.getJellyItem(), worldIn.getRandom().nextInt(3) + 2), -0.5F);
+            ent.remove();
+        }
 
+        return super.onItemRightClick(worldIn, playerIn, handIn);
+    }
 }

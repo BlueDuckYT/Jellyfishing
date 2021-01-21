@@ -116,6 +116,11 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         return JELLYFISH_ITEM;
     }
 
+
+    public Item getJellyItem() {
+        return JELLY_ITEM;
+    }
+
     public void livingTick() {
         if (this.stingCounter > 0) {
             --this.stingCounter;
