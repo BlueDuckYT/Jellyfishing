@@ -2,6 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "##",
+    "##",
     "##"
   ],
   "key": {
@@ -10,7 +11,6 @@
     }
   },
   "result": {
-    "item": "jellyfishing:chrome_bricks",
-    "count": 4
+    "item": "jellyfishing:chrome_door"
   }
 }

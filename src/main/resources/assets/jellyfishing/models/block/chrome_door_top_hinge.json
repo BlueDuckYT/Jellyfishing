@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "jellyfishing:block/chrome_door_bottom",
+        "top": "jellyfishing:block/chrome_door_top"
+    }
+}

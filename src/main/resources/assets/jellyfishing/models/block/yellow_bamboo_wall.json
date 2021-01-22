@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jellyfishing:block/yellow_bamboo_wall_top",
+    "side": "jellyfishing:block/yellow_bamboo_wall"
+  }
+}

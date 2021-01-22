@@ -451,6 +451,8 @@ public class JellyfishingMod
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.TUBE_PLANT.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.SEANUT_BUSH.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.SCRAP_METAL_WINDOW.get(), RenderType.getCutoutMipped());
+            RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CHROME_DOOR.get(), RenderType.getCutoutMipped());
+            RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CHROME_VENT.get(), RenderType.getCutoutMipped());
 
 
             RenderingRegistry.registerEntityRenderingHandler(JellyfishingEntities.JELLYFISH.get(), manager -> new JellyfishRenderer(manager));

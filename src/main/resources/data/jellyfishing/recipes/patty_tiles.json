@@ -6,11 +6,10 @@
   ],
   "key": {
     "#": {
-      "item": "jellyfishing:chrome_metal"
+      "item": "jellyfishing:krabby_patty"
     }
   },
   "result": {
-    "item": "jellyfishing:chrome_bricks",
-    "count": 4
+    "item": "jellyfishing:patty_tiles"
   }
 }
