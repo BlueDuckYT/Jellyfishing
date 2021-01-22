@@ -226,6 +226,9 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                         if (0.005 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
                             this.entityDropItem(new ItemStack(JellyfishingItems.MUSIC_DISC_JELLYFISH_FIELDS.get(), 1), -0.5F);
                         }
+                        if (0.005 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
+                            this.entityDropItem(new ItemStack(JellyfishingItems.BUBBLE_WAND.get(), 1), -0.5F);
+                        }
                     }
                     ItemStack itemstack1 = this.getJellyfishItem();
                     this.setBucketData(itemstack1);

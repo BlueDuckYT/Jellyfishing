@@ -425,6 +425,7 @@ public class JellyfishingMod
             event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.BLUE_JELLYFISH.get(), 1), 2, 10, 0.05F));
             event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(JellyfishingItems.SEANUT.get(), 1), 4, 10, 0.05F));
             event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(JellyfishingItems.KRABBY_PATTY.get(), 1), 3, 10, 0.05F));
+            event.getRareTrades().add((entity, random) -> new MerchantOffer(new ItemStack(Items.EMERALD, 3), new ItemStack(JellyfishingItems.BUBBLE_WAND.get(), 1), 2, 10, 0.05F));
         }
     }
 

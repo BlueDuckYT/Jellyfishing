@@ -201,6 +201,7 @@ public class JellyfishingBlocks {
         registerFlammable(BAMBOO_WALL.get(), 10, 20);
         registerFlammable(PINK_BAMBOO_WALL.get(), 10, 20);
         registerFlammable(BLUE_BAMBOO_WALL.get(), 10, 20);
+        registerFlammable(YELLOW_BAMBOO_WALL.get(), 10, 20);
 
         registerFlammable(WHITE_CARPETED_TILES.get(), 8, 20);
         registerFlammable(ORANGE_CARPETED_TILES.get(), 8, 20);
