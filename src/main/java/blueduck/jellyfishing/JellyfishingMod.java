@@ -267,6 +267,11 @@ public class JellyfishingMod
                 event.getGeneration().withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, JellyfishingConfiguredFeatures.CONFIGURED_CORALSTONE_REPLACEMENT);
 
             }
+
+            if (event.getCategory().equals(Biome.Category.JUNGLE)) {
+                event.getGeneration().withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingConfiguredFeatures.CONFIGURED_PINEAPPLE_PLANT);
+
+            }
         }
         @SubscribeEvent
         public static void onLootLoad(LootTableLoadEvent event) throws IllegalAccessException {
@@ -450,6 +455,7 @@ public class JellyfishingMod
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CORAL_PLANT.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.TUBE_PLANT.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.SEANUT_BUSH.get(), RenderType.getCutoutMipped());
+            RenderTypeLookup.setRenderLayer(JellyfishingBlocks.PINEAPPLE_PLANT.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.SCRAP_METAL_WINDOW.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CHROME_DOOR.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CHROME_VENT.get(), RenderType.getCutoutMipped());

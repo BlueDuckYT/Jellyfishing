@@ -2,6 +2,7 @@ package blueduck.jellyfishing.registry;
 
 import blueduck.jellyfishing.JellyfishingMod;
 import blueduck.jellyfishing.features.CoralPlantFeature;
+import blueduck.jellyfishing.features.PineapplePlantFeature;
 import blueduck.jellyfishing.features.SeanutBushFeature;
 import blueduck.jellyfishing.features.TubePlantFeature;
 import net.minecraft.util.ResourceLocation;
@@ -21,6 +22,7 @@ public class JellyfishingFeatures extends net.minecraftforge.registries.ForgeReg
     public static final RegistryObject<Feature<ProbabilityConfig>> CORAL_PLANT_FEATURE = FEATURES.register("coral_plant_feature", () -> new CoralPlantFeature(ProbabilityConfig.CODEC));
     public static final RegistryObject<Feature<ProbabilityConfig>> TUBE_PLANT_FEATURE = FEATURES.register("tube_plant_feature", () ->new TubePlantFeature(ProbabilityConfig.CODEC));
     public static final RegistryObject<Feature<ProbabilityConfig>> SEANUT_BUSH_FEATURE = FEATURES.register("seanut_bush_feature", () -> new SeanutBushFeature(ProbabilityConfig.CODEC));
+    public static final RegistryObject<Feature<ProbabilityConfig>> PINEAPPLE_PLANT_FEATURE = FEATURES.register("pineapple_plant_feature", () -> new PineapplePlantFeature(ProbabilityConfig.CODEC));
 
 
     public static void init() {

@@ -12,7 +12,7 @@
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "jellyfishing:seanut_bush",
+          "block": "jellyfishing:pineapple_plant",
           "properties": {
             "age": "3"
           }
