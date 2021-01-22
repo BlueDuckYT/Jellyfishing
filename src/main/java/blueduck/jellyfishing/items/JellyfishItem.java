@@ -54,7 +54,7 @@ public class JellyfishItem extends Item {
         Hand hand = context.getHand();
         if (world.isRemote || JellyfishingMod.CONFIG.NOPLACE_JELLYFISH.get()) {
             AbstractJellyfishEntity ent = (AbstractJellyfishEntity) this.entityType.get().create(world);
-            player.entityDropItem(new ItemStack(ent.getJellyItem(), world.getRandom().nextInt(3) + 2), -0.5F);
+            player.entityDropItem(new ItemStack(ent.getJellyItem(), world.getRandom().nextInt(3) + 2), 0F);
             ent.remove();
             if (!player.abilities.isCreativeMode) {
                 player.getHeldItem(hand).shrink(1);
@@ -90,7 +90,7 @@ public class JellyfishItem extends Item {
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         if (JellyfishingMod.CONFIG.NOPLACE_JELLYFISH.get()) {
             AbstractJellyfishEntity ent = (AbstractJellyfishEntity) this.entityType.get().create(worldIn);
-            playerIn.entityDropItem(new ItemStack(ent.getJellyItem(), worldIn.getRandom().nextInt(3) + 2), -0.5F);
+            playerIn.entityDropItem(new ItemStack(ent.getJellyItem(), worldIn.getRandom().nextInt(3) + 2), 0F);
             ent.remove();
             if (!playerIn.abilities.isCreativeMode) {
                 playerIn.getHeldItem(handIn).shrink(1);

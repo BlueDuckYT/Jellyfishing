@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "jellyfishing:chrome_bricks"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:chrome_brick_stairs",
+    "count": 4
+  }
+}

@@ -50,6 +50,16 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> CHROME_METAL_SLAB = BLOCKS.register("chrome_metal_slab", () -> new SlabBlock(Block.Properties.from(CHROME_METAL.get())));
     public static final RegistryObject<Item> CHROME_METAL_SLAB_ITEM = ITEMS.register("chrome_metal_slab", () -> new BlockItemBase(CHROME_METAL_SLAB.get()));
 
+    public static final RegistryObject<Block> CHROME_BRICKS = BLOCKS.register("chrome_bricks", () -> new Block(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
+    public static final RegistryObject<Item> CHROME_BRICKS_ITEM = ITEMS.register("chrome_bricks", () -> new BlockItemBase(CHROME_BRICKS.get()));
+
+    public static final RegistryObject<Block> CHROME_BRICK_STAIRS = BLOCKS.register("chrome_brick_stairs", () -> new StairsBlock(() -> CHROME_METAL.get().getDefaultState(), Block.Properties.from(CHROME_METAL.get())));
+    public static final RegistryObject<Item> CHROME_BRICK_STAIRS_ITEM = ITEMS.register("chrome_brick_stairs", () -> new BlockItemBase(CHROME_BRICK_STAIRS.get()));
+
+    public static final RegistryObject<Block> CHROME_BRICK_SLAB = BLOCKS.register("chrome_brick_slab", () -> new SlabBlock(Block.Properties.from(CHROME_METAL.get())));
+    public static final RegistryObject<Item> CHROME_BRICK_SLAB_ITEM = ITEMS.register("chrome_brick_slab", () -> new BlockItemBase(CHROME_BRICK_SLAB.get()));
+
+
     public static final RegistryObject<Block> VAULT_DOOR = BLOCKS.register("vault_door", () -> new DoorBlock(Block.Properties.create(Material.PISTON, MaterialColor.GRAY).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
     public static final RegistryObject<Item> VAULT_DOOR_ITEM = ITEMS.register("vault_door", () -> new BlockItemBase(VAULT_DOOR.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
 
