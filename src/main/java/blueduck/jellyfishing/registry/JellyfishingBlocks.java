@@ -228,4 +228,6 @@ public class JellyfishingBlocks {
         fire.setFireInfo(block, encouragement, flammability);
     }
 
+
+
 }

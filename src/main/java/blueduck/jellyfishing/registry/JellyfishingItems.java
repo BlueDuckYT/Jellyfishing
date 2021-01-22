@@ -2,6 +2,7 @@ package blueduck.jellyfishing.registry;
 
 import blueduck.jellyfishing.JellyfishingMod;
 import blueduck.jellyfishing.items.*;
+import net.minecraft.block.ComposterBlock;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
@@ -82,6 +83,13 @@ public class JellyfishingItems {
 
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    }
+
+
+    public static void registerCompostables() {
+        ComposterBlock.registerCompostable(0.3F, SEANUT.get());
+        ComposterBlock.registerCompostable(0.3F, PINEAPPLE_SEEDS.get());
+        ComposterBlock.registerCompostable(0.7F, PINEAPPLE.get());
     }
 
 }

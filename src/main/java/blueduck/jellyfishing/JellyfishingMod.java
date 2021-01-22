@@ -125,6 +125,7 @@ public class JellyfishingMod
             PointOfInterestType.BLOCKS_OF_INTEREST.addAll(JellyfishingVillagers.FRYCOOK_POI.get().blockStates);
 
             JellyfishingBlocks.registerFlammables();
+            JellyfishingItems.registerCompostables();
         });
 
     }
