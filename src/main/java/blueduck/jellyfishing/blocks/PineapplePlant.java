@@ -2,10 +2,7 @@ package blueduck.jellyfishing.blocks;
 
 import blueduck.jellyfishing.registry.JellyfishingBlocks;
 import blueduck.jellyfishing.registry.JellyfishingItems;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.IWaterLoggable;
-import net.minecraft.block.SweetBerryBushBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
@@ -23,6 +20,9 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
+
+import java.util.Random;
 
 public class PineapplePlant extends SweetBerryBushBlock {
 
@@ -54,6 +54,19 @@ public class PineapplePlant extends SweetBerryBushBlock {
         } else {
             return ActionResultType.SUCCESS;
         }
+    }
+
+    public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random random) {
+        int i = state.get(AGE);
+        int j = 9;
+        if (worldIn.getBlockState(pos.down()).getBlock().equals(Blocks.FARMLAND)) {
+            j = 5;
+        }
+        if (i < 3 && worldIn.getLightSubtracted(pos.up(), 0) >= 9 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(worldIn, pos, state,random.nextInt(j) == 0)) {
+            worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(i + 1)), 2);
+            net.minecraftforge.common.ForgeHooks.onCropsGrowPost(worldIn, pos, state);
+        }
+
     }
 
     public void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "jellyfishing:pineapple"
+    }
+  },
+  "result": {
+    "item": "jellyfishing:pineapple_seeds"
+  }
+}
