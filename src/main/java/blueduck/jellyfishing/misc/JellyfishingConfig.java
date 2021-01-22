@@ -58,15 +58,17 @@ public class JellyfishingConfig {
         this.POWER_KARATE_DAMAGE= subscriber.subscribe(builder
                 .comment("Damage of the Power Karate Glove")
                 .defineInRange("power_karate_damage", 18, 1, 1000));
+        builder.pop();
         builder.push("Biome");
         this.FLOWER_CLOUDS = subscriber.subscribe(builder
                 .comment("Enable Flower Clouds?")
                 .define("flower_clouds", true, o -> o instanceof Boolean));
+        builder.pop();
         builder.push("Optimization");
         this.NOPLACE_JELLYFISH = subscriber.subscribe(builder
                 .comment("Should Jellyfish be non-placeable? (Useful for servers as it will prevent entity lag from placed jellyfish)")
                 .comment("With this enabled, right clicking will produce a few of the jellyfish's jelly item and destroy the jellyfish item")
-                .define("no_place_jellyfish", true, o -> o instanceof Boolean));
+                .define("no_place_jellyfish", false, o -> o instanceof Boolean));
 
         builder.pop();
     }

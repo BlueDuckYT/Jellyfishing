@@ -49,9 +49,16 @@ public class JellyfishItem extends Item {
 
     @Override
     public ActionResultType onItemUse(ItemUseContext context) {
-
         World world = context.getWorld();
+        PlayerEntity player = context.getPlayer();
+        Hand hand = context.getHand();
         if (world.isRemote || JellyfishingMod.CONFIG.NOPLACE_JELLYFISH.get()) {
+            AbstractJellyfishEntity ent = (AbstractJellyfishEntity) this.entityType.get().create(world);
+            player.entityDropItem(new ItemStack(ent.getJellyItem(), world.getRandom().nextInt(3) + 2), -0.5F);
+            ent.remove();
+            if (!player.abilities.isCreativeMode) {
+                player.getHeldItem(hand).shrink(1);
+            }
             return ActionResultType.SUCCESS;
         } else {
             ItemStack itemstack = context.getItem();
@@ -85,6 +92,9 @@ public class JellyfishItem extends Item {
             AbstractJellyfishEntity ent = (AbstractJellyfishEntity) this.entityType.get().create(worldIn);
             playerIn.entityDropItem(new ItemStack(ent.getJellyItem(), worldIn.getRandom().nextInt(3) + 2), -0.5F);
             ent.remove();
+            if (!playerIn.abilities.isCreativeMode) {
+                playerIn.getHeldItem(handIn).shrink(1);
+            }
         }
 
         return super.onItemRightClick(worldIn, playerIn, handIn);
