@@ -2,6 +2,8 @@
   "block.jellyfishing.jelly_block": "Jelly Block",
   "block.jellyfishing.blue_jelly_block": "Blue Jelly Block",
 
+  "block.jellyfishing.bubble_block": "Bubble Block",
+
   "block.jellyfishing.seanut_brittle_block": "Seanut Brittle Block",
   "block.jellyfishing.pineapple_block": "Pineapple Block",
 
@@ -87,6 +89,8 @@
 
   "item.jellyfishing.pineapple": "Pineapple",
   "item.jellyfishing.pineapple_seeds": "Pineapple Seeds",
+
+  "item.jellyfishing.bubble_wand": "Bubble Wand",
 
   "item.jellyfishing.kelp_shake": "Kelp Shake",
   "item.jellyfishing.kelp_mustache": "Kelp Mustache",

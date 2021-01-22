@@ -15,7 +15,7 @@ public class JellyfishingItems {
 
     public static final RegistryObject<Item> JELLYFISH_NET = ITEMS.register("jellyfish_net", () -> new JellyfishNetItem(new Item.Properties().group(ItemGroup.TOOLS).defaultMaxDamage(148)));
 
-    public static final RegistryObject<Item> BUBBLE_KIT = ITEMS.register("bubble_kit", () -> new BubbleKitItem(new Item.Properties().group(ItemGroup.TOOLS).defaultMaxDamage(148)));
+    public static final RegistryObject<Item> BUBBLE_WAND = ITEMS.register("bubble_wand", () -> new BubbleKitItem(new Item.Properties().group(ItemGroup.TOOLS).defaultMaxDamage(128)));
 
     public static final RegistryObject<Item> JELLYFISH_JELLY = ITEMS.register("jellyfish_jelly", () -> new Item(new Item.Properties().group(ItemGroup.MATERIALS).food(new Food.Builder().hunger(3).saturation(0.2F).build())));
     public static final RegistryObject<Item> BLUE_JELLYFISH_JELLY = ITEMS.register("blue_jellyfish_jelly", () -> new Item(new Item.Properties().group(ItemGroup.MATERIALS).food(new Food.Builder().hunger(6).saturation(0.3F).build())));

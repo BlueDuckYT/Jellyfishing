@@ -269,7 +269,7 @@ public class JellyfishingMod
             }
 
             if (event.getCategory().equals(Biome.Category.JUNGLE)) {
-                event.getGeneration().withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingConfiguredFeatures.CONFIGURED_PINEAPPLE_PLANT);
+                event.getGeneration().withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, JellyfishingConfiguredFeatures.CONFIGURED_PINEAPPLE_PLANT_PATCH);
 
             }
         }
@@ -452,6 +452,7 @@ public class JellyfishingMod
 
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.JELLY_BLOCK.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.BLUE_JELLY_BLOCK.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(JellyfishingBlocks.BUBBLE_BLOCK.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CORAL_PLANT.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.TUBE_PLANT.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.SEANUT_BUSH.get(), RenderType.getCutoutMipped());
