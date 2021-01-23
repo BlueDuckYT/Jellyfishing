@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "jellyfishing:block/pineapple_fan",
+		"0": "jellyfishing:block/pineapple_fan_small",
 		"1": "jellyfishing:block/pineapple_0",
-		"particle": "jellyfishing:block/pineapple_fan"
+		"particle": "jellyfishing:block/pineapple_fan_small"
 	},
 	"elements": [
 		{

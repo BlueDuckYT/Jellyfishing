@@ -12,6 +12,7 @@ import com.google.common.collect.ImmutableSet;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FireBlock;
+import net.minecraft.block.FlowerPotBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -118,7 +119,9 @@ public class JellyfishingMod
         VillagerEntity.FOOD_VALUES = FOOD_VALUES_BUILDER.putAll(VillagerEntity.FOOD_VALUES).put(JellyfishingItems.ROASTED_SEANUT.get(), 2).put(JellyfishingItems.SEANUT_BRITTLE.get(), 5).put(JellyfishingItems.JELLYFISH_JELLY_SANDWICH.get(), 4).put(JellyfishingItems.BLUE_JELLYFISH_JELLY_SANDWICH.get(), 5).put(JellyfishingItems.SEANUT_JELLYFISH_JELLY_SANDWICH.get(), 5).put(JellyfishingItems.SEANUT_BLUE_JELLYFISH_JELLY_SANDWICH.get(), 6).put(JellyfishingItems.KRABBY_PATTY.get(), 20).put(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get(), 8).build();
         VillagerEntity.ALLOWED_INVENTORY_ITEMS = ALLOWED_ITEMS_BUILDER.addAll(VillagerEntity.ALLOWED_INVENTORY_ITEMS).add(JellyfishingItems.ROASTED_SEANUT.get()).add(JellyfishingItems.SEANUT_BRITTLE.get()).add(JellyfishingItems.JELLYFISH_JELLY_SANDWICH.get()).add(JellyfishingItems.BLUE_JELLYFISH_JELLY_SANDWICH.get()).add(JellyfishingItems.SEANUT_JELLYFISH_JELLY_SANDWICH.get()).add(JellyfishingItems.SEANUT_BLUE_JELLYFISH_JELLY_SANDWICH.get()).add(JellyfishingItems.KRABBY_PATTY.get()).add(JellyfishingItems.TRIPLE_GOOBERBERRY_SUNRISE.get()).build();
 
+        FlowerPotBlock pot = (FlowerPotBlock) Blocks.FLOWER_POT;
 
+        pot.addPlant(new ResourceLocation("jellyfishing:pineapple_seeds"), JellyfishingBlocks.POTTED_PINEAPPLE);
 
         event.enqueueWork(() -> {
             PointOfInterestType.registerBlockStates(JellyfishingVillagers.FRYCOOK_POI.get());
@@ -459,6 +462,7 @@ public class JellyfishingMod
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.TUBE_PLANT.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.SEANUT_BUSH.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.PINEAPPLE_PLANT.get(), RenderType.getCutoutMipped());
+            RenderTypeLookup.setRenderLayer(JellyfishingBlocks.POTTED_PINEAPPLE.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.SCRAP_METAL_WINDOW.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CHROME_DOOR.get(), RenderType.getCutoutMipped());
             RenderTypeLookup.setRenderLayer(JellyfishingBlocks.CHROME_VENT.get(), RenderType.getCutoutMipped());

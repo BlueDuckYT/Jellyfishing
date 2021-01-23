@@ -185,6 +185,9 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Item> GRILL_ITEM = ITEMS.register("grill", () -> new BlockItem(GRILL.get(), new Item.Properties().group(ItemGroup.DECORATIONS)));
 
 
+    public static final RegistryObject<Block> POTTED_PINEAPPLE = BLOCKS.register("potted_pineapple", () -> new FlowerPotBlock( () -> (FlowerPotBlock) Blocks.FLOWER_POT, () -> PINEAPPLE_PLANT.get(), Block.Properties.from(Blocks.FLOWER_POT)));
+
+
     //public static final RegistryObject<Block> JELLYFISH_MACHINE = BLOCKS.register("jellyfish_machine", () -> new JellyfishMachineBlock(Block.Properties.create(Material.CLAY, MaterialColor.BROWN).sound(SoundType.METAL)));
     //public static final RegistryObject<Item> JELLYFISH_MACHINE_ITEM = ITEMS.register("jellyfish_machine", () -> new BlockItemBase(JELLYFISH_MACHINE.get()));
 
