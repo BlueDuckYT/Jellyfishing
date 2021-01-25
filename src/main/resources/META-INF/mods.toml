@@ -15,13 +15,13 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 # The modid of the mod
 modId="jellyfishing" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="1.5.10" #mandatory
+version="1.6.0" #mandatory
  # A display name for the mod
 displayName="Jellyfishing" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://curseforge.com/minecraft/mc-mods/jellyfishing" #optional
 # A text field displayed in the mod UI
-credits="Developed by Blue Duck, Textures by Coda1552, SaikoChan, Chikorita Lover, codysquirtle, and Evo_934.  Spanish Translation by Amgelo563, Russian Translation by kazmurenko.  Jellyfish Fields Music Disc by WhirlingWinds.  Background music by TurtwigX" #optional
+credits="Developed by Blue Duck, Textures by Coda1552, SaikoChan, Chikorita Lover, codysquirtle, Evo_934, Nary, and Bold Muddy.  Spanish Translation by Amgelo563, Russian Translation by kazmurenko.  Jellyfish Fields Music Disc by WhirlingWinds.  Background music by TurtwigX" #optional
 # A text field displayed in the mod UI
 authors="Blue Duck" #optional
 # The description text for the mod (multi line!) (#mandatory)
