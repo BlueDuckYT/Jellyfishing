@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "jellyfishing:block/pineapple_pillar" },
+    "axis=z":   { "model": "jellyfishing:block/pineapple_pillar", "x": 90 },
+    "axis=x":   { "model": "jellyfishing:block/pineapple_pillar", "x": 90, "y": 90 }
+  }
+}

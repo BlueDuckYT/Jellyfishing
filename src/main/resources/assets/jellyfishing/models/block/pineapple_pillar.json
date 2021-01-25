@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jellyfishing:block/pineapple_pillar_top",
+    "side": "jellyfishing:block/pineapple_pillar_side"
+  }
+}

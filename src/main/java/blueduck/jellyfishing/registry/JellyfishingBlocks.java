@@ -82,6 +82,12 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> PINEAPPLE_BLOCK = BLOCKS.register("pineapple_block", () -> new Block(Block.Properties.create(Material.PLANTS, MaterialColor.YELLOW).sound(SoundType.WET_GRASS).hardnessAndResistance(0.9F, 0.9F).harvestTool(ToolType.AXE).harvestLevel(0)));
     public static final RegistryObject<Item> PINEAPPLE_BLOCK_ITEM = ITEMS.register("pineapple_block", () -> new BlockItemBase(PINEAPPLE_BLOCK.get()));
 
+    public static final RegistryObject<Block> PINEAPPLE_PILLAR = BLOCKS.register("pineapple_pillar", () -> new RotatedPillarBlock(Block.Properties.from(PINEAPPLE_BLOCK.get())));
+    public static final RegistryObject<Item> PINEAPPLE_PILLAR_ITEM = ITEMS.register("pineapple_pillar", () -> new BlockItemBase(PINEAPPLE_PILLAR.get()));
+
+    public static final RegistryObject<Block> CHISELED_PINEAPPLE_BLOCK = BLOCKS.register("chiseled_pineapple_block", () -> new Block(Block.Properties.from(PINEAPPLE_BLOCK.get())));
+    public static final RegistryObject<Item> CHISELED_PINEAPPLE_BLOCK_ITEM = ITEMS.register("chiseled_pineapple_block", () -> new BlockItemBase(CHISELED_PINEAPPLE_BLOCK.get()));
+
     public static final RegistryObject<Block> CORALSTONE = BLOCKS.register("coralstone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.PURPLE).sound(SoundType.STONE).hardnessAndResistance(1.5F, 1F).harvestTool(ToolType.PICKAXE).setRequiresTool()));
     public static final RegistryObject<Item> CORALSTONE_ITEM = ITEMS.register("coralstone", () -> new BlockItemBase(CORALSTONE.get()));
 
