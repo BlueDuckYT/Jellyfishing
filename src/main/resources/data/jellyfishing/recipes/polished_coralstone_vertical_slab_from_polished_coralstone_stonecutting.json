@@ -1,0 +1,22 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "item": "jellyfishing:coralstone_vertical_slab",
+          "type": "forge:item_exists"
+        }
+      ],
+
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "jellyfishing:polished_coralstone"
+        },
+        "result": "jellyfishing:polished_coralstone_vertical_slab",
+        "count": 2
+      }
+    }
+  ]
+}

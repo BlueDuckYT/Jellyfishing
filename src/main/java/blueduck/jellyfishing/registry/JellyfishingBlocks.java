@@ -10,10 +10,13 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.function.Supplier;
 
 public class JellyfishingBlocks {
 
@@ -41,6 +44,9 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> SCRAP_METAL_SLAB = BLOCKS.register("scrap_metal_slab", () -> new SlabBlock(Block.Properties.from(SCRAP_METAL.get())));
     public static final RegistryObject<Item> SCRAP_METAL_SLAB_ITEM = ITEMS.register("scrap_metal_slab", () -> new BlockItemBase(SCRAP_METAL_SLAB.get()));
 
+    public static final RegistryObject<Block> SCRAP_METAL_VERTICAL_SLAB = conditionallyRegisterBlock("scrap_metal_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(SCRAP_METAL.get())), () -> isLoaded("quark"));
+    public static final RegistryObject<Item> SCRAP_METAL_VERTICAL_SLAB_ITEM = conditionallyRegisterItem("scrap_metal_vertical_slab", () -> new BlockItem(SCRAP_METAL_VERTICAL_SLAB.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)), () -> isLoaded("quark"));
+
     public static final RegistryObject<Block> CHROME_METAL = BLOCKS.register("chrome_metal", () -> new Block(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
     public static final RegistryObject<Item> CHROME_METAL_ITEM = ITEMS.register("chrome_metal", () -> new BlockItemBase(CHROME_METAL.get()));
 
@@ -49,6 +55,9 @@ public class JellyfishingBlocks {
 
     public static final RegistryObject<Block> CHROME_METAL_SLAB = BLOCKS.register("chrome_metal_slab", () -> new SlabBlock(Block.Properties.from(CHROME_METAL.get())));
     public static final RegistryObject<Item> CHROME_METAL_SLAB_ITEM = ITEMS.register("chrome_metal_slab", () -> new BlockItemBase(CHROME_METAL_SLAB.get()));
+
+    public static final RegistryObject<Block> CHROME_METAL_VERTICAL_SLAB = conditionallyRegisterBlock("chrome_metal_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(CHROME_METAL.get())), () -> isLoaded("quark"));
+    public static final RegistryObject<Item> CHROME_METAL_VERTICAL_SLAB_ITEM = conditionallyRegisterItem("chrome_metal_vertical_slab", () -> new BlockItem(CHROME_METAL_VERTICAL_SLAB.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)), () -> isLoaded("quark"));
 
     public static final RegistryObject<Block> CHROME_BRICKS = BLOCKS.register("chrome_bricks", () -> new Block(Block.Properties.create(Material.IRON, MaterialColor.BROWN).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
     public static final RegistryObject<Item> CHROME_BRICKS_ITEM = ITEMS.register("chrome_bricks", () -> new BlockItemBase(CHROME_BRICKS.get()));
@@ -59,6 +68,8 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> CHROME_BRICK_SLAB = BLOCKS.register("chrome_brick_slab", () -> new SlabBlock(Block.Properties.from(CHROME_METAL.get())));
     public static final RegistryObject<Item> CHROME_BRICK_SLAB_ITEM = ITEMS.register("chrome_brick_slab", () -> new BlockItemBase(CHROME_BRICK_SLAB.get()));
 
+    public static final RegistryObject<Block> CHROME_BRICK_VERTICAL_SLAB = conditionallyRegisterBlock("chrome_brick_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(CHROME_BRICKS.get())), () -> isLoaded("quark"));
+    public static final RegistryObject<Item> CHROME_BRICK_VERTICAL_SLAB_ITEM = conditionallyRegisterItem("chrome_brick_vertical_slab", () -> new BlockItem(CHROME_BRICK_VERTICAL_SLAB.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)), () -> isLoaded("quark"));
 
     public static final RegistryObject<Block> VAULT_DOOR = BLOCKS.register("vault_door", () -> new DoorBlock(Block.Properties.create(Material.PISTON, MaterialColor.GRAY).sound(SoundType.METAL).hardnessAndResistance(2F, 2F).notSolid().harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
     public static final RegistryObject<Item> VAULT_DOOR_ITEM = ITEMS.register("vault_door", () -> new BlockItemBase(VAULT_DOOR.get(), new Item.Properties().group(ItemGroup.REDSTONE)));
@@ -100,6 +111,9 @@ public class JellyfishingBlocks {
     public static final RegistryObject<Block> CORALSTONE_SLAB = BLOCKS.register("coralstone_slab", () -> new SlabBlock(Block.Properties.from(CORALSTONE.get())));
     public static final RegistryObject<Item> CORALSTONE_SLAB_ITEM = ITEMS.register("coralstone_slab", () -> new BlockItemBase(CORALSTONE_SLAB.get()));
 
+    public static final RegistryObject<Block> CORALSTONE_VERTICAL_SLAB = conditionallyRegisterBlock("coralstone_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(CORALSTONE.get())), () -> isLoaded("quark"));
+    public static final RegistryObject<Item> CORALSTONE_VERTICAL_SLAB_ITEM = conditionallyRegisterItem("coralstone_vertical_slab", () -> new BlockItem(CORALSTONE_VERTICAL_SLAB.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)), () -> isLoaded("quark"));
+
     public static final RegistryObject<Block> POLISHED_CORALSTONE = BLOCKS.register("polished_coralstone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.PURPLE).sound(SoundType.STONE).hardnessAndResistance(1.5F, 1F).harvestTool(ToolType.PICKAXE).setRequiresTool()));
     public static final RegistryObject<Item> POLISHED_CORALSTONE_ITEM = ITEMS.register("polished_coralstone", () -> new BlockItemBase(POLISHED_CORALSTONE.get()));
 
@@ -108,6 +122,9 @@ public class JellyfishingBlocks {
 
     public static final RegistryObject<Block> POLISHED_CORALSTONE_SLAB = BLOCKS.register("polished_coralstone_slab", () -> new SlabBlock(Block.Properties.from(POLISHED_CORALSTONE.get())));
     public static final RegistryObject<Item> POLISHED_CORALSTONE_SLAB_ITEM = ITEMS.register("polished_coralstone_slab", () -> new BlockItemBase(POLISHED_CORALSTONE_SLAB.get()));
+
+    public static final RegistryObject<Block> POLISHED_CORALSTONE_VERTICAL_SLAB = conditionallyRegisterBlock("polished_coralstone_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(CORALSTONE.get())), () -> isLoaded("quark"));
+    public static final RegistryObject<Item> POLISHED_CORALSTONE_VERTICAL_SLAB_ITEM = conditionallyRegisterItem("polished_coralstone_vertical_slab", () -> new BlockItem(POLISHED_CORALSTONE_VERTICAL_SLAB.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)), () -> isLoaded("quark"));
 
     public static final RegistryObject<Block> ALGAE_GRASS = BLOCKS.register("algae_grass", () -> new AlgaeGrassBlock(Block.Properties.create(Material.EARTH, MaterialColor.LIME).sound(SoundType.WET_GRASS).hardnessAndResistance(1F, 1F).harvestTool(ToolType.SHOVEL).harvestLevel(0)));
     public static final RegistryObject<Item> ALGAE_GRASS_ITEM = ITEMS.register("algae_grass", () -> new BlockItemBase(ALGAE_GRASS.get()));
@@ -237,6 +254,19 @@ public class JellyfishingBlocks {
         fire.setFireInfo(block, encouragement, flammability);
     }
 
+    public static RegistryObject<Item> conditionallyRegisterItem(String registryName, Supplier<Item> item, Supplier<Boolean> condition) {
+        if (condition.get())
+            return ITEMS.register(registryName, item);
+        return null;
+    }
+    public static RegistryObject<Block> conditionallyRegisterBlock(String registryName, Supplier<Block> block, Supplier<Boolean> condition) {
+        if (condition.get())
+            return BLOCKS.register(registryName, block);
+        return null;
+    }
 
+    public static boolean isLoaded(String modid) {
+        return ModList.get().isLoaded(modid);
+    }
 
 }

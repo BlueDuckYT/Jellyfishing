@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "item": "jellyfishing:coralstone_vertical_slab",
+          "type": "forge:item_exists"
+        }
+      ],
+
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#",
+          "#",
+          "#"
+        ],
+        "key": {
+          "#": {
+            "item": "jellyfishing:scrap_metal_vertical_slab"
+          }
+        },
+        "result": {
+          "item": "jellyfishing:scrap_metal_slab",
+          "count": 3
+        }
+      }
+    }
+  ]
+}
