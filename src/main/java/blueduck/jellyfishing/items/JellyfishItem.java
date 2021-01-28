@@ -34,7 +34,10 @@ public class JellyfishItem extends Item {
             public ItemStack dispenseStack(IBlockSource source, ItemStack stack) {
                 Direction direction = source.getBlockState().get(DispenserBlock.FACING);
                 EntityType<?> entitytype = ((JellyfishItem) stack.getItem()).entityType.get();
-                entitytype.spawn(source.getWorld(), stack, null, source.getBlockPos().offset(direction), SpawnReason.DISPENSER, direction != Direction.UP, false);
+                AbstractJellyfishEntity entity = (AbstractJellyfishEntity) entitytype.spawn(source.getWorld(), stack, null, source.getBlockPos().offset(direction), SpawnReason.DISPENSER, direction != Direction.UP, false);
+                if (entity != null) {
+                    ((AbstractFishEntity)entity).setFromBucket(true);
+                }
                 stack.shrink(1);
                 return stack;
             }
