@@ -4,6 +4,8 @@ import blueduck.jellyfishing.client.entity.renderer.BlueJellyfishRenderer;
 import blueduck.jellyfishing.client.entity.renderer.JellyfishRenderer;
 import blueduck.jellyfishing.client.entity.renderer.PattyWagonRenderer;
 import blueduck.jellyfishing.entities.AbstractJellyfishEntity;
+import blueduck.jellyfishing.entities.BlueJellyfishEntity;
+import blueduck.jellyfishing.entities.JellyfishEntity;
 import blueduck.jellyfishing.items.JellyfishingSpawnEgg;
 import blueduck.jellyfishing.misc.*;
 import blueduck.jellyfishing.registry.*;
@@ -16,6 +18,7 @@ import net.minecraft.block.FlowerPotBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
@@ -32,6 +35,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.village.PointOfInterestType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.Heightmap;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
@@ -111,6 +115,8 @@ public class JellyfishingMod
         GlobalEntityTypeAttributes.put(JellyfishingEntities.JELLYFISH.get(), AbstractJellyfishEntity.func_234176_m_().create()/*(or your own)*/);
         GlobalEntityTypeAttributes.put(JellyfishingEntities.BLUE_JELLYFISH.get(), AbstractJellyfishEntity.func_234176_m_().create()/*(or your own)*/);
 
+        EntitySpawnPlacementRegistry.register(JellyfishingEntities.JELLYFISH.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, JellyfishEntity::canSpawn);
+        EntitySpawnPlacementRegistry.register(JellyfishingEntities.BLUE_JELLYFISH.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BlueJellyfishEntity::canSpawn);
 
 
         ImmutableMap.Builder<Item,Integer> FOOD_VALUES_BUILDER = ImmutableMap.builder();

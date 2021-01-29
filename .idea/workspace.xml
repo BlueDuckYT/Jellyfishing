@@ -5,9 +5,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Dispenser-placed jellyfish do not despawn">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="XP From catching jellyfish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/JellyfishingMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/AbstractJellyfishEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/BlueJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/BlueJellyfishEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/JellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/JellyfishEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,13 +245,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00161" summary="Villager change">
-      <created>1606576655845</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1606576655845</updated>
     </task>
     <task id="LOCAL-00162" summary="Balanced jellyfish">
       <created>1606844495514</created>
@@ -586,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611851773362</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="XP From catching jellyfish">
+      <created>1611860835150</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1611860835151</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Mixins set up and refactoring and jelly particle fix" />
     <MESSAGE value="Scrap windows and bamboo walls and chrome metal" />
     <MESSAGE value="Carpeted Tiles" />
     <MESSAGE value="Moved flower cloud config to server side" />
@@ -628,7 +630,8 @@
     <MESSAGE value="recipe error" />
     <MESSAGE value="Vertical Slabs" />
     <MESSAGE value="Dispenser-placed jellyfish do not despawn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dispenser-placed jellyfish do not despawn" />
+    <MESSAGE value="XP From catching jellyfish" />
+    <option name="LAST_COMMIT_MESSAGE" value="XP From catching jellyfish" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611675451241">
