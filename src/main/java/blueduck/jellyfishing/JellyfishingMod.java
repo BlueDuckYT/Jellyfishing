@@ -115,8 +115,8 @@ public class JellyfishingMod
         GlobalEntityTypeAttributes.put(JellyfishingEntities.JELLYFISH.get(), AbstractJellyfishEntity.func_234176_m_().create()/*(or your own)*/);
         GlobalEntityTypeAttributes.put(JellyfishingEntities.BLUE_JELLYFISH.get(), AbstractJellyfishEntity.func_234176_m_().create()/*(or your own)*/);
 
-        EntitySpawnPlacementRegistry.register(JellyfishingEntities.JELLYFISH.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, JellyfishEntity::canSpawn);
-        EntitySpawnPlacementRegistry.register(JellyfishingEntities.BLUE_JELLYFISH.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BlueJellyfishEntity::canSpawn);
+        EntitySpawnPlacementRegistry.register(JellyfishingEntities.JELLYFISH.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbstractJellyfishEntity::canSpawn);
+        EntitySpawnPlacementRegistry.register(JellyfishingEntities.BLUE_JELLYFISH.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbstractJellyfishEntity::canSpawn);
 
 
         ImmutableMap.Builder<Item,Integer> FOOD_VALUES_BUILDER = ImmutableMap.builder();

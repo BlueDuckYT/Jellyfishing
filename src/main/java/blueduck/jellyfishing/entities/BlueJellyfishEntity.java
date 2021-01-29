@@ -19,10 +19,4 @@ public class BlueJellyfishEntity extends AbstractJellyfishEntity {
 
 
 
-    public static boolean canSpawn(EntityType<BlueJellyfishEntity> type, IWorld world, SpawnReason spawnReason, BlockPos pos, Random random) {
-        return world.hasWater(pos);
-    }
-
-
-
 }

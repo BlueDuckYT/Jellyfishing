@@ -292,6 +292,8 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     }
 
 
-
+    public static boolean canSpawn(EntityType<? extends AbstractJellyfishEntity> type, IWorld world, SpawnReason spawnReason, BlockPos pos, Random random) {
+        return world.hasWater(pos);
+    }
 
 }
