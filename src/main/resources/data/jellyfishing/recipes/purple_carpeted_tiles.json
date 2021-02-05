@@ -13,6 +13,7 @@
     }
   },
   "result": {
-    "item": "jellyfishing:purple_carpeted_tiles"
+    "item": "jellyfishing:purple_carpeted_tiles",
+    "count": 4
   }
 }
