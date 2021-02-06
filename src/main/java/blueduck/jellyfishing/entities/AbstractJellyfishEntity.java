@@ -219,7 +219,13 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                             this.world.addEntity(new ExperienceOrbEntity(this.world, this.getPosX(), this.getPosY(), this.getPosZ(), j));
                         }
                     }
-                    if (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) > 0) {
+                    boolean greaseFlag = false;
+                    if (0.005 > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
+                        this.entityDropItem(new ItemStack(JellyfishingItems.GREASE_BALL.get(), 1), -0.5F);
+                        this.playSound(SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, 1.0F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.4F);
+                        greaseFlag = true;
+                    }
+                    if (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) > 0 && this.canDespawn(1)) {
                         if (this.canDespawn(1) && player.getEntityWorld().getRandom().nextDouble() < (0.1 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack))) {
                             try {
                                 LootContext.Builder lootcontext$builder = (new LootContext.Builder(this.getServer().getWorld(this.getEntityWorld().getDimensionKey()))).withParameter(LootParameters.field_237457_g_, this.getMotion()).withParameter(LootParameters.TOOL, itemstack).withRandom(this.rand).withLuck(player.getLuck() + (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) - 1));
@@ -232,7 +238,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                                 this.playSound(SoundEvents.ENTITY_FISHING_BOBBER_RETRIEVE, 1.0F, 1.0F);
                             }
                         }
-                        if (0.005 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
+                        if (!greaseFlag && 0.005 * EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.PLUNDERING.get(), itemstack) > this.getEntityWorld().getRandom().nextDouble() && this.canDespawn(1)) {
                             this.entityDropItem(new ItemStack(JellyfishingItems.GREASE_BALL.get(), 1), -0.5F);
                             this.playSound(SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, 1.0F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.4F);
                         }
