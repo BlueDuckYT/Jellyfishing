@@ -5,8 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixed carpeted tiles recipes">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Grease now no longer requires plundering (this feature was too hard to figure out without asking)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/AbstractJellyfishEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/entities/AbstractJellyfishEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,13 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Added config option for caught jellyfish stinging cause they sting through blocks and it's annoying">
-      <created>1607049098152</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1607049098153</updated>
     </task>
     <task id="LOCAL-00167" summary="Adds sandy's suit">
       <created>1607100899645</created>
@@ -585,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612493982876</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="Grease now no longer requires plundering (this feature was too hard to figure out without asking)">
+      <created>1612574637798</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1612574637798</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Forgot some recipes" />
     <MESSAGE value="Sound changes and flammability" />
     <MESSAGE value="bubble blocks" />
     <MESSAGE value="ubbles" />
@@ -627,7 +627,8 @@
     <MESSAGE value="yeeeeeeeeeeeeeeee" />
     <MESSAGE value="Music client turn off works now" />
     <MESSAGE value="Fixed carpeted tiles recipes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed carpeted tiles recipes" />
+    <MESSAGE value="Grease now no longer requires plundering (this feature was too hard to figure out without asking)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grease now no longer requires plundering (this feature was too hard to figure out without asking)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611675451241">
@@ -694,10 +695,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612493992416">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612574643339">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612493992416" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612574643339" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

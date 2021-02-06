@@ -135,6 +135,7 @@ public class JellyfishingMod
 
             JellyfishingBlocks.registerFlammables();
             JellyfishingItems.registerCompostables();
+            JellyfishingConfiguredFeatures.registerConfiguredFeatures();
         });
 
     }
