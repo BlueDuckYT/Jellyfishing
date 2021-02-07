@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "jellyfishing:coralstone_slab",
-    "jellyfishing:polished_coralstone_slab"
+    "jellyfishing:polished_coralstone_slab",
+    "jellyfishing:scrap_metal_slab",
+    "jellyfishing:chrome_metal_slab",
+    "jellyfishing:chrome_brick_slab"
   ]
 }

@@ -5,8 +5,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Nerfed agility">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fixed scrap window recipe">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips/gloves.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips/power_glove.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/items/trapdoors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips/blue_jellyfish.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips/blue_jellyfish.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips/grease.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips/grease.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/slabs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/slabs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +90,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/blocks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/jellyfishing/tips" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -95,12 +101,12 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="blueduck.jellyfishing.jellyfishingmod.items" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\blocks" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\recipes" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\models\item" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\blockstates" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\models\block" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\forge\tags\items\jolly_boxes" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\loot_tables\gameplay" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="blueduck.jellyfishing.features" />
@@ -109,12 +115,12 @@
       <recent name="blueduck.jellyfishing.jellyfishingmod.misc" />
       <recent name="blueduck.jellyfishing.jellyfishingmod.blocks" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\forge\tags\items\jolly_boxes" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\minecraft\loot_tables\gameplay" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\data\forge\tags" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\resources\assets\jellyfishing\sounds\entity\jellyfish" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing\src\main\java\blueduck\jellyfishing\jellyfishingmod" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\tips" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\minecraft\tags\items" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\blocks" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\recipes" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\models\item" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -241,13 +247,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00169" summary="Recipe change">
-      <created>1607106451654</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1607106451654</updated>
     </task>
     <task id="LOCAL-00170" summary="Advancement">
       <created>1607106836547</created>
@@ -585,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612659628823</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="Fixed scrap window recipe">
+      <created>1612662485750</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1612662485750</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ubbles" />
     <MESSAGE value="Jellyfish place config for laggy servers" />
     <MESSAGE value="new chrome" />
     <MESSAGE value="chrome bricks" />
@@ -627,7 +632,8 @@
     <MESSAGE value="Grease now no longer requires plundering (this feature was too hard to figure out without asking)" />
     <MESSAGE value="Registers configured features" />
     <MESSAGE value="Nerfed agility" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nerfed agility" />
+    <MESSAGE value="Fixed scrap window recipe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed scrap window recipe" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611675451241">
@@ -694,10 +700,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612659636126">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612662489379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612659636126" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612662489379" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
