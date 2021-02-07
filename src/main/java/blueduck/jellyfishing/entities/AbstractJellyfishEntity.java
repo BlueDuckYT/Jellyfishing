@@ -132,7 +132,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
             --this.stingCounter;
         }
         if (dropCounter == 0 && this.isInWater()) {
-            this.entityDropItem(new ItemStack(JELLY_ITEM, 1), -0.5F).setMotion(0, -0.5, 0);
+            this.entityDropItem(new ItemStack(JELLY_ITEM, 1), -0.5F);
             dropCounter = (int) (24000 / dailyDrops);
         }
         if (dropCounter > 0) {
@@ -202,7 +202,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
             player.swingArm(hand);
             if (!player.getEntityWorld().isRemote() && this.isAlive()) {
-                if (!this.canDespawn(1) || dodgeChance / (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.AGILITY.get(), itemstack) + 1) < this.getEntityWorld().getRandom().nextDouble()) {
+                if (!this.canDespawn(1) || dodgeChance - (EnchantmentHelper.getEnchantmentLevel(JellyfishingEnchantments.AGILITY.get(), itemstack)/10) < this.getEntityWorld().getRandom().nextDouble()) {
 
                     player.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
                     this.playSound(SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1.0F, 1.0F);
