@@ -5,8 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="New tips">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/nuts.json" afterDir="false" />
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fishing Real Support">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +84,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/forge/tags/items" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/fishing" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -111,11 +110,11 @@
       <recent name="blueduck.jellyfishing.jellyfishingmod.blocks" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\fishing" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\forge\tags\items" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\tips" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\minecraft\tags\items" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\blocks" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\recipes" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -242,13 +241,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00171" summary="Karate Gloves">
-      <created>1607221267712</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1607221267719</updated>
     </task>
     <task id="LOCAL-00172" summary="Final Changes">
       <created>1607221631928</created>
@@ -586,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612663999295</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="Fishing Real Support">
+      <created>1612697766493</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1612697766493</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new chrome" />
     <MESSAGE value="chrome bricks" />
     <MESSAGE value="Pineapple Plants" />
     <MESSAGE value="Pineapple plants grow faster on farmland" />
@@ -628,7 +626,8 @@
     <MESSAGE value="Nerfed agility" />
     <MESSAGE value="Fixed scrap window recipe" />
     <MESSAGE value="New tips" />
-    <option name="LAST_COMMIT_MESSAGE" value="New tips" />
+    <MESSAGE value="Fishing Real Support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fishing Real Support" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611675451241">

@@ -46,6 +46,7 @@ import net.minecraftforge.event.entity.living.LivingSpawnEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
@@ -262,6 +263,13 @@ public class JellyfishingMod
         }
 
 
+    }
+
+    @SubscribeEvent
+    public static void onFluidChangeBlock(BlockEvent.FluidPlaceBlockEvent event) {
+        if (event.getWorld().getBlockState(event.getPos().down()).equals(JellyfishingBlocks.JELLY_BLOCK.get().getDefaultState()) && event.getNewState().equals(Blocks.COBBLESTONE.getDefaultState())) {
+            event.setNewState(JellyfishingBlocks.CORALSTONE.get().getDefaultState());
+        }
     }
 
 
