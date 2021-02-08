@@ -90,6 +90,8 @@ public class JellyfishingMod
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+        MinecraftForge.EVENT_BUS.addListener(JellyfishingMod::onFluidChangeBlock);
+
         JellyfishingEnchantments.init();
         JellyfishingBlocks.init();
         JellyfishingItems.init();
@@ -170,6 +172,12 @@ public class JellyfishingMod
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
 
+    }
+
+    public static void onFluidChangeBlock(BlockEvent.FluidPlaceBlockEvent event) {
+        if (event.getWorld().getBlockState(event.getPos().down()).equals(JellyfishingBlocks.JELLY_BLOCK.get().getDefaultState()) && event.getNewState().equals(Blocks.COBBLESTONE.getDefaultState())) {
+            event.setNewState(JellyfishingBlocks.CORALSTONE.get().getDefaultState());
+        }
     }
 
     @SubscribeEvent
@@ -265,12 +273,7 @@ public class JellyfishingMod
 
     }
 
-    @SubscribeEvent
-    public static void onFluidChangeBlock(BlockEvent.FluidPlaceBlockEvent event) {
-        if (event.getWorld().getBlockState(event.getPos().down()).equals(JellyfishingBlocks.JELLY_BLOCK.get().getDefaultState()) && event.getNewState().equals(Blocks.COBBLESTONE.getDefaultState())) {
-            event.setNewState(JellyfishingBlocks.CORALSTONE.get().getDefaultState());
-        }
-    }
+
 
 
     @Mod.EventBusSubscriber(modid = "jellyfishing")

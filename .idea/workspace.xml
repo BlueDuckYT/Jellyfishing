@@ -5,8 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Fishing Real Support">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Coralstone generators now a thing with jelly blocks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/JellyfishingMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +128,7 @@
       <command value="gradle genIntellijRuns" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Jellyfishing [build]">
+  <component name="RunManager" selected="Application.runClient">
     <configuration name="Jellyfishing 1.16.4 [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -241,13 +243,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00172" summary="Final Changes">
-      <created>1607221631928</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1607221631928</updated>
     </task>
     <task id="LOCAL-00173" summary="Actual Final Changes">
       <created>1607221890255</created>
@@ -585,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612697766493</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="Coralstone generators now a thing with jelly blocks">
+      <created>1612792905478</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1612792905478</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="chrome bricks" />
     <MESSAGE value="Pineapple Plants" />
     <MESSAGE value="Pineapple plants grow faster on farmland" />
     <MESSAGE value="pineapples spawn now" />
@@ -627,7 +628,8 @@
     <MESSAGE value="Fixed scrap window recipe" />
     <MESSAGE value="New tips" />
     <MESSAGE value="Fishing Real Support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fishing Real Support" />
+    <MESSAGE value="Coralstone generators now a thing with jelly blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coralstone generators now a thing with jelly blocks" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611675451241">
@@ -658,46 +660,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609862179059" />
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom" timestamp="1612659713936">
+    <state width="1493" height="180" key="GridCell.Tab.0.bottom" timestamp="1612816285805">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612659713936" />
-    <state width="1493" height="180" key="GridCell.Tab.0.center" timestamp="1612659713936">
+    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612816285805" />
+    <state width="1493" height="180" key="GridCell.Tab.0.center" timestamp="1612816285805">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612659713936" />
-    <state width="1493" height="180" key="GridCell.Tab.0.left" timestamp="1612659713936">
+    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612816285805" />
+    <state width="1493" height="180" key="GridCell.Tab.0.left" timestamp="1612816285805">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612659713936" />
-    <state width="1493" height="180" key="GridCell.Tab.0.right" timestamp="1612659713936">
+    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612816285805" />
+    <state width="1493" height="180" key="GridCell.Tab.0.right" timestamp="1612816285805">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612659713936" />
-    <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1607106503551">
+    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612816285805" />
+    <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1612816277084">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
-    <state width="1493" height="128" key="GridCell.Tab.1.center" timestamp="1607106503551">
+    <state width="1493" height="128" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612816277084" />
+    <state width="1493" height="128" key="GridCell.Tab.1.center" timestamp="1612816277084">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
-    <state width="1493" height="128" key="GridCell.Tab.1.left" timestamp="1607106503551">
+    <state width="1493" height="128" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612816277084" />
+    <state width="1493" height="128" key="GridCell.Tab.1.left" timestamp="1612816277084">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
-    <state width="1493" height="128" key="GridCell.Tab.1.right" timestamp="1607106503551">
+    <state width="1493" height="128" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612816277084" />
+    <state width="1493" height="128" key="GridCell.Tab.1.right" timestamp="1612816277084">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607106503551" />
+    <state width="1493" height="128" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612816277084" />
     <state x="485" y="133" key="RollbackChangesDialog" timestamp="1605442368796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612664006176">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612792912815">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612664006176" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612792912815" />
     <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
