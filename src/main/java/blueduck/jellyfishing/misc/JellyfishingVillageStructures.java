@@ -25,12 +25,11 @@ public class JellyfishingVillageStructures {
             DesertVillagePools.init();
             SavannaVillagePools.init();
 
-            addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_plains"), 4);
-            addToPool(new ResourceLocation("village/snowy/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_snowy"), 4);
-            addToPool(new ResourceLocation("village/taiga/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_taiga"), 4);
-            addToPool(new ResourceLocation("village/desert/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_desert"), 4);
-            addToPool(new ResourceLocation("village/savanna/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_savanna"), 4);
-            addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/scrap_metal_forge"), 4);
+            addToPool(new ResourceLocation("village/plains/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_plains"), 10);
+            addToPool(new ResourceLocation("village/snowy/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_snowy"), 10);
+            addToPool(new ResourceLocation("village/taiga/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_taiga"), 10);
+            addToPool(new ResourceLocation("village/desert/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_desert"), 10);
+            addToPool(new ResourceLocation("village/savanna/houses"), new ResourceLocation("jellyfishing:village/krusty_krab_savanna"), 10);
 
         }
 
