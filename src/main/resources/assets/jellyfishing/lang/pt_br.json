@@ -4,7 +4,7 @@
 
   "block.jellyfishing.bubble_block": "Bloco de bolha",
 
-  "block.jellyfishing.seanut_brittle_block": "Bloco de amendoim-do-mar com casca",
+  "block.jellyfishing.seanut_brittle_block": "Bloco de doce de amendoim-do-mar",
   "block.jellyfishing.pineapple_block": "Bloco de abacaxi",
   "block.jellyfishing.pineapple_pillar": "Pilar de abacaxi",
   "block.jellyfishing.chiseled_pineapple_block": "Bloco de abacaxi talhado",
@@ -34,8 +34,8 @@
   "block.jellyfishing.polished_coralstone_slab": "Laje de pedra-coral polida",
   "block.jellyfishing.polished_coralstone_vertical_slab": "Laje vertical de pedra-coral polida",
 
-  "block.jellyfishing.algae_grass": "Grama de alga-marinha",
-  "block.jellyfishing.algae_block": "Bloco de alga-marinha",
+  "block.jellyfishing.algae_grass": "Grama de macroalgas",
+  "block.jellyfishing.algae_block": "Bloco de macroalgas",
 
 
   "block.jellyfishing.seanut_bush": "Arbusto de amendoim-do-mar",
@@ -45,35 +45,35 @@
 
   "block.jellyfishing.patty_tiles": "Ladrilhos de hambúrguer",
 
-  "block.jellyfishing.grill": "Grelha",
+  "block.jellyfishing.grill": "Chapa",
 
   "block.jellyfishing.vault_door": "Porta forte",
   "block.jellyfishing.vault_trapdoor": "Alçapão forte",
   "block.jellyfishing.scrap_metal_window": "Janela de sucata",
-  "block.jellyfishing.chrome_door": "Porta de cromagem",
-  "block.jellyfishing.chrome_vent": "Chaminé de cromagem",
+  "block.jellyfishing.chrome_door": "Porta cromada",
+  "block.jellyfishing.chrome_vent": "Saída de ar cromada",
 
   "block.jellyfishing.bamboo_wall": "Parede de bambu",
   "block.jellyfishing.pink_bamboo_wall": "Parede de bambu rosa",
   "block.jellyfishing.blue_bamboo_wall": "Parede de bambu azul",
-  "block.jellyfishing.yellow_bamboo_wall": "Parede de bambu amarelo",
+  "block.jellyfishing.yellow_bamboo_wall": "Parede de bambu amarela",
 
-  "block.jellyfishing.white_carpeted_tiles": "Ladrilhos brancos entapetados",
-  "block.jellyfishing.orange_carpeted_tiles": "Ladrilhos laranjas entapetados",
-  "block.jellyfishing.magenta_carpeted_tiles": "Ladrilhos magentas entepetados",
-  "block.jellyfishing.light_blue_carpeted_tiles": "Larilhos azuis-claros entapetados",
-  "block.jellyfishing.yellow_carpeted_tiles": "Ladrilhos amarelos entapetados",
-  "block.jellyfishing.lime_carpeted_tiles": "Ladrilhos verdes-limão entapetados",
-  "block.jellyfishing.pink_carpeted_tiles": "Ladrilhos rosas entapetados",
-  "block.jellyfishing.gray_carpeted_tiles": "Ladrilhos cinzas entapetados",
-  "block.jellyfishing.light_gray_carpeted_tiles": "Ladrilhos cinza-claros entapetados",
-  "block.jellyfishing.cyan_carpeted_tiles": "Ladrilhos cíanos entapetados",
-  "block.jellyfishing.purple_carpeted_tiles": "Ladrilhos roxos entapetados",
-  "block.jellyfishing.blue_carpeted_tiles": "Ladrilhos azuis entapetados",
-  "block.jellyfishing.brown_carpeted_tiles": "Ladrilhos marrons entapetados",
-  "block.jellyfishing.green_carpeted_tiles": "Ladrilhos verdes entapetados",
-  "block.jellyfishing.red_carpeted_tiles": "Ladrilhos vermelhos entapetados",
-  "block.jellyfishing.black_carpeted_tiles": "Ladrilhos pretos entapetados",
+  "block.jellyfishing.white_carpeted_tiles": "Ladrilhos com entapetado branco",
+  "block.jellyfishing.orange_carpeted_tiles": "Ladrilhos com entapetado laranja",
+  "block.jellyfishing.magenta_carpeted_tiles": "Ladrilhos com entapetado magenta",
+  "block.jellyfishing.light_blue_carpeted_tiles": "Larilhos com entapetado azul-claro",
+  "block.jellyfishing.yellow_carpeted_tiles": "Ladrilhos com entapetado amarelo",
+  "block.jellyfishing.lime_carpeted_tiles": "Ladrilhos com entapetado verde-limão",
+  "block.jellyfishing.pink_carpeted_tiles": "Ladrilhos com entapetado rosa",
+  "block.jellyfishing.gray_carpeted_tiles": "Ladrilhos com entapetado cinza",
+  "block.jellyfishing.light_gray_carpeted_tiles": "Ladrilhos com entapetado cinza-claro",
+  "block.jellyfishing.cyan_carpeted_tiles": "Ladrilhos com entapetado ciano",
+  "block.jellyfishing.purple_carpeted_tiles": "Ladrilhos com entapetado roxo",
+  "block.jellyfishing.blue_carpeted_tiles": "Ladrilhos com entapetado azul",
+  "block.jellyfishing.brown_carpeted_tiles": "Ladrilhos com entapetado marrom",
+  "block.jellyfishing.green_carpeted_tiles": "Ladrilhos com entapetado verde",
+  "block.jellyfishing.red_carpeted_tiles": "Ladrilhos com entapetado vermedlho",
+  "block.jellyfishing.black_carpeted_tiles": "Ladrilhos com entapetado preto",
 
   "item.jellyfishing.jellyfish_net": "Rede de água-viva",
   "item.jellyfishing.jellyfish_jelly": "Geleia de água-viva",
@@ -94,7 +94,7 @@
   "item.jellyfishing.seanut": "Amendoim-do-mar",
   "item.jellyfishing.roasted_seanut": "Amendoim-do-mar torrado",
   "item.jellyfishing.seanut_butter": "Manteiga de amendoim-do-mar",
-  "item.jellyfishing.seanut_brittle": "Amendoim-do-mar com casca",
+  "item.jellyfishing.seanut_brittle": "Doce de amendoim-do-mar",
 
   "item.jellyfishing.pineapple": "Abacaxi",
   "item.jellyfishing.pineapple_seeds": "Sementes de abacaxi",
@@ -104,7 +104,7 @@
   "item.jellyfishing.kelp_shake": "Shake de alga",
   "item.jellyfishing.kelp_mustache": "Bigode de alga",
 
-  "item.jellyfishing.triple_gooberberry_sunrise": "Triple Gooberberry Sunrise***",
+  "item.jellyfishing.triple_gooberberry_sunrise": "Sundae triplo",
   "item.jellyfishing.krabby_patty": "Hambúrguer de siri",
 
   "item.jellyfishing.music_disc_jellyfish_fields": "Disco de música",
@@ -122,12 +122,12 @@
 
   "item.jellyfishing.karate_glove": "Luva de karatê",
   "item.jellyfishing.master_karate_glove": "Luva de mestre do karatê",
-  "item.jellyfishing.power_karate_glove": "Luva de karatê do poder",
+  "item.jellyfishing.power_karate_glove": "Luva de karatê poderosa",
 
 
   "entity.jellyfishing.jellyfish": "Água-viva",
   "entity.jellyfishing.blue_jellyfish": "Água-viva azul",
-  "entity.minecraft.villager.jellyfishing.frycook": "Frycook***",
+  "entity.minecraft.villager.jellyfishing.frycook": "Cozinheiro",
 
   "biome.jellyfishing.jellyfish_fields": "Campos de água-viva",
 
