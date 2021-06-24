@@ -4,7 +4,7 @@
 
   "block.jellyfishing.bubble_block": "Bloco de bolha",
 
-  "block.jellyfishing.seanut_brittle_block": "Bloco de doce de amendoim-do-mar",
+  "block.jellyfishing.seanut_brittle_block": "Bloco de paçoca-do-mar",
   "block.jellyfishing.pineapple_block": "Bloco de abacaxi",
   "block.jellyfishing.pineapple_pillar": "Pilar de abacaxi",
   "block.jellyfishing.chiseled_pineapple_block": "Bloco de abacaxi talhado",
@@ -94,7 +94,7 @@
   "item.jellyfishing.seanut": "Amendoim-do-mar",
   "item.jellyfishing.roasted_seanut": "Amendoim-do-mar torrado",
   "item.jellyfishing.seanut_butter": "Manteiga de amendoim-do-mar",
-  "item.jellyfishing.seanut_brittle": "Doce de amendoim-do-mar",
+  "item.jellyfishing.seanut_brittle": "Paçoca-do-mar",
 
   "item.jellyfishing.pineapple": "Abacaxi",
   "item.jellyfishing.pineapple_seeds": "Sementes de abacaxi",
@@ -112,7 +112,7 @@
   "item.jellyfishing.spatula": "Espátula",
   "item.jellyfishing.golden_spatula": "Espátula dourada",
 
-  "item.jellyfishing.grease_ball": "Wad of Grease***",
+  "item.jellyfishing.grease_ball": "Bucha de gordura***",
 
   "item.jellyfishing.air_suit_helmet": "Capecete do traje de mergulho",
   "item.jellyfishing.air_suit_chestplate": "Peitoral do traje de mergulho",
@@ -160,7 +160,7 @@
   "advancements.jellyfishing.seanut_butter.title": "Manteiga de amendoim-do-mar",
   "advancements.jellyfishing.seanut_butter.description": "Faça manteiga de amendoim-do-mar com um amendoim-do-mar e leite",
   "advancements.jellyfishing.seanut_brittle.title": "Puxa! Amendoim com casca!",
-  "advancements.jellyfishing.seanut_brittle.description": "Faça um doce de amendoim-do-mar",
+  "advancements.jellyfishing.seanut_brittle.description": "Faça uma paçoca-do-mar",
   "advancements.jellyfishing.seanut_jelly_sandwich.title": "Sanduíche de geleia com manteiga de amendoim-do-mar",
   "advancements.jellyfishing.seanut_jelly_sandwich.description": "Faça um sanduíche de geleia com manteiga de amendoim-do-mar",
   "advancements.jellyfishing.mustache.title": "Agora nós somos homens!",
