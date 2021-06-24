@@ -39,7 +39,7 @@
 
 
   "block.jellyfishing.seanut_bush": "Arbusto de amendoim-do-mar",
-  "block.jellyfishing.pineapple_plant": "Planta de abacaxi",
+  "block.jellyfishing.pineapple_plant": "Plantio de abacaxi",
 
   "block.jellyfishing.potted_pineapple": "Abacaxi envasado",
 
@@ -72,7 +72,7 @@
   "block.jellyfishing.blue_carpeted_tiles": "Ladrilhos com entapetado azul",
   "block.jellyfishing.brown_carpeted_tiles": "Ladrilhos com entapetado marrom",
   "block.jellyfishing.green_carpeted_tiles": "Ladrilhos com entapetado verde",
-  "block.jellyfishing.red_carpeted_tiles": "Ladrilhos com entapetado vermedlho",
+  "block.jellyfishing.red_carpeted_tiles": "Ladrilhos com entapetado vermelho",
   "block.jellyfishing.black_carpeted_tiles": "Ladrilhos com entapetado preto",
 
   "item.jellyfishing.jellyfish_net": "Rede de água-viva",
@@ -101,7 +101,7 @@
 
   "item.jellyfishing.bubble_wand": "Fazedor de bolhas",
 
-  "item.jellyfishing.kelp_shake": "Shake de alga",
+  "item.jellyfishing.kelp_shake": "Shake de algas",
   "item.jellyfishing.kelp_mustache": "Bigode de alga",
 
   "item.jellyfishing.triple_gooberberry_sunrise": "Sundae triplo",
@@ -143,7 +143,7 @@
   "advancements.jellyfishing.firmly_grasp_it.description": "Obtenha uma rede de água-viva",
   "advancements.jellyfishing.ol_reliable.title": "Ol' Reliable***",
   "advancements.jellyfishing.ol_reliable.description": "Encante uma rede de água-viva",
-  "advancements.jellyfishing.catch.title": "Caçador de água-vivas",
+  "advancements.jellyfishing.catch.title": "Caçador de águas-vivas",
   "advancements.jellyfishing.catch.description": "Capture uma água-viva",
   "advancements.jellyfishing.catch_blue.title": "Sem-nome",
   "advancements.jellyfishing.catch_blue.description": "Capture uma água-viva azul",
@@ -158,24 +158,24 @@
   "advancements.jellyfishing.roasted_seanut.title": "Sentar em volta da fogueira",
   "advancements.jellyfishing.roasted_seanut.description": "Torre um amendoim-do-mar",
   "advancements.jellyfishing.seanut_butter.title": "Manteiga de amendoim-do-mar",
-  "advancements.jellyfishing.seanut_butter.description": "Faça manteiga de amendoim-do-mar com um amendomar e leite",
-  "advancements.jellyfishing.seanut_brittle.title": "Oh Boy! Amendoim com casca!***",
-  "advancements.jellyfishing.seanut_brittle.description": "Faça amendoim-do-mar com casca",
-  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Sanduíche de geleia de água-viva com manteiga de amendoim-do-mar",
-  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Faça um sanduíche de geleia de água-viva com manteiga de amendoim-do-mar",
+  "advancements.jellyfishing.seanut_butter.description": "Faça manteiga de amendoim-do-mar com um amendoim-do-mar e leite",
+  "advancements.jellyfishing.seanut_brittle.title": "Puxa! Amendoim com casca!",
+  "advancements.jellyfishing.seanut_brittle.description": "Faça um doce de amendoim-do-mar",
+  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Sanduíche de geleia com manteiga de amendoim-do-mar",
+  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Faça um sanduíche de geleia com manteiga de amendoim-do-mar",
   "advancements.jellyfishing.mustache.title": "Agora nós somos homens!",
   "advancements.jellyfishing.mustache.description": "Faça um bigode de alga",
   "advancements.jellyfishing.ice_cream.title": "Oh, Waiter!***",
-  "advancements.jellyfishing.ice_cream.description": "Craft a Triple Gooberberry Sunrise***",
+  "advancements.jellyfishing.ice_cream.description": "Faça um sundae triplo",
   "advancements.jellyfishing.krabby_patty.title": "100 dólares por um hambúrguer de siri?",
   "advancements.jellyfishing.krabby_patty.description": "Compre um hambúrguer de siri",
-  "advancements.jellyfishing.spatula.title": "World's Best Frycook***",
+  "advancements.jellyfishing.spatula.title": "O melhor mestre-cuca do mundo!",
   "advancements.jellyfishing.spatula.description": "Faça uma espátula",
   "advancements.jellyfishing.golden_spatula.title": "A espátula dourada",
   "advancements.jellyfishing.golden_spatula.description": "Faça uma espátula dourada",
   "advancements.jellyfishing.sandy_suit.title": "Direto do Texas!",
   "advancements.jellyfishing.sandy_suit.description": "Faça um conjunto de roupa de mergulho",
-  "advancements.jellyfishing.karate.title": "Kara-tei",
+  "advancements.jellyfishing.karate.title": "Kara-tay",
   "advancements.jellyfishing.karate.description": "Faça uma luva de mestre do karatê",
 
   "death.attack.sting.player": "{Player} foi ferroado por uma água-viva",
