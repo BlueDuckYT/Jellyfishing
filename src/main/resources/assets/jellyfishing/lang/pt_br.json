@@ -127,7 +127,7 @@
 
   "entity.jellyfishing.jellyfish": "Água-viva",
   "entity.jellyfishing.blue_jellyfish": "Água-viva azul",
-  "entity.minecraft.villager.jellyfishing.frycook": "Mestre-cuca",
+  "entity.minecraft.villager.jellyfishing.frycook": "Cozinheiro",
 
   "biome.jellyfishing.jellyfish_fields": "Campos de água-viva",
 
@@ -153,7 +153,7 @@
   "advancements.jellyfishing.jelly_sandwich.description": "Faça um sanduíche de geleia de água-viva",
   "advancements.jellyfishing.jelly_block.title": "Bloco de geleia",
   "advancements.jellyfishing.jelly_block.description": "Faça um bloco de geleia",
-  "advancements.jellyfishing.seanut.title": "Um amendoim do mar",
+  "advancements.jellyfishing.seanut.title": "Um amendoim que veio do mar",
   "advancements.jellyfishing.seanut.description": "Encontre um amendoim-marinho",
   "advancements.jellyfishing.roasted_seanut.title": "Sentar em volta da fogueira",
   "advancements.jellyfishing.roasted_seanut.description": "Torre um amendoim-marinho",
@@ -161,8 +161,8 @@
   "advancements.jellyfishing.seanut_butter.description": "Faça manteiga de amendoim-marinho com um amendoim-marinho e leite",
   "advancements.jellyfishing.seanut_brittle.title": "Puxa! Amendoim com casca!",
   "advancements.jellyfishing.seanut_brittle.description": "Faça uma paçoca-marinha",
-  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Sanduíche de geleia com manteiga de amendoim-marinho",
-  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Faça um sanduíche de geleia com manteiga de amendoim-marinho",
+  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Sanduíche de geleia de água-viva com manteiga de amendoim-marinho",
+  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Faça um sanduíche de geleia de água-viva com manteiga de amendoim-marinho",
   "advancements.jellyfishing.mustache.title": "Já somos homens!",
   "advancements.jellyfishing.mustache.description": "Faça um bigode de alga",
   "advancements.jellyfishing.ice_cream.title": "Ô garçom!",
