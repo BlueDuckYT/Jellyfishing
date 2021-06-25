@@ -112,7 +112,7 @@
   "item.jellyfishing.spatula": "Espátula",
   "item.jellyfishing.golden_spatula": "Espátula dourada",
 
-  "item.jellyfishing.grease_ball": "Bola de graxa***",
+  "item.jellyfishing.grease_ball": "Pedaço de graxa",
 
   "item.jellyfishing.air_suit_helmet": "Capecete do traje de mergulho",
   "item.jellyfishing.air_suit_chestplate": "Peitoral do traje de mergulho",
@@ -136,7 +136,7 @@
 
 
   "advancements.jellyfishing.root.title": "Jellyfishing",
-  "advancements.jellyfishing.root.description": "Comece sua jornada no Jellyfishing",
+  "advancements.jellyfishing.root.description": "Começando sua jornada no Jellyfishing",
   "advancements.jellyfishing.im_ready.title": "Estou pronto!",
   "advancements.jellyfishing.im_ready.description": "Entre nos campos de água-viva",
   "advancements.jellyfishing.firmly_grasp_it.title": "Segure bem na sua mão",
