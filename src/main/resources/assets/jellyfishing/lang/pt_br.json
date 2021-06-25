@@ -1,0 +1,190 @@
+{
+  "block.jellyfishing.jelly_block": "Bloco de geleia",
+  "block.jellyfishing.blue_jelly_block": "Bloco de geleia azul",
+
+  "block.jellyfishing.bubble_block": "Bloco de bolha",
+
+  "block.jellyfishing.seanut_brittle_block": "Bloco de paçoca-marinha",
+  "block.jellyfishing.pineapple_block": "Bloco de abacaxi",
+  "block.jellyfishing.pineapple_pillar": "Pilar de abacaxi",
+  "block.jellyfishing.chiseled_pineapple_block": "Bloco de abacaxi talhado",
+
+  "block.jellyfishing.coral_plant": "Planta-coral",
+  "block.jellyfishing.tube_plant": "Planta-de-tubo",
+  "block.jellyfishing.scrap_metal": "Metal sucateado",
+  "block.jellyfishing.scrap_metal_slab": "Laje de metal sucateado",
+  "block.jellyfishing.scrap_metal_vertical_slab": "Laje vertical de metal sucateado",
+  "block.jellyfishing.scrap_metal_stairs": "Escadas de metal sucateado",
+  "block.jellyfishing.chrome_metal": "Chapeamento cromado",
+  "block.jellyfishing.chrome_metal_slab": "Laje de chapeamento cromado",
+  "block.jellyfishing.chrome_metal_vertical_slab": "Laje vertical de chapeamento cromado",
+  "block.jellyfishing.chrome_metal_stairs": "Escadas de chapeamento cromado",
+  "block.jellyfishing.chrome_bricks": "Tijolos cromados",
+  "block.jellyfishing.chrome_brick_slab": "Laje de tijolos cromados",
+  "block.jellyfishing.chrome_brick_vertical_slab": "Laje vertical de tijolos cromados",
+  "block.jellyfishing.chrome_brick_stairs": "Escadas de tijolos cromados",
+  "block.jellyfishing.coralstone": "Pedra-coral",
+  "block.jellyfishing.coralstone_wall": "Muro de pedra-coral",
+  "block.jellyfishing.coralstone_stairs": "Escadas de pedra-coral",
+  "block.jellyfishing.coralstone_slab": "Laje de pedra-coral",
+  "block.jellyfishing.coralstone_vertical_slab": "Laje vertical de pedra-coral",
+
+  "block.jellyfishing.polished_coralstone": "Pedra-coral polida",
+  "block.jellyfishing.polished_coralstone_stairs": "Escadas de pedra-coral polida",
+  "block.jellyfishing.polished_coralstone_slab": "Laje de pedra-coral polida",
+  "block.jellyfishing.polished_coralstone_vertical_slab": "Laje vertical de pedra-coral polida",
+
+  "block.jellyfishing.algae_grass": "Grama de macroalgas",
+  "block.jellyfishing.algae_block": "Bloco de macroalgas",
+
+
+  "block.jellyfishing.seanut_bush": "Arbusto de amendoim-marinho",
+  "block.jellyfishing.pineapple_plant": "Planta de abacaxi",
+
+  "block.jellyfishing.potted_pineapple": "Abacaxi envasado",
+
+  "block.jellyfishing.patty_tiles": "Ladrilhos de hambúrguer",
+
+  "block.jellyfishing.grill": "Chapa",
+
+  "block.jellyfishing.vault_door": "Porta forte",
+  "block.jellyfishing.vault_trapdoor": "Alçapão forte",
+  "block.jellyfishing.scrap_metal_window": "Janela de metal sucateado",
+  "block.jellyfishing.chrome_door": "Porta cromada",
+  "block.jellyfishing.chrome_vent": "Saída de ar cromada",
+
+  "block.jellyfishing.bamboo_wall": "Parede de bambu",
+  "block.jellyfishing.pink_bamboo_wall": "Parede de bambu rosa",
+  "block.jellyfishing.blue_bamboo_wall": "Parede de bambu azul",
+  "block.jellyfishing.yellow_bamboo_wall": "Parede de bambu amarela",
+
+  "block.jellyfishing.white_carpeted_tiles": "Ladrilhos com entapetado branco",
+  "block.jellyfishing.orange_carpeted_tiles": "Ladrilhos com entapetado laranja",
+  "block.jellyfishing.magenta_carpeted_tiles": "Ladrilhos com entapetado magenta",
+  "block.jellyfishing.light_blue_carpeted_tiles": "Larilhos com entapetado azul-claro",
+  "block.jellyfishing.yellow_carpeted_tiles": "Ladrilhos com entapetado amarelo",
+  "block.jellyfishing.lime_carpeted_tiles": "Ladrilhos com entapetado verde-limão",
+  "block.jellyfishing.pink_carpeted_tiles": "Ladrilhos com entapetado rosa",
+  "block.jellyfishing.gray_carpeted_tiles": "Ladrilhos com entapetado cinza",
+  "block.jellyfishing.light_gray_carpeted_tiles": "Ladrilhos com entapetado cinza-claro",
+  "block.jellyfishing.cyan_carpeted_tiles": "Ladrilhos com entapetado ciano",
+  "block.jellyfishing.purple_carpeted_tiles": "Ladrilhos com entapetado roxo",
+  "block.jellyfishing.blue_carpeted_tiles": "Ladrilhos com entapetado azul",
+  "block.jellyfishing.brown_carpeted_tiles": "Ladrilhos com entapetado marrom",
+  "block.jellyfishing.green_carpeted_tiles": "Ladrilhos com entapetado verde",
+  "block.jellyfishing.red_carpeted_tiles": "Ladrilhos com entapetado vermelho",
+  "block.jellyfishing.black_carpeted_tiles": "Ladrilhos com entapetado preto",
+
+  "item.jellyfishing.jellyfish_net": "Rede de caçar água-viva",
+  "item.jellyfishing.jellyfish_jelly": "Geleia de água-viva",
+  "item.jellyfishing.blue_jellyfish_jelly": "Geleia de água-viva azul",
+
+  "item.jellyfishing.jellyfish": "Água-viva",
+  "item.jellyfishing.blue_jellyfish": "Água-viva azul",
+
+  "item.jellyfishing.jellyfish_spawn_egg": "Ovo gerador de água-viva",
+  "item.jellyfishing.blue_jellyfish_spawn_egg": "Ovo gerador de água-viva azul",
+
+  "item.jellyfishing.jellyfish_jelly_sandwich": "Sanduíche de geleia de água-viva",
+  "item.jellyfishing.blue_jellyfish_jelly_sandwich": "Sanduíche de geleia de água-viva azul",
+
+  "item.jellyfishing.seanut_butter_jellyfish_jelly_sandwich": "Sanduíche de geleia de água-viva com manteiga de amendoim-marinho",
+  "item.jellyfishing.seanut_butter_blue_jellyfish_jelly_sandwich": "Sanduíche de geleia de água-viva azul com manteiga de amendoim-marinho",
+
+  "item.jellyfishing.seanut": "Amendoim-marinho",
+  "item.jellyfishing.roasted_seanut": "Amendoim-marinho torrado",
+  "item.jellyfishing.seanut_butter": "Manteiga de amendoim-marinho",
+  "item.jellyfishing.seanut_brittle": "Paçoca-marinha",
+
+  "item.jellyfishing.pineapple": "Abacaxi",
+  "item.jellyfishing.pineapple_seeds": "Sementes de abacaxi",
+
+  "item.jellyfishing.bubble_wand": "Fazedor de bolhas",
+
+  "item.jellyfishing.kelp_shake": "Shake de algas",
+  "item.jellyfishing.kelp_mustache": "Bigode de alga",
+
+  "item.jellyfishing.triple_gooberberry_sunrise": "Alvorecer amendo-sundae triplo",
+  "item.jellyfishing.krabby_patty": "Hambúrguer de siri",
+
+  "item.jellyfishing.music_disc_jellyfish_fields": "Disco de música",
+  "item.jellyfishing.music_disc_jellyfish_fields.desc": "WhirlingWinds - Jellyfish Fields",
+  "item.jellyfishing.spatula": "Espátula",
+  "item.jellyfishing.golden_spatula": "Espátula dourada",
+
+  "item.jellyfishing.grease_ball": "Pedaço de graxa",
+
+  "item.jellyfishing.air_suit_helmet": "Capecete do traje de mergulho",
+  "item.jellyfishing.air_suit_chestplate": "Peitoral do traje de mergulho",
+  "item.jellyfishing.air_suit_leggings": "Calças do traje de mergulho",
+  "item.jellyfishing.air_suit_boots": "Botas do traje de mergulho",
+
+
+  "item.jellyfishing.karate_glove": "Luva de karatê",
+  "item.jellyfishing.master_karate_glove": "Luva de mestre do karatê",
+  "item.jellyfishing.power_karate_glove": "Luva de karatê poderosa",
+
+
+  "entity.jellyfishing.jellyfish": "Água-viva",
+  "entity.jellyfishing.blue_jellyfish": "Água-viva azul",
+  "entity.minecraft.villager.jellyfishing.frycook": "Cozinheiro",
+
+  "biome.jellyfishing.jellyfish_fields": "Campos de água-viva",
+
+  "enchantment.jellyfishing.agility": "Agilidade",
+  "enchantment.jellyfishing.plundering": "Pilhagem",
+
+
+  "advancements.jellyfishing.root.title": "Jellyfishing",
+  "advancements.jellyfishing.root.description": "Começando sua jornada no Jellyfishing",
+  "advancements.jellyfishing.im_ready.title": "Estou pronto!",
+  "advancements.jellyfishing.im_ready.description": "Entre nos campos de água-viva",
+  "advancements.jellyfishing.firmly_grasp_it.title": "Segure bem na sua mão",
+  "advancements.jellyfishing.firmly_grasp_it.description": "Obtenha uma rede de caçar água-viva",
+  "advancements.jellyfishing.ol_reliable.title": "A confiável",
+  "advancements.jellyfishing.ol_reliable.description": "Encante uma rede de caçar água-viva",
+  "advancements.jellyfishing.catch.title": "Caçador de água-viva",
+  "advancements.jellyfishing.catch.description": "Capture uma água-viva",
+  "advancements.jellyfishing.catch_blue.title": "Sem-nome",
+  "advancements.jellyfishing.catch_blue.description": "Capture uma água-viva azul",
+  "advancements.jellyfishing.jelly.title": "Geleia de água-viva",
+  "advancements.jellyfishing.jelly.description": "Pegue geleia de água-viva de uma água-viva",
+  "advancements.jellyfishing.jelly_sandwich.title": "Sanduíche de geleia de água-viva",
+  "advancements.jellyfishing.jelly_sandwich.description": "Faça um sanduíche de geleia de água-viva",
+  "advancements.jellyfishing.jelly_block.title": "Bloco de geleia",
+  "advancements.jellyfishing.jelly_block.description": "Faça um bloco de geleia",
+  "advancements.jellyfishing.seanut.title": "Um amendoim que veio do mar",
+  "advancements.jellyfishing.seanut.description": "Encontre um amendoim-marinho",
+  "advancements.jellyfishing.roasted_seanut.title": "Sentar em volta da fogueira",
+  "advancements.jellyfishing.roasted_seanut.description": "Torre um amendoim-marinho",
+  "advancements.jellyfishing.seanut_butter.title": "Manteiga de amendoim-marinho",
+  "advancements.jellyfishing.seanut_butter.description": "Faça manteiga de amendoim-marinho com um amendoim-marinho e leite",
+  "advancements.jellyfishing.seanut_brittle.title": "Puxa! Amendoim com casca!",
+  "advancements.jellyfishing.seanut_brittle.description": "Faça uma paçoca-marinha",
+  "advancements.jellyfishing.seanut_jelly_sandwich.title": "Sanduíche de geleia de água-viva com manteiga de amendoim-marinho",
+  "advancements.jellyfishing.seanut_jelly_sandwich.description": "Faça um sanduíche de geleia de água-viva com manteiga de amendoim-marinho",
+  "advancements.jellyfishing.mustache.title": "Já somos homens!",
+  "advancements.jellyfishing.mustache.description": "Faça um bigode de alga",
+  "advancements.jellyfishing.ice_cream.title": "Ô garçom!",
+  "advancements.jellyfishing.ice_cream.description": "Faça um alvorecer amendo-sundae triplo",
+  "advancements.jellyfishing.krabby_patty.title": "100 dólares por um hambúrguer de siri?",
+  "advancements.jellyfishing.krabby_patty.description": "Compre um hambúrguer de siri",
+  "advancements.jellyfishing.spatula.title": "O melhor mestre-cuca do mundo!",
+  "advancements.jellyfishing.spatula.description": "Faça uma espátula",
+  "advancements.jellyfishing.golden_spatula.title": "A espátula dourada",
+  "advancements.jellyfishing.golden_spatula.description": "Faça uma espátula dourada",
+  "advancements.jellyfishing.sandy_suit.title": "Direto do Texas!",
+  "advancements.jellyfishing.sandy_suit.description": "Faça um conjunto de traje de mergulho",
+  "advancements.jellyfishing.karate.title": "Kara-tê",
+  "advancements.jellyfishing.karate.description": "Faça uma luva de mestre do karatê",
+
+  "death.attack.sting.player": "{Player} foi ferroado por uma água-viva",
+
+  "jellyfishing.subtitle.sting": "Água-viva ferroando",
+  "jellyfishing.subtitle.jellyfishfields": "Campos de água-viva",
+
+  "enchantment.jellyfishing.agility.desc": "Diminui a chance que uma água-viva desviará de sua rede",
+  "enchantment.jellyfishing.plundering.desc": "Tem uma chance de soltar saque extra ao capturar uma água-viva"
+
+
+}
