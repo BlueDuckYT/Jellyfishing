@@ -5,10 +5,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Coralstone generators now a thing with jelly blocks">
+    <list default="true" id="015840fe-62f7-4c29-ad36-482feee8da82" name="Default Changelist" comment="Less frequent pineapples">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/blocks/tube_plant.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/loot_tables/chests/village_house.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/items/piglin_loved.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/JellyfishingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/JellyfishingMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/JellyfishingVillageStructures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blueduck/jellyfishing/misc/JellyfishingVillageStructures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_desert.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_desert.nbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_plains.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_plains.nbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_savanna.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_savanna.nbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_snowy.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_snowy.nbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_taiga.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village/krusty_krab_taiga.nbt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +95,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/fishing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/jellyfishing/structures/village" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -112,9 +121,9 @@
       <recent name="blueduck.jellyfishing.jellyfishingmod.blocks" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\fishing" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\forge\tags\items" />
-      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\assets\jellyfishing\tips" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\structures\village" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\chests" />
+      <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\run\saves" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\minecraft\tags\items" />
       <recent name="C:\Users\Max\IdeaProjects\Jellyfishing 1.16.4\src\main\resources\data\jellyfishing\loot_tables\blocks" />
     </key>
@@ -243,27 +252,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595473240727</updated>
-    </task>
-    <task id="LOCAL-00173" summary="Actual Final Changes">
-      <created>1607221890255</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1607221890255</updated>
-    </task>
-    <task id="LOCAL-00174" summary="Grill Loot Table">
-      <created>1607442377184</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1607442377185</updated>
-    </task>
-    <task id="LOCAL-00175" summary="Power Karate Glove, new algae grass, bugfixes">
-      <created>1607644346786</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1607644346787</updated>
     </task>
     <task id="LOCAL-00176" summary="Fixed crash w/ quark">
       <created>1607656763119</created>
@@ -587,7 +575,28 @@
       <option name="project" value="LOCAL" />
       <updated>1612792905478</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="Coralstone generators now work properly">
+      <created>1612816663776</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1612816663777</updated>
+    </task>
+    <task id="LOCAL-00223" summary="Buffed krusty krab spawnrate">
+      <created>1612816777430</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1612816777430</updated>
+    </task>
+    <task id="LOCAL-00224" summary="Less frequent pineapples">
+      <created>1612816908961</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1612816908961</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -604,9 +613,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Pineapple Plants" />
-    <MESSAGE value="Pineapple plants grow faster on farmland" />
-    <MESSAGE value="pineapples spawn now" />
     <MESSAGE value="Pineapples now spawn in patches" />
     <MESSAGE value="yee" />
     <MESSAGE value="Bubble wand and tag changes" />
@@ -629,96 +635,27 @@
     <MESSAGE value="New tips" />
     <MESSAGE value="Fishing Real Support" />
     <MESSAGE value="Coralstone generators now a thing with jelly blocks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coralstone generators now a thing with jelly blocks" />
+    <MESSAGE value="Coralstone generators now work properly" />
+    <MESSAGE value="Buffed krusty krab spawnrate" />
+    <MESSAGE value="Less frequent pineapples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Less frequent pineapples" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="490" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611675451241">
+    <state width="1493" height="180" key="GridCell.Tab.0.bottom" timestamp="1627838469848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="490" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1611675451241" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1611169309490">
+    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627838469848" />
+    <state width="1493" height="180" key="GridCell.Tab.0.center" timestamp="1627838469848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611169309490" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610738613583">
+    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1627838469848" />
+    <state width="1493" height="180" key="GridCell.Tab.0.left" timestamp="1627838469848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610738613583" />
-    <state x="464" y="32" key="#runClient" timestamp="1605359857364">
+    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1627838469848" />
+    <state width="1493" height="180" key="GridCell.Tab.0.right" timestamp="1627838469848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="464" y="32" key="#runClient/0.0.1536.824@0.0.1536.824" timestamp="1605359857364" />
-    <state x="464" y="32" key="#runServer" timestamp="1605899191455">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="464" y="32" key="#runServer/0.0.1536.824@0.0.1536.824" timestamp="1605899191455" />
-    <state x="524" y="115" key="#xdebugger.evaluate" timestamp="1607089903807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1607089903807" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1609862179059">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609862179059" />
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom" timestamp="1612816285805">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612816285805" />
-    <state width="1493" height="180" key="GridCell.Tab.0.center" timestamp="1612816285805">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612816285805" />
-    <state width="1493" height="180" key="GridCell.Tab.0.left" timestamp="1612816285805">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612816285805" />
-    <state width="1493" height="180" key="GridCell.Tab.0.right" timestamp="1612816285805">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612816285805" />
-    <state width="1493" height="128" key="GridCell.Tab.1.bottom" timestamp="1612816277084">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612816277084" />
-    <state width="1493" height="128" key="GridCell.Tab.1.center" timestamp="1612816277084">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612816277084" />
-    <state width="1493" height="128" key="GridCell.Tab.1.left" timestamp="1612816277084">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612816277084" />
-    <state width="1493" height="128" key="GridCell.Tab.1.right" timestamp="1612816277084">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="128" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612816277084" />
-    <state x="485" y="133" key="RollbackChangesDialog" timestamp="1605442368796">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="485" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605442368796" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612792912815">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612792912815" />
-    <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605305366054">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="448" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1605305366054" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612664105939">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1612664105939" />
-    <state x="475" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1606401035523">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="475" y="160" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1606401035523" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1607023506792">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607023506792" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611944992506">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611944992506" />
+    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1627838469848" />
   </component>
 </project>
