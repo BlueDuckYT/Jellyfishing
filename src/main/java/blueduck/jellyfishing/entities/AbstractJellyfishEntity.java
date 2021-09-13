@@ -184,8 +184,8 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
         }
     }
 
-    public static AttributeModifierMap.MutableAttribute func_234176_m_() {
-        return MobEntity.func_233666_p_().createMutableAttribute(Attributes.MAX_HEALTH, 6.0D);
+    public static AttributeModifierMap.MutableAttribute createAttributes() {
+        return MobEntity.registerAttributes().createMutableAttribute(Attributes.MAX_HEALTH, 6.0D);
     }
 
     public void setNewVelocity(Entity entityIn, double multiplier) {

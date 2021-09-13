@@ -21,6 +21,8 @@ import net.minecraft.world.server.ServerWorld;
 
 import java.util.function.Supplier;
 
+import net.minecraft.item.Item.Properties;
+
 public class JellyfishItem extends Item {
 
 

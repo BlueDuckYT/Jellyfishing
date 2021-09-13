@@ -21,19 +21,19 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class JellyBlock extends HoneyBlock {
-    protected static final VoxelShape field_226930_a_ = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 15.0D, 15.0D);
+    protected static final VoxelShape SHAPE = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 15.0D, 15.0D);
 
-    public JellyBlock(Block.Properties properties) {
+    public JellyBlock(AbstractBlock.Properties properties) {
         super(properties);
     }
 
-    private static boolean func_226937_c_(Entity p_226937_0_) {
+    private static boolean doesEntityDoHoneyBlockSlideEffects(Entity p_226937_0_) {
         return p_226937_0_ instanceof LivingEntity || p_226937_0_ instanceof AbstractMinecartEntity || p_226937_0_ instanceof TNTEntity || p_226937_0_ instanceof BoatEntity;
     }
 
     @Override
     public VoxelShape getCollisionShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-        return field_226930_a_;
+        return SHAPE;
     }
 
     /**
@@ -54,16 +54,16 @@ public class JellyBlock extends HoneyBlock {
 
 //    @Override
 //    public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
-//        if (this.func_226935_a_(pos, entityIn)) {
-//            this.func_226933_a_(entityIn, pos);
-//            this.func_226938_d_(entityIn);
-//            this.func_226934_a_(worldIn, entityIn);
+//        if (this.isSlidingDown(pos, entityIn)) {
+//            this.maybeDoSlideAchievement(entityIn, pos);
+//            this.doSlideMovement(entityIn);
+//            this.maybeDoSlideEffects(worldIn, entityIn);
 //        }
 //
 //        super.onEntityCollision(state, worldIn, pos, entityIn);
 //    }
 //
-//    private boolean func_226935_a_(BlockPos p_226935_1_, Entity p_226935_2_) {
+//    private boolean isSlidingDown(BlockPos p_226935_1_, Entity p_226935_2_) {
 //        if (p_226935_2_.onGround) {
 //            return false;
 //        } else if (p_226935_2_.getPosY() > (double)p_226935_1_.getY() + 0.9375D - 1.0E-7D) {
@@ -78,14 +78,14 @@ public class JellyBlock extends HoneyBlock {
 //        }
 //    }
 //
-//    private void func_226933_a_(Entity p_226933_1_, BlockPos p_226933_2_) {
+//    private void maybeDoSlideAchievement(Entity p_226933_1_, BlockPos p_226933_2_) {
 //        if (p_226933_1_ instanceof ServerPlayerEntity && p_226933_1_.world.getGameTime() % 20L == 0L) {
-//            CriteriaTriggers.field_229864_K_.func_227152_a_((ServerPlayerEntity)p_226933_1_, p_226933_1_.world.getBlockState(p_226933_2_));
+//            CriteriaTriggers.HONEY_BLOCK_SLIDE.trigger((ServerPlayerEntity)p_226933_1_, p_226933_1_.world.getBlockState(p_226933_2_));
 //        }
 //
 //    }
 
-    private void func_226938_d_(Entity p_226938_1_) {
+    private void doSlideMovement(Entity p_226938_1_) {
         Vector3d vec3d = p_226938_1_.getMotion();
         if (vec3d.y < -0.13D) {
             double d0 = -0.05D / vec3d.y;
@@ -97,8 +97,8 @@ public class JellyBlock extends HoneyBlock {
         p_226938_1_.fallDistance = 0.0F;
     }
 
-    private void func_226934_a_(World p_226934_1_, Entity p_226934_2_) {
-        if (func_226937_c_(p_226934_2_)) {
+    private void maybeDoSlideEffects(World p_226934_1_, Entity p_226934_2_) {
+        if (doesEntityDoHoneyBlockSlideEffects(p_226934_2_)) {
             if (p_226934_1_.rand.nextInt(5) == 0) {
                 p_226934_2_.playSound(SoundEvents.BLOCK_HONEY_BLOCK_SLIDE, 1.0F, 1.0F);
             }
@@ -111,17 +111,17 @@ public class JellyBlock extends HoneyBlock {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public static void func_226931_a_(Entity p_226931_0_) {
-        func_226932_a_(p_226931_0_, 5);
+    public static void showSlideParticles(Entity p_226931_0_) {
+        showParticles(p_226931_0_, 5);
     }
 
     @OnlyIn(Dist.CLIENT)
-    public static void func_226936_b_(Entity p_226936_0_) {
-        func_226932_a_(p_226936_0_, 10);
+    public static void showJumpParticles(Entity p_226936_0_) {
+        showParticles(p_226936_0_, 10);
     }
 
     @OnlyIn(Dist.CLIENT)
-    private static void func_226932_a_(Entity p_226932_0_, int p_226932_1_) {
+    private static void showParticles(Entity p_226932_0_, int p_226932_1_) {
         if (p_226932_0_.world.isRemote) {
             BlockState blockstate = JellyfishingBlocks.JELLY_BLOCK.get().getDefaultState();
 

@@ -11,6 +11,8 @@ import net.minecraft.potion.PotionUtils;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.World;
 
+import net.minecraft.item.Item.Properties;
+
 public class KelpShakeItem extends Item {
 
     public KelpShakeItem(Properties properties) {

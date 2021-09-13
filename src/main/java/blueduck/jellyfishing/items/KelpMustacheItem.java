@@ -11,6 +11,8 @@ import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.world.World;
 
+import net.minecraft.item.Item.Properties;
+
 public class KelpMustacheItem extends ArmorItem {
     public KelpMustacheItem(IArmorMaterial materialIn, Properties builder) {
         super(materialIn, EquipmentSlotType.HEAD, builder);

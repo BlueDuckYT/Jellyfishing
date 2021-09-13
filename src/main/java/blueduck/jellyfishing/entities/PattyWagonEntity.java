@@ -116,16 +116,16 @@ public class PattyWagonEntity extends Entity {
     }
 
     public boolean canCollide(Entity entity) {
-        return func_242378_a(this, entity);
+        return canVehicleCollide(this, entity);
     }
 
-    public static boolean func_242378_a(Entity p_242378_0_, Entity entity) {
-        return (entity.func_241845_aY() || entity.canBePushed()) && !p_242378_0_.isRidingSameEntity(entity);
+    public static boolean canVehicleCollide(Entity p_242378_0_, Entity entity) {
+        return (entity.canBeCollidedWith() || entity.canBePushed()) && !p_242378_0_.isRidingSameEntity(entity);
     }
 
-    public boolean func_241845_aY() {
-        return true;
-    }
+//    public boolean canBeCollidedWith() {
+//        return true;
+//    }
 
     /**
      * Returns true if this entity should push and be pushed by other entities when colliding.
@@ -134,9 +134,9 @@ public class PattyWagonEntity extends Entity {
         return true;
     }
 
-    protected Vector3d func_241839_a(Direction.Axis axis, TeleportationRepositioner.Result result) {
-        return LivingEntity.func_242288_h(super.func_241839_a(axis, result));
-    }
+//    protected Vector3d getRelativePortalPosition(Direction.Axis axis, TeleportationRepositioner.Result result) {
+//        return LivingEntity.resetForwardDirectionOfRelativePortalPosition(super.getRelativePortalPosition(axis, result));
+//    }
 
     /**
      * Returns the Y offset from the entity's position for any entity riding this one.
@@ -666,33 +666,33 @@ public class PattyWagonEntity extends Entity {
         }
     }
 
-    public Vector3d func_230268_c_(LivingEntity livingEntity) {
-        Vector3d vector3d = func_233559_a_((double)(this.getWidth() * MathHelper.SQRT_2), (double)livingEntity.getWidth(), this.rotationYaw);
-        double d0 = this.getPosX() + vector3d.x;
-        double d1 = this.getPosZ() + vector3d.z;
-        BlockPos blockpos = new BlockPos(d0, this.getBoundingBox().maxY, d1);
-        BlockPos blockpos1 = blockpos.down();
-        if (!this.world.hasWater(blockpos1)) {
-            double d2 = (double)blockpos.getY() + this.world.func_242403_h(blockpos);
-            double d3 = (double)blockpos.getY() + this.world.func_242403_h(blockpos1);
-
-            for(Pose pose : livingEntity.getAvailablePoses()) {
-                Vector3d vector3d1 = TransportationHelper.func_242381_a(this.world, d0, d2, d1, livingEntity, pose);
-                if (vector3d1 != null) {
-                    livingEntity.setPose(pose);
-                    return vector3d1;
-                }
-
-                Vector3d vector3d2 = TransportationHelper.func_242381_a(this.world, d0, d3, d1, livingEntity, pose);
-                if (vector3d2 != null) {
-                    livingEntity.setPose(pose);
-                    return vector3d2;
-                }
-            }
-        }
-
-        return super.func_230268_c_(livingEntity);
-    }
+//    public Vector3d getDismountLocationForPassenger(LivingEntity livingEntity) {
+//        Vector3d vector3d = getCollisionHorizontalEscapeVector((double)(this.getWidth() * MathHelper.SQRT_2), (double)livingEntity.getWidth(), this.rotationYaw);
+//        double d0 = this.getPosX() + vector3d.x;
+//        double d1 = this.getPosZ() + vector3d.z;
+//        BlockPos blockpos = new BlockPos(d0, this.getBoundingBox().maxY, d1);
+//        BlockPos blockpos1 = blockpos.down();
+//        if (!this.world.hasWater(blockpos1)) {
+//            double d2 = (double)blockpos.getY() + this.world.getBlockFloorHeight(blockpos);
+//            double d3 = (double)blockpos.getY() + this.world.getBlockFloorHeight(blockpos1);
+//
+//            for(Pose pose : livingEntity.getAvailablePoses()) {
+//                Vector3d vector3d1 = TransportationHelper.findDismountLocation(this.world, d0, d2, d1, livingEntity, pose);
+//                if (vector3d1 != null) {
+//                    livingEntity.setPose(pose);
+//                    return vector3d1;
+//                }
+//
+//                Vector3d vector3d2 = TransportationHelper.findDismountLocation(this.world, d0, d3, d1, livingEntity, pose);
+//                if (vector3d2 != null) {
+//                    livingEntity.setPose(pose);
+//                    return vector3d2;
+//                }
+//            }
+//        }
+//
+//        return super.getDismountLocationForPassenger(livingEntity);
+//    }
 
     /**
      * Applies this boat's yaw to the given entity. Used to update the orientation of its passenger.

@@ -7,6 +7,8 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockReader;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class JellyfishMachineBlock extends Block {
 
     public static final IntegerProperty LEVEL = BlockStateProperties.LEVEL_0_3;

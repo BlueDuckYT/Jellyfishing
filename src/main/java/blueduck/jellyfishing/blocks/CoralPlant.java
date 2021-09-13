@@ -5,8 +5,10 @@ import net.minecraft.block.CoralPlantBlock;
 import net.minecraft.block.DeadCoralPlantBlock;
 import net.minecraft.block.SeaGrassBlock;
 
+import net.minecraft.block.AbstractBlock;
+
 public class CoralPlant extends DeadCoralPlantBlock {
-    public CoralPlant(Block.Properties properties) {
+    public CoralPlant(AbstractBlock.Properties properties) {
         super(properties);
     }
 }

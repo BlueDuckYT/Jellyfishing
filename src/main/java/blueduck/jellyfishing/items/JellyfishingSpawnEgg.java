@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.function.Supplier;
 
+import net.minecraft.item.Item.Properties;
+
 public class JellyfishingSpawnEgg extends SpawnEggItem {
 
     public static final ArrayList<JellyfishingSpawnEgg> JELLYFISHING_SPAWN_EGGS = new ArrayList<>();

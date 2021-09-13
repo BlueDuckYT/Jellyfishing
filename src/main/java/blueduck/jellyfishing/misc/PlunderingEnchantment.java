@@ -4,6 +4,8 @@ import blueduck.jellyfishing.registry.JellyfishingEnchantments;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.inventory.EquipmentSlotType;
 
+import net.minecraft.enchantment.Enchantment.Rarity;
+
 public class PlunderingEnchantment extends Enchantment {
 
 

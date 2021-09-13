@@ -30,10 +30,10 @@ public class JellyfishingFeatures extends net.minecraftforge.registries.ForgeReg
     }
 
 //    public static void registerConfiguredFeatures() {
-//        register("coral_plant_feature", CORAL_PLANT_FEATURE.get().withConfiguration(new ProbabilityConfig(.5F)).range(32).square().func_242731_b(100));
-//        register("tube_plant_feature", TUBE_PLANT_FEATURE.get().withConfiguration(new ProbabilityConfig(.1F)).range(32).square().func_242731_b(100));
-//        register("seanut_bush_feature", SEANUT_BUSH_FEATURE.get().withConfiguration(new ProbabilityConfig(.2F)).range(32).square().func_242731_b(100));
-//        register("coralstone_replacement", Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 100)).range(300).square().func_242731_b(50));
+//        register("coral_plant_feature", CORAL_PLANT_FEATURE.get().withConfiguration(new ProbabilityConfig(.5F)).range(32).square().count(100));
+//        register("tube_plant_feature", TUBE_PLANT_FEATURE.get().withConfiguration(new ProbabilityConfig(.1F)).range(32).square().count(100));
+//        register("seanut_bush_feature", SEANUT_BUSH_FEATURE.get().withConfiguration(new ProbabilityConfig(.2F)).range(32).square().count(100));
+//        register("coralstone_replacement", Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, JellyfishingBlocks.CORALSTONE.get().getDefaultState(), 100)).range(300).square().count(50));
 //    }
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> feature) {

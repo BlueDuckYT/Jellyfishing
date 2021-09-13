@@ -29,7 +29,7 @@ public class JellyfishingConfig {
         builder.push("General");
         this.BIOME_WEIGHT= subscriber.subscribe(builder
                 .comment("Biome Weight of Jellyfish Fields")
-                .defineInRange("jellyfish_fields_weight", 6, 1, 100));
+                .defineInRange("jellyfish_fields_weight", 2, 1, 100));
         this.JELLYFISH_STING= subscriber.subscribe(builder
                 .comment("Should Jellyfish sting?")
                 .define("jellyfish_sting", true, o -> o instanceof Boolean));

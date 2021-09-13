@@ -8,6 +8,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.IBlockReader;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class BlueJellyBlock extends SlimeBlock {
     public BlueJellyBlock(Properties properties) {
         super(properties);
@@ -18,12 +20,12 @@ public class BlueJellyBlock extends SlimeBlock {
         if (entityIn.isSuppressingBounce()) {
             super.onLanded(worldIn, entityIn);
         } else {
-            this.func_226946_a_(entityIn);
+            this.bounceUp(entityIn);
         }
 
     }
 
-    private void func_226946_a_(Entity p_226946_1_) {
+    private void bounceUp(Entity p_226946_1_) {
         Vector3d vec3d = p_226946_1_.getMotion();
         if (vec3d.y < 0.0D) {
             double d0 = p_226946_1_ instanceof LivingEntity ? 1.0D : 0.8D;

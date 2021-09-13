@@ -2,12 +2,14 @@ package blueduck.jellyfishing.registry;
 
 import blueduck.jellyfishing.JellyfishingMod;
 import blueduck.jellyfishing.biomes.JellyfishFields;
+import blueduck.jellyfishing.miscellaneous.AbnormalsCoreOceanBiomeRegistry;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -29,7 +31,13 @@ public class JellyfishingBiomes {
     }
     public static void registerBiome(Biome biome, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
         BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, new ResourceLocation("jellyfishing:jellyfish_fields")), types);
-        BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, new ResourceLocation("jellyfishing:jellyfish_fields")), JellyfishingMod.CONFIG.BIOME_WEIGHT.get()));
+        if (ModList.get().isLoaded("abnormals_core")) {
+            RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, new ResourceLocation("jellyfishing:jellyfish_fields"));
+            AbnormalsCoreOceanBiomeRegistry.registerBiome(key, key, JellyfishingMod.CONFIG.BIOME_WEIGHT.get());
+        }
+        else {
+            BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, new ResourceLocation("jellyfishing:jellyfish_fields")), JellyfishingMod.CONFIG.BIOME_WEIGHT.get()));
+        }
     }
 
     //For Porting to 1.16.2

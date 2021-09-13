@@ -19,6 +19,8 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import net.minecraft.item.Item.Properties;
+
 public class BubbleKitItem extends BlockNamedItem {
     public BubbleKitItem(Properties properties) {
         super(JellyfishingBlocks.BUBBLE_BLOCK.get(), properties);
@@ -45,7 +47,7 @@ public class BubbleKitItem extends BlockNamedItem {
                     BlockState blockstate1 = world.getBlockState(blockpos);
                     Block block = blockstate1.getBlock();
                     if (block == blockstate.getBlock()) {
-                        blockstate1 = this.func_219985_a(blockpos, world, itemstack, blockstate1);
+                        blockstate1 = this.updateBlockStateFromTag(blockpos, world, itemstack, blockstate1);
                         this.onBlockPlaced(blockpos, world, playerentity, itemstack, blockstate1);
                         block.onBlockPlacedBy(world, blockpos, blockstate1, playerentity, itemstack);
                         if (playerentity instanceof ServerPlayerEntity) {
@@ -67,7 +69,7 @@ public class BubbleKitItem extends BlockNamedItem {
         }
     }
 
-    private BlockState func_219985_a(BlockPos p_219985_1_, World p_219985_2_, ItemStack p_219985_3_, BlockState p_219985_4_) {
+    private BlockState updateBlockStateFromTag(BlockPos p_219985_1_, World p_219985_2_, ItemStack p_219985_3_, BlockState p_219985_4_) {
         BlockState blockstate = p_219985_4_;
         CompoundNBT compoundnbt = p_219985_3_.getTag();
         if (compoundnbt != null) {
@@ -78,7 +80,7 @@ public class BubbleKitItem extends BlockNamedItem {
                 Property<?> property = statecontainer.getProperty(s);
                 if (property != null) {
                     String s1 = compoundnbt1.get(s).getString();
-                    blockstate = func_219988_a(blockstate, property, s1);
+                    blockstate = updateState(blockstate, property, s1);
                 }
             }
         }
@@ -89,7 +91,7 @@ public class BubbleKitItem extends BlockNamedItem {
 
         return blockstate;
     }
-    private static <T extends Comparable<T>> BlockState func_219988_a(BlockState p_219988_0_, Property<T> p_219988_1_, String p_219988_2_) {
+    private static <T extends Comparable<T>> BlockState updateState(BlockState p_219988_0_, Property<T> p_219988_1_, String p_219988_2_) {
         return p_219988_1_.parseValue(p_219988_2_).map((p_219986_2_) -> {
             return p_219988_0_.with(p_219988_1_, p_219986_2_);
         }).orElse(p_219988_0_);
