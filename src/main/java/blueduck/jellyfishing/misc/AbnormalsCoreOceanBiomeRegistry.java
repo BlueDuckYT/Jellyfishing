@@ -1,4 +1,4 @@
-package blueduck.jellyfishing.miscellaneous;
+package blueduck.jellyfishing.misc;
 
 import blueduck.jellyfishing.JellyfishingMod;
 import com.minecraftabnormals.abnormals_core.core.util.BiomeUtil;

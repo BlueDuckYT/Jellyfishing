@@ -2,7 +2,7 @@ package blueduck.jellyfishing.registry;
 
 import blueduck.jellyfishing.JellyfishingMod;
 import blueduck.jellyfishing.biomes.JellyfishFields;
-import blueduck.jellyfishing.miscellaneous.AbnormalsCoreOceanBiomeRegistry;
+import blueduck.jellyfishing.misc.AbnormalsCoreOceanBiomeRegistry;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;

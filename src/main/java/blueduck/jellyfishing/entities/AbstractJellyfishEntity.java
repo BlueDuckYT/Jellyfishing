@@ -185,7 +185,7 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
     }
 
     public static AttributeModifierMap.MutableAttribute createAttributes() {
-        return MobEntity.registerAttributes().createMutableAttribute(Attributes.MAX_HEALTH, 6.0D);
+        return MobEntity.func_233666_p_().createMutableAttribute(Attributes.MAX_HEALTH, 6.0D);
     }
 
     public void setNewVelocity(Entity entityIn, double multiplier) {
@@ -198,6 +198,11 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
 
     @Override
     protected ActionResultType func_230254_b_(PlayerEntity player, Hand hand) {
+
+        if (player.getHeldItem(hand).getItem() == (Items.WATER_BUCKET)) {
+            return ActionResultType.FAIL;
+        }
+
         ItemStack itemstack = player.getHeldItem(hand);
         if (itemstack.getItem() == JellyfishingItems.JELLYFISH_NET.get() && player.getCooldownTracker().getCooldown(itemstack.getItem(), 0) == 0) {
             player.swingArm(hand);
@@ -271,7 +276,8 @@ public class AbstractJellyfishEntity extends AbstractFishEntity {
                 }
             }
         }
-        return  super.func_230254_b_(player, hand);
+
+        return super.func_230254_b_(player, hand);
     }
 
     public void writeAdditional(CompoundNBT compound) {

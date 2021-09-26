@@ -29,7 +29,7 @@ public class JellyfishingConfig {
         builder.push("General");
         this.BIOME_WEIGHT= subscriber.subscribe(builder
                 .comment("Biome Weight of Jellyfish Fields")
-                .defineInRange("jellyfish_fields_weight", 2, 1, 100));
+                .defineInRange("jellyfish_fields_weight", 6, 1, 100));
         this.JELLYFISH_STING= subscriber.subscribe(builder
                 .comment("Should Jellyfish sting?")
                 .define("jellyfish_sting", true, o -> o instanceof Boolean));
@@ -45,10 +45,10 @@ public class JellyfishingConfig {
         builder.push("Attack Damages");
         this.SPATULA_DAMAGE= subscriber.subscribe(builder
                 .comment("Damage of the Spatula")
-                .defineInRange("spatula_damage", 6, 1, 1000));
+                .defineInRange("spatula_damage", 4, 1, 1000));
         this.GOLDEN_SPATULA_DAMAGE= subscriber.subscribe(builder
                 .comment("Damage of the Golden Spatula")
-                .defineInRange("golden_spatula_damage", 8, 1, 1000));
+                .defineInRange("golden_spatula_damage", 6, 1, 1000));
         this.KARATE_DAMAGE= subscriber.subscribe(builder
                 .comment("Damage of the Karate Glove")
                 .defineInRange("karate_damage", 3, 1, 1000));
